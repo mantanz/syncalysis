@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pd:prPriceLvlPd xmlns:vs="urn:vfi-sapphire:vs.2001-10-01"
+    xmlns:fuel="urn:vfi-sapphire:fuel.2001-10-01"
+    xmlns:base="urn:vfi-sapphire:base.2001-10-01"
+    xmlns:pd="urn:vfi-sapphire:pd.2002-05-21"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <vs:period sysid="2" periodType="day" name="Day" periodSeqNum="868" periodBeginDate="2025-03-09T23:44:03-05:00" periodEndDate="2025-03-10T23:44:03-05:00" />
+    <vs:site>ARC004</vs:site>
+    <pd:constituentPeriods>
+        <vs:period sysid="1" periodType="daypart" name="Shift" periodSeqNum="360" isFirst="true" isLast="true" periodBeginDate="2025-03-09T23:44:03-05:00" periodEndDate="2025-03-10T23:44:03-05:00" />
+    </pd:constituentPeriods>
+    <totals>
+        <prPriceLvlInfo>
+            <fuel:fuelProdBase sysid="2" number="2">
+                <name>Midgrade</name>
+            </fuel:fuelProdBase>
+            <priceLvlInfo>
+                <fuel:fuelPriceLevel sysid="2">
+                    <name>CREDIT</name>
+                </fuel:fuelPriceLevel>
+                <fuelInfo>
+                    <count>6</count>
+                    <amount>305.43</amount>
+                    <volume>86.062</volume>
+                </fuelInfo>
+            </priceLvlInfo>
+            <priceLvlInfo>
+                <fuel:fuelPriceLevel sysid="1">
+                    <name>CASH</name>
+                </fuel:fuelPriceLevel>
+                <fuelInfo>
+                    <count>2</count>
+                    <amount>95.00</amount>
+                    <volume>26.769</volume>
+                </fuelInfo>
+            </priceLvlInfo>
+            <subtotal>
+                <count>8</count>
+                <amount>400.43</amount>
+                <volume>112.831</volume>
+            </subtotal>
+        </prPriceLvlInfo>
+        <prPriceLvlInfo>
+            <fuel:fuelProdBase sysid="1" number="1">
+                <name>Regular</name>
+            </fuel:fuelProdBase>
+            <priceLvlInfo>
+                <fuel:fuelPriceLevel sysid="2">
+                    <name>CREDIT</name>
+                </fuel:fuelPriceLevel>
+                <fuelInfo>
+                    <count>134</count>
+                    <amount>4505.82</amount>
+                    <volume>1503.706</volume>
+                </fuelInfo>
+            </priceLvlInfo>
+            <priceLvlInfo>
+                <fuel:fuelPriceLevel sysid="1">
+                    <name>CASH</name>
+                </fuel:fuelPriceLevel>
+                <fuelInfo>
+                    <count>39</count>
+                    <amount>1151.83</amount>
+                    <volume>384.063</volume>
+                </fuelInfo>
+            </priceLvlInfo>
+            <subtotal>
+                <count>173</count>
+                <amount>5657.65</amount>
+                <volume>1887.769</volume>
+            </subtotal>
+        </prPriceLvlInfo>
+        <prPriceLvlInfo>
+            <fuel:fuelProdBase sysid="3" number="3">
+                <name>Premium</name>
+            </fuel:fuelProdBase>
+            <priceLvlInfo>
+                <fuel:fuelPriceLevel sysid="2">
+                    <name>CREDIT</name>
+                </fuel:fuelPriceLevel>
+                <fuelInfo>
+                    <count>26</count>
+                    <amount>1194.09</amount>
+                    <volume>291.316</volume>
+                </fuelInfo>
+            </priceLvlInfo>
+            <priceLvlInfo>
+                <fuel:fuelPriceLevel sysid="1">
+                    <name>CASH</name>
+                </fuel:fuelPriceLevel>
+                <fuelInfo>
+                    <count>4</count>
+                    <amount>80.32</amount>
+                    <volume>19.594</volume>
+                </fuelInfo>
+            </priceLvlInfo>
+            <subtotal>
+                <count>30</count>
+                <amount>1274.41</amount>
+                <volume>310.910</volume>
+            </subtotal>
+        </prPriceLvlInfo>
+        <prPriceLvlInfo>
+            <fuel:fuelProdBase sysid="7" number="7">
+                <name>Diesel</name>
+            </fuel:fuelProdBase>
+            <priceLvlInfo>
+                <fuel:fuelPriceLevel sysid="2">
+                    <name>CREDIT</name>
+                </fuel:fuelPriceLevel>
+                <fuelInfo>
+                    <count>11</count>
+                    <amount>941.83</amount>
+                    <volume>277.086</volume>
+                </fuelInfo>
+            </priceLvlInfo>
+            <subtotal>
+                <count>11</count>
+                <amount>941.83</amount>
+                <volume>277.086</volume>
+            </subtotal>
+        </prPriceLvlInfo>
+        <total>
+            <count>222</count>
+            <amount>8274.32</amount>
+            <volume>2588.596</volume>
+        </total>
+    </totals>
+</pd:prPriceLvlPd>

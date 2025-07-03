@@ -1,0 +1,48 @@
+"department_id","department_name","department_type","is_car_wash_department","is_fuel_department","is_lottery_department"
+"9","Car Wash","Other Services",False,False,False
+"10","Instant Lotto","Lottery",False,False,False
+"14","Cigarettes","Inside Sales",False,False,False
+"15","Smokeless","Inside Sales",False,False,False
+"16","Cigars","Inside Sales",False,False,False
+"17","Vaping Products","Inside Sales",False,False,False
+"18","CBD","Inside Sales",False,False,False
+"19","Beer","Inside Sales",False,False,False
+"20","Alcoholic Seltzer","Inside Sales",False,False,False
+"21","Hot Dispensed Beverages","Other Services",False,False,False
+"22","Cold Dispensed Beverages","Other Services",False,False,False
+"23","Frozen Dispensed Beverages","Other Services",False,False,False
+"24","Carbonated Soft Drinks","Inside Sales",False,False,False
+"25","Sports Drink","Inside Sales",False,False,False
+"26","Juice/Juice Drinks","Inside Sales",False,False,False
+"27","Water","Inside Sales",False,False,False
+"28","Energy Drinks","Inside Sales",False,False,False
+"29","Ready-To-Drink Coffee","Inside Sales",False,False,False
+"30","Fluid Milk Products","Inside Sales",False,False,False
+"31","Candy","Inside Sales",False,False,False
+"32","Gum/Mints","Inside Sales",False,False,False
+"33","Potato Chips","Inside Sales",False,False,False
+"34","Nuts/Seeds","Inside Sales",False,False,False
+"35","Other Salty Snacks","Inside Sales",False,False,False
+"36","Meat Snacks","Inside Sales",False,False,False
+"37","Other Alternative Snacks","Inside Sales",False,False,False
+"38","Packaged Sweet Snacks","Inside Sales",False,False,False
+"39","Commissary & Other Products","Inside Sales",False,False,False
+"40","Food Service Onsite","Other Services",False,False,False
+"41","Bakery","Other Services",False,False,False
+"42","Other Dairy & Deli Products","Inside Sales",False,False,False
+"43","Frozen Foods","Inside Sales",False,False,False
+"44","Packaged Ice Cream/Novelties","Inside Sales",False,False,False
+"45","Edible Grocery","Inside Sales",False,False,False
+"46","Non-Edible Grocery","Inside Sales",False,False,False
+"47","Health & Beauty Care","Inside Sales",False,False,False
+"48","General Merchandise","Inside Sales",False,False,False
+"49","Propane Purchases - Full Cyl","Inside Sales",False,False,False
+"50","Bagged Ice","Inside Sales",False,False,False
+"51","Automotive Products","Inside Sales",False,False,False
+"52","Coupons","Other Services",False,False,False
+"53","Mobile Coupons","Other Services",False,False,False
+"56","Operating Supplies","Other Services",False,False,False
+"58","WisGo Transit","Other Services",False,False,False
+"59","Cigarette Cartons","Inside Sales",False,False,False
+"60","Smokeless Rolls","Inside Sales",False,False,False
+"62","Propane Exchange - Empty Cyl","Inside Sales",False,False,False
