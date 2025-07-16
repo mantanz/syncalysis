@@ -448,8 +448,26 @@ class GenericProcessor {
       defaults: {
         promotion_id: promotionId,
         promotion_name: `Promotion ${promotionId} (from ${fileType})`,
-        promotion_type: 'discount',
-        is_active: true
+        promo_desc: null,
+        promo_amount: null,
+        promo_percent: null,
+        promotion_discount_method: 'discount',
+        mfg_multi_pack_flag: false,
+        outlet_multi_pack_flag: false,
+        tob_promo_flag: false,
+        effective_start_date: null,
+        effective_end_date: null,
+        manufacturer_name: null,
+        mfg_multi_pack_qty: null,
+        mfg_promo_desc: null,
+        outlet_multi_pack_qty: null,
+        provider_name: null,
+        store_pays_amount: null,
+        store_pays_disc_type: null,
+        store_pays_percent: null,
+        vendor_pays_amount: null,
+        vendor_pays_disc_type: null,
+        vendor_pays_percent: null
       },
       transaction: options.transaction
     });

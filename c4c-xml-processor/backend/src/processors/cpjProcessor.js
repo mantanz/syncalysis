@@ -199,15 +199,11 @@ class CPJProcessor {
       if (paylines.trpayline) {
         const payments = Array.isArray(paylines.trpayline) ? paylines.trpayline : [paylines.trpayline];
         for (const payment of payments) {
-          await this.processPayment(salesTransaction.transaction_id, payment, { transaction });
+          await this.processPayment(salesTransaction.transaction_id, payment, header, { transaction });
         }
       }
 
       // Process loyalty programs
-      console.log("---------------------------------------------------");
-      console.log(loyalty);
-      console.log(loyalty.trloyaltyprogram);
-      console.log("---------------------------------------------------");
       if (loyalty.trloyaltyprogram) {
         await this.processLoyaltyProgram(salesTransaction.transaction_id, loyalty, { transaction });
       }
@@ -231,7 +227,7 @@ class CPJProcessor {
       customer_dob_entry: values.custdob?.dob || null,
       duration: parseInt(header.duration) || null,
       event_type: header.termmsgsn?.type || '',
-      global_unique_identifier: parseInt(header.uniqueid) || null,
+      global_unique_identifier: header.uniqueid || null,
       verifone_transaction_sn: parseInt(header.truniquesn) || null
     };
 
@@ -252,15 +248,15 @@ class CPJProcessor {
       transaction_event_log_id: eventLogId,
       cashier_session: parseInt(header.cashier?.period),
       employee_id: parseInt(header.cashier?.sysid),
-      employee_name: typeof header.cashier ? header.cashier._ : null,
-      food_stamp_eligible_total: parseFloat(values.trfstmp?.trfstmptot) || null,
-      grand_totalizer: parseFloat(values.trgtotalizer) || null,
+      employee_name: header.cashier?._ || null,
+      food_stamp_eligible_total: values.trfstmp?.trfstmptot ? parseFloat(values.trfstmp?.trfstmptot) : null,
+      grand_totalizer: parseFloat(values.trgtotalizer),
       has_transaction_id: parseInt(header.trticknum?.trseq) ? true : false,
-      total_amount: parseFloat(values.trtotwtax) || null,
-      total_no_tax: parseFloat(values.trtotnotax) || null,
-      total_tax_amount: parseFloat(values.trtottax) || null,
-      transaction_datetime: this.parseDateTime(header.date) || new Date(),
-      transaction_recall: transData.recalled || null,
+      total_amount: parseFloat(values.trtotwtax),
+      total_no_tax: parseFloat(values.trtotnotax),
+      total_tax_amount: parseFloat(values.trtottax),
+      transaction_datetime: this.parseDateTime(header.date),
+      transaction_recall: transData.recalled,
       transaction_type: transData.type
     };
 
@@ -298,14 +294,14 @@ class CPJProcessor {
       department: departmentId,
       department_name:  lineData.trldept._ || null,
       department_type: (lineData.trldept?.type === 'norm' ? 'Inside Sales' : lineData.trldept?.type) || null,
-      has_birthday_verification: !!lineData.trlbdayverif,
-      has_category_override: !!lineData.trlcatcust,
-      has_department_override: !!lineData.trlupddepcust,
-      has_loyalty_line_discount: !!lineData.trlloylndisc,
-      has_mix_match_promotion: !!lineData.trlmatch,
-      has_plu_override: !!lineData.trlupdplucust,
-      is_ebt_eligible: !!lineData.trlfstmp,
-      is_plu_item: !!lineData.trlplu,
+      has_birthday_verification: typeof lineData.trlflags.trlbdayverif === 'string',
+      has_category_override: typeof lineData.trlflags.trlcatcust === 'string',
+      has_department_override: typeof lineData.trlflags.trlupddepcust === 'string',
+      has_loyalty_line_discount: typeof lineData.trlflags.trlloylndisc === 'string',
+      has_mix_match_promotion: typeof lineData.trlflags.trlmatch === 'string',
+      has_plu_override: typeof lineData.trlflags.trlupdplucust === 'string',
+      is_ebt_eligible: typeof lineData.trlflags.trlfstmp === 'string',
+      is_plu_item: typeof lineData.trlflags.trlplu === 'string',
       line_total: parseFloat(lineData.trllinetot),
       network_code: parseInt(lineData.trlnetwcode),
       quantity: parseFloat(lineData.trlqty),
@@ -321,17 +317,17 @@ class CPJProcessor {
     });
 
     // Process tax information
-    if (lineData.trlrate || lineData.trltax) {
+    if (lineData.trltaxes) {
       await this.processLineItemTax(lineItem.line_item_uuid, lineData, options);
     }
 
     // Process promotions
-    if (lineData.trlpromotionid || lineData.trlmatch) {
+    if (lineData.trlmixmatches?.trlmatchline) {
       await this.processPromotionLineItem(lineItem.line_item_uuid, lineData, options);
     }
 
     // Process loyalty discounts
-    if (lineData.trlloylndisc) {
+    if (lineData.trlolnitemdisc) {
       await this.processLoyaltyLineItem(lineItem.line_item_uuid, lineData, options);
     }
 
@@ -339,18 +335,18 @@ class CPJProcessor {
   }
 
   async processLineItemTax(lineItemUuid, lineData, options = {}) {
-    const taxData = lineData.trlrate || lineData.trltax;
+    const taxData = lineData.trltaxes;
     if (!taxData) return;
-
+    
     const taxes = Array.isArray(taxData) ? taxData : [taxData];
     
     for (const tax of taxes) {
     const taxLineData = {
         line_item_uuid: lineItemUuid,
-        tax_line_amount: parseFloat(tax.amount || tax.trltax || tax) || null,
-        tax_line_category: tax.cat || tax.category || null,
-        tax_line_rate: parseFloat(tax.rate || tax.percent) || null,
-        tax_line_sys_id: parseInt(tax.sysid || tax.id) || null
+        tax_line_amount: parseFloat(tax.trltax?._) || null,
+        tax_line_category: tax.trltax?.cat || null,
+        tax_line_rate: parseFloat(tax.trlrate?._) || null,
+        tax_line_sys_id: parseInt(tax.trltax?.sysid) || null
       };
 
       await models.TransactionLineItemTax.create(taxLineData, {
@@ -360,22 +356,22 @@ class CPJProcessor {
   }
 
   async processPromotionLineItem(lineItemUuid, lineData, options = {}) {
-    const promotionId = parseInt(lineData.trlpromotionid) || parseInt(lineData.trlmatch?.id) || null;
+    const promotionId = parseInt(lineData.trlmixmatches?.trlmatchline?.trlpromotionid?._) || null;
     
     // Ensure promotion program exists if promotion ID is provided
     if (promotionId) {
-      await this.ensurePromotionProgramExists(promotionId, lineData, options);
+      await this.ensurePromotionProgramExists(promotionId, lineData.trlmixmatches?.trlmatchline, options);
     }
 
     const promotionData = {
       line_item_uuid: lineItemUuid,
       promotion_id: promotionId,
-      match_price: parseFloat(lineData.trlmatchprice || lineData.trlmatch?.price) || null,
-      match_quantity: parseFloat(lineData.trlmatchquantity || lineData.trlmatch?.quantity) || null,
-      mix_group_id: parseInt(lineData.trlmatchmixes || lineData.trlmatch?.mixgroup) || null,
-      promo_amount: parseFloat(lineData.trlpromoamount || lineData.trlmatch?.amount) || null,
-      promotion_name: lineData.trlmatchname || lineData.trlmatch?.name || null,
-      promotion_type: lineData.trlpromotionid?.promotype || lineData.trlmatch?.type || ''
+      match_price: parseFloat(lineData.trlmixmatches?.trlmatchline?.trlmatchprice) || null,
+      match_quantity: parseFloat(lineData.trlmixmatches?.trlmatchline?.trlmatchquantity) || null,
+      mix_group_id: parseInt(lineData.trlmixmatches?.trlmatchline?.trlmatchmixes) || null,
+      promo_amount: parseFloat(lineData.trlmixmatches?.trlmatchline?.trlpromoamount) || null,
+      promotion_name: lineData.trlmixmatches?.trlmatchline?.trlmatchname || null,
+      promotion_type: lineData.trlmixmatches?.trlmatchline?.trlpromotionid?.promotype || ''
     };
 
     await models.PromotionsLineItem.create(promotionData, {
@@ -386,9 +382,9 @@ class CPJProcessor {
   async processLoyaltyLineItem(lineItemUuid, lineData, options = {}) {
     const loyaltyData = {
       line_item_uuid: lineItemUuid,
-      discount_amount: parseFloat(lineData.trlloylndisc?.discamt || lineData.discamt) || null,
-      quantity_applied: parseFloat(lineData.trlloylndisc?.qty || lineData.qty) || null,
-      tax_credit: parseFloat(lineData.trlloylndisc?.taxcred || lineData.taxcred) || null
+      discount_amount: parseFloat(lineData.trlolnitemdisc?.discamt) || null,
+      quantity_applied: parseFloat(lineData.trlolnitemdisc?.qty) || null,
+      tax_credit: parseFloat(lineData.trlolnitemdisc?.taxcred)
     };
 
     await models.LoyaltyLineItems.create(loyaltyData, {
@@ -396,15 +392,20 @@ class CPJProcessor {
     });
   }
 
-  async processPayment(transactionId, paymentData, options = {}) {
+  async processPayment(transactionId, paymentData, header, options = {}) {
+    console.log('------------------------------------------------------------');
+    console.log(paymentData);
+    console.log(paymentData.trppaycode);
+    console.log(paymentData.trppaycode.mop);
+    const mopCode = parseInt(paymentData.trppaycode?.mop) || null;
     const paymentInfo = {
       transaction_id: transactionId,
       authorization_code: parseInt(paymentData.trpcardinfo?.trpcauthcode) || null,
       cc_name: paymentData.trpcardinfo?.trpcccname._ || null,
       mop_amount: parseFloat(paymentData.trpamt) || null,
-      mop_code: parseInt(paymentData.trppaycode?.mop) || null,
-      payment_entry_method: paymentData.trpcardinfo?.trpcentrymeth || null,
-      payment_timestamp: this.parseDateTime(paymentData.trpcardinfo?.trpcauthdatetime) || null,
+      mop_code: mopCode,
+      payment_entry_method: (mopCode === 1 ? paymentData.trppaycode?._ : paymentData.trpcardinfo?.trpcentrymeth) || null,
+      payment_timestamp: (mopCode === 1 ? this.parseDateTime(header.date) : this.parseDateTime(paymentData.trpcardinfo?.trpcauthdatetime)) || null,
       payment_type: paymentData.type || null
     };
     await models.Payment.create(paymentInfo, {
@@ -414,21 +415,17 @@ class CPJProcessor {
 
   async processLoyaltyProgram(transactionId, loyaltyData, options = {}) {
     // Process transaction-level loyalty data
-    console.log("---------------------------------------------------");
-    console.log(loyaltyData);
-    console.log(loyaltyData.trloyaltyprogram);
-    console.log("---------------------------------------------------");
     const loyaltyProgram = loyaltyData.trloyaltyprogram || loyaltyData;
     
     if (loyaltyProgram) {
       const transactionLoyaltyData = {
       transaction_id: transactionId,
-        loyalty_account_number: loyaltyProgram.trloaccount || loyaltyProgram.account || null,
-        loyalty_auto_discount: parseFloat(loyaltyProgram.trloautodisc || loyaltyProgram.autodisc) || null,
-        loyalty_customer_discount: parseFloat(loyaltyProgram.tlrocustdisc || loyaltyProgram.custdisc) || null,
-        loyalty_entry_method: loyaltyProgram.trloentrymeth || loyaltyProgram.entrymethod || null,
-        loyalty_sub_total: parseFloat(loyaltyProgram.trlosubtotal || loyaltyProgram.subtotal) || null,
-        program_name: loyaltyProgram.programid || loyaltyProgram.name || 'Default Loyalty Program'
+        loyalty_account_number: loyaltyProgram.trloaccount || null,
+        loyalty_auto_discount: parseFloat(loyaltyProgram.trloautodisc),
+        loyalty_customer_discount: parseFloat(loyaltyProgram.trlocustdisc),
+        loyalty_entry_method: loyaltyProgram.trloentrymeth || null,
+        loyalty_sub_total: parseFloat(loyaltyProgram.trlosubtotal) || null,
+        program_name: loyaltyProgram.programID  || 'Default Loyalty Program'
       };
 
       await models.TransactionLoyalty.create(transactionLoyaltyData, {
@@ -515,7 +512,7 @@ class CPJProcessor {
         department_id: departmentId,
         upc_description: lineData.trldesc || `Product ${upcId}`,
         cost: null,
-        retail_price: parseFloat(lineData.trlunitprice) || null
+        retail_price: null
       },
       transaction: options.transaction
     });
@@ -532,14 +529,10 @@ class CPJProcessor {
       where: { promotion_id: promotionId },
       defaults: {
         promotion_id: promotionId,
-        promotion_name: promotionData.trlmatchname || promotionData.trlmatch?.name || `Promotion ${promotionId}`,
+        promotion_name: promotionData.trlmatchname || `Promotion ${promotionId}`,
         promotion_description: promotionData.description || null,
-        promotion_type: promotionData.trlpromotionid?.promotype || promotionData.trlmatch?.type || 'discount',
-        discount_amount: parseFloat(promotionData.trlpromoamount || promotionData.trlmatch?.amount) || null,
-        minimum_quantity: parseFloat(promotionData.trlmatchquantity || promotionData.trlmatch?.quantity) || null,
-        is_active: true,
-        promotion_code: promotionData.code || null,
-        mix_match_group_id: parseInt(promotionData.trlmatchmixes || promotionData.trlmatch?.mixgroup) || null
+        promotion_type: promotionData.trlpromotionid?.promotype,
+        discount_amount: parseFloat(promotionData.trlpromoamount) || null
       },
       transaction: options.transaction
     });

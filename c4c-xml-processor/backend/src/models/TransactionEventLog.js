@@ -5,14 +5,6 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       allowNull: false
     },
-    transaction_id: {
-      type: DataTypes.DECIMAL,
-      allowNull: true,
-      references: {
-        model: 'sales_transaction',
-        key: 'transaction_id'
-      }
-    },
     customer_dob_entry: {
       type: DataTypes.TEXT,
       allowNull: true
@@ -26,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true
     },
     global_unique_identifier: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.TEXT,
       allowNull: true
     },
     verifone_transaction_sn: {

@@ -1,0 +1,10 @@
+promotion_id,promotion_name,mfg_multi_pack_flag,outlet_multi_pack_flag,tob_promo_flag,effective_end_date,effective_start_date,manufacturer_name,mfg_multi_pack_qty,mfg_promo_desc,outlet_multi_pack_qty,promo_amount,promo_desc,promo_percent,promotion_discount_method,provider_name,store_pays_amount,store_pays_disc_type,store_pays_percent,vendor_pays_amount,vendor_pays_disc_type,vendor_pays_percent
+13,Pepsi 20z Q1 2025,false,false,false,,,,,,,0.44,,,mixAndMatchOffer,,,,,,,
+14,2024 RCI All Non Marb Buy 2,false,false,false,,,,,,,0.50,,,mixAndMatchOffer,,,,,,,
+18,Pepsi Starbucks Frapp Q1 2025,false,false,false,,,,,,,0.69,,,mixAndMatchOffer,,,,,,,
+24,RCI Altria Marlboro Buy 2 July 2024,false,false,false,,,,,,,0.90,,,mixAndMatchOffer,,,,,,,
+28,RCI Donuts 2 for 250,false,false,false,,,,,,,0.34,,,mixAndMatchOffer,,,,,,,
+39,RCI Smart Water 1L,false,false,false,,,,,,,0.54,,,mixAndMatchOffer,,,,,,,
+41,2025 Altria ON Buy 3 for 1150,false,false,false,,,,,,,0.31,,,mixAndMatchOffer,,,,,,,
+43,RCI Bucked Up 16z,false,false,false,,,,,,,0.37,,,mixAndMatchOffer,,,,,,,
+60,Zyn Buy 2 for 449,false,false,false,,,,,,,1.30,,,mixAndMatchOffer,,,,,,,

@@ -1,48 +1,58 @@
-"department_id","department_name","department_type","is_car_wash_department","is_fuel_department","is_lottery_department"
-"9","Car Wash","Other Services",False,False,False
-"10","Instant Lotto","Lottery",False,False,False
-"14","Cigarettes","Inside Sales",False,False,False
-"15","Smokeless","Inside Sales",False,False,False
-"16","Cigars","Inside Sales",False,False,False
-"17","Vaping Products","Inside Sales",False,False,False
-"18","CBD","Inside Sales",False,False,False
-"19","Beer","Inside Sales",False,False,False
-"20","Alcoholic Seltzer","Inside Sales",False,False,False
-"21","Hot Dispensed Beverages","Other Services",False,False,False
-"22","Cold Dispensed Beverages","Other Services",False,False,False
-"23","Frozen Dispensed Beverages","Other Services",False,False,False
-"24","Carbonated Soft Drinks","Inside Sales",False,False,False
-"25","Sports Drink","Inside Sales",False,False,False
-"26","Juice/Juice Drinks","Inside Sales",False,False,False
-"27","Water","Inside Sales",False,False,False
-"28","Energy Drinks","Inside Sales",False,False,False
-"29","Ready-To-Drink Coffee","Inside Sales",False,False,False
-"30","Fluid Milk Products","Inside Sales",False,False,False
-"31","Candy","Inside Sales",False,False,False
-"32","Gum/Mints","Inside Sales",False,False,False
-"33","Potato Chips","Inside Sales",False,False,False
-"34","Nuts/Seeds","Inside Sales",False,False,False
-"35","Other Salty Snacks","Inside Sales",False,False,False
-"36","Meat Snacks","Inside Sales",False,False,False
-"37","Other Alternative Snacks","Inside Sales",False,False,False
-"38","Packaged Sweet Snacks","Inside Sales",False,False,False
-"39","Commissary & Other Products","Inside Sales",False,False,False
-"40","Food Service Onsite","Other Services",False,False,False
-"41","Bakery","Other Services",False,False,False
-"42","Other Dairy & Deli Products","Inside Sales",False,False,False
-"43","Frozen Foods","Inside Sales",False,False,False
-"44","Packaged Ice Cream/Novelties","Inside Sales",False,False,False
-"45","Edible Grocery","Inside Sales",False,False,False
-"46","Non-Edible Grocery","Inside Sales",False,False,False
-"47","Health & Beauty Care","Inside Sales",False,False,False
-"48","General Merchandise","Inside Sales",False,False,False
-"49","Propane Purchases - Full Cyl","Inside Sales",False,False,False
-"50","Bagged Ice","Inside Sales",False,False,False
-"51","Automotive Products","Inside Sales",False,False,False
-"52","Coupons","Other Services",False,False,False
-"53","Mobile Coupons","Other Services",False,False,False
-"56","Operating Supplies","Other Services",False,False,False
-"58","WisGo Transit","Other Services",False,False,False
-"59","Cigarette Cartons","Inside Sales",False,False,False
-"60","Smokeless Rolls","Inside Sales",False,False,False
-"62","Propane Exchange - Empty Cyl","Inside Sales",False,False,False
+department_id,department_name,department_type,is_car_wash_department,is_fuel_department,is_lottery_department
+56,Operating Supplies,Other Services,f,f,f
+46,Non-Edible Grocery,Inside Sales,f,f,f
+40,Food Service Onsite,Other Services,f,f,f
+16,Cigars,Inside Sales,f,f,f
+50,Bagged Ice,Inside Sales,f,f,f
+48,General Merchandise,Inside Sales,f,f,f
+51,Automotive Products,Inside Sales,f,f,f
+31,Candy,Inside Sales,f,f,f
+32,Gum/Mints,Inside Sales,f,f,f
+45,Edible Grocery,Inside Sales,f,f,f
+38,Packaged Sweet Snacks,Inside Sales,f,f,f
+44,Packaged Ice Cream/Novelties,Inside Sales,f,f,f
+47,Health & Beauty Care,Inside Sales,f,f,f
+24,Carbonated Soft Drinks,Inside Sales,f,f,f
+27,Water,Inside Sales,f,f,f
+29,Ready-To-Drink Coffee,Inside Sales,f,f,f
+28,Energy Drinks,Inside Sales,f,f,f
+26,Juice/Juice Drinks,Inside Sales,f,f,f
+14,Cigarettes,Inside Sales,f,f,f
+15,Smokeless,Inside Sales,f,f,f
+59,Cigarette Cartons,Inside Sales,f,f,f
+60,Smokeless Rolls,Inside Sales,f,f,f
+43,Frozen Foods,Inside Sales,f,f,f
+35,Other Salty Snacks,Inside Sales,f,f,f
+34,Nuts/Seeds,Inside Sales,f,f,f
+37,Other Alternative Snacks,Inside Sales,f,f,f
+36,Meat Snacks,Inside Sales,f,f,f
+42,Other Dairy & Deli Products,Inside Sales,f,f,f
+19,Beer,Inside Sales,f,f,f
+20,Alcoholic Seltzer,Inside Sales,f,f,f
+33,Potato Chips,Inside Sales,f,f,f
+39,Commissary & Other Products,Inside Sales,f,f,f
+30,Fluid Milk Products,Inside Sales,f,f,f
+52,Coupons,Other Services,f,f,f
+53,Mobile Coupons,Other Services,f,f,f
+23,Frozen Dispensed Beverages,Other Services,f,f,f
+25,Sports Drink,Inside Sales,f,f,f
+21,Hot Dispensed Beverages,Other Services,f,f,f
+22,Cold Dispensed Beverages,Other Services,f,f,f
+41,Bakery,Other Services,f,f,f
+9,Car Wash,Other Services,t,f,f
+58,WisGo Transit,Other Services,f,f,f
+17,Vaping Products,Inside Sales,f,f,f
+18,CBD,Inside Sales,f,f,f
+62,Propane Exchange - Empty Cyl,Inside Sales,f,f,f
+49,Propane Purchases - Full Cyl,Inside Sales,f,f,f
+10,Instant Lotto,Lottery,f,f,t
+1,Unleaded-Regular,fuel,f,t,f
+3,Unleaded-Premium,fuel,f,t,f
+11,Mega Lotto,Inside Sales,f,f,t
+2,Unleaded-Mid,fuel,f,t,f
+9999,FUEL DEPOSIT,fuel,f,t,f
+4,Diesel,fuel,f,t,f
+5,Ethanol- E85,fuel,f,t,f
+12,Instant Lotto Payout,neg,f,f,t
+65,Fuel Not Sold,fuel,f,t,f
+13,Mega Lotto Payout,neg,f,f,t

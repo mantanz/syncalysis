@@ -9,54 +9,98 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: true
     },
-    promotion_description: {
-      type: DataTypes.TEXT,
-      allowNull: true
+    mfg_multi_pack_flag: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
     },
-    promotion_type: {
-      type: DataTypes.TEXT,
-      allowNull: true
+    outlet_multi_pack_flag: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
     },
-    start_date: {
+    tob_promo_flag: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    effective_end_date: {
       type: DataTypes.DATE,
       allowNull: true
     },
-    end_date: {
+    effective_start_date: {
       type: DataTypes.DATE,
       allowNull: true
     },
-    discount_amount: {
+    manufacturer_name: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    mfg_multi_pack_qty: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    mfg_promo_desc: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    outlet_multi_pack_qty: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    promo_amount: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
     },
-    discount_percentage: {
-      type: DataTypes.DECIMAL(5, 4),
-      allowNull: true
-    },
-    minimum_quantity: {
-      type: DataTypes.DECIMAL,
-      allowNull: true
-    },
-    maximum_quantity: {
-      type: DataTypes.DECIMAL,
-      allowNull: true
-    },
-    is_active: {
-      type: DataTypes.BOOLEAN,
-      allowNull: true,
-      defaultValue: true
-    },
-    promotion_code: {
+    promo_desc: {
       type: DataTypes.TEXT,
       allowNull: true
     },
-    mix_match_group_id: {
-      type: DataTypes.DECIMAL,
+    promo_percent: {
+      type: DataTypes.DECIMAL(5, 2),
+      allowNull: true
+    },
+    promotion_discount_method: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    provider_name: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    store_pays_amount: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: true
+    },
+    store_pays_disc_type: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    store_pays_percent: {
+      type: DataTypes.DECIMAL(5, 2),
+      allowNull: true
+    },
+    vendor_pays_amount: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: true
+    },
+    vendor_pays_disc_type: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    vendor_pays_percent: {
+      type: DataTypes.DECIMAL(5, 2),
       allowNull: true
     }
   }, {
     tableName: 'promotions_program_details',
-    timestamps: false
+    timestamps: false,
+    indexes: [
+      {
+        name: 'idx_promotions_dates',
+        fields: ['effective_start_date', 'effective_end_date']
+      }
+    ]
   });
 
   PromotionsProgramDetails.associate = (models) => {
