@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pd:taxPd xmlns:vs="urn:vfi-sapphire:vs.2001-10-01"
+    xmlns:fuel="urn:vfi-sapphire:fuel.2001-10-01"
+    xmlns:base="urn:vfi-sapphire:base.2001-10-01"
+    xmlns:pd="urn:vfi-sapphire:pd.2002-05-21"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <vs:period sysid="2" periodType="day" name="Day" periodSeqNum="868" periodBeginDate="2025-03-09T23:44:03-05:00" periodEndDate="2025-03-10T23:44:03-05:00" />
+    <vs:site>ARC004</vs:site>
+    <pd:constituentPeriods>
+        <vs:period sysid="1" periodType="daypart" name="Shift" periodSeqNum="360" isFirst="true" isLast="true" periodBeginDate="2025-03-09T23:44:03-05:00" periodEndDate="2025-03-10T23:44:03-05:00" />
+    </pd:constituentPeriods>
+    <totals>
+        <taxInfo>
+            <vs:taxrateBase sysid="1">
+                <name>State and</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.501</actualTaxRate>
+            <taxableSales>1619.59</taxableSales>
+            <nonTaxableSales>9442.74</nonTaxableSales>
+            <salesTax>96.51</salesTax>
+            <refundTax>-7.41</refundTax>
+            <netTax>89.10</netTax>
+            <taxableRefunds>-134.73</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="2">
+                <name>Non-MKE St</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.494</actualTaxRate>
+            <taxableSales>714.56</taxableSales>
+            <nonTaxableSales>10347.77</nonTaxableSales>
+            <salesTax>39.26</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>39.26</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>2.99</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="3">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>11062.33</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="4">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>11062.33</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="5">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>11062.33</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="6">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>11062.33</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="7">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>11062.33</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="8">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>11062.33</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+    </totals>
+    <byRegister>
+        <vs:register sysid="101" />
+        <ticketRange>
+            <begin>1011176</begin>
+            <end>1011445</end>
+        </ticketRange>
+        <taxInfo>
+            <vs:taxrateBase sysid="1">
+                <name>State and</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.501</actualTaxRate>
+            <taxableSales>1619.59</taxableSales>
+            <nonTaxableSales>1749.73</nonTaxableSales>
+            <salesTax>96.51</salesTax>
+            <refundTax>-7.41</refundTax>
+            <netTax>89.10</netTax>
+            <taxableRefunds>-134.73</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="2">
+                <name>Non-MKE St</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.494</actualTaxRate>
+            <taxableSales>714.56</taxableSales>
+            <nonTaxableSales>2654.76</nonTaxableSales>
+            <salesTax>39.26</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>39.26</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>2.99</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="3">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>3369.32</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="4">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>3369.32</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="5">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>3369.32</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="6">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>3369.32</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="7">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>3369.32</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="8">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>3369.32</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+    </byRegister>
+    <byRegister>
+        <vs:register sysid="9" />
+        <ticketRange>
+            <begin>9084770</begin>
+            <end>9084815</end>
+        </ticketRange>
+        <ticketRange>
+            <begin>9076371</begin>
+            <end>9076419</end>
+        </ticketRange>
+        <ticketRange>
+            <begin>9054766</begin>
+            <end>9054793</end>
+        </ticketRange>
+        <ticketRange>
+            <begin>9045133</begin>
+            <end>9045156</end>
+        </ticketRange>
+        <ticketRange>
+            <begin>9035508</begin>
+            <end>9035541</end>
+        </ticketRange>
+        <ticketRange>
+            <begin>9024617</begin>
+            <end>9024642</end>
+        </ticketRange>
+        <ticketRange>
+            <begin>9013371</begin>
+            <end>9013393</end>
+        </ticketRange>
+        <taxInfo>
+            <vs:taxrateBase sysid="8">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+    </byRegister>
+    <byCashier>
+        <vs:cashier sysid="0">
+            <name>SYSTEM</name>
+        </vs:cashier>
+        <taxInfo>
+            <vs:taxrateBase sysid="1">
+                <name>State and</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.500</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="2">
+                <name>Non-MKE St</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.500</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="3">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="4">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="5">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="6">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="7">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="8">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>7693.01</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+    </byCashier>
+    <byCashier>
+        <vs:cashier sysid="4">
+            <name>Keyana Stott</name>
+        </vs:cashier>
+        <taxInfo>
+            <vs:taxrateBase sysid="1">
+                <name>State and</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.503</actualTaxRate>
+            <taxableSales>797.40</taxableSales>
+            <nonTaxableSales>819.49</nonTaxableSales>
+            <salesTax>51.29</salesTax>
+            <refundTax>-7.41</refundTax>
+            <netTax>43.88</netTax>
+            <taxableRefunds>-134.73</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="2">
+                <name>Non-MKE St</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.490</actualTaxRate>
+            <taxableSales>358.66</taxableSales>
+            <nonTaxableSales>1258.23</nonTaxableSales>
+            <salesTax>19.69</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>19.69</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>2.99</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="3">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1616.89</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="4">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1616.89</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="5">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1616.89</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="6">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1616.89</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="7">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1616.89</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="8">
+                <name>State and</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1616.89</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+    </byCashier>
+    <byCashier>
+        <vs:cashier sysid="9">
+            <name>John Dergentis</name>
+        </vs:cashier>
+        <taxInfo>
+            <vs:taxrateBase sysid="1">
+                <name>State and</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.500</actualTaxRate>
+            <taxableSales>822.19</taxableSales>
+            <nonTaxableSales>930.24</nonTaxableSales>
+            <salesTax>45.22</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>45.22</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="2">
+                <name>Non-MKE St</name>
+                <taxRate>5.500</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>5.499</actualTaxRate>
+            <taxableSales>355.90</taxableSales>
+            <nonTaxableSales>1396.53</nonTaxableSales>
+            <salesTax>19.57</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>19.57</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="3">
+                <name>COUNTY SAL</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1752.43</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="4">
+                <name>LOCAL EXPO</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1752.43</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="5">
+                <name>LOCAL EXPO</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1752.43</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="6">
+                <name>LOCAL EXPO</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1752.43</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="7">
+                <name>LOCAL EXPO</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1752.43</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+        <taxInfo>
+            <vs:taxrateBase sysid="8">
+                <name>LOCAL EXPO</name>
+                <taxRate>0.000</taxRate>
+            </vs:taxrateBase>
+            <actualTaxRate>0.000</actualTaxRate>
+            <taxableSales>0.00</taxableSales>
+            <nonTaxableSales>1752.43</nonTaxableSales>
+            <salesTax>0.00</salesTax>
+            <refundTax>0.00</refundTax>
+            <netTax>0.00</netTax>
+            <taxableRefunds>0.00</taxableRefunds>
+            <taxExemptSales>0.00</taxExemptSales>
+            <taxExemptRefunds>0.00</taxExemptRefunds>
+            <taxForgivenSales>0.00</taxForgivenSales>
+            <taxForgivenRefunds>0.00</taxForgivenRefunds>
+        </taxInfo>
+    </byCashier>
+</pd:taxPd>

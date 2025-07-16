@@ -1,0 +1,221 @@
+#,XML Block,XML Block Translation,XML Field,XML Field Translation,Example TLog Field Value,Table,Column,Column Type,Questions | Notes
+1,<trans>,Sales Transaction,<trans type=,Container for entire transaction information,Network Sale & Sale,Sales Transaction,TransactionType,Text,
+2,<trans>,Sales Transaction,<trans recalled=,Indicates the transaction was not reopened or resumed from a suspended state.,FALSE,Sales Transaction,TransactionRecall,Text,
+3,<trHeader>,Transaction Header,<termMsgSN>,"This is the serial number of the message itself — a unique numeric ID used internally by the system to sequence and track messages. It's often auto-incremented and can be used to troubleshoot or audit logs, particularly when matching CPJ entries to other log sources or payment processor trails.",10141178,Transaction Event Log,Transaction_Event_Log_ID,Numeric,
+4,<trHeader>,Transaction Header,<termMsgSN type=,"This is a money-impacting transaction (sale, refund, etc.) - as opposed to operational/system messages.",FINANCIAL,Transaction Event Log,EventType,Text,
+5,<trHeader>,Transaction Header,<posNum>,Register or terminal number where the transaction took place. Used for tracking which POS device processed the transaction.,101,POS Device/Terminal,Register_ID,Numeric,
+6,<trHeader>,Transaction Header,<trSeq>,"Transaction sequence number — unique per register. Combined with posNum, it forms the complete ticket/receipt number (e.g., Register 101, Transaction 1011183).",1011183,Sales Transaction,Transaction_ID,Numeric,
+7,<trHeader>,Transaction Header,<trUniqueSN>,Verifone internal unique serial number for the transaction. May be used for system-level reconciliation or tracking across logs. It is not the same as the transaction number,77522,Transaction Event Log,VerifoneTransactionSN,Numeric,
+8,<trHeader>,Transaction Header,<date>,"The transaction start time, including timezone offset. This is the exact time the transaction was initiated. Matches ISO 8601 standard (YYYY-MM-DDTHH:MM:SS±HH:MM).",2025-03-10T06:34:24-05:00,Sales Transaction,TransactionDateTime,Timestamp with Time Zone,
+9,<trHeader>,Transaction Header,<duration>,"The length of the transaction in seconds. In this case, it took 39 seconds from start to completion. Useful for tracking unusually long transactions or performance bottlenecks.",39,Transaction Event Log,Duration,Numeric,
+10,<trHeader>,Transaction Header,<cashier>,Cashier’s name who handled the transaction. This field includes multiple attributes listed below.,Keyana Stott,Sales Transaction,EmployeeName,Text,
+11,<trHeader>,Transaction Header,<cashier sysid=,"System ID for the cashier — internal POS unique identifier.
+  
+Internal tracking by the POS system -> This ID stays constant even if the employees badge number changes",4,Sales Transaction,EmployeeID,Numeric,
+12,<trHeader>,Transaction Header,<cashier empNum=,"Employee number (sometimes same as sysid, sometimes different).
+  
+Store management or HR system recognizes for employee",4,N/A,N/A,N/A,
+13,<trHeader>,Transaction Header,<cashier posNum=,POS terminal number used. Matches posNum in <trTickNum>.,101,N/A,N/A,N/A,
+14,<trHeader>,Transaction Header,<cashier period=,Reporting period/session this cashier is assigned to.,87,Sales Transaction,CashierSession,Numeric,
+15,<trHeader>,Transaction Header,<cashier drawer=,Cash drawer assigned to the cashier.,1,N/A,N/A,N/A,
+16,<trHeader>,Transaction Header,<storeNumber>,Store number assigned to this location in the Verifone system. Typically matches the store’s unique ID in back-office systems.,ARC004,Store,Store_ID,text,
+17,<trHeader>,Transaction Header,<physicalRegisterID>,"Hardware identifier for the POS terminal. Often matches posNum, but may differ in multi-register setups.",101,N/A,N/A,N/A,
+18,<trHeader>,Transaction Header,<uniqueID>,"Globally unique identifier (GUID) for the transaction. Used for reconciling across APIs, exports, loyalty systems, or cloud platforms. Usually combines timestamp + transaction ID + terminal info.",1726116894000-660011418-0001011109,Transaction Event Log,GlobalUniqueIdentifier,Numeric,
+19,<trValue>,Transaction Value,<trTotNoTax>,Total sale amount before tax. Corresponds to subtotal.,77.95,Sales Transaction,TotalNoTax,Currency,
+20,<trValue>,Transaction Value,<trTotWTax>,Total sale amount including tax. Final transaction total.,82.09,Sales Transaction,TotalAmount,Currency,
+21,<trValue>,Transaction Value,<trTotTax>,Total tax collected (difference between trTotWTax and trTotNoTax).,4.14,Sales Transaction,TotalTaxAmount,Currency,
+22,<trValue>,Transaction Value,<taxAmt>,Taxable amount under this jurisdiction. Amount of total transaction applicable to sales tax.,43.28,N/A,N/A,N/A,Tax one long string
+23,<trValue>,Transaction Value,<taxAmt sysid=,Internal tax group ID. Used for grouping related tax fields.,1,N/A,N/A,N/A,
+24,<trValue>,Transaction Value,<taxAmt cat=,Human-readable name of the tax jurisdiction.,State and County Sales Tax,N/A,N/A,N/A,
+25,<trValue>,Transaction Value,<taxRate>,"Tax rate applied (%) — in this case, 5.5%. Preset within Commander by Tax Rate SysID",5.5,N/A,N/A,N/A,
+26,<trValue>,Transaction Value,<taxRate sysid=,Same tax ID as above — used for mapping tax lines.,1,N/A,N/A,N/A,
+27,<trValue>,Transaction Value,<taxRate cat=,Same category name as above.,State and County Sales Tax,N/A,N/A,N/A,
+28,<trValue>,Transaction Value,<taxNet>,Actual tax collected for this jurisdiction.,2.38,N/A,N/A,N/A,
+29,<trValue>,Transaction Value,<taxNet sysid=,Matches the ID used in related tax tags.,1,N/A,N/A,N/A,
+30,<trValue>,Transaction Value,<taxNet cat=,Consistent category name for grouping.,State and County Sales Tax,N/A,N/A,N/A,
+31,<trValue>,Transaction Value,<taxAttribute>,Internal flag for taxable status. 0 = standard taxable item.,0,N/A,N/A,N/A,
+32,<trValue>,Transaction Value,<taxAttribute sysid=,Links to the same tax group.,1,N/A,N/A,N/A,
+33,<trValue>,Transaction Value,<taxAttribute cat=,Same tax jurisdiction label.,State and County Sales Tax,N/A,N/A,N/A,
+34,<trValue>,Transaction Value,<taxAmt>,Taxable amount in second tax jurisdiction.,31.98,N/A,N/A,N/A,
+35,<trValue>,Transaction Value,<taxAmt sysid=,Unique tax group ID for second region.,2,N/A,N/A,N/A,
+36,<trValue>,Transaction Value,<taxAmt cat=,Name of this tax jurisdiction.,Non-MKE State and County Sales Tax,N/A,N/A,N/A,
+37,<trValue>,Transaction Value,<taxRate>,Tax rate for this tax region (5.5%).,5.5,N/A,N/A,N/A,
+38,<trValue>,Transaction Value,<taxRate sysid=,Tax ID for grouping.,2,N/A,N/A,N/A,
+39,<trValue>,Transaction Value,<taxRate cat=,Descriptive label of this region.,Non-MKE State and County Sales Tax,N/A,N/A,N/A,
+40,<trValue>,Transaction Value,<taxNet>,Tax collected for this second jurisdiction.,1.76,N/A,N/A,N/A,
+41,<trValue>,Transaction Value,<taxNet sysid=,ID used to link the tax line items.,2,N/A,N/A,N/A,
+42,<trValue>,Transaction Value,<taxNet cat=,Repeated for grouping clarity.,Non-MKE State and County Sales Tax,N/A,N/A,N/A,
+43,<trValue>,Transaction Value,<taxAttribute>,Tax attribute flag. 0 = standard taxable.,0,N/A,N/A,N/A,
+44,<trValue>,Transaction Value,<taxAttribute sysid=,Tax attribute for this jurisdiction.,2,N/A,N/A,N/A,
+45,<trValue>,Transaction Value,<taxAttribute cat=,Descriptive name of this tax type.,Non-MKE State and County Sales Tax,N/A,N/A,N/A,
+46,<trValue>,Transaction Value,<trCurrTot>,Transaction total (same as trTotWTax). Includes tax.,82.09,N/A,N/A,N/A,
+47,<trValue>,Transaction Value,<trCurrTot locale=,Currency code (ISO format). USD = U.S. dollars.,USD,N/A,N/A,N/A,
+48,<trValue>,Transaction Value,<trSTotalizer>,"Shift-level totalizer. This is the running total for this POS terminal during the current shift, including this transaction.",82.09,N/A,N/A,N/A,
+49,<trValue>,Transaction Value,<trGTotalizer>,Total Grand totalizer — running total on this POS register for this transaction.,87.45,Sales Transaction,GrandTotalizer,Currency,
+50,<trValue>,Transaction Value,<trFstmpTot>,Total value of EBT-eligible items in this transaction. Reflects items that could be paid for using food stamps.,2.69,Sales Transaction,FoodStampEligibleTotal,Currency,
+51,<trValue>,Transaction Value,<trFstmpTax>,"Tax applied to EBT-eligible items. Often zero, since EBT items are generally tax-exempt.",0,N/A,N/A,N/A,
+52,<trValue>,Transaction Value,<trFstmpChg>,Change given back from EBT transaction. Typically not allowed — stays $0.00.,0,N/A,N/A,N/A,
+53,<trValue>,Transaction Value,<trFstmpTnd>,"Amount of EBT tender actually used in the transaction. If $0.00, the customer did not use EBT as payment, even though eligible items existed.",0,N/A,N/A,N/A,
+54,<trValue>,Transaction Value,<custDOB>,Identifying no scan used of License,SKIPID,N/A,N/A,N/A,
+55,<trValue>,Transaction Value,<custDOB dobEntryMeth=,Method of DOB entry. “Skipped” indicates cashier bypassed ID scan and manually entered DOB.,Skipped,N/A,N/A,N/A,
+56,<trValue>,Transaction Value,<custDOB minage=,"Minimum legal age for item purchase. Typically 18 or 21 depending on product (e.g., alcohol = 21).",21,N/A,N/A,N/A,
+57,<trValue>,Transaction Value,<custDOB custAge=,Customer’s age calculated or entered at time of sale. Must meet or exceed minAge.,21,N/A,N/A,N/A,
+58,<trValue>,Transaction Value,<custDOB dob=,"Entered Date of Birth in MMDDYY format → March 10, 2004. Used to validate age.",31004,Transaction Event Log,CustomerDOBEntry,text,
+59,<trLoyalty>,Transaction Loyalty,<trLoyaltyProgram programID=,"ID of the loyalty program applied to this transaction (e.g., ""EM Rewards"").",EM Rewards,Transaction Loyalty,ProgramName,text,
+60,<trLoyalty>,Transaction Loyalty,<trloSubTotal>,Subtotal of all items before loyalty discounts were applied. Used as the base for reward calculation.,82.09,Transaction Loyalty,LoyaltySubTotal,Currency,
+61,<trLoyalty>,Transaction Loyalty,<trloAutoDisc>,"Discount applied automatically based on loyalty program rules (e.g., price rollback or manufacturer promotion).",2.19,Transaction Loyalty,LoyaltyAutoDiscount,Currency,
+62,<trLoyalty>,Transaction Loyalty,<trloCustDisc>,Manual or account-specific discount applied by cashier or customer (none in this case).,0,Transaction Loyalty,LoyaltyCustomerDiscount,Currency,
+63,<trLoyalty>,Transaction Loyalty,<trloAccount>,Loyalty account number (card number or digital ID). May be truncated or hashed depending on system.,8.01813E+21,Transaction Loyalty,LoyaltyAccountNumber,text,
+64,<trLoyalty>,Transaction Loyalty,<trloEntryMeth>,"Method used to enter loyalty info (e.g., scanner, keypad, lookup).",Scanner,Transaction Loyalty,LoyaltyEntryMethod,Text,
+65,<trExNetProds>,Transaction Extended Net Products,<trENPPcode>,"Extended product classification code. 950 often represents tax (in this case, matching trTotTax = 4.14).",950,N/A,N/A,N/A,Future phase | Transaction Extended Network Products | ProductClassCode
+66,<trExNetProds>,Transaction Extended Net Products,<trENPAmount>,Amount applied to the 950 category — this matches total tax.,4.14,N/A,N/A,N/A,Future phase | Transaction Extended Network Products | Amount
+67,<trExNetProds>,Transaction Extended Net Products,<trENPItemCnt>,Number of items involved in this classification.,1,N/A,N/A,N/A,Future phase | Transaction Extended Network Products | ItemCount
+68,<trExNetProds>,Transaction Extended Net Products,<trENPPcode>,Code 900 typically represents manufacturer-funded promotions or loyalty discounts.,900,Duplicate,Duplicate,Duplicate,See Rows 65-67
+69,<trExNetProds>,Transaction Extended Net Products,<trENPAmount>,Negative value = discount applied (automatic loyalty promo).,-2.19,Duplicate,Duplicate,Duplicate,See Rows 65-67
+70,<trExNetProds>,Transaction Extended Net Products,<trENPItemCnt>,One item was discounted under this promotion.,1,Duplicate,Duplicate,Duplicate,See Rows 65-67
+71,<trExNetProds>,Transaction Extended Net Products,<trENPPcode>,Internal product classification — may tie to tobacco or regulated items.,411,Duplicate,Duplicate,Duplicate,See Rows 65-67
+72,<trExNetProds>,Transaction Extended Net Products,<trENPAmount>,Indicates value attributed to this category — possibly matches loyalty savings on tobacco.,1.8,Duplicate,Duplicate,Duplicate,See Rows 65-67
+73,<trExNetProds>,Transaction Extended Net Products,<trENPItemCnt>,No unique items counted in this category (may be tracking value instead of quantity).,0,Duplicate,Duplicate,Duplicate,See Rows 65-67
+74,<trExNetProds>,Transaction Extended Net Products,<trENPPcode>,"Second entry under code 900 — likely another discount, such as multi-pack mix & match.",900,Duplicate,Duplicate,Duplicate,See Rows 65-67
+75,<trExNetProds>,Transaction Extended Net Products,<trENPAmount>,Additional discount from a mix & match or loyalty combo (matches line-level promo data).,-5.36,Duplicate,Duplicate,Duplicate,See Rows 65-67
+76,<trExNetProds>,Transaction Extended Net Products,<trENPItemCnt>,One item affected in this grouping.,1,Duplicate,Duplicate,Duplicate,See Rows 65-67
+77,<trLines>,Transaction Lines,<trLine type=,"Identifies this line as a PLU-based sale (vs. fuel, department, or open ring).",plu,Transaction Line Item,TransactionLineType,Text,
+78,<trLines>,Transaction Lines,<trlFstmp>,Indicates this item is eligible for EBT (food stamps).,(if present save value 1 if not present 0),Transaction Line Item,is_EBT_Eligible,Boolean,
+79,<trLines>,Transaction Lines,<trlPLU>,Confirms this line is for a PLU-coded item.,(if present save value 1 if not present 0),Transaction Line Item,is_PLU_Item,Boolean,
+80,<trLines>,Transaction Lines,<trlUpdPluCust>,Used internally to flag updates to PLU-level customer records (Verifone-specific).,(if present save value 1 if not present 0),Transaction Line Item,has_PLU_Override,Boolean,
+81,<trLines>,Transaction Lines,<trlUpdDepCust>,Tracks updates at the department level for the item.,(if present save value 1 if not present 0),Transaction Line Item,has_Department_Override,Boolean,
+82,<trLines>,Transaction Lines,<trlCatCust>,"Flags category-level data (for sales rollups, analytics, or CRM tracking).",(if present save value 1 if not present 0),Transaction Line Item,has_Category_Override,Boolean,
+83,<trLines>,Transaction Lines,<trlDept>,Human-readable department name.,Potato Chips,Transaction Line Item,DepartmentName,text,
+84,<trLines>,Transaction Lines,<trlDept number=,Department code — used for department-level sales reporting.,33,Transaction Line Item,Department,Numeric,
+85,<trLines>,Transaction Lines,<trlDept type=,"Indicates it's a normal department sale (vs. open price, fuel, etc.).",norm,Transaction Line Item,DepartmentType,Text,
+86,<trLines>,Transaction Lines,<trlCat>,Item category name — useful for margin analysis or category management.,Edible Merchandise,Transaction Line Item,CategoryName,text,
+87,<trLines>,Transaction Lines,<trlCat number=,"Category code assigned to this item (e.g., snacks, groceries).",8,Transaction Line Item,CategoryNumber,Numeric,
+88,<trLines>,Transaction Lines,<trlNetwCode>,Internal POS or network code used to reference the product. Often maps to a pricebook or vendor system.,440,Transaction Line Item,NetworkCode,Numeric,
+89,<trLines>,Transaction Lines,<trlQty>,Quantity purchased. Represents how many units of the item were sold.,1,Transaction Line Item,Quantity,Numeric,
+90,<trLines>,Transaction Lines,<trlSign>,"Sign indicator: 1.00 for a sale, -1.00 for a return/refund.",1,N/A,N/A,N/A,
+91,<trLines>,Transaction Lines,<trlSellUnit>,Number of units being sold per item. Used in weighted or bulk items. Defaults to 1.000 for single-unit sales.,1,N/A,N/A,N/A,
+92,<trLines>,Transaction Lines,<trlUnitPrice>,Price per unit before tax and any discounts.,2.69,Transaction Line Item,UnitPrice,Currency,
+93,<trLines>,Transaction Lines,<trlLineTot>,Total price for the line (calculated: trlQty × trlUnitPrice × trlSign).,2.69,Transaction Line Item,LineTotal,Currency,
+94,<trLines>,Transaction Lines,<trlDesc>,Description of the product as stored in the pricebook or PLU file. Used for receipts and reports.,LAYS SOUR CREAM AND ONION 2.6Z,Transaction Line Item,UPCDescription,text,
+95,<trLines>,Transaction Lines,<trlUPC>,Universal Product Code (UPC) scanned or keyed for this item.,28400324212,Transaction Line Item,UPC,Numeric,
+96,<trLines>,Transaction Lines,<trlModifier>,"Modifier code (if used). Typically “000” when no size, flavor, or variation is applied.",000,Transaction Line Item,UPCModifier,Numeric,
+97,<trLines>,Transaction Lines,<trlUPCEntry type=,Method of entry: “scanned” means the barcode was read via scanner. Alternatives might include “manual” or “keyboard”.,scanned,Transaction Line Item,UPCEntryType,Text,
+98,<trLines>,Transaction Lines,<trLine type=,"Identifies this line as a PLU-coded item, meaning it was sold using a predefined product code from the pricebook (as opposed to an open department, fuel, or refund transaction).",plu,Duplicate,Duplicate,Duplicate,See Row 77
+99,<trLines>,Transaction Lines,<trlTax>,Taxable amount for this item under the listed jurisdiction.,11.49,Transaction Line Item Tax,TaxLineAmount,Currency,
+100,<trLines>,Transaction Lines,<trlTax sysid=,Internal ID used to identify this tax jurisdiction.,2,Transaction Line Item Tax,TaxLineSysID,Numeric,
+101,<trLines>,Transaction Lines,<trlTax cat=,Human-readable name of the tax category or jurisdiction.,Non-MKE State and County Sales Tax,Transaction Line Item Tax,TaxLineCategory,text,
+102,<trLines>,Transaction Lines,<trlTax reverse=,Flag indicating if the tax is reversed/refunded. 0 = no reversal.,0,N/A,N/A,N/A,
+103,<trLines>,Transaction Lines,<trlRate>,Tax rate applied to the item (in percent).,5.5,Transaction Line Item Tax,TaxLineRate,Numeric or Percent,
+104,<trLines>,Transaction Lines,<trlRate sysid=,ID linking this rate to its tax jurisdiction.,2,Duplicate,Duplicate,Duplicate,See Row 100
+105,<trLines>,Transaction Lines,<trlRate cat=,Label for tax group tied to the rate.,Non-MKE State and County Sales Tax,Duplicate,Duplicate,Duplicate,See Row 101
+106,<trLines>,Transaction Lines,<trlBdayVerif>,Indicates age verification was required and completed for this item.,(if present save value 1 if not present 0),Transaction Line Item,has_Birthday_Verification,Boolean,
+107,<trLines>,Transaction Lines,<trlPLU>,Confirms item is PLU-coded (not open dept or fuel).,(if present save value 1 if not present 0),Transaction Line Item,is_PLU_Item,Boolean,
+108,<trLines>,Transaction Lines,<trlUpdPluCust>,Tracks PLU-level customer update flags for reporting or CRM.,(if present save value 1 if not present 0),Transaction Line Item,has_PLU_Override,Boolean,
+109,<trLines>,Transaction Lines,<trlUpdDepCust>,Tracks department-level update flag for this transaction.,(if present save value 1 if not present 0),Transaction Line Item,has_Department_Override,Boolean,
+110,<trLines>,Transaction Lines,<trlCatCust>,"Flags category-level update; used for loyalty, CRM, or reporting.",(if present save value 1 if not present 0),Transaction Line Item,has_Category_Override,Boolean,
+111,<trLines>,Transaction Lines,<trlDept>,Human-readable department description.,Alcoholic Seltzer,Duplicate,Duplicate,Duplicate,See Row 83
+112,<trLines>,Transaction Lines,<trlDept number=,Numeric department ID for this item.,20,Duplicate,Duplicate,Duplicate,See Row 84
+113,<trLines>,Transaction Lines,<trlDept type=,Type of department. norm = standard sale.,norm,Duplicate,Duplicate,Duplicate,See Row 85
+114,<trLines>,Transaction Lines,<trlCat>,Item category (used for reporting and analytics).,ALCOHOL,Duplicate,Duplicate,Duplicate,See Row 86
+115,<trLines>,Transaction Lines,<trlCat number=,Internal category ID code.,6,Duplicate,Duplicate,Duplicate,See Row 87
+116,<trLines>,Transaction Lines,<trlNetwCode>,Internal POS/pricebook code assigned to this item.,480,Duplicate,Duplicate,Duplicate,See Row 88
+117,<trLines>,Transaction Lines,<trlQty>,"Quantity sold. In this case, 1 unit.",1,Duplicate,Duplicate,Duplicate,See Row 89
+118,<trLines>,Transaction Lines,<trlSign>,"1 = sale, -1 = return. Multiplies into total calculations.",1,N/A,N/A,N/A,
+119,<trLines>,Transaction Lines,<trlSellUnit>,Selling unit multiplier — default is 1.000.,1,N/A,N/A,N/A,
+120,<trLines>,Transaction Lines,<trlUnitPrice>,Price per item before tax or discount.,11.49,Duplicate,Duplicate,Duplicate,See Row 92
+121,<trLines>,Transaction Lines,<trlLineTot>,Total cost for this line (qty × unit price × sign).,11.49,Duplicate,Duplicate,Duplicate,See Row 93
+122,<trLines>,Transaction Lines,<trlDesc>,Item name or description as shown on receipt.,WHITE CLAW MANGO 6PK 12Z CANS EA,Duplicate,Duplicate,Duplicate,See Row 94
+123,<trLines>,Transaction Lines,<trlUPC>,UPC code scanned or keyed for the item.,6.36E+11,Duplicate,Duplicate,Duplicate,See Row 95
+124,<trLines>,Transaction Lines,<trlModifier>,Modifier for the PLU (if applicable). Usually 000.,0,Duplicate,Duplicate,Duplicate,See Row 96
+125,<trLines>,Transaction Lines,<trlUPCEntry type=,Method used to enter UPC — “scanned” = barcode scanned.,scanned,Duplicate,Duplicate,Duplicate,See Row 97
+126,<trLines>,Transaction Lines,<trLine type=,Identifies this transaction line as a PLU-coded item (scanned or preset product).,plu,Duplicate,Duplicate,Duplicate,See Row 77
+127,<trLines>,Transaction Lines,<trlTax>,Taxable amount for this item under the specified jurisdiction.,20.49,Duplicate,Duplicate,Duplicate,See Row 99
+128,<trLines>,Transaction Lines,<trlTax sysid=,"Internal tax jurisdiction ID (e.g., 2 = Non-MKE State and County Sales Tax).",2,Duplicate,Duplicate,Duplicate,See Row 100
+129,<trLines>,Transaction Lines,<trlTax cat=,Descriptive label for the tax group or jurisdiction.,Non-MKE State and County Sales Tax,Duplicate,Duplicate,Duplicate,See Row 101
+130,<trLines>,Transaction Lines,<trlTax reverse=,Indicates whether the tax is reversed/refunded. 0 = normal tax applied.,0,N/A,N/A,N/A,
+131,<trLines>,Transaction Lines,<trlRate>,Tax rate applied to the item (5.5%).,5.5,Duplicate,Duplicate,Duplicate,See Row 103
+132,<trLines>,Transaction Lines,<trlRate sysid=,Tax jurisdiction ID linked to the rate applied.,2,Duplicate,Duplicate,Duplicate,See Row 100
+133,<trLines>,Transaction Lines,<trlRate cat=,Name of the tax jurisdiction tied to the rate.,Non-MKE State and County Sales Tax,Duplicate,Duplicate,Duplicate,See Row 101
+134,<trLines>,Transaction Lines,<trlBdayVerif>,Age verification was triggered for this item (likely alcohol).,(if present save value 1 if not present 0),Transaction Line Item,has_Birthday_Verification,Boolean,
+135,<trLines>,Transaction Lines,<trlPLU>,Confirms that the item was sold using a PLU code.,(if present save value 1 if not present 0),Transaction Line Item,is_PLU_Item,Boolean,
+136,<trLines>,Transaction Lines,<trlUpdPluCust>,Tracks whether PLU-level customer updates occurred for analytics or CRM.,(if present save value 1 if not present 0),Transaction Line Item,has_PLU_Override,Boolean,
+137,<trLines>,Transaction Lines,<trlDept>,Human-readable name of the department this item belongs to.,Alcoholic Seltzer,Duplicate,Duplicate,Duplicate,See Row 83
+138,<trLines>,Transaction Lines,<trlDept number=,"Numeric ID for the department (e.g., 20 = Alcoholic Seltzer).",20,Duplicate,Duplicate,Duplicate,See Row 84
+139,<trLines>,Transaction Lines,<trlDept type=,Sale type for this department (norm = standard department sale).,norm,Duplicate,Duplicate,Duplicate,See Row 85
+140,<trLines>,Transaction Lines,<trlCat>,Name of the item category — used for grouping/reporting.,ALCOHOL,Duplicate,Duplicate,Duplicate,See Row 86
+141,<trLines>,Transaction Lines,<trlCat number=,"Category ID for the item (e.g., 6 = ALCOHOL).",6,Duplicate,Duplicate,Duplicate,See Row 87
+142,<trLines>,Transaction Lines,<trlNetwCode>,"Internal POS/product code (for inventory, analytics, or vendor mapping).",480,Duplicate,Duplicate,Duplicate,See Row 88
+143,<trLines>,Transaction Lines,<trlQty>,Quantity of items sold (1 unit in this case).,1,Duplicate,Duplicate,Duplicate,See Row 89
+144,<trLines>,Transaction Lines,<trlSign>,"1 = sale, -1 = return. Helps determine transaction direction.",1,N/A,N/A,N/A,
+145,<trLines>,Transaction Lines,<trlSellUnit>,Sale unit (1 = each). Used for weighted or bulk products.,1,N/A,N/A,N/A,
+146,<trLines>,Transaction Lines,<trlUnitPrice>,Unit price of the item before tax or discounts.,20.49,Duplicate,Duplicate,Duplicate,See Row 92
+147,<trLines>,Transaction Lines,<trlLineTot>,Extended line total: quantity × unit price × sign.,20.49,Duplicate,Duplicate,Duplicate,See Row 93
+148,<trLines>,Transaction Lines,<trlDesc>,Full product description pulled from the POS or pricebook file.,VIZZY HARD SELTZER TROPICAL 12PK 12Z CA,Duplicate,Duplicate,Duplicate,See Row 94
+149,<trLines>,Transaction Lines,<trlUPC>,UPC code scanned for this item (or manually entered).,34100012328,Duplicate,Duplicate,Duplicate,See Row 95
+150,<trLines>,Transaction Lines,<trlModifier>,PLU modifier — used for item variants (default “000” = no variant).,0,Duplicate,Duplicate,Duplicate,See Row 96
+151,<trLines>,Transaction Lines,<trlUPCEntry type=,"Entry method for UPC — “scanned” = barcode scanned, not manually keyed.",scanned,Duplicate,Duplicate,Duplicate,See Row 97
+152,<trLines>,Transaction Lines,<trLine type=,"This item line was recorded as a PLU-coded product sale (e.g., UPC-based item).",plu,Duplicate,Duplicate,Duplicate,See Row 77
+153,<trLines>,Transaction Lines,<trlTax>,Taxable amount for the item.,43.28,Duplicate,Duplicate,Duplicate,See Row 99
+154,<trLines>,Transaction Lines,<trlTax sysid=,Internal tax ID used to group related tax entries.,1,Duplicate,Duplicate,Duplicate,See Row 100
+155,<trLines>,Transaction Lines,<trlTax cat=,"Human-readable name of the tax jurisdiction (e.g., State and County Sales Tax).",State and County Sales Tax,Duplicate,Duplicate,Duplicate,See Row 101
+156,<trLines>,Transaction Lines,<trlTax reverse=,Indicates whether the tax was reversed/refunded (0 = standard tax applied).,0,N/A,N/A,N/A,
+157,<trLines>,Transaction Lines,<trlRate>,Tax rate applied to this item (5.5%).,5.5,Duplicate,Duplicate,Duplicate,See Row 103
+158,<trLines>,Transaction Lines,<trlRate sysid=,Internal ID of the tax jurisdiction associated with the rate.,1,Duplicate,Duplicate,Duplicate,See Row 100
+159,<trLines>,Transaction Lines,<trlRate cat=,Name of the tax jurisdiction for reporting purposes.,State and County Sales Tax,Duplicate,Duplicate,Duplicate,See Row 101
+160,<trLines>,Transaction Lines,<trlBdayVerif>,Age verification was triggered and passed.,(if present save value 1 if not present 0),Transaction Line Item,has_Birthday_Verification,Boolean,
+161,<trLines>,Transaction Lines,<trlPLU>,Confirms this item was sold using a PLU code.,(if present save value 1 if not present 0),Transaction Line Item,is_PLU_Item,Boolean,
+162,<trLines>,Transaction Lines,<trlUpdPluCust>,Flag indicating PLU customer data tracking was updated.,(if present save value 1 if not present 0),Transaction Line Item,has_PLU_Override,Boolean,
+163,<trLines>,Transaction Lines,<trlUpdDepCust,Indicates department-level customer tracking was updated.,(if present save value 1 if not present 0),Transaction Line Item,has_Department_Override,Boolean,
+164,<trLines>,Transaction Lines,<trlCatCust/>,Indicates category-level customer tracking was updated.,(if present save value 1 if not present 0),Transaction Line Item,has_Category_Override,Boolean,
+165,<trLines>,Transaction Lines,<trlMatch/>,"This item was part of a promotional offer (e.g., Mix & Match).",(if present save value 1 if not present 0),Transaction Line Item,has_Mix_Match_Promotion,Boolean,
+166,<trLines>,Transaction Lines,<trlLoyLnDisc,A loyalty discount was applied to this item.,(if present save value 1 if not present 0),Transaction Line Item,has_Loyalty_Line_Discount,Boolean,
+167,<trLines>,Transaction Lines,<trlDept>,"Human-readable department name: ""Cigarettes"".",Cigarettes,Duplicate,Duplicate,Duplicate,See Row 83
+168,<trLines>,Transaction Lines,<trlDept number=,"Department number used for reporting and auditing (e.g., 14).",14,Duplicate,Duplicate,Duplicate,See Row 84
+169,<trLines>,Transaction Lines,<trlDept type=,Department type: norm = standard sale.,norm,Duplicate,Duplicate,Duplicate,See Row 85
+170,<trLines>,Transaction Lines,<trlCat>,"Category name for the item (e.g., ""CIGARETTES"").",CIGARETTES,Duplicate,Duplicate,Duplicate,See Row 86
+171,<trLines>,Transaction Lines,<trlCat number=,"Numeric ID of the item’s category (e.g., 4 = cigarettes).",4,Duplicate,Duplicate,Duplicate,See Row 87
+172,<trLines>,Transaction Lines,<trlNetwCode>,POS internal network or pricebook code.,411,Duplicate,Duplicate,Duplicate,See Row 88
+173,<trLines>,Transaction Lines,<trlQty>,"Quantity purchased (e.g., 4 packs).",4,Duplicate,Duplicate,Duplicate,See Row 89
+174,<trLines>,Transaction Lines,<trlSign>,"Sign of the transaction: 1 = sale, -1 = refund.",1,N/A,N/A,N/A,
+175,<trLines>,Transaction Lines,<trlSellUnit>,Sale unit multiplier (typically 1 unless weighted).,1,N/A,N/A,N/A,
+176,<trLines>,Transaction Lines,<trlUnitPrice>,Price per unit before any discounts or tax.,12.16,Duplicate,Duplicate,Duplicate,See Row 92
+177,<trLines>,Transaction Lines,<trlLineTot>,Line total (quantity × price × sign).,46.84,Duplicate,Duplicate,Duplicate,See Row 93
+178,<trLines>,Transaction Lines,<trlDesc>,Description of the item as it appears on receipts (from pricebook/PLU).,PHMO MARLBORO GOLD KS BX PK,Duplicate,Duplicate,Duplicate,See Row 94
+179,<trLines>,Transaction Lines,<trlUPC>,UPC code of the product.,28200003843,Duplicate,Duplicate,Duplicate,See Row 95
+180,<trLines>,Transaction Lines,<trlModifier>,PLU modifier code — typically 000 when unused.,0,Duplicate,Duplicate,Duplicate,See Row 96
+181,<trLines>,Transaction Lines,<trlUPCEntry type=,Method of UPC entry: “scanned” indicates barcode scanner used.,scanned,Duplicate,Duplicate,Duplicate,See Row 97
+182,<trLines>,Transaction Lines,<trlMatchName>,Name or label of the promotional offer (RCI Altria Marlboro Buy 4).,RCI Altria Marlboro Buy 4 July 2024,Promotions Program Details,PromotionName,text,
+183,<trLines>,Transaction Lines,<trlMatchQuantity>,"Number of qualifying items for the promotion (e.g., 4 packs).",4,Promotions Line Item,MatchQuantity,Numeric,
+184,<trLines>,Transaction Lines,<trlMatchPrice>,Discounted total price after promo is applied.,45.08,Promotions Line Item,MatchPrice,Currency,
+185,<trLines>,Transaction Lines,<trlMatchMixes>,"Mix tier or ID used for the offer logic (e.g., 100 = 4-pack promo).",100,Promotions Line Item,MixGroupID,Numeric,
+186,<trLines>,Transaction Lines,<trlPromoAmount>,Total discount value received from the promotional offer.,3.56,Promotions Line Item,PromoAmount,Currency,
+187,<trLines>,Transaction Lines,<trlPromotionID>,Internal ID of the promo event (used for backend matching and rebate claims).,25,Promotions Program Details,Promotion_ID,Numeric,
+188,<trLines>,Transaction Lines,<trlPromotionID promotype=,"Type of promotion — in this case, mixAndMatchOffer = combo/multibuy.",mixAndMatchOffer,Promotions Program Details,PromotionType,Text,mixAndMatchOffer for phase 0.5
+189,<trLines>,Transaction Lines,<trloLnItemDisc programID=,"Loyalty program name that applied the additional discount (e.g., EM Rewards).",EM Rewards,Duplicate,Duplicate,Duplicate,See Row 59
+190,<trLines>,Transaction Lines,<discAmt>,Discount value applied from the loyalty program to this item.,1.8,Loyalty Line Items,DiscountAmount,Currency,
+191,<trLines>,Transaction Lines,<qty>,Quantity of items receiving loyalty discount.,4,Loyalty Line Items,QuantityApplied,Numeric,
+192,<trLines>,Transaction Lines,<taxCred>,Tax credit value from loyalty — often zero if item is not tax-exempt.,0,Loyalty Line Items,TaxCredit,Currency,
+193,<trPaylines>,Transaction Paylines,<trPayline type=,Type of payment line — “sale” indicates this tender was used for a purchase (vs. refund or change).,sale,N/A,N/A,N/A,
+194,<trPaylines>,Transaction Paylines,<trPayline sysid=,Internal system identifier for this specific payment line (used in audits or matching sequences).,1,N/A,N/A,N/A,
+195,<trPaylines>,Transaction Paylines,<trPayline locale=,"Currency used for the transaction (e.g., ""US DOLLAR"").",US DOLLAR,N/A,N/A,N/A,
+196,<trPaylines>,Transaction Paylines,<trpPaycode>,"Tender type name (e.g., “CREDIT”). This appears on receipts and transaction summaries.",CREDIT,Payment,PaymentType,Text,
+197,<trLines>,Transaction Paylines,<trpPaycode mop=,Method of Payment code — 2 = Credit Card.,2,Payment,MOPCode,Numeric,
+198,<trPaylines>,Transaction Paylines,<trpPaycode cat=,Tender category — 1 = Standard tender.,1,N/A,N/A,N/A,
+199,<trPaylines>,Transaction Paylines,<trpPaycode nacstendercode=,NACS-standard code for the tender type. “Generic” when not mapped to a specific NACS code.,generic,N/A,N/A,N/A,
+200,<trPaylines>,Transaction Paylines,<trpPaycode nacstendersubcode=,Subcode in NACS standard for more granular classification.,generic,N/A,N/A,N/A,
+201,<trPaylines>,Transaction Paylines,<trpAmt>,Total amount charged to this payment method.,79.9,Payment,MOPAmount,Currency,
+202,<trPaylines>,Transaction Paylines,<trpCardInfo isAboveSite=,"Indicates that authorization was handled at the site level, not routed to a centralized/cloud processor.",FALSE,N/A,N/A,N/A,
+203,<trPaylines>,Transaction Paylines,<trpcAccount>,Masked account number used for the card transaction.,420621FFFFFF9660,N/A,N/A,N/A,
+204,<trPaylines>,Transaction Paylines,<trpcCCName,"Name of the credit card brand (e.g., Visa).",Visa,Payment,CCName,Text,
+205,<trPaylines>,Transaction Paylines,<trpcCCName sysid=,"Internal ID used to identify card type (e.g., 0 = Visa).",0,N/A,N/A,N/A,
+206,<trPaylines>,Transaction Paylines,<trpcHostID>,"Payment processor or host handling the transaction (e.g., ""buypass"").",buypass,N/A,N/A,N/A,
+207,<trPaylines>,Transaction Paylines,<trpcAuthCode>,Authorization code returned by the processor.,62401,Payment,AuthorizationCode,Numeric,
+208,<trPaylines>,Transaction Paylines,<trpcAuthSrc/>,Empty field for authorization source — may be populated in other configurations.,(blank),N/A,N/A,N/A,
+209,<trPaylines>,Transaction Paylines,<trpcTicket>,Ticket number for the payment authorization. Often matches the auth code.,62401,N/A,N/A,N/A,
+210,<trPaylines>,Transaction Paylines,<trpcEntryMeth>,Card entry method — “ContactlessSmartCard” = tap-to-pay or mobile wallet (NFC).,ContactlessSmartCard,Payment,PaymentEntryMethod,Text,
+211,<trPaylines>,Transaction Paylines,<trpcBatchNr>,Batch number for grouping transactions in settlement or reporting.,868,N/A,N/A,N/A,
+212,<trPaylines>,Transaction Paylines,<trpcSeqNr>,Unique sequence number assigned by the POS terminal for this payment.,1494491,N/A,N/A,N/A,
+213,<trPaylines>,Transaction Paylines,<trpcAuthDateTime>,"Date and time of authorization (in ISO 8601 format, with timezone).",2025-03-10T06:18:42-05:00,Payment,PaymentTimeStamp,Timestamp with Time Zone,
+214,<trPaylines>,Transaction Paylines,<trpcRefNum>,Reference number from the processor. Suggest formatting Excel cell as Text to avoid scientific notation.,1.01E+15,N/A,N/A,N/A,
+215,<trPaylines>,Transaction Paylines,<trpcmMerchID>,Merchant ID used for the payment submission. Assigned by the processor.,9942640,N/A,N/A,N/A,
+216,<trPaylines>,Transaction Paylines,<trpcmTermID>,Terminal ID used by the merchant for this transaction. Matches POS hardware or logical terminal.,9942640,N/A,N/A,N/A,

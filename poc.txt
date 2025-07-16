@@ -1,0 +1,445 @@
+C4C Proof of Concept
+
+Table of Contents:
+C4C Proof of Concept	1
+Demonstrate Need	2
+Evision Solution	2
+Define POC Goals	6
+Measurable Success Criteria	7
+Team Members	8
+C4C POC Execution Tracker	9
+
+
+
+
+
+
+
+
+
+
+Demonstrate Need
+Describe the problem you’re trying to solve or the reason your product needs to exist. 
+
+Independent convenience stores and small chains lack access to modern tools and systems that enable automated rebate and promotions tracking, item-level sales analytics, and operational efficiency—resulting in missed revenue, margin loss, and exclusion from manufacturer-funded promotions.
+
+In other words, they are:
+Excluded from enterprise-grade tools available to larger chains.
+Unable to access or manage rebate programs due to lack of data and time.
+Losing money on rebates and promotions they could be eligible for.
+Trapped by outdated & siloed systems (manual processes, POS reports, paper invoices).
+Not supported by wholesalers or manufacturers with timely, detailed data.
+
+Evision Solution
+Use customer feedback to brainstorm solutions. Assess your ideas based on constraints (i.e. time, cost, tech) in order to identify feasible solutions.
+
+PART 1: POC Sales Analysis
+Extract & Store: We need a solution to extract sales data from TLogs and pull them into a centralized cloud database.  <ED diagram>
+
+Clean: the data needs to match each transaction via the C4C Pricebook in order to structure the data using the UPC code. <need pricebook>
+
+Consolidate & Store: the data for each independent or small chain owner needs to be consolidated and visible through a client facing dashboard. <dashboard>
+
+Report: each store owner is able to run reports based on their store sales data. 
+
+#
+Reports TBC
+Purpose
+1
+Item-Level Sales Report
+Tracks units and revenue by SKU, helping identify best/worst sellers, set pricing, and drive rebate eligibility.
+2
+Top-Selling Items
+Quickly shows what products drive most sales or margin — useful for merchandising and reorder priorities.
+3
+Slow-Moving / Dead Inventory Report
+Flags SKUs with no or low sales over a period — helps reduce overstock and free up shelf space.
+4
+Rebate-Eligible Item Report
+Lists SKUs tied to manufacturer programs and their sales volume — helps maximize rebate submission and earnings.
+5
+Promotion Performance Report
+Shows how in-store promos affected sales volume or mix — informs future offers or CPG negotiation.
+6
+Category Sales Breakdown
+Slices sales by department (e.g. tobacco, beverages, snacks) — helps optimize category placement & margins.
+7
+Hourly/Daily Sales by Product
+Useful for labor planning and promo timing (e.g., energy drink spikes in morning vs. candy sales in afternoon).
+8
+Store Comparison Report (if multiple stores)
+Lets owners benchmark locations — see which store is underperforming by SKU or category.
+9
+Sales vs. Delivery Report
+Helps reconcile delivery invoices with POS sell-through — flags possible shrink, overstocking, or theft.
+10
+Voids / Refunds / No Sales
+Audit-focused report to detect suspicious register activity — useful for loss prevention.
+11
+Cashier/Employee Sales Summary
+Measures individual cashier sales and refund volume — identifies upsell potential or fraud.
+12
+Margin by SKU /Category
+Helps spot high-volume, low-margin items (profit killers)
+13
+Basket Size & Mix Report
+Tracks average sale per customer and which items are often bought together — helps bundle or upsell.
+14
+Missed Rebate Opportunities Report
+Shows SKUs you sold but didn’t submit for rebate (or weren’t eligible due to purchase source) — often $300–$1,500/month missed.
+15
+AI Supported Analysis & Responses
+Ability for operators to ask natural-language Qs like:
+What items are selling best during morning rush?
+When is my morning rush time slot?
+What products are down this week in Store 2?
+Which SKUs pair best with energy drinks?
+
+
+
+
+
+
+
+
+
+
+
+PART 2: POC Rebate Discovery, Tracking & Submission
+
+Existing ARC Rebate Programs: 
+Rebate Upload: 
+Existing programs can be added to the POC & tag relevant SKUs <Need List>
+Reports: 
+List of all active rebate programs
+Sales by rebate program & SKUs <Need Field Reqs>
+Rebate programs in progress, current sales and estimated refund
+Relevant rebate SKUs not selling – prompting checks for stock outs or shelf gaps
+Notifications:
+An automated email with a sales report is sent to a designated recipient with a set frequency or date desired from C4C. <Need Field Reqs>
+
+New C4C Rebate Programs:
+Rebate Upload:
+Newly established programs can be manually added to the C4C system and relevant SKUs tagged <Need field reqs>
+Reports:
+All active rebate programs list
+Sales reports can be pulled based on rebate program <Need Field Reqs>
+Rebate programs in progress, current sales and estimated refund by SKU
+Relevant rebate SKUs that aren’t selling – prompting checks for stock outs or shelf gaps
+Notifications:
+Owners are notified of new rebate offerings & opt in by default, unless they specifically opt out
+Submission:
+An automated email with a report is sent to a designated recipient with a set frequency or date desired from C4C. <Need Field Reqs>
+Rebate Reimbursements:
+Report: C4C is provided a report by store with rebate $ required by program
+Submission: C4C sends a check with reimbursements 
+
+
+PART 3: Brand Supported Promotions, Tracking & Submission
+
+Existing ARC Promotions: 
+Promo Upload:
+The existing promotions can be added to the POC and relevant SKUs or SKU grouping are tagged by promotion <Need list & details>
+Reports:
+All active promotions list
+Sales reports by promotion & relevant SKUs 
+Promotions in progress, current sales and estimated refund 
+Relevant SKUs that aren’t selling – prompting checks for stock outs or shelf gaps
+Submission:
+An automated email with a report is sent to a designated recipient with a set frequency or date desired from C4C. <Need Field Reqs>
+New C4C Promotions:
+Connection
+C4C connects with suppliers to establish promotions with guaranteed reimbursement terms (i.e. Snickers 2-for-$3 with $0.30 /unit covered by brand)
+Promo Upload
+C4C manually adds new promotions to the C4C system and tags relevant SKUs <Need field reqs>
+Notifications: 
+Owners are notified of new promotion and opt in by default, unless they specifically opt out  <Need Field Reqs>
+Reports:
+All active promotions list
+Sales by promotion & relevant SKUs <Need Field Reqs>
+Promotions in progress, current sales and estimated refund
+Relevant SKUs that aren’t selling – prompting checks for stock outs or shelf gaps
+AI Supported Analysis:
+Smart promotions are suggested to C4C based on basket patterns and historical trends across the network (e.g. “Pair chips + energy drinks with a BOGO offer”).
+Submission:
+An automated email with a report is sent to a designated recipient with a set frequency or date desired from C4C. <Need Field Reqs>
+Suppliers:
+Reporting
+List of all active rebates and promotions
+Rebate & promotions in progress with current sales and estimated refund across the C4C network
+
+
+
+
+
+
+
+
+
+
+Define POC Goals
+What are we trying to achieve with a POC project? 
+PART 1: Sales Analysis
+Objective
+Goal
+Extract & Structure Data
+Automate parsing of TLOGs and match with C4C Pricebook to normalize sales data by UPC.
+Centralize Data
+Build a cloud-based data warehouse (Snowflake, BigQuery, etc.) to store structured sales data per store.
+Visualize & Report
+Provide a dashboard where store owners can log in and see their own performance across 15+ standard reports.
+Enable AI Queries
+Let operators ask real questions in plain language (via ChatGPT or a GPT-based assistant) about store or SKU performance.
+Support Decision-Making
+Enable weekly/monthly operational improvements via insights into pricing, inventory, and sales patterns.
+
+
+PART 2: Rebate Discovery, Tracking & Submission
+Objective
+Goal
+ARC Program Integration
+Upload and tag all current ARC rebates to C4C database; match SKUs and sales transactions.
+Track Rebate Status
+Monitor in-progress program sales vs. thresholds and estimated refund per store.
+Surface Missed Opportunities
+Flag SKUs with sales but no rebate (or unsold eligible SKUs for shelf placement checks).
+Enable Reporting & Notifications
+Auto-generate weekly/monthly rebate performance reports and email to store operators or staff.
+C4C Program Management
+Allow rebate admins to manually upload new rebate offers and auto-tag SKUs across stores.
+Submission Automation
+Create one-click submission files or automated check disbursements for processed rebates.
+
+
+PART 3: Brand-Supported Promotions, Tracking & Submission
+Objective
+Goal
+Promo Tagging System
+Upload existing ARC and C4C promotions with SKU group tagging and effective date tracking.
+Sales Attribution
+Measure promo-linked SKU performance vs. baseline and track redemptions.
+Gap Alerts
+Identify promoted SKUs that aren’t selling to flag possible stock outs or misplacement.
+Auto Notification & Opt-In
+Default opt-in for new promotions with the ability to opt-out; push alerts when promos launch.
+Brand Program Reporting
+Provide a brand-level dashboard with sales uplift, store participation, and ROI by SKU.
+AI Promo Insights
+Recommend high-potential promo bundles (e.g., “chips + energy drink”) based on basket trends.
+Reimbursement Automation
+Auto-generate supplier invoices or disbursements for validated promotions.
+
+Measurable Success Criteria
+List metrics you’ll use to verify your goals have been achieved and evaluate your ideas.
+
+PART 1: Sales Analysis
+95%+ of items matched to pricebook by UPC
+Dashboard loads within 2–3 seconds per query
+At least 10 actionable reports generated per store
+Operator usage within first 30 days post-onboarding
+PART 2: Rebate Discovery, Tracking & Submission
+Rebate capture rate increase of $300–$1,500+/store/month
+90%+ rebate programs tracked to closure
+Notifications & reports delivered on-time per schedule
+Store onboarding of new rebates completed in <48 hours
+PART 3: Brand-Supported Promotions, Tracking & Submission
+85%+ promotion participation rate across C4C stores
+5-10%+ sales uplift in promoted SKUs (month over month)
+Smart promotion suggestions generate >5 accepted offers/month
+Supplier adoption of C4C network reporting by Q2 pilot close
+Cross-Program Metrics & KPIs
+Metric
+Goal
+Owner
+Tracking Frequency
+Notes
+Rebate $ Captured
++$300–$1,000 / store / month
+Ops Lead
+Weekly
+Tracked per store ID
+Promotion Uplift
++5–10% sales on tagged SKUs
+Data Lead
+Weekly
+Pre/post sales baseline
+Report Accuracy
+>95% UPC match rate
+QA
+Weekly
+Linked to pricebook match logic
+Store Engagement
+80%+ dashboard usage weekly
+Product
+Weekly
+Measured via login activity
+Supplier Adoption
+15+ CPG brands onboarded
+Biz Dev
+End of POC
+Brand dashboard support
+Platform Readiness
+MVP platform usable in under 15 min of training
+Product
+End of POC
+
+
+
+
+Team Members
+Outline POC team members and their roles in the project.
+
+Role
+Owner
+Dev Lead
+
+
+Data Eng
+
+
+Infra Lead
+
+
+UI / UX 
+
+
+Data Lead
+
+
+AI Eng
+
+
+Ops Lead
+
+
+Finance
+
+
+
+C4C POC Execution Tracker
+PART 1: Sales Analysis
+Goal
+Deliverable
+Owner
+Deadline
+Status
+Extract TLOGs 
+Automated TLOG extraction 
+Dev Lead
+Week 1
+🔲 Not Started
+Normalize with Pricebook
+Pricebook schema + UPC matcher
+Data Eng
+Week 2
+🔲 Not Started
+Load into Cloud DB
+Centralized cloud-based sales DB
+Infra Lead
+Week 2
+🔲 Not Started
+Build Store Dashboards
+Client-facing dashboard with key reports
+UI/UX + Dev
+Week 3
+🔲 Not Started
+Implement 10+ Sales Reports
+Reports ie item-level, top/bottom SKUs, rebate-qualified items, etc.
+Data Lead
+Week 3
+🔲 Not Started
+Enable AI Q&A Interface
+Natural language question feature using GPT
+AI Eng
+Week 4
+🔲 Not Started
+
+
+PART 2: Rebate Discovery, Tracking & Submission
+Goal
+Deliverable
+Owner
+Deadline
+Status
+Upload Existing ARC Rebates
+List + SKUs uploaded and tagged
+Ops Lead
+Week 1
+🔲 Not Started
+Track Sales vs Rebate Programs
+Dashboard with live rebate status
+Data Eng
+Week 3
+🔲 Not Started
+Flag Unsold Rebate SKUs
+Auto alert for shelf gap or stockout
+Dev
+Week 3
+🔲 Not Started
+Rebate Submission Email Setup
+Automated report with estimated refund
+Dev + Ops
+Week 4
+🔲 Not Started
+Upload New C4C Rebate Programs
+Manual rebate uploader interface
+UI/UX + Dev
+Week 3
+🔲 Not Started
+Owner Opt-In by Default
+Notification system for new rebate programs
+Dev
+Week 3
+🔲 Not Started
+Reimbursement Reporting
+Payout tracker per store per program
+Finance + Dev
+Week 4
+🔲 Not Started
+
+PART 3: Brand-Supported Promotions, Tracking & Submission
+Goal
+Deliverable
+Owner
+Deadline
+Status
+Upload Existing ARC Promotions
+Tag promotions by SKU or group
+Ops
+Week 2
+🔲 Not Started
+Sales by Promotion Report
+Show impact of promotion by SKU
+Data Lead
+Week 3
+🔲 Not Started
+Stock Gap Alerts
+Flag low/no-sales promo SKUs
+Dev
+Week 3
+🔲 Not Started
+New Promo Uploader
+Manual C4C promo input tool
+Dev
+Week 3
+🔲 Not Started
+Supplier Promo Dashboard
+Real-time brand-facing dashboard
+UI/UX + Dev
+Week 4
+🔲 Not Started
+AI Promotion Suggestions
+Smart bundle recommendation system
+AI Eng
+Week 5
+🔲 Not Started
+Supplier Payout Reporting
+Refund & ROI report by brand/SKU
+Finance
+Week 5
+🔲 Not Started
+
+
+
+
+

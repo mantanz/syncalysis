@@ -1,0 +1,742 @@
+line_item_uuid,transaction_id,upc_id,category_name,category_number,department,department_name,department_type,has_birthday_verification,has_category_override,has_department_override,has_loyalty_line_discount,has_mix_match_promotion,has_plu_override,is_ebt_eligible,is_plu_item,line_total,network_code,quantity,transaction_line_type,unit_price,upc_description,upc_entry_type,upc_modifier
+bdc48af3-d667-428b-badc-b5b81c96ca25,9065048,,FUEL,1,4,Diesel,fuel,f,f,f,f,f,f,f,f,59.49,19,18.597,postFuel,3.20,Diesel CR #06,,
+a2d54614-ff48-4be1-b792-e595f592f561,9047805,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,33.14,3,7.892,postFuel,4.20,Premium CR #04,,
+c908b6b9-c8bf-49ff-8280-39da9308c54e,1011847,888109253097,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.79,440,1,plu,2.79,HOSTESS GLAZED JUMBO HONEY BUN,scanned,0
+de48d9c7-a662-4aef-a01b-a68a563f7d58,1011847,24300865404,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.99,440,1,plu,1.99,LITTLE DEBBIE GLAZED HONEY BUN EA,scanned,0
+74ee3554-19b4-4cf3-b135-d36a3bbb765c,1011847,888109010089,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.79,440,1,plu,2.79,HSTSS HOSTESS ZINGERS RASPBERR,scanned,0
+e5148ef4-be11-4002-8b23-b20a582ef305,1011847,52000102475,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,GATORADE FROST GLACIER CHERRY 20Z BOTTL,scanned,0
+e6041f5c-7bab-4a7d-8196-d40890f01a43,1011847,72730264557,BEVERAGE MERCHANDISE,9,30,Fluid Milk Products,Inside Sales,f,f,f,f,f,f,f,f,1.99,461,1,plu,1.99,PRAIRIE FARMS 1 LOWFAT CHOCOLA,scanned,0
+c75f30f4-9ff2-4449-b8a2-6fb96ee1781c,9065049,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,32.45,1,10.471,postFuel,3.10,Regular CR #06,,
+229977d0-a639-4dfd-abfe-7b38b9f844fc,1011848,12300000079,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,10.99,411,1,plu,10.99,RJR CAMEL BLUE KS BX PK,scanned,0
+2f8c06bc-3183-4887-b243-52c87dcac5bb,9056895,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,47.55,1,15.343,postFuel,3.10,Regular CR #05,,
+dc3aa6d9-dec2-4160-9882-66e306c4e747,1011849,28200004017,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.76,411,1,plu,12.76,PHMO MARLBORO MENTHOL GOLD KS,scanned,0
+118f5fc0-5c1c-4942-b276-227315eabfb5,1011849,28200004017,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.76,411,1,plu,12.76,PHMO MARLBORO MENTHOL GOLD KS,scanned,0
+a3f7797d-47e5-45ba-8d8a-539cd7885884,9065051,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,71.28,1,23.002,postFuel,3.10,Regular CR #06,,
+133fe1b6-71ab-4e73-84f2-5fade9b4ca2c,9047806,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,42.36,1,13.669,postFuel,3.10,Regular CR #04,,
+1c2bf46b-960d-4a02-972c-f6ee8232f1e5,9026801,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,49.64,1,16.019,postFuel,3.10,Regular CR #02,,
+8848e072-9a6e-4fa0-973c-eccc3e2dfc64,1011850,852480007884,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.29,420,1,plu,3.29,CELSIUS ORANGESICLE 16Z CAN EA,scanned,0
+ddaed172-507a-44b4-840a-36d9fd098beb,1011850,852480007884,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.29,420,1,plu,3.29,CELSIUS ORANGESICLE 16Z CAN EA,scanned,0
+68777b3e-6ca8-410e-a600-10b73b410c74,9038227,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,24.24,1,7.823,postFuel,3.10,Regular CR #03,,
+cdfbc518-6dd4-4f15-9bbe-416ba5a6e767,9026802,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,16.59,1,5.354,postFuel,3.10,Regular CR #02,,
+f496ad98-60e0-4aaf-860d-816ee391c728,9079835,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,58.00,1,19.339,postFuel,3.00,Regular CR #07,,
+ed525537-488b-44da-9e69-70900d16bf56,9038228,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,9.56,3,2.277,postFuel,4.20,Premium CA #03,,
+22810535-ae37-4e79-895b-70272d62f77e,1011851,191088113123,ON-SITE SERVICES,7,21,Hot Dispensed Beverages,Inside Sales,f,f,f,f,f,f,f,f,1.99,431,1,plu,1.99,ANODYNE COFFEE 16Z EA,key,0
+d6c49495-e9fb-46ab-bb92-f13420ccb3c8,1011851,305730705127,MERCHANDISE,10,47,Health & Beauty Care,Inside Sales,f,f,f,f,f,f,f,f,2.59,540,1,plu,2.59,CHAPSTICK CHERRY BLISTER CARD,scanned,0
+ef3acb7e-8d71-40a0-9874-94ac3b08b315,1011851,22000007698,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,2.49,450,1,plu,2.49,ALTOIDS ARCTIC PEPPERMINT TIN,scanned,0
+f5ba65d7-5dfc-4af5-afcd-bd5299cb8e29,9065052,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,25.00,1,8.068,postFuel,3.10,Regular CR #06,,
+2492c321-acdc-42a4-8d72-91b3927ac91e,9047807,,FUEL,1,2,Unleaded-Mid,fuel,f,f,f,f,f,f,f,f,47.80,2,13.1,postFuel,3.65,Midgrade CR #04,,
+5263fe1e-95eb-464a-915b-f2c38db159c3,1011852,49000024692,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI DIET COKE 16.9Z BOTTLE EA,scanned,0
+c096d6a2-baae-4296-80ac-03b5d6dcd343,1011852,49000024692,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI DIET COKE 16.9Z BOTTLE EA,scanned,0
+7570df09-7096-495c-bc8c-9f909f755667,1011853,78000082401,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.29,420,1,plu,2.29,DR PEPPER 20Z BOTTLE EA,scanned,0
+0b385f52-6934-47a6-80c9-a41f79b2a21e,9047808,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,23.13,1,7.463,postFuel,3.10,Regular CA #04,,
+268c5c90-f99b-461e-a0d7-d932afae51b8,1011854,73390026349,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,1.89,450,1,plu,1.89,MENTOS STRAWBERRY ROLL 1.32Z M,scanned,0
+62e077f7-77c4-4d48-a612-6af2f63afdac,9056896,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,47.86,1,15.445,postFuel,3.10,Regular CR #05,,
+20bdad14-5145-4d97-9c0b-57972c64c7ea,1011855,52000054996,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,GATORLYTE GLACIER FREEZE 20Z BOTTLE EA,scanned,0
+939cd3c3-3852-4ca6-b6e1-e719d4abc665,1011856,98100100324,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,3.79,420,1,plu,3.79,STARBUCKS CB CHCLT CRM 11Z CAN EA,scanned,0
+91f006f9-9d1c-4416-8c78-9c383a69a6a1,1011857,30772045145,MERCHANDISE,10,46,Non-Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,1.49,472,1,plu,1.49,CHRMN ESS STG TIS 1CT,scanned,0
+3cdcfcfb-0d46-4302-87a3-cc271d376d62,1011857,37000004707,MERCHANDISE,10,46,Non-Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,3.49,472,1,plu,3.49,PG GAIN DETERGENT ORG DBL STRE,scanned,0
+e627a0d6-cf9c-4cc9-9943-3b500890489d,1011858,12000003622,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,MOUNTAIN DEW CODE RED 1L BOTTLE EA,scanned,0
+f89cc43e-7d36-4b4a-a10e-abef918b86f6,1011858,70137839224,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,1.69,410,1,plu,1.69,BLACK AND MILD NICE WINE PT EA,scanned,0
+119750e1-875e-44e1-b57b-e36b2bcf654c,1011858,70137114918,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,1.19,410,1,plu,1.19,BLACK AND MILD CIGAR SWEET PT,scanned,0
+9229d4d5-5c2c-4171-8d0c-f21837d63209,1011859,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,5.00,510,1,dept,5.00,Mega Lotto,,
+f99aab10-4ec2-4269-ac58-dcdce933c3f1,1011860,42100005431,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,11.53,410,1,plu,11.53,AM SNF GRIZZLY WINTERGREEN POU,scanned,0
+2c385590-a304-408a-be81-4268d3abd51e,1011861,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,5.00,510,1,dept,5.00,Mega Lotto,,
+e01c4507-7c19-4808-a472-8c5992822226,9038229,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,21.38,1,6.898,postFuel,3.10,Regular CR #03,,
+3a0b1ce1-2d40-489f-b162-0ea326cf608e,9026803,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,12.87,1,4.154,postFuel,3.10,Regular CR #02,,
+acc2ebac-a661-462b-9e29-0ac39e324bce,9014956,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,75.85,3,18.063,postFuel,4.20,Premium CR #01,,
+2b375db4-882f-4bd7-b9ec-ba55e9e39c7b,1011862,49000050158,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.69,420,1,plu,3.69,RCI SPRITE 2L BOTTLE EA,scanned,0
+5ea5328e-44c9-4490-9abc-6838523b4622,1011862,49000050158,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.69,420,1,plu,3.69,RCI SPRITE 2L BOTTLE EA,scanned,0
+3b626e28-03cc-4f49-abca-bd8c806c163a,1011862,28200003638,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,124.00,411,10,plu,12.40,PHMO MARLBORO 100 BX PK,scanned,0
+70977fd5-005a-4510-b323-3473acea4650,1011863,815154020008,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI NOS ORIGINAL 16Z CAN EA,scanned,0
+a7a389be-4714-4a77-8d6c-46bd16d0691b,9056897,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,37.98,1,12.257,postFuel,3.10,Regular CR #05,,
+0ee4d01c-abfc-4ddc-876e-d6f93eff7f0f,9079837,,FUEL,1,2,Unleaded-Mid,fuel,f,f,f,f,f,f,f,f,44.09,2,12.083,postFuel,3.65,Midgrade CR #07,,
+2f4af2f2-21d4-4865-ae6b-30c5fcd20554,1011864,18200250002,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,2.99,481,1,plu,2.99,BUDWEISER 25Z CAN,scanned,0
+f3b2bf10-afaa-455a-8881-87111e096ebc,9065053,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,24.85,1,8.018,postFuel,3.10,Regular CR #06,,
+b2be5977-1a5c-464e-aece-cb96d830a574,1011865,42100024968,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,6.45,410,1,plu,6.45,AM SNF COUGAR SNUFF WNTRGRN LC EA,scanned,0
+7747daa9-e668-4f2e-a530-3e8b783e7d25,1011865,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,6.00,510,1,dept,6.00,Mega Lotto,,
+380237ee-59eb-4e04-a4ca-a7012343d462,9047809,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,11.54,3,2.748,postFuel,4.20,Premium CR #04,,
+21db756c-e15a-41e5-8fbe-dd6b42aac790,9065054,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,44.10,1,14.23,postFuel,3.10,Regular CA #06,,
+e085fb4d-38bd-4f11-a6a0-8993446ef740,9038230,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,5.55,1,1.79,postFuel,3.10,Regular CR #03,,
+200f59a9-b991-4060-812b-87b4439f3e94,9026804,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,6.68,3,1.591,postFuel,4.20,Premium CR #02,,
+c13f33d7-2f34-4fe9-99d2-d3693dbbb3ff,1011866,611269991000,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,RED BULL ORIGINAL 8.4Z CAN EA,scanned,0
+0fa22ff5-a40a-47c4-9f3c-f70a34eb2757,1011866,611269991000,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,RED BULL ORIGINAL 8.4Z CAN EA,scanned,0
+abfb83af-7de0-4b94-b992-d5df2bca027f,1011866,611269991000,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,-3.09,420,1,void plu,3.09,RED BULL ORIGINAL 8.4Z CAN EA,manual,0
+d0d6008b-536b-45b1-a0f8-e53c460669c9,1011866,28200003683,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO RED LABEL KS BX,scanned,0
+259bad03-9b68-476c-86e4-5f59ef7ff0f4,1011867,896887002202,EDIBLE MERCHANDISE,8,34,Nuts/Seeds,Inside Sales,f,f,f,f,f,f,f,f,3.69,440,1,plu,3.69,CNGR BIGS SUNFLOWER SEEDS DILL,scanned,0
+eaee4d2a-f60e-4b8e-bb71-7405293e7a23,9026805,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,40.88,1,13.19,postFuel,3.10,Regular CR #02,,
+2f307c48-77f0-4024-a108-d3f9e65aecd8,1011868,12000016721,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS FRACCINO CARAMEL 13.7Z B,scanned,0
+9e7c58ad-1237-419b-97e2-c0c79dc52711,1011869,840170618052,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,4.89,410,1,plu,4.89,VELO PLUS WINTERGREEN 9MG,scanned,0
+a51d1c17-0193-4301-8965-89c264e09240,1011869,840170618052,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,4.89,410,1,plu,4.89,VELO PLUS WINTERGREEN 9MG,scanned,0
+f5c3105d-6eb7-4574-97d7-59f20b02573b,9065055,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,41.72,1,13.461,postFuel,3.10,Regular CA #06,,
+ab630041-7b22-47c7-a08f-54fce93b4132,1011870,28200004772,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,10.60,411,1,plu,12.40,PHMO MARLBORO SILVER KS BX PK,scanned,0
+0cb46802-0547-4607-b18a-2a5c650c5f8e,1011870,28200004772,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO SILVER KS BX PK,scanned,0
+a354a578-f124-4fea-86e3-4a3d2c87439c,9079838,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,69.50,1,22.426,postFuel,3.10,Regular CR #07,,
+4c1fa548-81f2-4c64-b681-1153d9b488af,9038231,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,44.00,1,14.199,postFuel,3.10,Regular CA #03,,
+ffc624dc-5110-43b7-9723-e278ccb9d1c0,9026806,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,28.33,1,9.142,postFuel,3.10,Regular CR #02,,
+d7dff4f4-652c-4024-8473-1f335a80d569,9014957,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,42.18,1,13.612,postFuel,3.10,Regular CR #01,,
+e966f2b0-60f0-460e-bc41-c4dc6b573aa2,1011871,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,4.00,510,1,dept,4.00,Mega Lotto,,
+f9237442-0744-46ba-afc1-75b36b6a7e5c,1011872,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,16.00,0,1,preFuel,,PREPAY CR #07,,
+ddc5b6e3-db0b-4330-9142-5306e20d3011,1011873,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,110.00,0,1,preFuel,,PREPAY CR #01,,
+426aaf74-bd93-406f-9514-5a1879e492e5,9056898,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,12.89,1,4.158,postFuel,3.10,Regular CR #05,,
+bf10d43f-db13-4986-b2c5-034f93e16f4a,9079839,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,16.00,1,5.163,postFuel,3.10,Regular CR #07,,
+6f92d9f8-ce86-46aa-aed9-04c3d47e9c83,1011872,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,16.00,0,1,preFuel,,PREPAY CR #07,,
+cab1b64d-f02d-40f3-b370-57a80a868e83,1011874,73100000393,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,12.44,410,1,plu,12.44,UTC COPENHAGEN MINT POUCH EA,scanned,0
+b71f73e2-351e-4a2d-997e-64eda4e47799,1011875,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,101.12,3,24.082,postFuel,4.20,Premium CR #01,,
+788e6142-b9d9-43e0-a4a4-89bdce9f5efa,1011873,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,110.00,0,1,preFuel,,PREPAY CR #01,,
+04d8ecd0-b68d-411a-a558-8f249e003f14,1011876,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,9.00,0,1,preFuel,,PREPAY CR #04,,
+9c166680-6d30-49b4-b961-4419041633fa,9065056,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,35.13,1,11.337,postFuel,3.10,Regular CR #06,,
+1cfa4790-7c2b-4a36-ac17-5b4a2512a692,1011877,609249902016,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN SPEARMINT POUCH 3MG,scanned,0
+aedabe3b-7af3-4f6c-9f92-c401961eb016,1011877,609249902016,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN SPEARMINT POUCH 3MG,scanned,0
+7c80e767-e856-4b68-8bd0-9c544e3b0c64,1011877,609249902016,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN SPEARMINT POUCH 3MG,scanned,0
+aa1c9b88-98c2-4eb2-86a7-188c07f66198,9047810,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,9.00,1,2.904,postFuel,3.10,Regular CR #04,,
+e487ec40-5d48-4b34-9d18-89ccb7e78d89,1011876,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,9.00,0,1,preFuel,,PREPAY CR #04,,
+1a50c7cc-e0d2-4668-ad1b-aae805184427,9056899,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,31.90,1,10.294,postFuel,3.10,Regular CR #05,,
+5cc661e1-e036-4057-9981-ebbb8863f4d7,9079840,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,40.14,1,12.952,postFuel,3.10,Regular CR #07,,
+3c73c855-89dd-4650-a708-a26d44fd23b8,9065057,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.00,1,4.839,postFuel,3.10,Regular CR #06,,
+421ec151-4582-4b29-93cd-4e216150692b,1011878,22000159335,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,3.69,450,1,plu,3.69,ALTOIDS PEPPERMINT TIN MINTS 1,scanned,0
+1e8deec3-2738-44ed-a03f-a34e2e15b0ac,9079841,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,54.36,1,17.54,postFuel,3.10,Regular CR #07,,
+57283641-f33a-4202-880d-b3abf48c4075,1011879,27541001235,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,5.39,420,1,plu,5.39,RCI NIAGARA DRINKING WATER 0.5L BOTTLES,scanned,0
+e84484bc-d3d2-4796-9673-a8f3b29c95b6,1011880,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+54153831-bb4d-4438-9ddf-d77b6ebfa78f,1011880,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+c9ace854-c276-4536-9361-e9b38073ddb5,9056900,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,45.42,1,14.655,postFuel,3.10,Regular CR #05,,
+8d57f5d6-1989-408a-8c91-e0a9c6c80e9d,9079842,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,68.01,1,21.947,postFuel,3.10,Regular CR #07,,
+01ed5299-82ce-4ed7-85f3-cca26cb5d79a,9026807,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,29.01,1,9.362,postFuel,3.10,Regular CR #02,,
+cf073526-a51e-484d-bfda-712ab4d39597,9056901,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,41.00,1,13.229,postFuel,3.10,Regular CR #05,,
+8c760216-0f4c-4744-a516-c157c9b66e99,1011881,49000079357,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,2.79,420,1,plu,2.79,RCI POWERADE MOUNTAIN BERRY 28Z BOTTLE,scanned,0
+3b5801f3-6ff4-4b32-ba12-ccf66b21919c,1011881,38900719715,EDIBLE MERCHANDISE,8,45,Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,2.29,471,1,plu,2.29,DOLE DOLE MIXED FRUIT GEL CHERRY 7Z EA,scanned,0
+4fe701e8-e3bf-4121-afc7-cf6d05ba36f1,9047811,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,24.00,1,7.743,postFuel,3.10,Regular CR #04,,
+9e6741a6-ea4d-41a5-bf6e-b10e133c4311,9026808,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,29.40,1,9.486,postFuel,3.10,Regular CR #02,,
+666fc70b-a18e-4569-87f4-eeeac1b9e2c4,1011882,28200003843,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD KS BX PK,scanned,0
+cf9e82af-8ca8-4910-b9e0-dd52eac36f95,9079843,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,34.11,1,11.006,postFuel,3.10,Regular CA #07,,
+c0213b9f-86e7-4a3e-8e04-710d7f02ccc3,1011884,28400769228,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL CHEETOS HOT XXVL,scanned,0
+bad8f438-91bc-41b6-8df7-db8f7e87ba35,1011884,28400769075,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL RUFFLES CHDR SR CRM XXVL,scanned,0
+ccd35545-ed80-4b1d-bbde-f700fd8e8563,1011884,849819000197,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.29,420,1,plu,1.29,RCI NATURES TWST LMND 16.9Z,scanned,0
+3b60d875-fd3a-468d-86ed-2c4980de3d9e,1011884,17082000392,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.99,440,1,plu,1.99,JACK LINKS ALL AMRCN BF CHS TW,scanned,0
+28edfb65-59a2-493e-9a6b-8403c20ca576,1011885,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,20.00,0,1,preFuel,,PREPAY CR #03,,
+f65a3416-7c94-4456-b57b-fece4b72a1a4,1011886,73390055288,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,4.49,450,1,plu,4.49,TRIDENT VIBES SPRMNT RSH,scanned,0
+e4de65f2-576f-4c8c-8c88-45100c6a73ee,1011886,73390055288,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,4.49,450,1,plu,4.49,TRIDENT VIBES SPRMNT RSH,scanned,0
+7868aac7-48a1-4acc-a093-99b42bb28418,1011886,73390055288,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,4.49,450,1,plu,4.49,TRIDENT VIBES SPRMNT RSH,scanned,0
+ed999473-2a8f-4ef3-8f52-507fed1aa25b,9026809,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.00,1,3.226,postFuel,3.10,Regular CR #02,,
+2362c34f-7dce-4780-bc20-ab84a8a21aea,9047812,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,41.68,1,13.45,postFuel,3.10,Regular CR #04,,
+3237d2dd-09dc-4311-80c5-48c4a8480f07,1011887,811374035631,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP MANGO TANGO 16Z CAN EA,scanned,0
+21c58566-c147-4827-a073-b4cae269b6d0,1011887,811374035631,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP MANGO TANGO 16Z CAN EA,scanned,0
+176dba13-6db2-437a-8763-eba0800402e8,1011887,90500000518,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,9.87,411,1,plu,9.87,ITG MAVERICK MENTHOL 100 BX PK,scanned,0
+8858e038-bca8-4258-aae5-6dc1d1668f77,9038232,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.00,1,6.453,postFuel,3.10,Regular CA #03,,
+44128405-b614-4cc2-a7a4-3af1d549d306,1011885,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,20.00,0,1,preFuel,,PREPAY CR #03,,
+802fbc71-4743-4d09-b49e-e52e491a34d9,9056902,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.99,1,6.772,postFuel,3.10,Regular CR #05,,
+5071ace8-e68d-4906-a277-f148001a5e33,9065058,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,30.63,1,9.885,postFuel,3.10,Regular CR #06,,
+87648d33-996e-4542-93cf-7b67ab4fea3a,9047813,,FUEL,1,5,Ethanol- E85,fuel,f,f,f,f,f,f,f,f,60.06,4,22.251,postFuel,2.70,E85 CR #04,,
+ed18aa7d-4b9a-434c-8700-0c1696d5425e,9038233,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,4.14,3,0.987,postFuel,4.20,Premium CA #03,,
+9490fe9d-5ecf-4dde-8c47-77457ae03f6a,1011888,38000845260,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,2.09,440,1,plu,2.09,KLG PRINGLES CHEDDAR CHS 2.5Z,scanned,0
+6fc1a9cf-f445-43fa-84e9-9116836ee658,1011888,38000845260,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,2.09,440,1,plu,2.09,KLG PRINGLES CHEDDAR CHS 2.5Z,scanned,0
+526b253c-095c-4c6c-99d5-e0e048283dc2,1011888,889392003628,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,CELSIUS SPARKLING WATERMELON 12Z CAN EA,scanned,0
+b1f732ea-fd63-46f5-9952-b22a082b79a1,1011888,855068007009,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,11.49,481,1,plu,11.49,THIRD SPACE BREW HAPPY PLACE 6PK 12Z CA,scanned,0
+414e9b74-2bdd-4d8c-9f65-4f9a3f0c7f66,1011888,855068007009,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,11.49,481,1,plu,11.49,THIRD SPACE BREW HAPPY PLACE 6PK 12Z CA,scanned,0
+0b82509f-d522-430f-a50d-0f370ad50b8d,1011888,41570055120,EDIBLE MERCHANDISE,8,34,Nuts/Seeds,Inside Sales,f,f,f,f,f,f,f,f,1.79,440,1,plu,1.79,BD BLUE DIAMOND ALMONDS HABANE,scanned,0
+9b2cb7ee-b956-4971-9d36-0b393695a7e3,1011888,29000027923,EDIBLE MERCHANDISE,8,34,Nuts/Seeds,Inside Sales,f,f,f,f,f,f,f,f,0.69,440,1,plu,0.69,HRML PLANTERS SWT and SPCY PEANU,scanned,0
+40a20096-10f6-46bf-a9b2-8a4b1e048171,1011888,29000075382,EDIBLE MERCHANDISE,8,34,Nuts/Seeds,Inside Sales,f,f,f,f,f,f,f,f,2.09,440,1,plu,2.09,HRML PLANTERS CASHEW SALTED 1.,scanned,0
+9f39229d-26e2-4f9f-b9c0-383d5329a9ad,1011888,29000022157,EDIBLE MERCHANDISE,8,34,Nuts/Seeds,Inside Sales,f,f,f,f,f,f,f,f,0.69,440,1,plu,0.69,HRML PLANTERS PEANUTS HEAT TUB,scanned,0
+1d097e77-0262-4308-b92c-519ff8e448df,1011888,609249904027,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN COFFEE POUCH 6MG EA,scanned,0
+1774d927-abbd-4c71-a75e-5170be6f3bf9,1011888,609249904027,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN COFFEE POUCH 6MG EA,scanned,0
+8a2ae081-27f8-4022-ae71-9399c47b9b78,1011888,191088113079,MERCHANDISE,10,50,Bagged Ice,Inside Sales,f,f,f,f,f,f,f,f,2.79,401,1,plu,2.79,ARC 8LB ICE EA,key,0
+c580d1d5-8dcb-4ebb-9884-9b6eee7260a6,1011889,12000001291,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI 20Z BOTTLE EA,scanned,0
+749f4cae-db1c-4145-a4ab-2b18915b7246,1011889,851015004220,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.79,440,1,plu,2.79,SWEETWOOD FATTY ORIGINAL MEAT STICK 2Z,scanned,0
+dd468f26-657f-48b4-8e27-afb4ae91b377,1011889,851015004220,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.79,440,1,plu,2.79,SWEETWOOD FATTY ORIGINAL MEAT STICK 2Z,scanned,0
+b8cd33f4-a603-4662-b06a-644dab63ab82,1011889,28200003577,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO KS BX PK,scanned,0
+491a1016-3108-4e01-90e4-2a6d8483b7ea,1011889,528200121825,OPERATIONS,13,54,UPC NOT FOUND,Inside Sales,f,f,f,f,f,f,f,f,2.00,400,1,plu,2.00,UPC NOT FOUND,manual,0
+8a634910-e0d1-4746-acc5-9e323a2d001e,1011892,40000006039,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,MARS 3 MUSKETEERS 2 GO KS BAR,scanned,0
+52f9f089-1341-4dbd-bb80-dda809fd632b,1011892,12000001291,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI 20Z BOTTLE EA,scanned,0
+240bfefb-c4e5-43aa-a3e8-f92d7be5fa83,9079844,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,49.85,1,16.087,postFuel,3.10,Regular CR #07,,
+e58f22e4-d37c-4017-88cd-aba8ef9f7e41,9026810,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,15.02,3,3.576,postFuel,4.20,Premium CR #02,,
+fef99441-9329-4403-950d-24ef7d01907d,9056903,,FUEL,1,2,Unleaded-Mid,fuel,f,f,f,f,f,f,f,f,43.84,2,12.014,postFuel,3.65,Midgrade CR #05,,
+6ff3b13a-9714-4d4e-9cca-4964df8b2954,1011895,35751117004,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,3.19,440,1,plu,3.19,BON APPETIT DANISH FRENCH SWT CONCHA 5Z,scanned,0
+e1361556-77ac-4ad0-bc3b-6f6a7ceb2ccf,1011895,35751117004,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,3.19,440,1,plu,3.19,BON APPETIT DANISH FRENCH SWT CONCHA 5Z,scanned,0
+9db4ad82-0db2-491e-9d4e-e17c24214c4d,1011895,70330666153,MERCHANDISE,10,48,General Merchandise,Inside Sales,f,f,f,f,f,f,f,f,2.49,400,1,plu,2.49,BIC MAXI ICONS EA,scanned,0
+a42d971f-6337-4ce7-8c05-4d29a33d6feb,1011895,71610202726,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,2.19,410,1,plu,2.19,ITG DUTCH MASTERS CGR BLUE DREAM FUSION,scanned,0
+ab98cb52-d4fc-40ca-8293-ce68f95235f1,1011895,191088113116,ON-SITE SERVICES,7,21,Hot Dispensed Beverages,Inside Sales,f,f,f,f,f,f,f,f,1.69,431,1,plu,1.69,ANODYNE COFFEE 12Z EA,key,0
+a2cef1c0-7846-4dc5-93b6-379631b3051f,1011896,34100013639,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,3.39,481,1,plu,3.39,SUMMER SHANDY 19Z CAN,scanned,0
+449b01c5-a8bf-4d6f-b1e4-e5791f1819bd,1011896,34100013639,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,3.39,481,1,plu,3.39,SUMMER SHANDY 19Z CAN,scanned,0
+e4a5236d-b730-433b-b96d-032534e53ff4,1011896,611269101713,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,RED BULL SUGAR FREE 8.4Z CAN EA,scanned,0
+a8f1acd7-8780-4f5f-9a7e-9a2e193d358b,1011896,611269101713,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,RED BULL SUGAR FREE 8.4Z CAN EA,scanned,0
+cdb33d96-e185-41ed-864f-4c659b2ada15,1011896,34100013639,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,3.39,481,1,plu,3.39,SUMMER SHANDY 19Z CAN,scanned,0
+da4fc565-9a34-489c-bbad-0ee3d790d9d2,9079845,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.00,1,4.839,postFuel,3.10,Regular CR #07,,
+0826470b-e6f6-4131-bc19-bf8af43e6365,1011898,76171271211,MERCHANDISE,10,51,Automotive Products,Inside Sales,f,f,f,f,f,f,f,f,1.99,100,1,plu,1.99,LITTLE TREES AIR FRESHENER BAYSIDE BREE,scanned,0
+4748e9ae-0f3b-42fc-a6b6-a23f92521c3c,9065060,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,43.66,1,14.089,postFuel,3.10,Regular CR #06,,
+a900bf8a-6fbc-4d31-85c0-88decbe0b412,1011899,44700024119,EDIBLE MERCHANDISE,8,42,Other Dairy & Deli Products,Inside Sales,f,f,f,f,f,f,f,f,4.39,460,1,plu,4.39,KRAFT LUNCHABLES CHEESE PIZZA 4.2Z EA,scanned,0
+7d02be9f-a19c-47e7-bc4f-f73f8061f9e1,9038234,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,53.67,1,17.318,postFuel,3.10,Regular CR #03,,
+81b1d122-8bc0-499f-aa45-1e913d432066,1011900,611269101713,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,RED BULL SUGAR FREE 8.4Z CAN EA,scanned,0
+6a9bf754-7de0-4418-83b2-14f718083221,1011900,611269101713,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,RED BULL SUGAR FREE 8.4Z CAN EA,scanned,0
+edd26591-0c23-4e04-946b-9c130ab9db7b,9065061,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,47.64,1,15.374,postFuel,3.10,Regular CR #06,,
+f772b9d1-4129-473f-9938-cddc5eb66310,1011901,12000027215,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.29,420,1,plu,2.29,MOUNTAIN DEW 16Z CAN EA,scanned,0
+105233d3-c243-4e5c-9f2b-ce938c4d9009,1011901,26100005738,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.29,411,1,plu,12.29,RJR NEWPORT MENTHOL 100 BX PK,scanned,0
+b84fda6a-a3a6-4884-af0d-7fcf27230a39,1011902,14800001693,EDIBLE MERCHANDISE,8,45,Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,1.29,471,1,plu,1.29,SNPL MOTTS APPLESAUCE POUCH 3.2Z EA,scanned,0
+4a5e7c10-4c2a-4ddd-9e19-1f8e5c0dc3ab,1011902,747804017239,EDIBLE MERCHANDISE,8,39,Commissary & Other Products,Inside Sales,f,f,f,f,f,f,f,f,4.69,500,1,plu,4.69,KITCHEN FRESH TURKEY AND CHEES,scanned,0
+5abe9bc9-8d50-494e-bbe2-767a0b173515,1011902,14800001693,EDIBLE MERCHANDISE,8,45,Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,1.29,471,1,plu,1.29,SNPL MOTTS APPLESAUCE POUCH 3.2Z EA,scanned,0
+9d9c56de-4c1f-4b61-b8f2-87aeafbadd85,1011902,26200140605,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,3.19,440,1,plu,3.19,CNGR SLIM JIM MONSTER STK ORIG,scanned,0
+9913ee07-c79d-41f5-aec9-159d492d1ff7,9065062,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,12.69,1,4.095,postFuel,3.10,Regular CA #06,,
+b1d05a8b-4823-4df3-a942-b2e80d3d3e59,9047814,,FUEL,1,2,Unleaded-Mid,fuel,f,f,f,f,f,f,f,f,50.60,2,13.867,postFuel,3.65,Midgrade CR #04,,
+03390f4e-1e2f-457a-aad4-55fd5810dd6a,1011903,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+8b356812-b367-4af9-b017-3868230421ee,1011903,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+04c35dab-29a9-4e0e-8c2f-a687070a28f9,9056904,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,35.12,1,11.333,postFuel,3.10,Regular CR #05,,
+4d9a13d1-94f0-4cf5-9246-1b8ac4a3108f,9038235,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,40.40,1,13.036,postFuel,3.10,Regular CR #03,,
+5bc26d7f-6fdc-476c-821f-a51e0fdbd9c4,9014959,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,30.99,1,10,postFuel,3.10,Regular CR #01,,
+a05d574d-e326-459b-8ce6-5668e2c9fc29,9065063,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,35.70,1,11.52,postFuel,3.10,Regular CA #06,,
+622ea926-8aac-4fcb-b57b-39d04a266be0,1011904,12000286223,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,LIPTON PURELEAF RASPBERRY 18.5Z BOTTLE,scanned,0
+28054809-4361-48cc-8915-c4e69f0c9453,9026811,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,83.54,3,19.896,postFuel,4.20,Premium CR #02,,
+5b1ebd49-8d9e-4c4f-9861-083bcd47140f,9079846,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,37.29,1,12.034,postFuel,3.10,Regular CR #07,,
+eb8a94f2-3c60-4964-a03f-5753a4a4eb9c,9065064,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,10.02,3,2.387,postFuel,4.20,Premium CR #06,,
+babc83e9-0710-4cf8-8397-73e3276806f8,9056905,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,12.52,1,4.041,postFuel,3.10,Regular CR #05,,
+5128fda2-4eb6-4362-abd9-d123653684da,1011905,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,0.17,510,1,dept,0.17,Mega Lotto,,
+dd67d213-1e8a-4df0-baf4-cafb8c22ce57,1011905,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,16.83,510,1,dept,16.83,Mega Lotto,,
+ff7fd5ac-4580-4466-8958-a9465f6fe982,1011905,49000006346,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.09,420,1,plu,1.09,RCI COKE 12Z CAN EA,scanned,0
+5f6bec92-25ab-43cd-8af2-5dd9d7a10ec5,1011905,49000006346,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.09,420,1,plu,1.09,RCI COKE 12Z CAN EA,scanned,0
+2f7cf348-7a8a-4234-a849-336733cf538b,9079847,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,65.74,1,21.213,postFuel,3.10,Regular CR #07,,
+f08ac69b-ffee-4a07-9f91-e7ba014896f4,9047815,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,43.66,3,10.704,postFuel,4.08,Premium CR #04,,
+5cf4a92e-eb2a-43c2-bdd5-9ae82b8c14ea,1011906,28200004772,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,10.60,411,1,plu,12.40,PHMO MARLBORO SILVER KS BX PK,scanned,0
+29ddf3e1-917e-4b9e-97be-048987009775,1011906,28200004772,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO SILVER KS BX PK,scanned,0
+b123ff38-42c2-4ec2-870e-e9359a6d23a0,1011907,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,2.00,510,1,dept,2.00,Mega Lotto,,
+ef828d73-61f6-4366-bc8e-db9218263849,9065065,,FUEL,1,4,Diesel,fuel,f,f,f,f,f,f,f,f,60.32,19,18.856,postFuel,3.20,Diesel CR #06,,
+a1591a5e-7280-429b-bff6-a7b18c3ea4d0,1011908,28400769105,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL RUFFLES QUESO XXVL,scanned,0
+566b661a-8273-4599-95d2-e3a6def80696,1011908,26200471389,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.79,440,1,plu,1.79,CNGR ANDY CAPPS FIRE FRIES 3Z EA,scanned,0
+55636877-f521-46c1-a761-90f280faa67b,1011908,28400769228,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL CHEETOS HOT XXVL,scanned,0
+4f784874-fb35-43c2-ae8c-5e009c7e8976,1011908,16000368309,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,3.19,440,1,plu,3.19,GM BUGLES ORIGINAL 3Z EA,scanned,0
+9d3db471-1429-4313-8404-36674976f3d6,1011908,24300865404,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.99,440,1,plu,1.99,LITTLE DEBBIE GLAZED HONEY BUN EA,scanned,0
+d24d2b31-aad3-499f-b994-dc5c5967b558,1011908,70847012474,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,RCI MONSTER ZERO ULTRA 16Z CAN EA,scanned,0
+8b6e9a20-2111-4835-b300-ee08b5c3d15f,1011908,52000058024,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORDADE MIDNIGHT 28Z BOTTLE EA,scanned,0
+ecafd5ff-9668-45e2-9b12-ada58bf2e9f7,1011908,52000058024,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORDADE MIDNIGHT 28Z BOTTLE EA,scanned,0
+520c9b81-59a2-40f0-933a-39ed958f09f5,1011908,52000058024,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORDADE MIDNIGHT 28Z BOTTLE EA,scanned,0
+6396e67a-a920-434c-9b6c-576f1ef5be16,1011909,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,30.00,0,1,preFuel,,PREPAY CR #01,,
+fb4dfd1d-e477-488f-85d7-6b2e3b0b54d2,1011909,26100005738,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.29,411,1,plu,12.29,RJR NEWPORT MENTHOL 100 BX PK,scanned,0
+996acf49-9d92-4aac-b387-2c2bbf9709d5,1011910,41420115875,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,FRRA TROLLI SOUR BRITE CRWLR V,scanned,0
+9512c39f-cfe1-48a0-a29f-a1580f71bd95,1011910,24300837869,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.99,440,1,plu,1.99,LITTLE DEBBIE COSMIC BROWNIE E,scanned,0
+17ea3765-584c-4546-9a44-b44081b298fd,1011910,41420045691,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,FRRA NERDS ROPE RAINBOW .92Z E,scanned,0
+6ddeec70-2bf5-44a7-8881-b0db89587cb1,1011910,28435399780,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR PITAYA BERRY 12Z CAN EA,scanned,0
+f957635e-b7d8-4583-bac1-0c3bc17ec6d7,9056906,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,38.32,3,9.127,postFuel,4.20,Premium CR #05,,
+0c81932c-be6a-40de-8718-0a095b517921,9014960,26100005738,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.29,411,1,plu,12.29,RJR NEWPORT MENTHOL 100 BX PK,scanned,0
+623178bb-af8d-4a78-8ec1-09563bee20e4,9014960,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,30.00,3,7.144,postFuel,4.20,Premium CR #01,,
+8d67f497-75e6-456c-894d-34e2ed0ca668,1011909,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,30.00,0,1,preFuel,,PREPAY CR #01,,
+3a1d674e-23f1-4dc9-999c-b0af509dcb9f,1011909,26100005738,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.29,411,1,plu,12.29,RJR NEWPORT MENTHOL 100 BX PK,scanned,0
+bbc626d8-31d0-4fe8-923b-3d7a4032e47a,9038236,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,10.97,3,2.612,postFuel,4.20,Premium CR #03,,
+b4f2c460-c1de-4a83-b454-f6d259c6bb93,9056907,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,33.20,1,10.713,postFuel,3.10,Regular CR #05,,
+5ec89444-0bcc-4a92-9961-bc4348421acb,1011911,12000001345,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,DIET MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+f623b46e-0412-4701-817a-9057f540c637,9079848,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,26.01,1,8.392,postFuel,3.10,Regular CR #07,,
+328dca94-e63e-4bc8-8e44-e8205a5fbc55,1011912,28200009623,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.21,411,1,plu,12.21,PHMO MARLBORO MENTHOL 72 BX PK,scanned,0
+e5e44521-fb89-4a25-8800-9b3236519039,9065066,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,46.99,1,15.164,postFuel,3.10,Regular CA #06,,
+12ce3221-6d7a-4f8d-91b3-b03500afb47d,9038237,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.51,1,5.004,postFuel,3.10,Regular CR #03,,
+a259725b-c580-4f13-badf-d398cf8487f7,1011913,73100000553,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,12.44,410,1,plu,12.44,UTC COPENHAGEN WINTERGREEN POU,scanned,0
+86750e77-da74-4792-aabd-489e985071b9,9079849,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,18.95,3,4.512,postFuel,4.20,Premium CA #07,,
+cb0b4ad3-6f0e-482c-8f7b-062c2c27235b,9026812,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,54.99,1,17.746,postFuel,3.10,Regular CA #02,,
+28376cf9-c665-443f-b6ab-104c8033a0c1,1011914,817719021000,EDIBLE MERCHANDISE,8,37,Other Alternative Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.79,440,1,plu,2.79,PRVN FIT CRUNCH PEANUT BUTTER JELLY 3.1,scanned,0
+3e63547e-05ea-4ba5-b2f6-42d9daf3673d,1011914,12000230431,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,ROCKSTAR RECOVERY BERRYADE 16Z CAN EA,scanned,0
+fff51ac3-9bdf-439a-9676-e67508ce3564,1011914,12000230431,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,ROCKSTAR RECOVERY BERRYADE 16Z CAN EA,scanned,0
+e095623c-9df4-4acb-87fd-49d356e1a504,1011915,78000083408,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.29,420,1,plu,2.29,DIET DR PEPPER 20Z BOTTLE EA,scanned,0
+4e837188-b4a9-4011-a2ef-dd94328b810c,1011915,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+91081e12-e95b-4fe2-a1e5-0316a672a2db,9079850,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,43.58,1,14.061,postFuel,3.10,Regular CA #07,,
+42c5b6cb-e8da-469f-9465-965c92e4eeb6,9065067,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,31.86,1,10.28,postFuel,3.10,Regular CR #06,,
+082ebd34-8fb7-4cc0-a716-230ba0acfe22,1011916,28200004857,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.76,411,1,plu,12.76,PHMO MARLBORO MENTHOL SILVER 1,scanned,0
+210231b0-40b2-4892-9d90-d18652e71c2a,1011916,28200004857,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.76,411,1,plu,12.76,PHMO MARLBORO MENTHOL SILVER 1,scanned,0
+75f4b057-e19f-4a61-80f6-5497de15886c,1011917,12000813313,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS FRACCINO VANILLA 13.7Z B,scanned,0
+96179890-7673-4409-a628-95eff2d1d6db,1011917,872181000069,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,4.59,440,1,plu,4.59,STR FLIPZ PRETZEL CHOCOLATE 5Z,scanned,0
+d40c016b-f040-4204-b4fe-6b7e43ea98b0,9038238,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,69.93,1,22.565,postFuel,3.10,Regular CR #03,,
+e491ae1d-e445-4f88-bf7a-ae5c01a290ea,9065068,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,40.37,1,13.028,postFuel,3.10,Regular CR #06,,
+a4505de8-adcf-4f41-a000-588b9de76a0a,9014961,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.00,1,3.226,postFuel,3.10,Regular CR #01,,
+197e331a-375b-46df-87a3-8060b055acc1,1011918,26100005738,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.29,411,1,plu,12.29,RJR NEWPORT MENTHOL 100 BX PK,scanned,0
+e561536e-ce66-467e-9c0f-aa03ac9bcb8d,9079851,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,6.50,1,2.099,postFuel,3.10,Regular CA #07,,
+cffab5df-832c-4766-8fea-41661a046d6c,9026813,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,25.08,1,8.092,postFuel,3.10,Regular CA #02,,
+019bc6b9-89d2-4db5-bed5-4ce81ce97b67,1011919,52000135152,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE LEMON LIME 28Z BOTTLE EA,scanned,0
+a4dc6ce0-7f3b-43a4-92d5-179bd37fa4fb,1011919,52000135152,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE LEMON LIME 28Z BOTTLE EA,scanned,0
+33c6e223-655f-4f3b-a8fb-df59e5950a9d,1011919,52000135152,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE LEMON LIME 28Z BOTTLE EA,scanned,0
+8558767f-8d79-47a2-95dd-b9f1c4a2eec7,9038239,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,47.47,1,15.318,postFuel,3.10,Regular CR #03,,
+dc3197cf-9de4-46bc-8a00-5b642a7e151a,9079852,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,8.67,1,2.799,postFuel,3.10,Regular CR #07,,
+57c4edef-5110-4fe2-b407-03ee4fc61811,9065069,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,54.38,1,17.547,postFuel,3.10,Regular CR #06,,
+be365a6b-b881-4ee2-8d95-fd0730343f51,1011920,78000013528,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,CRUSH GRAPE 20Z BOTTLE EA,scanned,0
+fec9e12f-892a-450d-a57a-14737b6a16bf,1011920,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,25.00,0,1,preFuel,,PREPAY CR #02,,
+14a36a94-b821-4059-aa76-85be54e5b2b8,1011921,35751117004,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,3.19,440,1,plu,3.19,BON APPETIT DANISH FRENCH SWT CONCHA 5Z,scanned,0
+15226078-ab3b-443a-aa00-29e18dabec9b,1011921,83046000111,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI ICE MOUNTAIN 1L BOTTLE EA,scanned,0
+a38d5066-6c8f-474f-8a3a-2f70c147fabe,1011921,83046000111,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI ICE MOUNTAIN 1L BOTTLE EA,scanned,0
+d8d51a81-c3fa-4e95-b089-a2b768e6e68d,9056908,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,30.04,1,9.693,postFuel,3.10,Regular CR #05,,
+16acf869-6fb1-4966-a11b-2e8d5e1b0403,9047816,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,8.00,1,2.58,postFuel,3.10,Regular CR #04,,
+a437d1a4-8e28-451b-a040-39b83cbf30e4,9065070,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.00,1,6.453,postFuel,3.10,Regular CR #06,,
+465b7761-5bd0-4485-a84e-4398ae244ef1,9026814,78000013528,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,CRUSH GRAPE 20Z BOTTLE EA,scanned,0
+c4f133f7-ff81-412a-b421-1216d10bbc4e,9026814,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,25.00,1,8.067,postFuel,3.10,Regular CA #02,,
+dd5323d9-d9ec-4f58-ac6e-539167a8de33,1011920,78000013528,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,CRUSH GRAPE 20Z BOTTLE EA,scanned,0
+40086cdf-ac71-493b-b41d-e5d6ed480805,1011920,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,25.00,0,1,preFuel,,PREPAY CR #02,,
+ac02eb33-d2d1-4d0e-af60-99e4124863dd,9038240,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.57,1,5.025,postFuel,3.10,Regular CR #03,,
+40d40842-8673-461f-8ac4-10db4e985aeb,9065071,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.71,1,5.068,postFuel,3.10,Regular CR #06,,
+ebd34425-ced8-4b76-9bfd-0fffc59c1527,9026815,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,29.87,1,9.637,postFuel,3.10,Regular CR #02,,
+fbd18385-ba55-4c1f-aab0-157e33b9261a,9056909,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,110.76,1,35.742,postFuel,3.10,Regular CR #05,,
+14641afe-5cb9-4676-9919-bf8877632372,9065072,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,38.97,1,12.574,postFuel,3.10,Regular CA #06,,
+f3f9f884-2008-437d-ae41-8a7876cc39c2,1011922,889392001396,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,CELSIUS FIZZ FREE BLUE RAZZ LEMONADE 12,scanned,0
+e089520b-f31d-42a7-ac2e-1722230cfa82,1011922,889392001396,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,CELSIUS FIZZ FREE BLUE RAZZ LEMONADE 12,scanned,0
+662c625f-f441-4c63-a4cd-be79dbac05be,1011922,811374039707,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP WHITE GUMMY DEER 16Z CAN,scanned,0
+d7f1f007-7ffc-4119-acc0-f9ffa017cfa3,1011922,34000000357,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,HRSHY REESES FAST BREAK KS BAR,scanned,0
+74de3e40-29b6-4af6-9657-770401f25341,1011923,689076852531,PROPANE,12,62,Propane Exchange - Empty Cyl,Inside Sales,f,f,f,f,f,f,f,f,26.99,303,1,plu,26.99,PROPANE TANK WITH GAS EXCHANGE,key,0
+adb0553e-8420-4e57-9c65-0665d3bfbeb2,9014962,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,39.23,1,12.66,postFuel,3.10,Regular CA #01,,
+ff4a98d1-ee20-41d6-b0d2-0b626e993ab5,1011924,28200007919,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,13.77,411,1,plu,13.77,PHMO PARLIAMENT WHITE 100 BX P,scanned,0
+80e9d98d-7130-447d-983b-f614b558c750,9079853,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,31.76,1,10.247,postFuel,3.10,Regular CR #07,,
+03cedd0d-fce1-4509-b3ab-aaadd3fc1e05,9038241,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,38.62,1,12.463,postFuel,3.10,Regular CR #03,,
+fb84e3f6-da19-4aa5-b421-c6931a8740ec,1011925,25900207465,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,2.29,410,1,plu,2.29,SWISHER SWEETS CIGARILLOS 2PK,scanned,0
+29729b4c-3284-4bb7-b5d8-0ebbb7079a1e,9065074,,FUEL,1,2,Unleaded-Mid,fuel,f,f,f,f,f,f,f,f,32.89,2,9.014,postFuel,3.65,Midgrade CA #06,,
+0159c6f7-7f61-49a9-b34f-029fab6e2a90,1011926,609249900036,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN COOL MINT POUCH 6MG,scanned,0
+72e6116a-4557-4ef9-9ab7-0af702c0ca55,1011927,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,2.00,510,1,dept,2.00,Mega Lotto,,
+712887e3-4645-42bb-ab42-095658b1976a,1011927,70137839927,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,13.52,410,8,plu,1.69,BLACK AND MILD NICE ORIGINAL WOOD TIP E,scanned,0
+99bc20ab-af07-4894-94d1-8b0a9dac28ab,9056910,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,13.22,1,4.265,postFuel,3.10,Regular CR #05,,
+8e4373a9-2b3c-4fcf-a371-fd438a899240,1011928,52000050288,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE ZERO LIME CUCUMBER 28Z BOTTLE,scanned,0
+37042241-8940-4499-8e08-c313460a3cab,9038242,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.07,1,6.475,postFuel,3.10,Regular CA #03,,
+2c61e107-cff7-478c-a35e-fc3286cde61b,1011929,12000171741,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,DIET PEPSI 20Z BOTTLE EA,scanned,0
+f68e129f-f600-466c-9062-42a17d1799af,1011929,28200003843,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD KS BX PK,scanned,0
+3559ccea-22fc-4cf9-93a0-107372d3311d,9079854,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,7.90,1,2.55,postFuel,3.10,Regular CR #07,,
+d4c2aa20-3d50-4921-90d4-c93ec4abc529,1011930,52000010282,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE FROST ICY CHARGE 28Z BOTTLE EA,scanned,0
+13cfc20c-4bce-4657-a25e-933a285885c2,1011930,52000010282,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE FROST ICY CHARGE 28Z BOTTLE EA,scanned,0
+2f924877-379c-46d5-a18c-4c8426a2a5fb,1011930,52000010282,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE FROST ICY CHARGE 28Z BOTTLE EA,scanned,0
+050ffe86-ebcf-45a8-a42e-b03aa4037d8a,1011930,747804015259,EDIBLE MERCHANDISE,8,39,Commissary & Other Products,Inside Sales,f,f,f,f,f,f,f,f,5.49,500,1,plu,5.49,KITCHEN FRESH TERIYAKI BEEF CHEDR CHS C,scanned,0
+6cdef3a2-2969-48a9-aaa5-05cccf7af773,1011930,49000024692,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI DIET COKE 16.9Z BOTTLE EA,scanned,0
+9e74684e-9e2b-442d-affb-612c952e97fb,1011930,44500201826,EDIBLE MERCHANDISE,8,42,Other Dairy & Deli Products,Inside Sales,f,f,f,f,f,f,f,f,4.39,460,1,plu,4.39,TYSON HILLSHIRE SM PLATES ITAL,scanned,0
+59dd400f-1cf2-40b9-8aab-4a1cec25985d,1011930,191088113536,ON-SITE SERVICES,7,22,Cold Dispensed Beverages,Inside Sales,f,f,f,f,f,f,f,f,0.48,432,1,plu,0.48,CUP OF ICE EA,key,0
+c4decdfb-6c14-4bdb-b579-a79775a61d8c,1011931,840170618472,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,24.45,410,5,plu,4.89,VELO PLUS WILD BERRY 9MG,scanned,0
+2004efcb-ee73-4179-ad3c-e2f43a0f9c05,1011931,840170618472,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,-24.45,410,5,void plu,4.89,VELO PLUS WILD BERRY 9MG,manual,0
+8b805175-2001-4196-b097-a7c81a4e1733,1011931,840170618472,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,4.89,410,1,plu,4.89,VELO PLUS WILD BERRY 9MG,scanned,0
+091ab201-ec22-4a5f-af81-3ae58ecc5613,1011931,840170618472,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,4.89,410,1,plu,4.89,VELO PLUS WILD BERRY 9MG,scanned,0
+b74643c5-4990-4987-8053-008d3061761f,1011932,52000135169,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE FIERCE GRAPE 28Z BOTTLE EA,scanned,0
+3c79e89b-1c36-4c3e-b32a-4dcbab43da04,1011932,52000135169,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE FIERCE GRAPE 28Z BOTTLE EA,scanned,0
+ad46dca7-228b-4efc-955a-401d7208b199,1011932,52000135169,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE FIERCE GRAPE 28Z BOTTLE EA,scanned,0
+9c04df2b-11ef-467c-a118-d6f96d30e955,1011933,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #04,,
+79b90845-ed32-4e53-8c31-32da7ee36598,1011934,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #06,,
+631b5ad5-35ed-4a0c-9255-668abe8be15d,9038243,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,40.88,1,13.191,postFuel,3.10,Regular CR #03,,
+e5da9728-d7d0-4a9f-88d5-0f6c99f2887a,9047817,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.00,1,3.227,postFuel,3.10,Regular CA #04,,
+6e27a55b-c362-49a1-913d-1d65b38fd40b,1011933,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #04,,
+caac0c7d-b3ce-4084-bb00-4051e61d0ec2,9065075,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.00,1,3.227,postFuel,3.10,Regular CA #06,,
+23b61111-f47a-4830-a580-986dabdef56d,1011934,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #06,,
+d2fb13f2-671b-4fe0-b0b4-f5e7db2328ae,1011935,817719021000,EDIBLE MERCHANDISE,8,37,Other Alternative Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.79,440,1,plu,2.79,PRVN FIT CRUNCH PEANUT BUTTER JELLY 3.1,scanned,0
+4b232103-642a-49fd-a422-71aa43128f33,1011935,876063002813,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,5.19,420,1,plu,5.19,MUSCLE MILK PRO VANILLA 14Z BOTTLE EA,scanned,0
+45d0c8b9-e309-4a8e-b77d-0d37ace02041,1011935,810028293298,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,RCI GHOST SOUR PATCH RED BERRY 16Z CAN,scanned,0
+6188378c-27dc-45d3-bca1-d74b4b65884d,1011935,70462035988,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,3.79,450,1,plu,3.79,MNDLZ SWEDISH FISH 8Z PEG EA,scanned,0
+fef117f6-9faf-4b08-9e54-366c31c6ceb1,1011936,12000064494,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI DOLE LEMONADE 20Z BOTTLE EA,scanned,0
+2dd1fae9-9f36-482a-ae4e-bfc7ffd797f3,1011936,82592194152,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,5.19,420,1,plu,5.19,QTGNJ NAKED JUICE SMOOTHIE STRAWBAN 8PK,scanned,0
+5fff6448-ca74-4637-875c-8d25669a08d2,1011936,12000190063,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,DOLE TROPICAL FRUIT PUNCH 15.2,scanned,0
+d5506f85-1286-427e-b902-8894f1b2a581,1011936,810079721337,MERCHANDISE,10,48,General Merchandise,Inside Sales,f,f,f,f,f,f,f,f,19.99,400,1,plu,19.99,USB C TO USB C CABLE,scanned,0
+fa0b5c49-f0a1-4b9b-b362-4ab158fcfd99,1011936,73390055288,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,4.49,450,1,plu,4.49,TRIDENT VIBES SPRMNT RSH,scanned,0
+5b727ad3-f87c-432c-9d61-b13a8d90d2cb,1011936,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,40.00,0,1,preFuel,,PREPAY CR #07,,
+5732defe-fd9d-4313-9926-4ccec59fc48f,9079855,12000064494,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI DOLE LEMONADE 20Z BOTTLE EA,scanned,0
+37226605-0573-444c-b3a4-c0c9a11011c2,9079855,82592194152,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,5.19,420,1,plu,5.19,QTGNJ NAKED JUICE SMOOTHIE STRAWBAN 8PK,scanned,0
+241fccff-c4d5-4538-8246-cdcbab175b6e,9079855,12000190063,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,DOLE TROPICAL FRUIT PUNCH 15.2,scanned,0
+dd9e6207-00ab-4489-b1d4-7c7d7cda89c6,9079855,810079721337,MERCHANDISE,10,48,General Merchandise,Inside Sales,f,f,f,f,f,f,f,f,19.99,400,1,plu,19.99,USB C TO USB C CABLE,scanned,0
+88e345ea-d297-48bd-a069-a1927dc59176,9079855,73390055288,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,4.49,450,1,plu,4.49,TRIDENT VIBES SPRMNT RSH,scanned,0
+17c75c30-d75e-4123-bb10-54c45b4bb928,9079855,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,40.00,1,12.907,postFuel,3.10,Regular CA #07,,
+ed53b907-4e27-4bda-b2fd-46221a5f2ff7,1011936,12000064494,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI DOLE LEMONADE 20Z BOTTLE EA,scanned,0
+9e112392-5c10-4253-8671-8b2e2950baba,1011936,82592194152,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,5.19,420,1,plu,5.19,QTGNJ NAKED JUICE SMOOTHIE STRAWBAN 8PK,scanned,0
+03d59129-ab61-4aff-b41f-89cf6a9a2a85,1011936,12000190063,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,DOLE TROPICAL FRUIT PUNCH 15.2,scanned,0
+41b35476-c2a1-476c-9718-35b69a78bf13,1011936,810079721337,MERCHANDISE,10,48,General Merchandise,Inside Sales,f,f,f,f,f,f,f,f,19.99,400,1,plu,19.99,USB C TO USB C CABLE,scanned,0
+e4835b0c-943d-4b14-b5ed-79824da2dd82,1011936,73390055288,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,4.49,450,1,plu,4.49,TRIDENT VIBES SPRMNT RSH,scanned,0
+b6161b3b-5ec5-4bf7-8cef-b7de44c95b3c,1011936,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,40.00,0,1,preFuel,,PREPAY CR #07,,
+35cbf11f-7699-4698-b489-7833f6da5eda,9065076,,FUEL,1,4,Diesel,fuel,f,f,f,f,f,f,f,f,60.03,19,18.766,postFuel,3.20,Diesel CR #06,,
+16119604-83d0-4730-9f9f-9904748f4873,1011937,14100085485,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,4.59,440,1,plu,4.59,PEPFM GLD FBXCHD 6.6Z,scanned,0
+09eec279-8027-409e-9842-6730d02c9d6b,1011937,876063002806,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,5.19,420,1,plu,5.19,MUSCLE MILK PRO CHOCOLATE 14Z BOTTLE EA,scanned,0
+e1a91138-f538-4ada-b50c-4b748efad1ff,9056911,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,58.85,1,18.989,postFuel,3.10,Regular CR #05,,
+a8340ddd-0b1f-4dbe-93c3-0755047f87f2,1011938,810131952860,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP BARE KNCKLE PNCH 16Z,scanned,0
+d3cd3fe5-d00a-440a-b1bc-811a6623f70f,1011938,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #06,,
+4ad64aa0-31e9-45ca-81f0-0fa461081d96,9065077,810131952860,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP BARE KNCKLE PNCH 16Z,scanned,0
+c16dbb96-7129-4b18-b3df-e90613b21896,9065077,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.00,1,3.227,postFuel,3.10,Regular CR #06,,
+0980b9eb-9820-4a1f-a292-dcad87571605,1011938,810131952860,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP BARE KNCKLE PNCH 16Z,scanned,0
+d8db27fd-459e-46e2-847c-7378a65430fa,1011938,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #06,,
+090978ab-b663-443f-aa96-70726719fe19,9079856,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,17.13,1,5.528,postFuel,3.10,Regular CA #07,,
+8f4db416-bb38-414b-b031-9a3c829aa5d4,1011939,28400026734,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.09,440,1,plu,1.09,FRITO LAY MUNCHIES CRACKERS PEANUT BUTT,scanned,0
+b0c3afd0-231d-4f30-aed3-4e2189e5eac3,1011940,30100125211,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,0.99,440,1,plu,0.99,KLG KEEBLER CRACKER CLUB SNDWC,scanned,0
+a542c9ab-2c9c-4367-8eb9-5a7bc2420379,1011940,12000140709,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.29,420,1,plu,2.29,PEPSI WILD CHERRY 16Z CAN EA,scanned,0
+ba12d131-9a11-4f9b-8cda-e1c2a136b6a0,1011940,34000007677,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,1.49,450,1,plu,1.49,BREATHSAVERS SUGAR FREE WINTER,scanned,0
+d8534c1f-bdde-40d8-b17b-7bf84f8755e5,9079857,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,23.27,1,7.51,postFuel,3.10,Regular CR #07,,
+836a1484-3011-4adb-bfe5-85c28e261fd2,9065078,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,48.77,1,15.737,postFuel,3.10,Regular CR #06,,
+4155eeeb-912a-4b98-bedc-e93bef692f74,9079858,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,43.17,1,13.931,postFuel,3.10,Regular CR #07,,
+02678635-cee3-40ad-bf1e-b39aadfea0a1,1011941,611269818994,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL ORIGINAL 12Z CAN EA,scanned,0
+a4d59bbc-d320-4ef6-b0c4-3a2283fe9871,1011941,611269818994,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL ORIGINAL 12Z CAN EA,scanned,0
+e0eea3b6-0773-4728-b5de-e0f9e12a06b3,1011941,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #03,,
+b14586d6-42e6-4108-92a0-01e41cf00f14,1011941,12300000079,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,10.99,411,1,plu,10.99,RJR CAMEL BLUE KS BX PK,scanned,0
+20b712ba-1101-44fa-b943-36e5ecdd4663,1011941,191088113642,ON-SITE SERVICES,7,41,Bakery,Inside Sales,f,f,f,f,f,f,f,f,1.59,500,1,plu,1.59,GREBES DONUT EA,key,0
+bdec5017-c696-4c40-9898-9f0fe7d177d5,1011942,609249904416,OTHER TOBACCO PRODUCTS,5,60,Smokeless Rolls,Inside Sales,f,f,f,f,f,f,f,f,28.45,410,1,plu,28.45,SWDSH ZYN COFFEE POUCH 3MG RL,scanned,0
+8d47703e-ac27-4195-a917-39ef34d6c66b,9056912,,FUEL,1,4,Diesel,fuel,f,f,f,f,f,f,f,f,77.57,19,24.247,postFuel,3.20,Diesel CA #05,,
+79a1cd48-80e2-4373-a623-73751061420f,1011943,611269818994,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL ORIGINAL 12Z CAN EA,scanned,0
+82406ff4-8b82-4769-a6a9-227e3bd31f80,1011943,611269818994,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL ORIGINAL 12Z CAN EA,scanned,0
+2eadfd44-4438-4bbf-9910-d819ce63d74c,1011943,12300000079,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,10.99,411,1,plu,10.99,RJR CAMEL BLUE KS BX PK,scanned,0
+66e1b609-9845-4c70-abaf-ebd1d9fd89a7,1011943,191088113642,ON-SITE SERVICES,7,41,Bakery,Inside Sales,f,f,f,f,f,f,f,f,1.59,500,1,plu,1.59,GREBES DONUT EA,key,0
+f77f775e-e76b-40d7-9766-5ff720303ad5,1011943,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,6.50,3,1.547,postFuel,4.20,Premium CR #03,,
+501a6662-48f8-4af5-9a90-541e4acb98a3,1011941,611269818994,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL ORIGINAL 12Z CAN EA,scanned,0
+90ff0e55-fcbb-4b36-bcfa-5d9996895373,9056916,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,26.39,1,8.515,postFuel,3.10,Regular CR #05,,
+e6d2f390-234c-4492-8714-208c0c6e2bb5,1011941,611269818994,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL ORIGINAL 12Z CAN EA,scanned,0
+ffee2480-358c-4bca-832c-27d9b18b2d6f,1011941,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #03,,
+eba099dd-7a9f-4506-9b5c-3a55cf312b4d,1011941,12300000079,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,10.99,411,1,plu,10.99,RJR CAMEL BLUE KS BX PK,scanned,0
+788a1a4e-e8cd-4752-8622-97e384614503,1011941,191088113642,ON-SITE SERVICES,7,41,Bakery,Inside Sales,f,f,f,f,f,f,f,f,1.59,500,1,plu,1.59,GREBES DONUT EA,key,0
+69428445-13fc-4031-ae55-7377cddaf9ff,9026816,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,6.36,1,2.052,postFuel,3.10,Regular CA #02,,
+402fc088-b310-4ba8-b516-aa0cb50699e6,1011944,19800001162,MERCHANDISE,10,46,Non-Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,5.49,472,1,plu,5.49,SCJS DRANO DRAIN CLEANER LIQ 32Z EA,scanned,0
+9f7d9aaf-d590-4709-bd1a-0c8335fbad55,1011944,12000811319,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW LIVE WIRE 20Z BOTTLE EA,scanned,0
+1fe01aaa-a004-494e-832b-0413519b5d12,1011944,12000811319,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW LIVE WIRE 20Z BOTTLE EA,scanned,0
+3a44164e-6197-4730-b9d0-f7bf5edc8175,9056913,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,22.91,1,7.392,postFuel,3.10,Regular CR #05,,
+749e943c-ab94-4317-855b-31ccb095c5a9,9065079,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,21.60,1,6.969,postFuel,3.10,Regular CR #06,,
+b24d14ee-a632-42e2-9313-980a85f0cb30,1011945,810131952860,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP BARE KNCKLE PNCH 16Z,scanned,0
+45820e01-79a7-4638-b0cd-94c7f6305736,1011946,52000054903,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,GATORADE WATER 700ML BOTTLE EA,scanned,0
+2ee062f0-6a64-43ec-9e68-45dfac06270e,1011946,28435600541,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR ORANGE DREAM 12Z CAN,scanned,0
+b9582a8b-0158-4ab5-9ff2-8346bf17d69a,1011946,34000000357,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,HRSHY REESES FAST BREAK KS BAR,scanned,0
+abcb0c1d-c895-454c-a186-4268f52ab23e,1011946,722252268037,EDIBLE MERCHANDISE,8,37,Other Alternative Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.29,440,1,plu,2.29,CLIF NUT BUTTER PEANUT 1.76Z EA,scanned,0
+2edeb68c-fbaa-47f0-95b6-ec27fb57345b,1011947,611269182460,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL BLUEBERRY 12Z CAN EA,scanned,0
+e2d79cd6-c132-47f8-a3a3-fdb90f24b65e,1011948,80660957111,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,21.99,481,1,plu,21.99,MODELO 18 PK CANS EA,scanned,0
+50ebccd5-98ec-45ed-a92c-4e8cafd0db90,1011948,80660957159,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,15.99,481,1,plu,15.99,MODELO 12PK 12Z CANS,scanned,0
+724fec80-f434-489d-b267-35f2ef2914ad,1011950,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,20.00,0,1,preFuel,,PREPAY CR #04,,
+f8a189f4-c823-48ba-8391-bd4bc352b98f,1011951,609249904010,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN COFFEE POUCH 3MG EA,scanned,0
+96113f6e-b181-42ab-baa5-4d7fe36e5525,1011952,28400770569,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL DORITOS COOL RANCH XXVL,scanned,0
+de864bf5-fb4a-494d-88ce-d27f735866fc,1011952,45243023225,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI SPRECHER BLACK CHERRY 16Z CAN EA,scanned,0
+c9ee7020-65a5-4fb1-9a7c-aff84e61aeba,1011952,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,15.00,0,1,preFuel,,PREPAY CR #03,,
+d51f5b8c-7a2e-4076-8a9c-f0a4f18e3ad2,1011953,79200001650,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,WONKA SPREE ROLL 1.7Z,scanned,0
+094f2828-f690-4149-81d1-1f938cdd94f3,1011953,83783375534,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,3.39,481,1,plu,3.39,SIERRA NEVADA IPA 19.2Z CAN,scanned,0
+4387711d-aa80-415b-8b31-f72e686f5133,1011953,28200003843,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD KS BX PK,scanned,0
+8aabc6f1-4038-4954-8dcf-70469d7c0e93,9047818,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.00,1,6.453,postFuel,3.10,Regular CR #04,,
+74a9815e-cdb2-4cc0-8433-06567c69ca91,1011950,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,20.00,0,1,preFuel,,PREPAY CR #04,,
+2341ac6c-1355-44ee-8c44-e3ad85784a3f,9038245,28400770569,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL DORITOS COOL RANCH XXVL,scanned,0
+b1cc055a-cde1-4ea2-8473-bdf91c9c8c83,9038245,45243023225,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI SPRECHER BLACK CHERRY 16Z CAN EA,scanned,0
+3aed460b-2e55-4f04-aa8e-976002ec9f3d,9038245,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.00,1,4.84,postFuel,3.10,Regular CR #03,,
+2b86eb46-9116-4bee-b46a-58bfe95a7da5,1011952,28400770569,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL DORITOS COOL RANCH XXVL,scanned,0
+6c608c29-945b-4e4a-b350-d9a11642feb2,1011952,45243023225,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI SPRECHER BLACK CHERRY 16Z CAN EA,scanned,0
+9e879472-dfc7-4bca-80e2-ebbac5ca6a49,1011952,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,15.00,0,1,preFuel,,PREPAY CR #03,,
+b37d204d-ce31-40d3-b7c7-050651b6619e,9079859,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,41.29,3,9.833,postFuel,4.20,Premium CA #07,,
+2715b742-7d40-4cb3-95dd-6a656cc5243b,9047819,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,29.29,3,6.976,postFuel,4.20,Premium CR #04,,
+d673f1dd-def1-4fc1-9bfe-695a4f9ad70f,1011954,83046000135,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,0.99,420,1,plu,0.99,RCI ICE MOUNTAIN 0.5L BOTTLE EA,scanned,0
+8906e379-29da-44b6-b389-7369ecdc94cc,1011954,28200003843,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD KS BX PK,scanned,0
+1826d25c-c1d0-4af7-84f8-e33a40f60179,1011954,28200003843,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD KS BX PK,scanned,0
+0cad1155-d743-4966-9fad-fd11118dea14,1011955,22000283818,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,3.49,450,1,plu,3.49,WRG ORBT PPR ECH,scanned,0
+7a4001d2-1403-4e61-89d7-08952566f618,1011955,76840101320,EDIBLE MERCHANDISE,8,44,Packaged Ice Cream/Novelties,Inside Sales,f,f,f,f,f,f,f,f,7.99,462,1,plu,7.99,BEN AND JERRY HALF BAKED PT EA,scanned,0
+610fa537-e0c3-4e91-9a8b-c0be01f64f3d,1011955,609249907028,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN CITRUS 6MG EA,scanned,0
+c669bf4a-7c88-45aa-91e9-8ba3e9c0f773,1011955,609249907028,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN CITRUS 6MG EA,scanned,0
+fc35259b-53dd-43c8-a0d7-6062b75cce72,9056914,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,56.30,3,13.409,postFuel,4.20,Premium CA #05,,
+c59a0f08-055b-4942-a911-5b531cda3ddc,9079860,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,11.88,3,2.83,postFuel,4.20,Premium CR #07,,
+03302098-473c-41c3-9ad5-cc17401e05d1,1011956,609249901019,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN PEPPERMINT POUCH 3MG,scanned,0
+fde1b94c-4ed6-4a47-a671-cd2e7e1f16fc,1011957,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,20.00,0,1,preFuel,,PREPAY CR #04,,
+d3bdc921-6750-4714-8de6-7d58a9bf8a59,9079861,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,36.17,1,11.67,postFuel,3.10,Regular CR #07,,
+7ea0d719-6680-4384-8d60-7ebcd349f554,1011958,74570114009,EDIBLE MERCHANDISE,8,44,Packaged Ice Cream/Novelties,Inside Sales,f,f,f,f,f,f,f,f,6.99,462,1,plu,6.99,HAAGEN DAZS BUTTER PECAN 14Z E,scanned,0
+df2bf205-6124-47e2-a58a-27ddb5b7e25a,1011958,77170119979,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,1.99,411,1,plu,1.99,JB CG PPR VR ECH,scanned,0
+fc90bdfe-ed34-45a4-b986-291b035232f9,9047820,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.00,1,6.453,postFuel,3.10,Regular CR #04,,
+1af86a30-3784-4b1d-a5f2-2c8cc683c323,1011957,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,20.00,0,1,preFuel,,PREPAY CR #04,,
+e4df8b24-cd8c-4aa1-9c26-be5608d6eb5d,9038246,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,37.58,1,12.125,postFuel,3.10,Regular CR #03,,
+68ae4b52-3da5-438f-a39e-fe6b8bdb40f2,1011959,12000001291,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI 20Z BOTTLE EA,scanned,0
+db42b9e2-c23d-4c78-95df-e97bb61b6e8e,1011959,12000001291,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI 20Z BOTTLE EA,scanned,0
+2d3001b0-259f-4e66-b114-8a699fe4d42d,1011960,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,5.00,510,1,dept,5.00,Mega Lotto,,
+6301f3fa-966c-4930-a53e-e3799770fc21,1011961,73100004575,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,14.67,410,1,plu,14.67,UTC SKOAL POUCH MINT EA,scanned,0
+88f30249-69e3-4e3a-87e4-5e015a180759,1011961,73100004575,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,14.67,410,1,plu,14.67,UTC SKOAL POUCH MINT EA,scanned,0
+5448fc83-2154-4cb4-acd8-93c30cfb5556,1011962,49000024708,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI SPRITE 16.9Z BOTTLE EA,scanned,0
+c1b70f69-9615-4f7d-8a69-ababebf44ea4,1011963,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+bf198141-7d9b-4702-8ee7-1b762173cd92,1011963,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+a547f384-8229-49f6-b71a-24d9e0323bc6,1011963,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+732d8891-4159-4038-bd96-58d71fe26d6b,1011963,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+bf62ea56-2c25-45a4-9478-956344f14223,1011963,300450134042,MERCHANDISE,10,47,Health & Beauty Care,Inside Sales,f,f,f,f,f,f,f,f,8.99,540,1,plu,8.99,IMODIUM ANTI-DIARRHEAL MINT LI,scanned,0
+14233e5f-8c8e-48aa-b318-c854f198a36a,1011963,301490039045,MERCHANDISE,10,47,Health & Beauty Care,Inside Sales,f,f,f,f,f,f,f,f,4.99,540,1,plu,4.99,PEPTO BISMOL 4Z EA,scanned,0
+fc6bdb93-c423-4595-bfd3-df8ce8f151e5,1011963,34000000982,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,3.49,450,1,plu,3.49,ICE BREAKERS SOUR FRUIT TIN 1.,scanned,0
+3ebd8e94-45cc-4e2b-a71f-907b91d1257d,1011963,34000000982,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,3.49,450,1,plu,3.49,ICE BREAKERS SOUR FRUIT TIN 1.,scanned,0
+2558cc20-96a7-48ee-b354-08f5d79e4c4b,1011964,,,,13,Mega Lotto Payout,neg,f,f,f,f,f,f,f,f,-4.00,911,1,dept,4.00,Mega Lotto Payout,,
+8e53ce4e-70b4-4b49-a183-6e20d1c327f1,9079864,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,30.01,1,9.683,postFuel,3.10,Regular CA #07,,
+acdeaec5-9681-4b1c-8fbb-82343945f1f4,1011965,28200004659,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD 100 BX PK,scanned,0
+c76f248e-35a3-4cb0-9e8a-4dd84ee1c855,9038247,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,34.10,1,11.002,postFuel,3.10,Regular CR #03,,
+67ba3eae-2d00-4fb5-844b-70bc63c1368e,1011966,811374037369,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP MIAMI 16Z CAN EA,scanned,0
+b1d43dc4-f799-483d-9ac0-588baa16df4c,1011966,811374037369,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,RCI BUCKED UP MIAMI 16Z CAN EA,scanned,0
+05489847-bd35-4919-92cd-2c133848b04b,1011967,12000240751,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW BAJA CABO 20Z,scanned,0
+2ae339a3-9d79-4d10-9939-111f76ff240e,1011969,28435600510,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR PEACH RASBERRY 12Z CAN,scanned,0
+22f66a62-a147-4b68-a639-a4ac0a3d368b,1011969,73390026424,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,1.89,450,1,plu,1.89,MENTOS RAINBOW MINT ROLL 1.32Z,scanned,0
+9b347f32-94fd-4479-8d10-0d72f7aac9c2,1011969,22000008916,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,WRIGLEY EXTRA PEPPERMINT 15 PC,scanned,0
+9bc47997-8f56-490b-9ede-f119afa6a8b5,9065080,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,26.94,3,6.416,postFuel,4.20,Premium CR #06,,
+ff2ae0e0-5791-4b88-bff8-6b28004b2e47,9079865,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,46.35,1,14.956,postFuel,3.10,Regular CR #07,,
+bbde8d02-950b-4bbb-b554-401d0ed780b8,1011970,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,60.00,0,1,preFuel,,PREPAY CR #05,,
+43a6a10a-2adc-4472-853f-a7a5c8b50d58,9038248,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,4.25,3,1.013,postFuel,4.20,Premium CR #03,,
+1fd0fa89-8e60-4757-8fc2-ba816a82d002,1011972,754336024000,,,10,Instant Lotto,Inside Sales,f,f,f,f,f,f,f,f,2.00,511,1,plu,2.00,$2 CROSSWORD,scanned,0
+dda62c61-0beb-4505-a22a-25dac0120b49,1011972,754336026790,,,10,Instant Lotto,Inside Sales,f,f,f,f,f,f,f,f,5.00,511,1,plu,5.00,$5 CROSSWORD CONNECT,scanned,0
+2c9c5156-73f2-4f17-ac9a-ddaf74748254,1011972,754336026400,,,10,Instant Lotto,Inside Sales,f,f,f,f,f,f,f,f,3.00,511,1,plu,3.00,$3 CLASSIC BINGO EA,scanned,0
+8a719b46-976b-43b5-801d-f4276744cc82,1011972,754336026929,,,10,Instant Lotto,Inside Sales,f,f,f,f,f,f,f,f,2.00,511,1,plu,2.00,$2 HIT 50,scanned,0
+93b69fd4-cddf-48cd-9773-5461f4e1777d,1011973,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,33.00,1,10.647,postFuel,3.10,Regular CR #05,,
+b752e365-3758-410b-b0a4-b72c9cc63e30,1011970,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,60.00,0,1,preFuel,,PREPAY CR #05,,
+f618a7b3-32e6-4df9-8455-4d075c89cf04,1011974,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,6.00,510,1,dept,6.00,Mega Lotto,,
+6f2c469b-77b9-4506-a023-e0e9c57e07fb,9079866,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,48.18,1,15.548,postFuel,3.10,Regular CA #07,,
+99b30ac3-dca9-4242-b3b0-0986e328ff0b,9014963,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,61.03,3,14.534,postFuel,4.20,Premium CR #01,,
+6b2c19d9-2824-4e66-9851-13090d77d09a,1011975,28200003843,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD KS BX PK,scanned,0
+83121e17-1268-45ab-b710-385fd3b16d1b,1011976,49000024692,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI DIET COKE 16.9Z BOTTLE EA,scanned,0
+821a1393-9e00-4343-8d0c-0fb9f45b507d,1011976,49000024692,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI DIET COKE 16.9Z BOTTLE EA,scanned,0
+ae55065a-a32d-4e2e-bf06-c05dc76dbc3b,9079867,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.00,1,4.84,postFuel,3.10,Regular CR #07,,
+1704045d-86e1-451d-8c9a-4f230e074658,9065081,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,103.08,1,33.263,postFuel,3.10,Regular CR #06,,
+81b1a06f-b68b-40cf-8ba0-dea7215e42ec,1011977,83046000111,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI ICE MOUNTAIN 1L BOTTLE EA,scanned,0
+7c4bd979-539d-4bfd-97eb-83268e8dad3b,1011978,98100100423,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS TRIPLE SHOT ENERGY VANILLA 11,scanned,0
+0af3d225-e416-4017-be5b-07422f155bdd,1011978,98100100423,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS TRIPLE SHOT ENERGY VANILLA 11,scanned,0
+33d9978a-2d13-4cb5-9ac7-173133663f43,1011978,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #02,,
+afd681ab-558e-41a9-8cd1-ad4400f4f0e9,9038249,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,45.57,1,14.706,postFuel,3.10,Regular CR #03,,
+7da2add8-b830-45cc-9d5a-8f1cdf50ff01,1011979,98100100843,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,3.79,420,1,plu,3.79,STARBUCKS FRAPP LITE DC 9.5Z,scanned,0
+c7b20bed-cb7f-497d-940d-25beadb217e2,1011979,12000191435,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW ZERO SUGAR 20Z BOTTLE EA,scanned,0
+f92ac705-00b2-417a-91f5-ed9b01091527,1011979,38000845246,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,2.09,440,1,plu,2.09,KLG PRINGLES CHIPS ORIGINAL 2.,scanned,0
+44124c67-0469-4d0a-bf65-42dfb350292e,1011979,850089007595,MERCHANDISE,10,46,Non-Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,0.99,472,1,plu,0.99,COSMOS DOG CHBCNBNE1Z,scanned,0
+0dbc958e-666f-4997-bb78-4d2b8de69c43,1011979,850089007618,MERCHANDISE,10,46,Non-Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,0.99,472,1,plu,0.99,TRT PLNT COSMOS DOG TREATS BAKERY BONE,scanned,0
+eaa02e47-3200-44e9-a06e-fd944aa39c82,1011979,34000002030,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,HRSHY REESES STICKS WAFERS KS,scanned,0
+bfde2cd7-6b67-4344-9b08-12b679bf5ccc,9026817,98100100423,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS TRIPLE SHOT ENERGY VANILLA 11,scanned,0
+a846f9f7-0444-41e4-b010-e0db69060753,9026817,98100100423,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS TRIPLE SHOT ENERGY VANILLA 11,scanned,0
+db70614f-679b-460b-a215-643dff773ce1,9026817,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,10.00,3,2.381,postFuel,4.20,Premium CR #02,,
+5e0bacc5-9f1f-48d6-871b-b45c674d7d5f,1011978,98100100423,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS TRIPLE SHOT ENERGY VANILLA 11,scanned,0
+7dccb20f-3dd8-4ce6-aa79-0f5b474656cc,1011978,98100100423,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS TRIPLE SHOT ENERGY VANILLA 11,scanned,0
+4a97a873-4934-4cb3-901a-3a1663738241,1011978,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #02,,
+70dcd1e4-7422-450a-8144-1eba8e3101eb,9065082,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,52.82,1,17.045,postFuel,3.10,Regular CR #06,,
+597129a6-31cc-4745-8518-41e7202e1d86,1011980,28200004659,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD 100 BX PK,scanned,0
+9b498338-e830-4ae5-af2e-2278d5f099cb,1011980,12000002335,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.69,420,1,plu,3.69,MOUNTAIN DEW 2L BOTTLE EA,scanned,0
+5bf38ef7-f177-423c-bb1f-3f8cd09fd3bc,1011981,191088113079,MERCHANDISE,10,50,Bagged Ice,Inside Sales,f,f,f,f,f,f,f,f,2.79,401,1,plu,2.79,ARC 8LB ICE EA,key,0
+92edc13d-762f-4aca-a247-60e8355c6116,1011982,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+e0307f98-1e63-4a47-a5b3-849d31a2388e,1011983,70847012474,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,RCI MONSTER ZERO ULTRA 16Z CAN EA,scanned,0
+05d02c5b-d09d-4791-bbfe-cd08682293a3,1011983,70847891857,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,RCI MONSTER ULTRA STRAWBERRY DREAMS 16Z,scanned,0
+a52934e0-21a5-437b-a5ec-3cd6bfbfc5e5,1011983,22000008992,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,WRIGLEY EXTRA SPEARMINT 15 PC,scanned,0
+08df7b08-060a-43e6-af2d-dfc92c549dbb,1011983,22000008992,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,WRIGLEY EXTRA SPEARMINT 15 PC,scanned,0
+f2f933e5-fd32-4cd2-935d-dc9253991962,9065083,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,0.00,1,0,postFuel,,Regular CA #06,,
+1e335adc-e54e-4124-b149-b9d0a9a7d401,9079868,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.63,1,5.043,postFuel,3.10,Regular CA #07,,
+f122e735-df66-4dbc-9e4d-c353c940142a,9065084,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,0.00,1,0,postFuel,,Regular CA #06,,
+d26e8d41-5901-469f-a299-3ba8c6c84497,9026818,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.76,1,5.086,postFuel,3.10,Regular CR #02,,
+ad95dc1f-ec8c-4ec1-9faf-f0e46dee8241,9065085,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,24.96,1,8.053,postFuel,3.10,Regular CA #06,,
+fa4f7d62-d73b-4a8c-9a94-6da611e4e6f4,9079869,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,19.49,1,6.29,postFuel,3.10,Regular CR #07,,
+ae72922a-10ef-4253-8e4f-370b3a0c24a5,9065086,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.33,1,6.559,postFuel,3.10,Regular CA #06,,
+951269d6-ebeb-4c44-897a-92619d482655,1011984,87692017820,ALCOHOL,6,20,Alcoholic Seltzer,Inside Sales,f,f,f,f,f,f,f,f,3.29,480,1,plu,3.29,TWSTD TEA XTREME BLUE 24OZ,scanned,0
+4ac9ff79-d0fa-49cd-80c9-3ab776b057a4,1011984,87692017820,ALCOHOL,6,20,Alcoholic Seltzer,Inside Sales,f,f,f,f,f,f,f,f,3.29,480,1,plu,3.29,TWSTD TEA XTREME BLUE 24OZ,scanned,0
+fbbd5da6-7123-4fc7-b53f-8f66a5924626,1011985,78000082401,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.29,420,1,plu,2.29,DR PEPPER 20Z BOTTLE EA,scanned,0
+13e022e4-fb77-4eda-b08c-e2b375b6aca2,1011985,78000082401,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.29,420,1,plu,2.29,DR PEPPER 20Z BOTTLE EA,scanned,0
+29df93fd-e717-45eb-b7e5-38c3c4771150,1011985,28435600510,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR PEACH RASBERRY 12Z CAN,scanned,0
+867a5b56-5972-4a7f-a93d-c2d7707c9e68,9056917,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.21,1,6.52,postFuel,3.10,Regular CR #05,,
+4ecb5f34-90c5-41b5-93f5-dddd388678a1,9065087,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,18.46,1,5.957,postFuel,3.10,Regular CR #06,,
+a28add37-2b5e-4cea-8403-52e0cc1f2da0,1011986,40000004608,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,MARS SKITTLES FRUIT KS 4Z EA,scanned,0
+6da77eca-91a5-4d16-821b-6be3883158b4,1011986,83783375558,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,3.39,481,1,plu,3.39,SIERRA NEVADA BLT IPA 19.2Z CAN,scanned,0
+4504c8b2-8e50-415d-81d7-83882d968e46,1011986,83783375558,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,3.39,481,1,plu,3.39,SIERRA NEVADA BLT IPA 19.2Z CAN,scanned,0
+aa2db695-7d6e-4212-a015-2f9ac2da8185,1011986,28200004659,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,10.60,411,1,plu,12.40,PHMO MARLBORO GOLD 100 BX PK,scanned,0
+097370fc-1c20-4a49-8663-231981b1eb64,1011986,28200004659,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD 100 BX PK,scanned,0
+d8825023-bc9c-4964-9a41-78e35469888c,1011986,22000285966,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,3.49,450,1,plu,3.49,MARS SKITTLES GUMMIES WILDBERR,scanned,0
+f4724d2e-3b2c-4081-9962-8d7f8e8cda42,1011987,83046453375,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,1.89,420,1,plu,1.89,RCI ICE MOUNTAIN SPORT TOP 700ML BOTTLE,scanned,0
+b618a591-ad44-4124-aea3-3b3ca09c60b0,1011987,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #03,,
+30c52ee2-f02a-495d-849f-e8ae8662448b,9038250,83046453375,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,1.89,420,1,plu,1.89,RCI ICE MOUNTAIN SPORT TOP 700ML BOTTLE,scanned,0
+3720d3b8-fa3a-4380-8d13-e02ddeefe576,9038250,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.00,1,3.227,postFuel,3.10,Regular CR #03,,
+3dcbf132-7c0a-40c5-a7ba-a722a572a221,1011987,83046453375,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,1.89,420,1,plu,1.89,RCI ICE MOUNTAIN SPORT TOP 700ML BOTTLE,scanned,0
+5d4956cf-643d-4462-9ba5-0b410ee2511d,1011987,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #03,,
+44167b19-a9eb-449a-bca1-fd5834ad95d5,9014964,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,18.53,3,4.413,postFuel,4.20,Premium CR #01,,
+c8ced158-3230-49f7-b29e-ebf4d82d7370,9056918,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,63.74,3,15.18,postFuel,4.20,Premium CR #05,,
+736d3fd1-e95f-4b23-a390-e4d3fce3cd4e,1011988,70847012474,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,RCI MONSTER ZERO ULTRA 16Z CAN EA,scanned,0
+0efd08ac-1ec2-4860-82a9-a87b376b0769,1011989,40000004325,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,MARS MandM PEANUT SHAR,scanned,0
+9d55db37-6882-45ed-b666-08263e8598da,1011989,34000490066,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,HRSHY REESES CRISPY CRUNCHY KS,scanned,0
+b4f197f3-4a76-4bab-8195-a928e88683da,1011990,72554001604,EDIBLE MERCHANDISE,8,44,Packaged Ice Cream/Novelties,Inside Sales,f,f,f,f,f,f,f,f,2.59,462,1,plu,2.59,DRUM VANILLA RND 24EA,scanned,0
+8538ee16-8ed0-4c96-9f2a-1f747ed3029f,1011990,72554415166,EDIBLE MERCHANDISE,8,44,Packaged Ice Cream/Novelties,Inside Sales,f,f,f,f,f,f,f,f,2.59,462,1,plu,2.59,NESTLE OREO BAR EA,scanned,0
+09a00539-a919-4e13-ba8f-c410656829fb,9047821,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,25.45,1,8.212,postFuel,3.10,Regular CR #04,,
+f436c1b8-474b-43c0-b287-2f27110af633,1011991,79694221121,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,19.99,440,1,plu,19.99,OLD TRAPPER BEEF JERKY ORIGINA,scanned,0
+f7ac2d87-fbe7-4757-9aad-5b7b3c1155d7,1011991,28400767194,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL CHEETOS CHS PZZA PUFFS XXVL,scanned,0
+16f64fee-c9b8-492a-b959-21b44e2177f8,1011992,49000024692,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI DIET COKE 16.9Z BOTTLE EA,scanned,0
+2637a25f-3d22-472a-8178-d9615669d52d,1011992,819913012594,OTHER TOBACCO PRODUCTS,5,17,Vaping Products,Inside Sales,f,f,f,f,f,f,f,f,20.99,410,1,plu,20.99,JUUL ECIG POD MENTHOL RFL 5P 4,scanned,0
+e7361fc3-10ea-41d4-8547-30380977fce2,1011992,819913012594,OTHER TOBACCO PRODUCTS,5,17,Vaping Products,Inside Sales,f,f,f,f,f,f,f,f,20.99,410,1,plu,20.99,JUUL ECIG POD MENTHOL RFL 5P 4,scanned,0
+17c35d08-8b63-412b-91af-099412e53c68,1011993,80660957111,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,21.99,481,1,plu,21.99,MODELO 18 PK CANS EA,scanned,0
+c308193b-c448-4c89-a373-1407c512f546,1011993,17869807015,EDIBLE MERCHANDISE,8,42,Other Dairy & Deli Products,Inside Sales,f,f,f,f,f,f,f,f,2.49,460,1,plu,2.49,CMPFR FIORUCCI MOZZARELLA SALAMI 1.5Z E,scanned,0
+f6eda066-7fa1-4a63-a89b-b6c5f900242b,1011993,747804008190,EDIBLE MERCHANDISE,8,39,Commissary & Other Products,Inside Sales,f,f,f,f,f,f,f,f,6.79,500,1,plu,6.79,KITCHEN FRESH SMOKED TURKEY EA,scanned,0
+8b53e2a9-f23e-42e3-8afc-02231a29950f,9079870,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,56.18,1,18.129,postFuel,3.10,Regular CR #07,,
+12049363-78e9-4247-b70d-d5bc72d23656,1011994,28200003843,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD KS BX PK,scanned,0
+6be73116-fa08-4f78-abf5-53025730929a,1011995,45243019402,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI SPRECHER ROOT BEER 16Z CAN EA,scanned,0
+d8b2fd3d-f69c-4e90-915a-5ad60ba480b3,1011995,49000024692,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI DIET COKE 16.9Z BOTTLE EA,scanned,0
+9e1c1e9e-e9ed-49dd-8e76-28de60f3597f,1011995,840530132150,MERCHANDISE,10,51,Automotive Products,Inside Sales,f,f,f,f,f,f,f,f,4.99,100,1,plu,4.99,RCI PRIME GUARD PURPLE WASHER SOLVENT E,scanned,0
+01d358ce-239d-467d-ad86-87aef9148b30,9038251,,FUEL,1,2,Unleaded-Mid,fuel,f,f,f,f,f,f,f,f,37.27,2,10.214,postFuel,3.65,Midgrade CR #03,,
+41757188-c93a-4e26-aafb-1f2600881b11,9026819,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,40.13,3,9.557,postFuel,4.20,Premium CR #02,,
+5e8d94f4-cee0-4f6e-ad9a-1dae3b34e0a9,9065089,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,27.82,1,8.976,postFuel,3.10,Regular CR #06,,
+02e64eae-5542-4144-9c38-cd70900749f0,9038252,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,35.79,1,11.549,postFuel,3.10,Regular CR #03,,
+06f3e376-3427-42ab-90ab-1a8a6d9fb051,1011996,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,45.00,0,1,preFuel,,PREPAY CR #02,,
+252a8af0-63b7-4489-82b9-04fe9d32e5ff,9079871,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,53.16,1,17.153,postFuel,3.10,Regular CR #07,,
+9266080f-9854-486d-a92f-ea032612fb06,1011997,191088113451,ON-SITE SERVICES,7,21,Hot Dispensed Beverages,Inside Sales,f,f,f,f,f,f,f,f,0.89,431,1,plu,0.89,COFF REFILL EA,key,0
+01809386-1ae3-4e88-a3da-b36100044b30,1011998,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #06,,
+486c56e8-f8fb-442f-a1f2-4695eb30276b,1011999,12000811319,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW LIVE WIRE 20Z BOTTLE EA,scanned,0
+2a19790a-1f66-413c-80b3-38054f77de43,1011999,12000811319,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW LIVE WIRE 20Z BOTTLE EA,scanned,0
+3e4b3c01-0afb-452e-8590-d6efb871c80d,9026820,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,45.00,3,10.716,postFuel,4.20,Premium CR #02,,
+fe58d11d-3e02-4001-b07c-b478452a5491,1011996,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,45.00,0,1,preFuel,,PREPAY CR #02,,
+5874797c-f3fe-4015-87a5-26977ffc785c,9065090,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.00,1,3.227,postFuel,3.10,Regular CR #06,,
+65eaa736-ee29-4d05-9f57-cf66be9f567e,1011998,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #06,,
+7ba45a8f-511e-4ffd-bc8a-464ee608f7a0,1012000,80660956053,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,9.59,481,1,plu,9.59,CORONA 6PK 12Z BOTTLES,scanned,0
+4cec1be1-31e0-44d1-888c-030a38dca97a,1012000,80660957111,ALCOHOL,6,19,Beer,Inside Sales,f,f,f,f,f,f,f,f,21.99,481,1,plu,21.99,MODELO 18 PK CANS EA,scanned,0
+6fd3e2b3-916c-4710-82ca-566bdf4b9e6e,1012001,689076852531,PROPANE,12,62,Propane Exchange - Empty Cyl,Inside Sales,f,f,f,f,f,f,f,f,26.99,303,1,plu,26.99,PROPANE TANK WITH GAS EXCHANGE,key,0
+02a2d2c4-7688-4c10-aec3-657cd1ef4a77,9038253,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,19.76,1,6.376,postFuel,3.10,Regular CR #03,,
+6c77724c-2f97-4773-b77a-50102711102b,1012002,17082889669,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.49,440,1,plu,2.49,JACK LINKS BEEF STICKS TERIYAK,scanned,0
+6c7c1a72-17cf-4b70-8ad3-a2721d974921,1012002,17082005380,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,8.99,440,1,plu,8.99,JACK LINKS ORIG THICK CUT STEA,scanned,0
+5279f0cd-a637-4704-8f09-b0f5dde95b7c,1012003,611269101713,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,RED BULL SUGAR FREE 8.4Z CAN EA,scanned,0
+20138301-bbd4-436b-805b-6d47efadc000,1012003,609249902023,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN SPEARMINT POUCH 6MG,scanned,0
+cd110bad-955f-456b-85af-a32b4f3894f2,9065091,,FUEL,1,2,Unleaded-Mid,fuel,f,f,f,f,f,f,f,f,35.30,2,9.674,postFuel,3.65,Midgrade CR #06,,
+ed85d8bd-945b-44ac-bbbf-77eb7216f649,1012004,34000002993,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,HRSHY WHATCHAMACALLIT KS2.6 EA,scanned,0
+ba76b992-943c-4472-812b-d9085c278f5d,1012004,83046453375,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,1.89,420,1,plu,1.89,RCI ICE MOUNTAIN SPORT TOP 700ML BOTTLE,scanned,0
+bf2bb9bd-de2b-475d-a921-bcda30a9d61c,1012004,83046453375,BEVERAGE MERCHANDISE,9,27,Water,Inside Sales,f,f,f,f,f,f,f,f,1.89,420,1,plu,1.89,RCI ICE MOUNTAIN SPORT TOP 700ML BOTTLE,scanned,0
+effd837e-5e1b-4180-88db-3b2fc79fc1f1,1012005,60534840237,MERCHANDISE,10,51,Automotive Products,Inside Sales,f,f,f,f,f,f,f,f,16.99,100,1,plu,16.99,RCI BRGS STRTN 2GL GAS CAN EA,scanned,0
+803e982a-3e89-4fc2-b4ba-4ee2ba32f706,9026821,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,31.24,1,10.082,postFuel,3.10,Regular CR #02,,
+3a7c76ec-71fd-4955-995e-f01321c8b01c,9065092,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,6.59,1,2.126,postFuel,3.10,Regular CR #06,,
+ef0a0e86-7014-49c5-80c5-10df32a10de9,1012006,28400768207,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL FUNYUNS XXVL,scanned,0
+7a328afb-5ed3-4524-a56f-f704df1a3d60,1012006,611269991000,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.09,420,1,plu,3.09,RED BULL ORIGINAL 8.4Z CAN EA,scanned,0
+73b8cd47-0cfe-45fc-8198-645c4526e94d,1012006,28400769075,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL RUFFLES CHDR SR CRM XXVL,scanned,0
+43a95772-d4f8-4a1e-af75-93cfe973af76,1012007,754336026394,,,10,Instant Lotto,Inside Sales,f,f,f,f,f,f,f,f,1.00,511,1,plu,1.00,$1 TWENTY ONE EA,scanned,0
+1587b653-1248-4132-8e1d-f1dd56fc5135,9079872,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,29.50,1,9.838,postFuel,3.00,Regular CR #07,,
+59307b3a-dfe2-46cb-bc2f-594507c439f9,1012008,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,15.00,0,1,preFuel,,PREPAY CR #02,,
+0a0fdd48-9bd5-48bd-8f10-9fdf94ee3ce3,1012009,840170618021,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,4.89,410,1,plu,4.89,VELO PLUS WINTERGREEN 6MG,scanned,0
+55c206e8-fc23-4334-8bea-1d8aa9804ee7,9026822,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.00,1,4.84,postFuel,3.10,Regular CA #02,,
+18a57b13-4b6d-4960-b7d7-2f8db1e03d2b,1012008,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,15.00,0,1,preFuel,,PREPAY CR #02,,
+aec5d660-1f9b-4b0b-a44f-357168637373,1012010,609249920225,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,5.69,410,1,plu,5.69,SWDSH ZYN CHILL POUCH 6MG EA,scanned,0
+7d96b1d2-7918-46b6-91a8-43a43d31a0cc,9014965,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,18.83,1,6.076,postFuel,3.10,Regular CR #01,,
+30ac03d0-501e-434d-a924-6326e39b85b0,9065093,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,42.55,1,13.731,postFuel,3.10,Regular CR #06,,
+c7691e44-ad26-4863-b338-1f954e12fd0d,9079873,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,34.72,1,11.204,postFuel,3.10,Regular CR #07,,
+cccfd442-b557-4fd1-b3d6-8990b1892452,9079874,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,0.00,1,0,postFuel,,Regular CR #07,,
+be5363d4-29b3-4bc4-a81f-6fdacda62646,9079875,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,28.89,1,9.323,postFuel,3.10,Regular CR #07,,
+90e71a78-0933-49e6-adf8-61d9790c4bd1,9056919,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,38.32,1,12.366,postFuel,3.10,Regular CR #05,,
+dc0c9a0f-f725-4608-859d-6b55099b2034,1012011,74329123382,EDIBLE MERCHANDISE,8,45,Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,1.79,471,1,plu,1.79,OH SNAP PICKLE DILLY BITES 3.5,scanned,0
+6c7743cf-94d5-44e9-986e-caacdb54f694,1012011,82000776888,ALCOHOL,6,20,Alcoholic Seltzer,Inside Sales,f,f,f,f,f,f,f,f,2.39,480,1,plu,2.39,SMIRNOFF ICE SMASH LEMON LIME 16Z CAN E,scanned,0
+f7b95992-1d23-4c10-a1dd-c287b0979713,1012011,82000776888,ALCOHOL,6,20,Alcoholic Seltzer,Inside Sales,f,f,f,f,f,f,f,f,2.39,480,1,plu,2.39,SMIRNOFF ICE SMASH LEMON LIME 16Z CAN E,scanned,0
+8ca8aab4-66b2-4155-8673-cf4653d8006f,1012012,611269002706,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL SUMMER WP 12Z CAN EA,scanned,0
+e367ebf9-7743-4ed6-8b2b-32cee714363e,1012013,12000028472,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS DOUBLESHOT COFFEE 15Z CAN EA,scanned,0
+991cb809-261d-4cf1-997d-1f9bd6fde471,1012013,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #01,,
+bc038729-993a-4d0a-b27d-21ef0ef9c66d,9014966,12000028472,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS DOUBLESHOT COFFEE 15Z CAN EA,scanned,0
+526eb127-6e8b-44bc-aea8-64c348c7c2bd,9014966,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.00,1,3.227,postFuel,3.10,Regular CR #01,,
+cf7756ca-bf93-4693-84eb-84d9a7370f87,1012013,12000028472,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS DOUBLESHOT COFFEE 15Z CAN EA,scanned,0
+b60f43a7-5a5a-483c-a58a-bb60afe1dff2,1012013,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #01,,
+33c86ab2-269b-41f5-8dbb-113a51b45828,9065094,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,38.41,1,12.393,postFuel,3.10,Regular CR #06,,
+0dcc6b0d-19ad-448a-9c6c-bc6127760c71,9026823,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,57.70,1,18.62,postFuel,3.10,Regular CR #02,,
+c03c6f27-0b52-4939-8b29-5620164f531c,9079876,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,33.16,1,10.699,postFuel,3.10,Regular CR #07,,
+06af21e7-4689-4c9d-941c-e891a94cc372,1012015,20709012302,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,2.99,450,1,plu,2.99,FRRA TROLLI SOUR BRITE CRAWLER,scanned,0
+e9eeaa43-33ee-4d3a-bcfb-ace7eb893882,1012015,34000214624,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,3.49,440,1,plu,3.49,HRSHY HERSHEY PRETZELS CKES N,scanned,0
+083efd10-db9d-4473-9abc-10160adcc957,9047822,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,47.41,1,15.3,postFuel,3.10,Regular CR #04,,
+89471ca5-ed66-4b5b-aef0-c5fd8abe929c,1012016,849819000722,BEVERAGE MERCHANDISE,9,26,Juice/Juice Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.29,420,1,plu,1.29,RCI NATURES TWST STRW LMN 16.9Z,scanned,0
+b545c1b2-9fab-4a3e-a35b-a148b3d12d92,1012017,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,30.00,0,1,preFuel,,PREPAY CR #01,,
+6b287aa3-1892-41be-8b2c-265766f5a36e,1012018,52000707786,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PROPEL KIWI STRAWBERRY 20Z BOTTLE EA,scanned,0
+63fc6157-d9c4-4b11-99ba-e46fd293ea1c,1012018,28435600428,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR TROPICAL DREAMER 12Z CAN EA,scanned,0
+d54e999f-53e6-4598-a8bb-8085fcf18153,1012018,28435600510,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR PEACH RASBERRY 12Z CAN,scanned,0
+0e6d9695-c78d-4c82-a45d-9bf93a2baa0b,1012018,73309200228,MERCHANDISE,10,50,Bagged Ice,Inside Sales,f,f,f,f,f,f,f,f,5.79,401,1,plu,5.79,HOME CITY ICE 22LB EA,key,0
+442028ac-719d-4546-9337-4d0db2658a57,9014967,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,30.00,1,9.68,postFuel,3.10,Regular CR #01,,
+1f16fcf3-d6ba-4645-b80c-c74c674e8486,1012017,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,30.00,0,1,preFuel,,PREPAY CR #01,,
+03a1394e-45ee-4b83-8bb9-f83969df78f7,1012019,28400770644,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL DORITOS DNMTA CHL LMN XXVL,scanned,0
+d32bf657-c6cb-45e0-ab03-69bea41d1537,9056920,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,28.33,1,9.142,postFuel,3.10,Regular CR #05,,
+a994eba3-954c-44a3-a903-b882a496105b,9047825,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,41.00,1,13.231,postFuel,3.10,Regular CR #04,,
+47b1dd56-705a-4d3e-8fce-093e9bdd72e3,9056921,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,13.61,1,4.393,postFuel,3.10,Regular CA #05,,
+0351aa15-39fb-48d4-871b-1a5e0ed9a768,1012020,79694332155,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,14.99,440,1,plu,14.99,OLD TRAPPER DELI BEEF STICK JALAPENO 15,scanned,0
+c36f7533-f880-425a-b6c9-00bf675fa75e,1012020,888109050047,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.79,440,1,plu,2.79,HSTSS HOSTESS DONETTES POWDERE,scanned,0
+348235af-1587-47b5-bd87-5f986c79c622,1012020,44000002114,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,0.99,440,1,plu,0.99,MNDLZ NABISCO RITZ CRACKERS CH,scanned,0
+1af3f89d-aa7f-4bc8-b8c6-73512c230280,1012020,98100100843,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,3.79,420,1,plu,3.79,STARBUCKS FRAPP LITE DC 9.5Z,scanned,0
+2bd3c58f-6d44-4bd5-a001-bf969c2fe2ac,1012020,611269133448,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,5.99,420,1,plu,5.99,RED BULL ORIGINAL 20Z CAN EA,scanned,0
+df5c0d29-7536-4541-bd87-53ec05025f93,1012020,98100100409,BEVERAGE MERCHANDISE,9,29,Ready-To-Drink Coffee,Inside Sales,f,f,f,f,f,f,f,f,4.19,420,1,plu,4.19,STARBUCKS TRIPLE SHOT ENERGY MOCHA 11Z,scanned,0
+46f98f78-0ed5-4355-be37-a53b97c28b0a,1012020,12000240751,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW BAJA CABO 20Z,scanned,0
+d4709264-8bb6-4247-a4d8-0f9c930dcfb9,1012020,12000043000,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.79,420,1,plu,2.79,MOUNTAIN DEW KS BLCK CHRY 16Z CAN,scanned,0
+bc824141-e7d8-4af2-bc69-825d390fadc6,1012020,720495902350,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,2.79,440,1,plu,2.79,UTZ TGI FRIDAYS POTATO SKINS C,scanned,0
+3aaccb48-27e8-40bd-89c5-5be1fec85605,9079877,,FUEL,1,2,Unleaded-Mid,fuel,f,f,f,f,f,f,f,f,29.87,2,8.187,postFuel,3.65,Midgrade CR #07,,
+1eda7ae8-193a-412a-9aaa-a55e96f66e5f,9047826,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.50,1,5,postFuel,3.10,Regular CR #04,,
+c28d9f5f-32a7-403b-b00a-77893ec4e20d,9065095,,FUEL,1,4,Diesel,fuel,f,f,f,f,f,f,f,f,175.00,19,54.705,postFuel,3.20,Diesel CR #06,,
+15d2d53a-4c8f-4c1d-80bf-b3a0ee05c2d3,9026824,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,48.90,3,11.645,postFuel,4.20,Premium CR #02,,
+d4573494-a3f3-49ba-9b99-b1b94970d0fa,1012021,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,5.00,510,1,dept,5.00,Mega Lotto,,
+38fc3d4e-5b24-4bda-b57f-1a9e9aa3f3af,9014968,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,43.00,1,13.874,postFuel,3.10,Regular CR #01,,
+842eab3c-9321-498d-ba1a-07295dfe7a4a,1012022,,,,13,Mega Lotto Payout,neg,f,f,f,f,f,f,f,f,-2.00,911,1,dept,2.00,Mega Lotto Payout,,
+df7843b0-7286-4652-b81d-c2ff49cfdd83,1012023,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,2.00,510,1,dept,2.00,Mega Lotto,,
+ef04013b-dd61-4019-9f82-c01e34936113,1012024,815800020024,EDIBLE MERCHANDISE,8,36,Meat Snacks,Inside Sales,f,f,f,f,f,f,f,f,7.99,440,1,plu,7.99,DUKE SHRT GRN CHILE5Z,scanned,0
+7d50b548-ab6e-445e-a30b-dbdbc5408ba1,1012024,611269002065,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL SF RED 12Z CAN EA,scanned,0
+442c5bfa-bc8e-43b7-959c-d6628542fa6c,1012025,,,,13,Mega Lotto Payout,neg,f,f,f,f,f,f,f,f,-1.00,911,1,dept,1.00,Mega Lotto Payout,,
+3964f1a7-69cf-42ee-a194-c41b6bec3f00,1012026,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,1.00,510,1,dept,1.00,Mega Lotto,,
+a338b8ef-c1fb-49bd-9ba3-4cc433a7bd94,1012027,70847027324,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,RCI MONSTER ULTRA VIOLET 16Z CAN EA,scanned,0
+c2052e97-52cb-4e78-8819-44fe58e1f57f,1012027,70847012474,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,RCI MONSTER ZERO ULTRA 16Z CAN EA,scanned,0
+b525f190-cb45-4646-bff8-044c38a0b25e,1012027,70847027324,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,RCI MONSTER ULTRA VIOLET 16Z CAN EA,scanned,0
+465607cb-9a71-40e1-b1cd-a1d96adb986e,1012027,52000047042,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.59,420,1,plu,3.59,GATORADE ZERO COOL BLUE 28Z BOTTLE EA,scanned,0
+787670f1-5945-43dc-94e4-fcac5f234b1d,9014969,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,53.99,3,12.859,postFuel,4.20,Premium CA #01,,
+9d7ed52e-0374-4fe8-a2e3-ff0132445a6a,9065096,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,46.08,1,14.87,postFuel,3.10,Regular CR #06,,
+3c9fae53-d6f8-4209-aa8d-80da4cdf9bf9,1012028,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,9.00,510,1,dept,9.00,Mega Lotto,,
+65f4392b-d9ce-4961-ae42-1aee1f4a832d,1012029,689076852531,PROPANE,12,62,Propane Exchange - Empty Cyl,Inside Sales,f,f,f,f,f,f,f,f,53.98,303,2,plu,26.99,PROPANE TANK WITH GAS EXCHANGE,key,0
+2ef6e3d9-c014-44b0-85c9-67f82f09d512,1012030,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+cb56a81d-bb9c-4f1d-8729-53851ab5aa3a,1012030,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+2c9b69f5-124e-4964-9b43-fa889db3f17e,1012031,24300865404,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.99,440,1,plu,1.99,LITTLE DEBBIE GLAZED HONEY BUN EA,scanned,0
+48214e95-e9f7-4053-ae5e-cc138c29ff8d,9047827,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,49.37,1,15.931,postFuel,3.10,Regular CR #04,,
+55bc256c-7efc-4780-bac8-838badd145da,1012032,78000013283,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,CRUSH ORANGE 20Z BOTTLE EA,scanned,0
+e68104b1-6150-4309-989a-ead613e73715,1012032,49000024708,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI SPRITE 16.9Z BOTTLE EA,scanned,0
+5b87367c-46bc-4496-bfcf-8114e76bbdfb,1012032,49000024708,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,1.99,420,1,plu,1.99,RCI SPRITE 16.9Z BOTTLE EA,scanned,0
+bd15a02c-0f0e-4ee5-87ae-8e4d10f84965,1012033,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,30.00,0,1,preFuel,,PREPAY CR #01,,
+2eea728c-6a3e-4a4b-bfcb-d16984af5e36,9079878,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,24.09,1,7.775,postFuel,3.10,Regular CR #07,,
+b7fd9889-ed3b-4c78-a1fb-bcb0bf34dca6,1012034,90500000945,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,13.68,411,1,plu,13.68,ITG SALEM GOLD MENTHOL 100 BX,scanned,0
+2898b2f0-7f26-462e-af84-ded19b1dc37b,1012034,90500000945,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,13.68,411,1,plu,13.68,ITG SALEM GOLD MENTHOL 100 BX,scanned,0
+d4348049-1a3e-4c69-9402-bc10b3e97e04,9065097,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,24.49,1,7.903,postFuel,3.10,Regular CA #06,,
+6f33db7c-9f7e-4203-8111-106ddd1385ef,9014970,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,30.00,1,9.68,postFuel,3.10,Regular CR #01,,
+ff663c64-2e8d-40f5-86ef-fad7870e6558,1012033,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,30.00,0,1,preFuel,,PREPAY CR #01,,
+a79cc08b-6447-4ceb-bd33-090171d1c6ce,1012035,72730224506,BEVERAGE MERCHANDISE,9,30,Fluid Milk Products,Inside Sales,f,f,f,f,f,f,f,f,1.99,461,1,plu,1.99,PF MLK 2% RDCE EA,scanned,0
+e3933bb0-9c66-436c-9de2-7a3ea9ff0da5,1012035,72730224506,BEVERAGE MERCHANDISE,9,30,Fluid Milk Products,Inside Sales,f,f,f,f,f,f,f,f,1.99,461,1,plu,1.99,PF MLK 2% RDCE EA,scanned,0
+be8febfa-dfe2-4541-88d2-28fc22461975,1012036,24300865411,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.99,440,1,plu,1.99,LITTLE DEBBIE ICED HONEY BUN EA,scanned,0
+a2b66889-964a-45e1-a46a-40aab4d793f5,1012037,28200003843,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO GOLD KS BX PK,scanned,0
+50c15d91-c821-45ea-aa24-0faf8e666f41,1012037,28200004017,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.76,411,1,plu,12.76,PHMO MARLBORO MENTHOL GOLD KS,scanned,0
+814a550f-6ac6-4716-830e-e7ffd42b15bd,1012038,889392000917,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,CELSIUS SPARKLING GRAPE RUSH 12Z CAN EA,scanned,0
+b7090d2b-5ecb-42ad-a83f-bbb78cc2ced5,1012038,22000004840,EDIBLE MERCHANDISE,8,32,Gum/Mints,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,ORBIT SF SPEARMINT GUM 14 PC E,scanned,0
+e044f260-50d1-4f3d-bfbf-c57370a727e9,9038254,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,31.00,1,10.002,postFuel,3.10,Regular CR #03,,
+08b78e6e-095e-450b-9796-b3ca9980c8c0,1012039,191088113079,MERCHANDISE,10,50,Bagged Ice,Inside Sales,f,f,f,f,f,f,f,f,2.79,401,1,plu,2.79,ARC 8LB ICE EA,key,0
+4305616b-6e98-42c5-8398-3dbcaae9fd17,1012039,52000049008,BEVERAGE MERCHANDISE,9,25,Sports Drink,Inside Sales,f,f,f,f,f,f,f,f,3.49,420,1,plu,3.49,GATORLYTE CHERRY LIME 20Z BOTTLE EA,scanned,0
+5260f2ef-d8ff-4382-bfb1-c36c0ff9a9aa,9047828,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,50.11,3,11.934,postFuel,4.20,Premium CR #04,,
+50a68d70-daba-4906-9c33-1c398bbf9e96,9038255,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,31.18,1,10.061,postFuel,3.10,Regular CA #03,,
+5d406dea-257c-4b86-80df-ca7df7ec1a16,1012040,34000940288,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,3.99,450,1,plu,3.99,HRSHY REESE PBC SUPR KING SIZE,scanned,0
+1b0e7432-5037-4b60-b367-1df946ae0644,1012040,28435600541,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR ORANGE DREAM 12Z CAN,scanned,0
+3b7f8c30-8996-4492-8133-eea08ae9232e,1012040,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,20.00,0,1,preFuel,,PREPAY CR #01,,
+75651f15-1144-42c2-920c-3450f5165f6d,1012040,71610496125,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,2.19,410,1,plu,2.19,DUTCH MASTERS CGRL HONEY FUSION 2PK EA,scanned,0
+223469d8-e793-4cf1-9ac1-d8093879ca0f,9065098,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,36.14,3,8.608,postFuel,4.20,Premium CR #06,,
+69bfd017-7fe7-49c0-9adc-7e6736ca49a9,9047829,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,48.34,1,15.599,postFuel,3.10,Regular CR #04,,
+75dd721d-9d2d-424a-8ca8-ab378a47d58e,9014971,34000940288,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,3.99,450,1,plu,3.99,HRSHY REESE PBC SUPR KING SIZE,scanned,0
+3f9bd6ca-c436-4241-8336-637897b22ec6,9014971,28435600541,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR ORANGE DREAM 12Z CAN,scanned,0
+0b4e3e34-144d-4a7d-a2e0-f11f6e4a8ac0,9014971,71610496125,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,2.19,410,1,plu,2.19,DUTCH MASTERS CGRL HONEY FUSION 2PK EA,scanned,0
+c13fb85e-6901-403e-89fa-d45b90a456b4,9014971,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.00,1,6.453,postFuel,3.10,Regular CR #01,,
+a1bb0255-a60e-4947-819e-6b73e8563f18,1012040,34000940288,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,3.99,450,1,plu,3.99,HRSHY REESE PBC SUPR KING SIZE,scanned,0
+9b73569c-2d17-404f-9534-12abbf8e970b,1012040,28435600541,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.19,420,1,plu,2.19,BUBBLR ORANGE DREAM 12Z CAN,scanned,0
+43d7b6dd-c5a8-4c0c-997f-baf311f6b589,1012040,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,20.00,0,1,preFuel,,PREPAY CR #01,,
+4a925821-0771-4844-81ed-0111abd85e8d,1012040,71610496125,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,2.19,410,1,plu,2.19,DUTCH MASTERS CGRL HONEY FUSION 2PK EA,scanned,0
+ab87b74b-96bc-4f18-be5e-3e565d1c14c4,1012041,611269182460,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL BLUEBERRY 12Z CAN EA,scanned,0
+90cfaabe-2bf3-4369-9581-986c105547a6,1012041,611269182460,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.89,420,1,plu,3.89,RED BULL BLUEBERRY 12Z CAN EA,scanned,0
+031b6b43-cfcf-46ca-b4c4-07f0fc981b16,1012041,70137105299,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,1.99,410,1,plu,1.99,BLACK AND MILD CIGARS WINE WOO,scanned,0
+0cc7bb9c-533a-49d2-b212-e65413a1487c,1012041,70137105299,OTHER TOBACCO PRODUCTS,5,16,Cigars,Inside Sales,f,f,f,f,f,f,f,f,9.95,410,5,plu,1.99,BLACK AND MILD CIGARS WINE WOO,scanned,0
+1556698b-49d9-4d52-8caf-6413b42294d5,9065099,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,38.71,1,12.492,postFuel,3.10,Regular CR #06,,
+36acc37b-9dd4-4179-b840-1c7872e7873b,9079879,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,63.20,1,20.394,postFuel,3.10,Regular CR #07,,
+e2f0e643-7db0-42c1-a1f8-4f88394dd7ab,1012042,72799056360,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,4.49,450,1,plu,4.49,STCK MAMBA FRUIT CHEWS PEG BAG,scanned,0
+b1734e9d-d201-44cc-b2f2-5c620245f287,1012042,38000138973,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,3.79,440,1,plu,3.79,KLG PRINGLES CHIPS CHEDDAR SOUR CREAM 5,scanned,0
+57e09db6-b2f7-4e4c-84dd-d260848d696a,1012042,12000018800,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI MAX ZERO 20Z BOTTLE EA,scanned,0
+dbaa0b4e-b3e1-40b9-9b00-d1abea3cdc52,9056922,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,90.32,3,21.509,postFuel,4.20,Premium CR #05,,
+cc6f67e2-5942-48fe-af89-cb20ab458087,1012043,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,4.00,510,1,dept,4.00,Mega Lotto,,
+c75b4e41-fe6d-493d-bc0b-33402008164e,1012043,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,30.00,0,1,preFuel,,PREPAY CR #01,,
+08d833a8-35da-4716-9be4-ba45a48d2a4b,9047830,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,37.72,3,8.983,postFuel,4.20,Premium CR #04,,
+464b0b01-7b6a-4a0f-b207-6ea9fd29d62c,9014972,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,4.00,510,1,dept,4.00,Mega Lotto,,
+6cd9e704-6197-493e-ad6c-7037def6b703,9014972,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,30.00,1,9.68,postFuel,3.10,Regular CR #01,,
+c9e72f05-211a-4c55-ac8d-793983e73f2f,1012043,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,4.00,510,1,dept,4.00,Mega Lotto,,
+48bd4c7d-f404-4ec9-97e1-364e46d64d74,1012043,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,30.00,0,1,preFuel,,PREPAY CR #01,,
+769d6d58-150d-4b09-9902-3b902e8eee4d,9026825,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,5.59,1,1.803,postFuel,3.10,Regular CR #02,,
+0830aec8-06aa-4956-ac8c-0befbf0abb5b,1012044,12000001314,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,MOUNTAIN DEW 20Z BOTTLE EA,scanned,0
+7ec0736c-e0ff-4562-be2d-6c03b9b404c4,1012044,38000590955,EDIBLE MERCHANDISE,8,38,Packaged Sweet Snacks,Inside Sales,f,f,f,f,f,f,f,f,1.79,440,1,plu,1.79,KLG RICE KRISPIES TREATS BIG B,scanned,0
+c6f7e027-b1db-4fc3-a576-9e6023b48344,9065100,,FUEL,1,4,Diesel,fuel,f,f,f,f,f,f,f,f,75.22,19,23.515,postFuel,3.20,Diesel CR #06,,
+93fb1ebe-cd60-49fb-b432-7dc05dafbc66,9079880,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,38.70,1,12.487,postFuel,3.10,Regular CR #07,,
+de9229d3-3155-4738-90ee-92e578bfe175,9026826,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,48.22,1,15.56,postFuel,3.10,Regular CR #02,,
+71ab275c-ae23-468c-8eea-ce54b4e25ace,9079881,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,50.00,1,16.133,postFuel,3.10,Regular CR #07,,
+93fa29cd-3185-4810-bcae-ff15544b27ee,1012045,72554335358,EDIBLE MERCHANDISE,8,44,Packaged Ice Cream/Novelties,Inside Sales,f,f,f,f,f,f,f,f,3.29,462,1,plu,3.29,OREO ICE CREAM SANDW,scanned,0
+ea5291ac-5d95-4eb1-8fce-8da6a8073cd0,1012045,72554415166,EDIBLE MERCHANDISE,8,44,Packaged Ice Cream/Novelties,Inside Sales,f,f,f,f,f,f,f,f,2.59,462,1,plu,2.59,NESTLE OREO BAR EA,scanned,0
+17c4fb94-ec5f-4ca5-820d-95a5ceced7f9,9079882,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,61.47,1,19.834,postFuel,3.10,Regular CA #07,,
+b506ac5f-d9d4-4779-8bc8-e30578a830f1,1012046,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,6.00,510,1,dept,6.00,Mega Lotto,,
+d82e7dcd-7148-4e10-aab1-a83eba356128,9079883,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.04,1,6.466,postFuel,3.10,Regular CR #07,,
+eb8e73ae-a734-47ed-aeab-b4ec07a9fb53,1012047,840170618472,OTHER TOBACCO PRODUCTS,5,15,Smokeless,Inside Sales,f,f,f,f,f,f,f,f,4.89,410,1,plu,4.89,VELO PLUS WILD BERRY 9MG,scanned,0
+6b061a3b-e784-4e21-bf74-6156270c8d64,1012048,28200004789,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,10.60,411,1,plu,12.40,PHMO MARLBORO SILVER 100 BX PK,scanned,0
+142f1dbf-70af-41dc-80e1-ae1f5973847e,1012048,28200004789,CIGARETTES,4,14,Cigarettes,Inside Sales,f,f,f,f,f,f,f,f,12.40,411,1,plu,12.40,PHMO MARLBORO SILVER 100 BX PK,scanned,0
+d1269268-3b47-4e6d-abdc-2310d177aade,9026827,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,29.37,1,9.478,postFuel,3.10,Regular CR #02,,
+5eb477ea-6d61-400b-a4c8-da84d3c71cc6,9038256,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,20.13,1,6.496,postFuel,3.10,Regular CR #03,,
+9dfababc-be32-4dcc-a074-f1abf480b556,1012049,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #06,,
+23e32483-61d0-4e42-97e5-4aa6609183ac,9056923,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,13.66,1,4.408,postFuel,3.10,Regular CA #05,,
+293af315-2e1c-452c-bf9b-521e276af30c,9065101,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,10.00,3,2.381,postFuel,4.20,Premium CA #06,,
+85be4fb8-bff1-43b2-a99e-1383df459be2,1012049,,FUEL DEPOSIT,9999,9999,FUEL DEPOSIT,fuel,f,f,f,f,f,f,f,f,10.00,0,1,preFuel,,PREPAY CR #06,,
+67f8d8c6-2526-4e55-844e-02d79e36a398,9014973,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,18.40,1,5.938,postFuel,3.10,Regular CA #01,,
+234997ea-1e0a-4faa-a867-c9ba4671c271,9047831,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,15.30,1,4.937,postFuel,3.10,Regular CR #04,,
+57077fc8-6a64-4aaf-b7b4-9e852ccf0600,9038257,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,40.43,1,13.045,postFuel,3.10,Regular CR #03,,
+be9ec29e-b389-4b92-81bd-4ba912ab3b62,1012050,,,,11,Mega Lotto,Inside Sales,f,f,f,f,f,f,f,f,12.00,510,1,dept,12.00,Mega Lotto,,
+e71db9c0-4a8a-49c6-9cf1-623c8fbc9faf,1012051,28400768917,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL CHEETOS CRUNCHY XXVL,scanned,0
+7f5ec784-e074-4b1a-8eb4-f8d337084ce6,1012051,28400769655,EDIBLE MERCHANDISE,8,33,Potato Chips,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL LAYS SLT VNGR XXVL,scanned,0
+7b73b6b9-1fdd-463c-b319-cd5456d1381f,9038258,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,47.00,1,15.165,postFuel,3.10,Regular CA #03,,
+507a53a9-1ff2-469a-98a7-f26eed8b225b,1012052,12000030659,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI REAL SUGAR 20Z BOTTLE EA,scanned,0
+e8fd2516-b520-43a9-8c7b-4e9b72260224,1012052,12000030659,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.69,420,1,plu,2.69,PEPSI REAL SUGAR 20Z BOTTLE EA,scanned,0
+ac559b05-7bfc-4c2a-98e6-cc8c554ef95f,1012052,71720531303,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,TTSRLL CHARLESTON CHEW VANILLA,scanned,0
+7c3030c9-7e9b-4786-af8f-5e8cf7e85e2b,1012052,71720531303,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,TTSRLL CHARLESTON CHEW VANILLA,scanned,0
+c1e1e16d-7859-4b94-b8eb-9df7194a3bc1,1012052,71720531105,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,TTSRLL CHARLESTON CHEW CHOCOLA,scanned,0
+396347ff-3b65-4614-9a5c-61186923d985,1012052,71720531105,EDIBLE MERCHANDISE,8,31,Candy,Inside Sales,f,f,f,f,f,f,f,f,1.99,450,1,plu,1.99,TTSRLL CHARLESTON CHEW CHOCOLA,scanned,0
+e2211983-cbd6-4639-96ad-46fe1656d486,9047832,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,16.77,1,5.411,postFuel,3.10,Regular CR #04,,
+941df1a9-4463-4ecd-9030-db83f23e5e42,9014974,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,38.06,1,12.28,postFuel,3.10,Regular CA #01,,
+ceaa8bcc-4ec7-4380-b544-3d1e788046db,1012053,12000809941,BEVERAGE MERCHANDISE,9,24,Carbonated Soft Drinks,Inside Sales,f,f,f,f,f,f,f,f,9.99,420,1,plu,9.99,PEPSI 12PK 12Z CANS EA,scanned,0
+d42bd80c-2c5d-48e9-a3b0-f7ba17186ff9,1012054,28400766982,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL DORITOS TNGY GLDN SRCHA XXVL,scanned,0
+7fb12a23-e393-40af-a76f-bdfe9ac69169,1012054,28400768214,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.69,440,1,plu,2.69,FL FUNYUNS HOT XXVL,scanned,0
+e9768d9f-34f0-4cdb-89a1-53ff9d733ba0,1012054,889392001396,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,2.99,420,1,plu,2.99,CELSIUS FIZZ FREE BLUE RAZZ LEMONADE 12,scanned,0
+e2dc171f-f442-4242-ab62-be34a86a42cc,1012054,852480007112,BEVERAGE MERCHANDISE,9,28,Energy Drinks,Inside Sales,f,f,f,f,f,f,f,f,3.29,420,1,plu,3.29,CELSIUS BLUE CRUSH 16Z CAN EA,scanned,0
+f4544a7b-afae-4e47-a829-81a03c72ef16,1012055,70330665958,MERCHANDISE,10,48,General Merchandise,Inside Sales,f,f,f,f,f,f,f,f,3.99,400,1,plu,3.99,DJEEP LIGHTER EA,scanned,0
+48132ddc-b3f3-43a7-9e08-c00957001761,1012055,70330665958,MERCHANDISE,10,48,General Merchandise,Inside Sales,f,f,f,f,f,f,f,f,3.99,400,1,plu,3.99,DJEEP LIGHTER EA,scanned,0
+acda5357-373d-408b-a578-1fc3c59940ac,9065103,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,23.97,1,7.736,postFuel,3.10,Regular CR #06,,
+720591a1-e968-4228-b16f-dd427deff8af,9065105,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,23.22,1,7.494,postFuel,3.10,Regular CR #06,,
+45700349-6e87-44db-ab40-7e85e0994977,9065106,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,18.24,1,5.887,postFuel,3.10,Regular CR #06,,
+72b2d3d2-e555-442a-8f8f-1ee80926071d,1012056,24100103447,EDIBLE MERCHANDISE,8,35,Other Salty Snacks,Inside Sales,f,f,f,f,f,f,f,f,2.99,440,1,plu,2.99,KLG CHEEZ IT GROOVES CHEDDAR R,scanned,0
+709d2db7-8a1a-4c58-9494-72522f7ade59,1012056,74329123382,EDIBLE MERCHANDISE,8,45,Edible Grocery,Inside Sales,f,f,f,f,f,f,f,f,1.79,471,1,plu,1.79,OH SNAP PICKLE DILLY BITES 3.5,scanned,0
+d448fbc8-9abd-41ef-805f-e19a900098f2,9079884,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,17.17,1,5.54,postFuel,3.10,Regular CR #07,,
+a40b2e09-f2b5-424d-ae56-e7c94984e129,9079885,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,37.94,1,12.242,postFuel,3.10,Regular CR #07,,
+ad0a8d43-d840-4cac-875e-f22438e069d0,9038259,,FUEL,1,3,Unleaded-Premium,fuel,f,f,f,f,f,f,f,f,69.49,3,16.548,postFuel,4.20,Premium CR #03,,
+f08ab372-1d71-4238-aa03-8b21fc9afb4d,9014975,,FUEL,1,1,Unleaded-Regular,fuel,f,f,f,f,f,f,f,f,10.02,1,3.234,postFuel,3.10,Regular CR #01,,
