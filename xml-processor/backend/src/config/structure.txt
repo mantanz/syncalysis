@@ -1,0 +1,134 @@
+c4c-xml-processor/
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── database.js
+│   │   │   └── config.js
+│   │   ├── models/
+│   │   │   ├── index.js
+│   │   │   ├── salesTransaction.js
+│   │   │   ├── transactionLineItem.js
+│   │   │   ├── payment.js
+│   │   │   ├── store.js
+│   │   │   ├── departments.js
+│   │   │   ├── pricebook.js
+│   │   │   ├── transactionEventLog.js
+│   │   │   ├── transactionLoyalty.js
+│   │   │   ├── promotions.js
+│   │   │   └── posDeviceTerminal.js
+│   │   ├── processors/
+│   │   │   ├── index.js
+│   │   │   ├── cpjProcessor.js          # Main transaction data
+│   │   │   ├── sumProcessor.js          # Summary data
+│   │   │   ├── hrsProcessor.js          # Hourly data
+│   │   │   ├── lytProcessor.js          # Layout data
+│   │   │   ├── tpmProcessor.js          # Terminal data
+│   │   │   ├── fgmProcessor.js          # Fuel data
+│   │   │   ├── ismProcessor.js          # Item data
+│   │   │   ├── msmProcessor.js          # Mix/match data
+│   │   │   ├── mcmProcessor.js          # Mix/category data
+│   │   │   └── pricebookProcessor.js    # Pricebook data
+│   │   ├── utils/
+│   │   │   ├── xmlParser.js
+│   │   │   ├── dataTransformer.js
+│   │   │   ├── logger.js
+│   │   │   └── validators.js
+│   │   ├── routes/
+│   │   │   ├── index.js
+│   │   │   ├── upload.js
+│   │   │   ├── reports.js
+│   │   │   └── analytics.js
+│   │   ├── controllers/
+│   │   │   ├── uploadController.js
+│   │   │   ├── reportController.js
+│   │   │   └── analyticsController.js
+│   │   └── app.js
+│   ├── data/
+│   │   ├── input/
+│   │   │   ├── xml/
+│   │   │   │   ├── CPJ2025-03-10-868.xml
+│   │   │   │   ├── SUM2025-03-10-868.xml
+│   │   │   │   ├── HRS2025-03-10-868.xml
+│   │   │   │   ├── LYT2025-03-10-868.xml
+│   │   │   │   ├── TPM2025-03-10-868.xml
+│   │   │   │   ├── FGM2025-03-10-868.xml
+│   │   │   │   ├── ISM2025-03-10-868.xml
+│   │   │   │   ├── MSM2025-03-10-868.xml
+│   │   │   │   └── MCM2025-03-10-868.xml
+│   │   │   ├── csv/
+│   │   │   │   ├── pricebook.csv
+│   │   │   │   └── fieldMapping.csv
+│   │   │   └── processed/
+│   │   └── logs/
+│   ├── package.json
+│   ├── .env.example
+│   └── README.md
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── common/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   ├── Loading.jsx
+│   │   │   │   └── ErrorBoundary.jsx
+│   │   │   ├── upload/
+│   │   │   │   ├── FileUpload.jsx
+│   │   │   │   ├── UploadProgress.jsx
+│   │   │   │   └── ProcessingStatus.jsx
+│   │   │   ├── reports/
+│   │   │   │   ├── SalesReport.jsx
+│   │   │   │   ├── ItemReport.jsx
+│   │   │   │   ├── RebateReport.jsx
+│   │   │   │   └── PromotionReport.jsx
+│   │   │   ├── analytics/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── Charts.jsx
+│   │   │   │   └── Metrics.jsx
+│   │   │   └── data/
+│   │   │       ├── DataTable.jsx
+│   │   │       ├── FilterPanel.jsx
+│   │   │       └── ExportButton.jsx
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Upload.jsx
+│   │   │   ├── Reports.jsx
+│   │   │   ├── Analytics.jsx
+│   │   │   └── Settings.jsx
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   ├── uploadService.js
+│   │   │   └── reportService.js
+│   │   ├── utils/
+│   │   │   ├── constants.js
+│   │   │   ├── helpers.js
+│   │   │   └── formatters.js
+│   │   ├── styles/
+│   │   │   ├── index.css
+│   │   │   ├── components.css
+│   │   │   └── variables.css
+│   │   ├── App.jsx
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+├── shared/
+│   ├── constants/
+│   │   ├── tableMappings.js
+│   │   ├── fieldMappings.js
+│   │   └── dataTypes.js
+│   └── utils/
+│       ├── validators.js
+│       └── formatters.js
+├── docs/
+│   ├── API.md
+│   ├── DEPLOYMENT.md
+│   └── DEVELOPMENT.md
+├── scripts/
+│   ├── setup-db.js
+│   ├── seed-data.js
+│   └── migrate.js
+├── package.json
+├── .gitignore
+└── README.md
