@@ -2,8 +2,8 @@ const { Sequelize } = require('sequelize');
 const logger = require('../utils/logger');
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME || 'c4c_database',
-  process.env.DB_USER || 'postgres',
+  process.env.DB_NAME || 'c4c_xml_processor',
+  process.env.DB_USER || 'eeshika',
   process.env.DB_PASSWORD || 'password',
   {
     host: process.env.DB_HOST || 'localhost',

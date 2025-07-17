@@ -230,7 +230,7 @@ class GenericProcessor {
   }
 
   isStoreData(key, value) {
-    const storeKeys = ['store', 'storeid', 'store_id', 'location', 'site'];
+    const storeKeys = ['store', 'storeid', 'location', 'site'];
     return storeKeys.some(k => key.toLowerCase().includes(k));
   }
 
@@ -350,22 +350,23 @@ class GenericProcessor {
 
   async processRebateData(rebateData, fileType, options = {}) {
     let rebateId = null;
+    let upcId = null;
     
     if (typeof rebateData === 'string' || typeof rebateData === 'number') {
       rebateId = parseInt(rebateData);
     } else if (typeof rebateData === 'object') {
       rebateId = parseInt(rebateData.id || rebateData.rebateid || rebateData.rebate_id);
+      upcId = parseInt(rebateData.upc_id || rebateData.upc) || null;
     }
 
     if (rebateId) {
       await this.ensureRebateProgramExists(rebateId, rebateData, fileType, options);
+      
+      // Create rebate UPC linkage if both rebate and UPC exist
+      if (upcId) {
+        await this.ensureRebateUPCLinkage(rebateId, upcId, options);
+      }
     }
-  }
-
-  async processLoyaltyData(loyaltyData, fileType, options = {}) {
-    // Process loyalty program data - this would typically be transaction-specific
-    // For generic processing, we just log that loyalty data was found
-    logger.info(`Loyalty data found in ${fileType} file`);
   }
 
   async ensureStoreExists(storeId, storeData, fileType, options = {}) {
@@ -430,7 +431,14 @@ class GenericProcessor {
         department_id: null,
         upc_description: `Product ${productId}`,
         cost: null,
-        retail_price: null
+        retail_price: null,
+        cost_avail_flag: 'N',
+        retail_price_avail_flag: 'N',
+        upc_source: fileType === 'pricebook' ? 'pricebook' : null,
+        created_by: 'Gunjan',
+        creation_date: new Date(),
+        modified_by: null,
+        modified_date: null
       },
       transaction: options.transaction
     });
@@ -496,6 +504,90 @@ class GenericProcessor {
     }
 
     return program;
+  }
+
+  async ensureRebateUPCLinkage(rebateId, upcId, options = {}) {
+    try {
+      const [linkage, created] = await models.RebateUPCLinkage.findOrCreate({
+        where: { 
+          rebate_id: rebateId,
+          upc_id: upcId
+        },
+        defaults: {
+          rebate_id: rebateId,
+          upc_id: upcId,
+          created_date: new Date(),
+          is_active: true
+        },
+        transaction: options.transaction
+      });
+
+      if (created) {
+        logger.info(`Created new rebate UPC linkage: Rebate ${rebateId} - UPC ${upcId}`);
+      }
+
+      return linkage;
+    } catch (error) {
+      logger.warn(`Failed to create rebate UPC linkage: ${error.message}`);
+      return null;
+    }
+  }
+
+  async processPromotionLineItem(lineItemUuid, promotionData, options = {}) {
+    const promotionId = parseInt(promotionData.id || promotionData.promotionid || promotionData.promotion_id);
+    const upcId = parseInt(promotionData.upc_id || promotionData.upc) || null;
+    
+    // Ensure promotion program exists if promotion ID is provided
+    if (promotionId) {
+      await this.ensurePromotionProgramExists(promotionId, promotionData, options);
+      
+      // Create promotion UPC linkage if both promotion and UPC exist
+      if (upcId) {
+        await this.ensurePromotionUPCLinkage(promotionId, upcId, options);
+      }
+    }
+
+    const promotionLineData = {
+      line_item_uuid: lineItemUuid,
+      promotion_id: promotionId,
+      match_price: parseFloat(promotionData.match_price) || null,
+      match_quantity: parseFloat(promotionData.match_quantity) || null,
+      mix_group_id: parseInt(promotionData.mix_group_id) || null,
+      promo_amount: parseFloat(promotionData.discount_amount || promotionData.promo_amount) || null,
+      promotion_name: promotionData.promotion_name || promotionData.name || null,
+      promotion_type: promotionData.promotion_type || promotionData.type || null
+    };
+
+    await models.PromotionsLineItem.create(promotionLineData, {
+      transaction: options.transaction
+    });
+  }
+
+  async ensurePromotionUPCLinkage(promotionId, upcId, options = {}) {
+    try {
+      const [linkage, created] = await models.PromotionUPCLinkage.findOrCreate({
+        where: { 
+          promotion_id: promotionId,
+          upc_id: upcId
+        },
+        defaults: {
+          promotion_id: promotionId,
+          upc_id: upcId,
+          created_date: new Date(),
+          is_active: true
+        },
+        transaction: options.transaction
+      });
+
+      if (created) {
+        logger.info(`Created new promotion UPC linkage: Promotion ${promotionId} - UPC ${upcId}`);
+      }
+
+      return linkage;
+    } catch (error) {
+      logger.warn(`Failed to create promotion UPC linkage: ${error.message}`);
+      return null;
+    }
   }
 }
 

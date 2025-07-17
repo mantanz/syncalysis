@@ -14,6 +14,14 @@ module.exports = (sequelize, DataTypes) => {
         key: 'line_item_uuid'
       }
     },
+    transaction_id: {
+      type: DataTypes.BIGINT,
+      allowNull: true,
+      references: {
+        model: 'sales_transaction',
+        key: 'transaction_id'
+      }
+    },
     discount_amount: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
@@ -35,6 +43,10 @@ module.exports = (sequelize, DataTypes) => {
     LoyaltyLineItems.belongsTo(models.TransactionLineItem, {
       foreignKey: 'line_item_uuid',
       as: 'lineItem'
+    });
+    LoyaltyLineItems.belongsTo(models.SalesTransaction, {
+      foreignKey: 'transaction_id',
+      as: 'transaction'
     });
   };
 

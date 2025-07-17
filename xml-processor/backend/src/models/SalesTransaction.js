@@ -112,6 +112,10 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: 'transaction_id',
       as: 'payments'
     });
+    SalesTransaction.hasMany(models.TransactionLineItemTax, {
+      foreignKey: 'transaction_id',
+      as: 'lineItemsTax'
+    });
     SalesTransaction.hasMany(models.TransactionLoyalty, {
       foreignKey: 'transaction_id',
       as: 'loyaltyPrograms'

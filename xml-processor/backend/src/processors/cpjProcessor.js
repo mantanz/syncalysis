@@ -164,19 +164,22 @@ class CPJProcessor {
         return;
       }
       console.log(transData)
-
+console.log('store');
       // Ensure store exists
       if (header.storenumber) {
         await this.ensureStoreExists(header.storenumber, { transaction });
       }
+      console.log('pos');
 
       // Ensure POS terminal exists
       if ((header.posnum || header.trticknum.posnum) && header.storenumber) {
         await this.ensurePosTerminalExists((header.posnum || header.trticknum.posnum), header.storenumber, { transaction });
       }
+      console.log('event log');
 
       // Process transaction event log
       const eventLog = await this.processTransactionEventLog(header, values, { transaction });
+      console.log('sales');
 
       // Create sales transaction
       const salesTransaction = await this.createSalesTransaction(
@@ -223,7 +226,7 @@ class CPJProcessor {
 
     const eventLogData = {
       transaction_event_log_id: parseInt(header.termmsgsn._) || Date.now(),
-      transaction_id: parseInt(header.trticknum?.trseq) || null,
+      transaction_id: parseInt(header.trticknum?.trseq) || Date.now(),
       customer_dob_entry: values.custdob?.dob || null,
       duration: parseInt(header.duration) || null,
       event_type: header.termmsgsn?.type || '',
@@ -259,7 +262,8 @@ class CPJProcessor {
       transaction_recall: transData.recalled,
       transaction_type: transData.type
     };
-
+console.log('-------------------------');
+console.log(transactionData.transaction_id);
     const [salesTransaction, created] = await models.SalesTransaction.findOrCreate({
       where: { transaction_id: transactionData.transaction_id },
       defaults: transactionData,
@@ -283,7 +287,7 @@ class CPJProcessor {
     // Ensure product exists in pricebook
     let upcId = null;
     if (lineData.trlupc) {
-      upcId = await this.ensureProductExists(lineData, departmentId, options);
+      upcId = await this.ensureProductExists(lineData, departmentId, transactionId, options);
     }
    
     const lineItemData = {
@@ -316,10 +320,10 @@ class CPJProcessor {
       transaction: options.transaction
     });
 
-    // Process tax information
-    if (lineData.trltaxes) {
-      await this.processLineItemTax(lineItem.line_item_uuid, lineData, options);
-    }
+          // Process tax information
+      if (lineData.trltaxes) {
+        await this.processLineItemTax(lineItem.line_item_uuid, lineData, transactionId, options);
+      }
 
     // Process promotions
     if (lineData.trlmixmatches?.trlmatchline) {
@@ -328,13 +332,13 @@ class CPJProcessor {
 
     // Process loyalty discounts
     if (lineData.trlolnitemdisc) {
-      await this.processLoyaltyLineItem(lineItem.line_item_uuid, lineData, options);
+      await this.processLoyaltyLineItem(lineItem.line_item_uuid, lineData, transactionId, options);
     }
 
     return lineItem;
   }
 
-  async processLineItemTax(lineItemUuid, lineData, options = {}) {
+  async processLineItemTax(lineItemUuid, lineData, transactionId, options = {}) {
     const taxData = lineData.trltaxes;
     if (!taxData) return;
     
@@ -343,6 +347,7 @@ class CPJProcessor {
     for (const tax of taxes) {
     const taxLineData = {
         line_item_uuid: lineItemUuid,
+        transaction_id: transactionId,
         tax_line_amount: parseFloat(tax.trltax?._) || null,
         tax_line_category: tax.trltax?.cat || null,
         tax_line_rate: parseFloat(tax.trlrate?._) || null,
@@ -357,10 +362,16 @@ class CPJProcessor {
 
   async processPromotionLineItem(lineItemUuid, lineData, options = {}) {
     const promotionId = parseInt(lineData.trlmixmatches?.trlmatchline?.trlpromotionid?._) || null;
+    const upcId = parseInt(lineData.trlupc) || null;
     
     // Ensure promotion program exists if promotion ID is provided
     if (promotionId) {
       await this.ensurePromotionProgramExists(promotionId, lineData.trlmixmatches?.trlmatchline, options);
+      
+      // Create promotion UPC linkage if both promotion and UPC exist
+      if (upcId) {
+        await this.ensurePromotionUPCLinkage(promotionId, upcId, options);
+      }
     }
 
     const promotionData = {
@@ -379,9 +390,10 @@ class CPJProcessor {
     });
   }
 
-  async processLoyaltyLineItem(lineItemUuid, lineData, options = {}) {
+  async processLoyaltyLineItem(lineItemUuid, lineData, transactionId, options = {}) {
     const loyaltyData = {
       line_item_uuid: lineItemUuid,
+      transaction_id: transactionId,
       discount_amount: parseFloat(lineData.trlolnitemdisc?.discamt) || null,
       quantity_applied: parseFloat(lineData.trlolnitemdisc?.qty) || null,
       tax_credit: parseFloat(lineData.trlolnitemdisc?.taxcred)
@@ -393,10 +405,6 @@ class CPJProcessor {
   }
 
   async processPayment(transactionId, paymentData, header, options = {}) {
-    console.log('------------------------------------------------------------');
-    console.log(paymentData);
-    console.log(paymentData.trppaycode);
-    console.log(paymentData.trppaycode.mop);
     const mopCode = parseInt(paymentData.trppaycode?.mop) || null;
     const paymentInfo = {
       transaction_id: transactionId,
@@ -501,7 +509,7 @@ class CPJProcessor {
     return department.department_id;
   }
 
-  async ensureProductExists(lineData, departmentId, options = {}) {
+  async ensureProductExists(lineData, departmentId, transactionId, options = {}) {
     const upcId = parseInt(lineData.trlupc) || null;
     if (!upcId) return null;
 
@@ -512,13 +520,20 @@ class CPJProcessor {
         department_id: departmentId,
         upc_description: lineData.trldesc || `Product ${upcId}`,
         cost: null,
-        retail_price: null
+        retail_price: null,
+        cost_avail_flag: 'N',
+        retail_price_avail_flag: 'N',
+        upc_source: transactionId ? transactionId.toString() : null,
+        created_by: 'Gunjan',
+        creation_date: new Date(),
+        modified_by: null,
+        modified_date: null
       },
       transaction: options.transaction
     });
 
     if (created) {
-      logger.info(`Created new product: ${upcId} - ${lineData.trldesc}`);
+      logger.info(`Created new product: ${upcId} - ${lineData.trldesc} (from transaction ${transactionId})`);
     }
 
     return product.upc_id;
@@ -530,9 +545,26 @@ class CPJProcessor {
       defaults: {
         promotion_id: promotionId,
         promotion_name: promotionData.trlmatchname || `Promotion ${promotionId}`,
-        promotion_description: promotionData.description || null,
-        promotion_type: promotionData.trlpromotionid?.promotype,
-        discount_amount: parseFloat(promotionData.trlpromoamount) || null
+        promo_desc: promotionData.description || null,
+        promo_amount: parseFloat(promotionData.trlpromoamount) || null,
+        promo_percent: null,
+        promotion_discount_method: null,
+        mfg_multi_pack_flag: false,
+        outlet_multi_pack_flag: false,
+        tob_promo_flag: false,
+        effective_start_date: null,
+        effective_end_date: null,
+        manufacturer_name: null,
+        mfg_multi_pack_qty: null,
+        mfg_promo_desc: null,
+        outlet_multi_pack_qty: null,
+        provider_name: null,
+        store_pays_amount: null,
+        store_pays_disc_type: null,
+        store_pays_percent: null,
+        vendor_pays_amount: null,
+        vendor_pays_disc_type: null,
+        vendor_pays_percent: null
       },
       transaction: options.transaction
     });
@@ -567,6 +599,60 @@ class CPJProcessor {
     }
 
     return program;
+  }
+
+  async ensurePromotionUPCLinkage(promotionId, upcId, options = {}) {
+    try {
+      const [linkage, created] = await models.PromotionUPCLinkage.findOrCreate({
+        where: { 
+          promotion_id: promotionId,
+          upc_id: upcId
+        },
+        defaults: {
+          promotion_id: promotionId,
+          upc_id: upcId,
+          created_date: new Date(),
+          is_active: true
+        },
+        transaction: options.transaction
+      });
+
+      if (created) {
+        logger.info(`Created new promotion UPC linkage: Promotion ${promotionId} - UPC ${upcId}`);
+      }
+
+      return linkage;
+    } catch (error) {
+      logger.warn(`Failed to create promotion UPC linkage: ${error.message}`);
+      return null;
+    }
+  }
+
+  async ensureRebateUPCLinkage(rebateId, upcId, options = {}) {
+    try {
+      const [linkage, created] = await models.RebateUPCLinkage.findOrCreate({
+        where: { 
+          rebate_id: rebateId,
+          upc_id: upcId
+        },
+        defaults: {
+          rebate_id: rebateId,
+          upc_id: upcId,
+          created_date: new Date(),
+          is_active: true
+        },
+        transaction: options.transaction
+      });
+
+      if (created) {
+        logger.info(`Created new rebate UPC linkage: Rebate ${rebateId} - UPC ${upcId}`);
+      }
+
+      return linkage;
+    } catch (error) {
+      logger.warn(`Failed to create rebate UPC linkage: ${error.message}`);
+      return null;
+    }
   }
 
   parseDateTime(dateString) {

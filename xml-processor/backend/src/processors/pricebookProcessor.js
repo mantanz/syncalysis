@@ -211,7 +211,14 @@ class PricebookProcessor {
           department_id: productData.departmentId,
           upc_description: productData.description,
           cost: productData.cost,
-          retail_price: productData.retailPrice
+          retail_price: productData.retailPrice,
+          cost_avail_flag: (productData.cost && productData.cost > 0) ? 'Y' : 'N',
+          retail_price_avail_flag: (productData.retailPrice && productData.retailPrice > 0) ? 'Y' : 'N',
+          upc_source: 'pricebook',
+          created_by: 'Gunjan',
+          creation_date: new Date(),
+          modified_by: null,
+          modified_date: null
         },
         transaction
       });
@@ -221,8 +228,16 @@ class PricebookProcessor {
         const updateData = {};
         if (productData.description) updateData.upc_description = productData.description;
         if (productData.departmentId) updateData.department_id = productData.departmentId;
-        if (productData.cost !== null) updateData.cost = productData.cost;
-        if (productData.retailPrice !== null) updateData.retail_price = productData.retailPrice;
+        if (productData.cost !== null) {
+          updateData.cost = productData.cost;
+          updateData.cost_avail_flag = (productData.cost && productData.cost > 0) ? 'Y' : 'N';
+        }
+        if (productData.retailPrice !== null) {
+          updateData.retail_price = productData.retailPrice;
+          updateData.retail_price_avail_flag = (productData.retailPrice && productData.retailPrice > 0) ? 'Y' : 'N';
+        }
+        updateData.modified_by = 'Gunjan';
+        updateData.modified_date = new Date();
 
         if (Object.keys(updateData).length > 0) {
           await product.update(updateData, { transaction });

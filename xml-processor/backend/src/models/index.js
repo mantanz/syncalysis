@@ -16,6 +16,8 @@ const PromotionsLineItem = require('./PromotionsLineItem');
 const PromotionsProgramDetails = require('./PromotionsProgramDetails');
 const RebateProgramDetails = require('./RebateProgramDetails');
 const TransactionLoyalty = require('./TransactionLoyalty');
+const PromotionUPCLinkage = require('./PromotionUPCLinkage');
+const RebateUPCLinkage = require('./RebateUPCLinkage');
 
 // Initialize models
 const models = {
@@ -32,7 +34,9 @@ const models = {
   PromotionsLineItem: PromotionsLineItem(sequelize, DataTypes),
   PromotionsProgramDetails: PromotionsProgramDetails(sequelize, DataTypes),
   RebateProgramDetails: RebateProgramDetails(sequelize, DataTypes),
-  TransactionLoyalty: TransactionLoyalty(sequelize, DataTypes)
+  TransactionLoyalty: TransactionLoyalty(sequelize, DataTypes),
+  PromotionUPCLinkage: PromotionUPCLinkage(sequelize, DataTypes),
+  RebateUPCLinkage: RebateUPCLinkage(sequelize, DataTypes)
 };
 
 // Define associations
