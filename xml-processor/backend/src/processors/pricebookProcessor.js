@@ -214,7 +214,7 @@ class PricebookProcessor {
           retail_price: productData.retailPrice,
           cost_avail_flag: (productData.cost && productData.cost > 0) ? 'Y' : 'N',
           retail_price_avail_flag: (productData.retailPrice && productData.retailPrice > 0) ? 'Y' : 'N',
-          upc_source: 'pricebook',
+          upc_source: 'Manual',
           created_by: 'Gunjan',
           creation_date: new Date(),
           modified_by: null,

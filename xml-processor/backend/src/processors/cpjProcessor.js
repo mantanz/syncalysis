@@ -156,30 +156,27 @@ class CPJProcessor {
       const paylines = transData.trpaylines || {};
       const loyalty = transData.trloyalty || {};
 
-      // Only process "network sale" and "sale" transaction types
+      // Process "network sale", "sale", "nosale", "refund sale", and "void" transaction types
       const transactionType = transData.type || '';
-      if (transactionType !== 'network sale' && transactionType !== 'sale') {
+      const allowedTypes = ['network sale', 'sale', 'nosale', 'refund sale', 'void'];
+      if (!allowedTypes.includes(transactionType)) {
         logger.info(`Skipping transaction type: ${transactionType}`);
         await transaction.commit();
         return;
       }
       console.log(transData)
-console.log('store');
       // Ensure store exists
       if (header.storenumber) {
         await this.ensureStoreExists(header.storenumber, { transaction });
       }
-      console.log('pos');
 
       // Ensure POS terminal exists
       if ((header.posnum || header.trticknum.posnum) && header.storenumber) {
         await this.ensurePosTerminalExists((header.posnum || header.trticknum.posnum), header.storenumber, { transaction });
       }
-      console.log('event log');
 
       // Process transaction event log
       const eventLog = await this.processTransactionEventLog(header, values, { transaction });
-      console.log('sales');
 
       // Create sales transaction
       const salesTransaction = await this.createSalesTransaction(
@@ -194,7 +191,7 @@ console.log('store');
       if (lines.trline) {
         const lineItems = Array.isArray(lines.trline) ? lines.trline : [lines.trline];
         for (const lineItem of lineItems) {
-          await this.processTransactionLineItem(salesTransaction.transaction_id, lineItem, { transaction });
+          await this.processTransactionLineItem(salesTransaction.transaction_id, salesTransaction.sales_transaction_unique_id, lineItem, { transaction });
         }
       }
 
@@ -202,13 +199,13 @@ console.log('store');
       if (paylines.trpayline) {
         const payments = Array.isArray(paylines.trpayline) ? paylines.trpayline : [paylines.trpayline];
         for (const payment of payments) {
-          await this.processPayment(salesTransaction.transaction_id, payment, header, { transaction });
+          await this.processPayment(salesTransaction.transaction_id, salesTransaction.sales_transaction_unique_id, payment, header, { transaction });
         }
       }
 
       // Process loyalty programs
       if (loyalty.trloyaltyprogram) {
-        await this.processLoyaltyProgram(salesTransaction.transaction_id, loyalty, { transaction });
+        await this.processLoyaltyProgram(salesTransaction.transaction_id, salesTransaction.sales_transaction_unique_id, loyalty, { transaction });
       }
 
       await transaction.commit();
@@ -224,14 +221,20 @@ console.log('store');
       return null;
     }
 
+    // Compute transaction_event_log_id as <termMsgSN term= + - + termMsgSN>
+    const termMsgSN = header.termmsgsn?._ || '';
+    const termValue = header.termmsgsn?.term || '';
+    const transactionEventLogId = `${termValue}-${termMsgSN}`;
+
     const eventLogData = {
-      transaction_event_log_id: parseInt(header.termmsgsn._) || Date.now(),
-      transaction_id: parseInt(header.trticknum?.trseq) || Date.now(),
-      customer_dob_entry: values.custdob?.dob || null,
+      transaction_event_log_id: transactionEventLogId,
       duration: parseInt(header.duration) || null,
       event_type: header.termmsgsn?.type || '',
-      global_unique_identifier: header.uniqueid || null,
-      verifone_transaction_sn: parseInt(header.truniquesn) || null
+      verifone_transaction_serial_number: parseInt(header.truniquesn) || null,
+      customer_dob_entry_method: values.custdob?.dobEntryMeth || null,
+      customer_dob: values.custdob?._ || null,
+      customer_age: values.custdob?.custAge || null,
+      terminal_serial_number: header.termmsgsn?._ || null
     };
 
     const [eventLog, created] = await models.TransactionEventLog.findOrCreate({
@@ -245,27 +248,33 @@ console.log('store');
 
   async createSalesTransaction(transData, header, values, eventLogId, options = {}) {
     const transactionData = {
-      transaction_id: parseInt(header.trticknum?.trseq) || Date.now(),
+      sales_transaction_unique_id: header.uniqueid || Date.now(),
+      transaction_id: parseInt(header.trticknum?.trseq) || null,
       store_id: header.storenumber || null,
       register_id: parseInt(header.trticknum.posnum) || parseInt(header.posnum),
       transaction_event_log_id: eventLogId,
       cashier_session: parseInt(header.cashier?.period),
       employee_id: parseInt(header.cashier?.sysid),
       employee_name: header.cashier?._ || null,
+      cashier_system_id: parseInt(header.cashier?.sysid) || null,
       food_stamp_eligible_total: values.trfstmp?.trfstmptot ? parseFloat(values.trfstmp?.trfstmptot) : null,
       grand_totalizer: parseFloat(values.trgtotalizer),
-      has_transaction_id: parseInt(header.trticknum?.trseq) ? true : false,
       total_amount: parseFloat(values.trtotwtax),
       total_no_tax: parseFloat(values.trtotnotax),
       total_tax_amount: parseFloat(values.trtottax),
       transaction_datetime: this.parseDateTime(header.date),
-      transaction_recall: transData.recalled,
-      transaction_type: transData.type
+      transaction_type: transData.type,
+      original_register_id: parseInt(header.troriginalticknum?.posnum) || null,
+      original_transaction_id: parseInt(header.troriginalticknum?.trseq) || null,
+      is_fuel_prepay: transData.fuelPrepay === 'true' || transData.fuelPrepay === true,
+      is_fuel_prepay_completion: transData.fuelPrepayCompletion === 'true' || transData.fuelPrepayCompletion === true,
+      is_rollback: transData.rollback === 'true' || transData.rollback === true,
+      is_suspended: transData.suspended === 'true' || transData.suspended === true,
+      was_recalled: transData.recalled === 'true' || transData.recalled === true
     };
-console.log('-------------------------');
-console.log(transactionData.transaction_id);
+    
     const [salesTransaction, created] = await models.SalesTransaction.findOrCreate({
-      where: { transaction_id: transactionData.transaction_id },
+      where: { sales_transaction_unique_id: transactionData.sales_transaction_unique_id },
       defaults: transactionData,
       transaction: options.transaction
     });
@@ -277,7 +286,7 @@ console.log(transactionData.transaction_id);
     return salesTransaction;
   }
 
-  async processTransactionLineItem(transactionId, lineData, options = {}) {
+  async processTransactionLineItem(transactionId, salesTransactionUniqueId, lineData, options = {}) {
     // Ensure department exists
     let departmentId = null;
     if (lineData.trldept?.number || lineData.trldept) {
@@ -292,6 +301,7 @@ console.log(transactionData.transaction_id);
    
     const lineItemData = {
       transaction_id: transactionId,
+      sales_transaction_unique_id: salesTransactionUniqueId,
       upc_id: upcId,
       category_name: lineData.trlcat?._ || null,
       category_number: parseInt(lineData.trlcat?.number) || null,
@@ -322,7 +332,7 @@ console.log(transactionData.transaction_id);
 
           // Process tax information
       if (lineData.trltaxes) {
-        await this.processLineItemTax(lineItem.line_item_uuid, lineData, transactionId, options);
+        await this.processLineItemTax(lineItem.line_item_uuid, lineData, transactionId, salesTransactionUniqueId, options);
       }
 
     // Process promotions
@@ -332,13 +342,13 @@ console.log(transactionData.transaction_id);
 
     // Process loyalty discounts
     if (lineData.trlolnitemdisc) {
-      await this.processLoyaltyLineItem(lineItem.line_item_uuid, lineData, transactionId, options);
+      await this.processLoyaltyLineItem(lineItem.line_item_uuid, lineData, transactionId, salesTransactionUniqueId, options);
     }
 
     return lineItem;
   }
 
-  async processLineItemTax(lineItemUuid, lineData, transactionId, options = {}) {
+  async processLineItemTax(lineItemUuid, lineData, transactionId, salesTransactionUniqueId, options = {}) {
     const taxData = lineData.trltaxes;
     if (!taxData) return;
     
@@ -348,6 +358,7 @@ console.log(transactionData.transaction_id);
     const taxLineData = {
         line_item_uuid: lineItemUuid,
         transaction_id: transactionId,
+        sales_transaction_unique_id: salesTransactionUniqueId,
         tax_line_amount: parseFloat(tax.trltax?._) || null,
         tax_line_category: tax.trltax?.cat || null,
         tax_line_rate: parseFloat(tax.trlrate?._) || null,
@@ -390,10 +401,11 @@ console.log(transactionData.transaction_id);
     });
   }
 
-  async processLoyaltyLineItem(lineItemUuid, lineData, transactionId, options = {}) {
+  async processLoyaltyLineItem(lineItemUuid, lineData, transactionId, salesTransactionUniqueId, options = {}) {
     const loyaltyData = {
       line_item_uuid: lineItemUuid,
       transaction_id: transactionId,
+      sales_transaction_unique_id: salesTransactionUniqueId,
       discount_amount: parseFloat(lineData.trlolnitemdisc?.discamt) || null,
       quantity_applied: parseFloat(lineData.trlolnitemdisc?.qty) || null,
       tax_credit: parseFloat(lineData.trlolnitemdisc?.taxcred)
@@ -404,15 +416,16 @@ console.log(transactionData.transaction_id);
     });
   }
 
-  async processPayment(transactionId, paymentData, header, options = {}) {
+  async processPayment(transactionId, salesTransactionUniqueId, paymentData, header, options = {}) {
     const mopCode = parseInt(paymentData.trppaycode?.mop) || null;
     const paymentInfo = {
       transaction_id: transactionId,
+      sales_transaction_unique_id: salesTransactionUniqueId,
       authorization_code: parseInt(paymentData.trpcardinfo?.trpcauthcode) || null,
       cc_name: paymentData.trpcardinfo?.trpcccname._ || null,
       mop_amount: parseFloat(paymentData.trpamt) || null,
       mop_code: mopCode,
-      payment_entry_method: (mopCode === 1 ? paymentData.trppaycode?._ : paymentData.trpcardinfo?.trpcentrymeth) || null,
+      payment_entry_method: paymentData.trppaycode?._ || null,
       payment_timestamp: (mopCode === 1 ? this.parseDateTime(header.date) : this.parseDateTime(paymentData.trpcardinfo?.trpcauthdatetime)) || null,
       payment_type: paymentData.type || null
     };
@@ -421,13 +434,14 @@ console.log(transactionData.transaction_id);
     });
   }
 
-  async processLoyaltyProgram(transactionId, loyaltyData, options = {}) {
+  async processLoyaltyProgram(transactionId, salesTransactionUniqueId, loyaltyData, options = {}) {
     // Process transaction-level loyalty data
     const loyaltyProgram = loyaltyData.trloyaltyprogram || loyaltyData;
     
     if (loyaltyProgram) {
       const transactionLoyaltyData = {
       transaction_id: transactionId,
+      sales_transaction_unique_id: salesTransactionUniqueId,
         loyalty_account_number: loyaltyProgram.trloaccount || null,
         loyalty_auto_discount: parseFloat(loyaltyProgram.trloautodisc),
         loyalty_customer_discount: parseFloat(loyaltyProgram.trlocustdisc),
@@ -520,11 +534,11 @@ console.log(transactionData.transaction_id);
         department_id: departmentId,
         upc_description: lineData.trldesc || `Product ${upcId}`,
         cost: null,
-        retail_price: null,
+        retail_price: parseFloat(lineData.trlunitprice) || null,
         cost_avail_flag: 'N',
-        retail_price_avail_flag: 'N',
+        retail_price_avail_flag: lineData.trlunitprice ? 'Y' : 'N',
         upc_source: transactionId ? transactionId.toString() : null,
-        created_by: 'Gunjan',
+        created_by: 'TLOG',
         creation_date: new Date(),
         modified_by: null,
         modified_date: null
@@ -658,13 +672,15 @@ console.log(transactionData.transaction_id);
   parseDateTime(dateString) {
     if (!dateString) return null;
     try {
-      // Handle various date formats
+      // Handle various date formats without timezone conversion
       if (typeof dateString === 'string') {
-        // ISO format
-        if (dateString.includes('T') || dateString.includes('Z')) {
-          return new Date(dateString);
+        // If it's an ISO format with timezone info, parse it as local time
+        if (dateString.includes('T')) {
+          // Remove timezone indicators to treat as local time
+          const localDateString = dateString.replace(/[Zz]$/, '').replace(/[+-]\d{2}:?\d{2}$/, '');
+          return new Date(localDateString);
         }
-        // MM/DD/YYYY or similar formats
+        // For other formats, parse as local time
         return new Date(dateString);
       }
       return new Date(dateString);

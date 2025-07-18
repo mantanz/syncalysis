@@ -16,10 +16,14 @@ module.exports = (sequelize, DataTypes) => {
     },
     transaction_id: {
       type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    sales_transaction_unique_id: {
+      type: DataTypes.TEXT,
       allowNull: true,
       references: {
         model: 'sales_transaction',
-        key: 'transaction_id'
+        key: 'sales_transaction_unique_id'
       }
     },
     tax_line_amount: {
@@ -47,6 +51,9 @@ module.exports = (sequelize, DataTypes) => {
       },
       {
         fields: ['transaction_id']
+      },
+      {
+        fields: ['sales_transaction_unique_id']
       }
     ]
   });
@@ -57,7 +64,7 @@ module.exports = (sequelize, DataTypes) => {
       as: 'lineItem'
     });
     TransactionLineItemTax.belongsTo(models.SalesTransaction, {
-      foreignKey: 'transaction_id',
+      foreignKey: 'sales_transaction_unique_id',
       as: 'transaction'
     });
   };

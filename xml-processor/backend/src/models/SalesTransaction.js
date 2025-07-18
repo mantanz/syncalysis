@@ -1,9 +1,13 @@
 module.exports = (sequelize, DataTypes) => {
   const SalesTransaction = sequelize.define('SalesTransaction', {
-    transaction_id: {
-      type: DataTypes.DECIMAL,
+    sales_transaction_unique_id: {
+      type: DataTypes.TEXT,
       primaryKey: true,
       allowNull: false
+    },
+    transaction_id: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
     },
     store_id: {
       type: DataTypes.STRING,
@@ -22,7 +26,7 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     transaction_event_log_id: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.TEXT,
       allowNull: true,
       references: {
         model: 'transaction_event_log',
@@ -41,6 +45,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: true
     },
+    cashier_system_id: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
     food_stamp_eligible_total: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
@@ -48,11 +56,6 @@ module.exports = (sequelize, DataTypes) => {
     grand_totalizer: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
-    },
-    has_transaction_id: {
-      type: DataTypes.BOOLEAN,
-      allowNull: true,
-      defaultValue: true
     },
     total_amount: {
       type: DataTypes.DECIMAL(10, 2),
@@ -70,13 +73,42 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: true
     },
-    transaction_recall: {
-      type: DataTypes.TEXT,
-      allowNull: true
-    },
     transaction_type: {
       type: DataTypes.TEXT,
       allowNull: true
+    },
+    original_register_id: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    original_transaction_id: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    is_fuel_prepay: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    is_fuel_prepay_completion: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    is_rollback: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    is_suspended: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    was_recalled: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
     }
   }, {
     tableName: 'sales_transaction',
@@ -87,6 +119,9 @@ module.exports = (sequelize, DataTypes) => {
       },
       {
         fields: ['transaction_datetime']
+      },
+      {
+        fields: ['transaction_id']
       }
     ]
   });
@@ -100,25 +135,33 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: 'register_id',
       as: 'terminal'
     });
+    SalesTransaction.belongsTo(models.PosDeviceTerminal, {
+      foreignKey: 'original_register_id',
+      as: 'original_terminal'
+    });
     SalesTransaction.belongsTo(models.TransactionEventLog, {
       foreignKey: 'transaction_event_log_id',
       as: 'eventLog'
     });
     SalesTransaction.hasMany(models.TransactionLineItem, {
-      foreignKey: 'transaction_id',
+      foreignKey: 'sales_transaction_unique_id',
       as: 'lineItems'
     });
     SalesTransaction.hasMany(models.Payment, {
-      foreignKey: 'transaction_id',
+      foreignKey: 'sales_transaction_unique_id',
       as: 'payments'
     });
     SalesTransaction.hasMany(models.TransactionLineItemTax, {
-      foreignKey: 'transaction_id',
+      foreignKey: 'sales_transaction_unique_id',
       as: 'lineItemsTax'
     });
     SalesTransaction.hasMany(models.TransactionLoyalty, {
-      foreignKey: 'transaction_id',
+      foreignKey: 'sales_transaction_unique_id',
       as: 'loyaltyPrograms'
+    });
+    SalesTransaction.hasMany(models.LoyaltyLineItems, {
+      foreignKey: 'sales_transaction_unique_id',
+      as: 'loyaltyLineItems'
     });
   };
 

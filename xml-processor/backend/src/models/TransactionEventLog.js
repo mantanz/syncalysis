@@ -1,13 +1,9 @@
 module.exports = (sequelize, DataTypes) => {
   const TransactionEventLog = sequelize.define('TransactionEventLog', {
     transaction_event_log_id: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.TEXT,
       primaryKey: true,
       allowNull: false
-    },
-    customer_dob_entry: {
-      type: DataTypes.TEXT,
-      allowNull: true
     },
     duration: {
       type: DataTypes.DECIMAL,
@@ -17,11 +13,23 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: true
     },
-    global_unique_identifier: {
+    verifone_transaction_serial_number: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    customer_dob_entry_method: {
       type: DataTypes.TEXT,
       allowNull: true
     },
-    verifone_transaction_sn: {
+    customer_dob: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    customer_age: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    terminal_serial_number: {
       type: DataTypes.DECIMAL,
       allowNull: true
     }
@@ -29,13 +37,6 @@ module.exports = (sequelize, DataTypes) => {
     tableName: 'transaction_event_log',
     timestamps: false
   });
-
-  // TransactionEventLog.associate = (models) => {
-  //   TransactionEventLog.belongsTo(models.SalesTransaction, {
-  //     foreignKey: 'transaction_id',
-  //     as: 'transaction'
-  //   });
-  // };
 
   return TransactionEventLog;
 }; 

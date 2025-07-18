@@ -8,10 +8,14 @@ module.exports = (sequelize, DataTypes) => {
     },
     transaction_id: {
       type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    sales_transaction_unique_id: {
+      type: DataTypes.TEXT,
       allowNull: true,
       references: {
         model: 'sales_transaction',
-        key: 'transaction_id'
+        key: 'sales_transaction_unique_id'
       }
     },
     loyalty_account_number: {
@@ -44,13 +48,16 @@ module.exports = (sequelize, DataTypes) => {
     indexes: [
       {
         fields: ['transaction_id']
+      },
+      {
+        fields: ['sales_transaction_unique_id']
       }
     ]
   });
 
   TransactionLoyalty.associate = (models) => {
     TransactionLoyalty.belongsTo(models.SalesTransaction, {
-      foreignKey: 'transaction_id',
+      foreignKey: 'sales_transaction_unique_id',
       as: 'transaction'
     });
   };

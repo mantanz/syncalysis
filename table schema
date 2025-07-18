@@ -11,16 +11,20 @@ create table public.departments (
 create table public.loyalty_line_items (
   line_loyalty_uuid uuid not null default gen_random_uuid (),
   line_item_uuid uuid null,
+  transaction_id numeric null,
+  sales_transaction_unique_id text null,
   discount_amount numeric(10, 2) null,
   quantity_applied numeric null,
   tax_credit numeric(10, 2) null,
   constraint loyalty_line_items_pkey primary key (line_loyalty_uuid),
-  constraint loyalty_line_items_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid)
+  constraint loyalty_line_items_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid),
+  constraint loyalty_line_items_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id)
 ) TABLESPACE pg_default;
 
 create table public.payment (
   payment_uuid uuid not null default gen_random_uuid (),
   transaction_id numeric null,
+  sales_transaction_unique_id text null,
   authorization_code numeric null,
   cc_name text null,
   mop_amount numeric(10, 2) null,
@@ -29,10 +33,11 @@ create table public.payment (
   payment_timestamp timestamp with time zone null,
   payment_type text null,
   constraint payment_pkey primary key (payment_uuid),
-  constraint payment_transaction_id_fkey foreign KEY (transaction_id) references sales_transaction (transaction_id)
+  constraint payment_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id)
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_payment_transaction on public.payment using btree (transaction_id) TABLESPACE pg_default;
+create index IF not exists idx_payment_sales_transaction_unique_id on public.payment using btree (sales_transaction_unique_id) TABLESPACE pg_default;
 
 create table public.pos_device_terminal (
   register_id numeric not null,
@@ -62,22 +67,32 @@ create table public.pricebook (
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_pricebook_department on public.pricebook using btree (department_id) TABLESPACE pg_default;
-
 create index IF not exists idx_pricebook_source on public.pricebook using btree (upc_source) TABLESPACE pg_default;
 
-create table public.promotions_line_item (
-  line_item_promo_uuid uuid not null default gen_random_uuid (),
-  promotion_id numeric null,
-  line_item_uuid uuid null,
-  match_price numeric(10, 2) null,
-  match_quantity numeric null,
-  mix_group_id numeric null,
-  promo_amount numeric(10, 2) null,
+create table public.promotions_program_details (
+  promotion_id numeric not null,
   promotion_name text null,
-  promotion_type text null,
-  constraint promotions_line_item_pkey primary key (line_item_promo_uuid),
-  constraint promotions_line_item_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid),
-  constraint promotions_line_item_promotion_id_fkey foreign KEY (promotion_id) references promotions_program_details (promotion_id)
+  promo_desc text null,
+  promo_amount numeric(10, 2) null,
+  promo_percent numeric(5, 2) null,
+  promotion_discount_method text null,
+  mfg_multi_pack_flag boolean null default false,
+  outlet_multi_pack_flag boolean null default false,
+  tob_promo_flag boolean null default false,
+  effective_start_date timestamp with time zone null,
+  effective_end_date timestamp with time zone null,
+  manufacturer_name text null,
+  mfg_multi_pack_qty numeric null,
+  mfg_promo_desc text null,
+  outlet_multi_pack_qty numeric null,
+  provider_name text null,
+  store_pays_amount numeric(10, 2) null,
+  store_pays_disc_type text null,
+  store_pays_percent numeric(5, 2) null,
+  vendor_pays_amount numeric(10, 2) null,
+  vendor_pays_disc_type text null,
+  vendor_pays_percent numeric(5, 2) null,
+  constraint promotions_program_details_pkey primary key (promotion_id)
 ) TABLESPACE pg_default;
 
 create table public.promotions_line_item (
@@ -95,47 +110,54 @@ create table public.promotions_line_item (
   constraint promotions_line_item_promotion_id_fkey foreign KEY (promotion_id) references promotions_program_details (promotion_id)
 ) TABLESPACE pg_default;
 
-create table public.promotions_line_item (
-  line_item_promo_uuid uuid not null default gen_random_uuid (),
-  promotion_id numeric null,
-  line_item_uuid uuid null,
-  match_price numeric(10, 2) null,
-  match_quantity numeric null,
-  mix_group_id numeric null,
-  promo_amount numeric(10, 2) null,
-  promotion_name text null,
-  promotion_type text null,
-  constraint promotions_line_item_pkey primary key (line_item_promo_uuid),
-  constraint promotions_line_item_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid),
-  constraint promotions_line_item_promotion_id_fkey foreign KEY (promotion_id) references promotions_program_details (promotion_id)
+create table public.rebate_program_details (
+  rebate_id numeric not null,
+  rebate_name text null,
+  rebate_description text null,
+  rebate_type text null default 'cashback',
+  rebate_amount numeric(10, 2) null,
+  rebate_percentage numeric(5, 2) null,
+  is_active boolean null default true,
+  rebate_code text null,
+  vendor_id text null,
+  product_category text null,
+  constraint rebate_program_details_pkey primary key (rebate_id)
 ) TABLESPACE pg_default;
 
 create table public.sales_transaction (
-  transaction_id numeric not null,
+  sales_transaction_unique_id text not null,
+  transaction_id numeric null,
   store_id text null,
   register_id numeric null,
-  transaction_event_log_id numeric null,
+  transaction_event_log_id text null,
   cashier_session numeric null,
   employee_id numeric null,
   employee_name text null,
+  cashier_system_id numeric null,
   food_stamp_eligible_total numeric(10, 2) null,
   grand_totalizer numeric(10, 2) null,
-  has_transaction_id boolean null default true,
   total_amount numeric(10, 2) null,
   total_no_tax numeric(10, 2) null,
   total_tax_amount numeric(10, 2) null,
   transaction_datetime timestamp with time zone null,
-  transaction_recall text null,
   transaction_type text null,
-  constraint sales_transaction_pkey primary key (transaction_id),
+  original_register_id numeric null,
+  original_transaction_id numeric null,
+  is_fuel_prepay boolean null default false,
+  is_fuel_prepay_completion boolean null default false,
+  is_rollback boolean null default false,
+  is_suspended boolean null default false,
+  was_recalled boolean null default false,
+  constraint sales_transaction_pkey primary key (sales_transaction_unique_id),
   constraint fk_transaction_event_log foreign KEY (transaction_event_log_id) references transaction_event_log (transaction_event_log_id),
   constraint sales_transaction_register_id_fkey foreign KEY (register_id) references pos_device_terminal (register_id),
+  constraint sales_transaction_original_register_id_fkey foreign KEY (original_register_id) references pos_device_terminal (register_id),
   constraint sales_transaction_store_id_fkey foreign KEY (store_id) references store (store_id)
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_sales_transaction_store on public.sales_transaction using btree (store_id) TABLESPACE pg_default;
-
 create index IF not exists idx_sales_transaction_datetime on public.sales_transaction using btree (transaction_datetime) TABLESPACE pg_default;
+create index IF not exists idx_sales_transaction_transaction_id on public.sales_transaction using btree (transaction_id) TABLESPACE pg_default;
 
 create table public.store (
   store_id text not null,
@@ -149,20 +171,21 @@ create table public.store (
 ) TABLESPACE pg_default;
 
 create table public.transaction_event_log (
-  transaction_event_log_id numeric not null,
-  transaction_id numeric null,
-  customer_dob_entry text null,
+  transaction_event_log_id text not null,
   duration numeric null,
   event_type text null,
-  global_unique_identifier numeric null,
-  verifone_transaction_sn numeric null,
-  constraint transaction_event_log_pkey primary key (transaction_event_log_id),
-  constraint transaction_event_log_transaction_id_fkey foreign KEY (transaction_id) references sales_transaction (transaction_id)
+  verifone_transaction_serial_number numeric null,
+  customer_dob_entry_method text null,
+  customer_dob text null,
+  customer_age numeric null,
+  terminal_serial_number numeric null,
+  constraint transaction_event_log_pkey primary key (transaction_event_log_id)
 ) TABLESPACE pg_default;
 
 create table public.transaction_line_item (
   line_item_uuid uuid not null default gen_random_uuid (),
   transaction_id numeric null,
+  sales_transaction_unique_id text null,
   upc_id numeric null,
   category_name text null,
   category_number numeric null,
@@ -186,32 +209,35 @@ create table public.transaction_line_item (
   upc_entry_type text null,
   upc_modifier numeric null,
   constraint transaction_line_item_pkey primary key (line_item_uuid),
-  constraint transaction_line_item_transaction_id_fkey foreign KEY (transaction_id) references sales_transaction (transaction_id),
+  constraint transaction_line_item_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id),
   constraint transaction_line_item_upc_id_fkey foreign KEY (upc_id) references pricebook (upc_id)
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_transaction_line_item_transaction on public.transaction_line_item using btree (transaction_id) TABLESPACE pg_default;
-
+create index IF not exists idx_transaction_line_item_sales_transaction_unique_id on public.transaction_line_item using btree (sales_transaction_unique_id) TABLESPACE pg_default;
 create index IF not exists idx_transaction_line_item_upc on public.transaction_line_item using btree (upc_id) TABLESPACE pg_default;
 
 create table public.transaction_line_item_tax (
   line_item_tax_uuid uuid not null default gen_random_uuid (),
   line_item_uuid uuid null,
   transaction_id numeric null,
+  sales_transaction_unique_id text null,
   tax_line_amount numeric(10, 2) null,
   tax_line_category text null,
   tax_line_rate numeric(5, 4) null,
   tax_line_sys_id numeric null,
   constraint transaction_line_item_tax_pkey primary key (line_item_tax_uuid),
   constraint transaction_line_item_tax_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid),
-  constraint transaction_line_item_tax_transaction_id_fkey foreign KEY (transaction_id) references sales_transaction (transaction_id)
+  constraint transaction_line_item_tax_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id)
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_transaction_line_item_tax_transaction on public.transaction_line_item_tax using btree (transaction_id) TABLESPACE pg_default;
+create index IF not exists idx_transaction_line_item_tax_sales_transaction_unique_id on public.transaction_line_item_tax using btree (sales_transaction_unique_id) TABLESPACE pg_default;
 
 create table public.transaction_loyalty (
   loyalty_transaction_uuid uuid not null default gen_random_uuid (),
   transaction_id numeric null,
+  sales_transaction_unique_id text null,
   loyalty_account_number text null,
   loyalty_auto_discount numeric(10, 2) null,
   loyalty_customer_discount numeric(10, 2) null,
@@ -219,10 +245,11 @@ create table public.transaction_loyalty (
   loyalty_sub_total numeric(10, 2) null,
   program_name text null,
   constraint transaction_loyalty_pkey primary key (loyalty_transaction_uuid),
-  constraint transaction_loyalty_transaction_id_fkey foreign KEY (transaction_id) references sales_transaction (transaction_id)
+  constraint transaction_loyalty_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id)
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_loyalty_transaction on public.transaction_loyalty using btree (transaction_id) TABLESPACE pg_default;
+create index IF not exists idx_loyalty_sales_transaction_unique_id on public.transaction_loyalty using btree (sales_transaction_unique_id) TABLESPACE pg_default;
 
 create table public.promotion_upc_linkage (
   linkage_id uuid not null default gen_random_uuid (),
@@ -237,7 +264,6 @@ create table public.promotion_upc_linkage (
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_promotion_upc_linkage_promotion on public.promotion_upc_linkage using btree (promotion_id) TABLESPACE pg_default;
-
 create index IF not exists idx_promotion_upc_linkage_upc on public.promotion_upc_linkage using btree (upc_id) TABLESPACE pg_default;
 
 create table public.rebate_upc_linkage (
@@ -253,5 +279,4 @@ create table public.rebate_upc_linkage (
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_rebate_upc_linkage_rebate on public.rebate_upc_linkage using btree (rebate_id) TABLESPACE pg_default;
-
 create index IF not exists idx_rebate_upc_linkage_upc on public.rebate_upc_linkage using btree (upc_id) TABLESPACE pg_default;

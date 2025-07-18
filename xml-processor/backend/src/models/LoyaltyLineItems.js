@@ -15,11 +15,15 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     transaction_id: {
-      type: DataTypes.BIGINT,
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    sales_transaction_unique_id: {
+      type: DataTypes.TEXT,
       allowNull: true,
       references: {
         model: 'sales_transaction',
-        key: 'transaction_id'
+        key: 'sales_transaction_unique_id'
       }
     },
     discount_amount: {
@@ -45,7 +49,7 @@ module.exports = (sequelize, DataTypes) => {
       as: 'lineItem'
     });
     LoyaltyLineItems.belongsTo(models.SalesTransaction, {
-      foreignKey: 'transaction_id',
+      foreignKey: 'sales_transaction_unique_id',
       as: 'transaction'
     });
   };
