@@ -1,334 +1,383 @@
-line_item_tax_uuid,line_item_uuid,tax_line_amount,tax_line_category,tax_line_rate,tax_line_sys_id
-423402ca-8bb7-42ac-99d8-7f8aaa4f39b3,e5148ef4-be11-4002-8b23-b20a582ef305,2.69,Non-MKE State and County Sales Tax,5.5000,2
-7f7430c7-d256-4660-b489-4869e55f7dcd,229977d0-a639-4dfd-abfe-7b38b9f844fc,10.99,State and County Sales Tax,5.5000,1
-17769667-662d-4871-87ad-76b0497e2aab,dc3aa6d9-dec2-4160-9882-66e306c4e747,11.86,State and County Sales Tax,5.5000,1
-c000f593-0853-4c43-8875-b0590df8f510,118f5fc0-5c1c-4942-b276-227315eabfb5,11.86,State and County Sales Tax,5.5000,1
-3abecfcc-392c-4bdc-b1cf-7ad7a0e3c202,8848e072-9a6e-4fa0-973c-eccc3e2dfc64,3.00,Non-MKE State and County Sales Tax,5.5000,2
-71ba7ad2-ba26-4455-a672-955451750f52,ddaed172-507a-44b4-840a-36d9fd098beb,3.00,Non-MKE State and County Sales Tax,5.5000,2
-a1bd614a-645a-4e20-9b8c-0fc0165e3435,22810535-ae37-4e79-895b-70272d62f77e,1.99,State and County Sales Tax,5.5000,1
-62bd1853-73de-40c6-adfd-46d84da984c2,d6c49495-e9fb-46ab-bb92-f13420ccb3c8,2.59,State and County Sales Tax,5.5000,1
-482d15b9-64f5-4923-ac18-993c4e9a60fb,ef3acb7e-8d71-40a0-9874-94ac3b08b315,2.49,Non-MKE State and County Sales Tax,5.5000,2
-5c6f13f8-ebee-4388-a72d-07b3e04cc952,5263fe1e-95eb-464a-915b-f2c38db159c3,1.75,Non-MKE State and County Sales Tax,5.5000,2
-1251b74f-70df-4f1d-a676-4e35696bc0f7,c096d6a2-baae-4296-80ac-03b5d6dcd343,1.75,Non-MKE State and County Sales Tax,5.5000,2
-6e1cdcdb-6df0-4185-ac57-7523cc14f1e3,7570df09-7096-495c-bc8c-9f909f755667,2.29,Non-MKE State and County Sales Tax,5.5000,2
-c80d13d8-b8b9-40f2-add7-2587b5b6de19,268c5c90-f99b-461e-a0d7-d932afae51b8,1.89,Non-MKE State and County Sales Tax,5.5000,2
-2aeff835-b1bf-4818-a5fa-b0067473299a,20bdad14-5145-4d97-9c0b-57972c64c7ea,3.49,Non-MKE State and County Sales Tax,5.5000,2
-8c19e590-4ee1-4810-b5ca-607e0b6a932a,939cd3c3-3852-4ca6-b6e1-e719d4abc665,3.79,State and County Sales Tax,5.5000,1
-f07cff79-2415-4dac-acab-f803a4f3e265,91f006f9-9d1c-4416-8c78-9c383a69a6a1,1.49,State and County Sales Tax,5.5000,1
-9cf1aa77-e3e8-4a95-9268-6060e814e6e3,3cdcfcfb-0d46-4302-87a3-cc271d376d62,3.49,State and County Sales Tax,5.5000,1
-e30d13ac-71c9-4057-9db6-90ba49446bf6,e627a0d6-cf9c-4cc9-9943-3b500890489d,3.09,Non-MKE State and County Sales Tax,5.5000,2
-8d143bac-7ee6-4273-a616-dc7e8b2329d5,f89cc43e-7d36-4b4a-a10e-abef918b86f6,1.69,State and County Sales Tax,5.5000,1
-4bab87b0-a87c-44f4-961d-9b8b6bb2ca10,119750e1-875e-44e1-b57b-e36b2bcf654c,1.19,State and County Sales Tax,5.5000,1
-812698fe-a671-40c4-85f8-d3f65715de93,f99aab10-4ec2-4269-ac58-dcdce933c3f1,11.53,State and County Sales Tax,5.5000,1
-1398e524-d923-45ba-8496-f960d75229c3,2b375db4-882f-4bd7-b9ec-ba55e9e39c7b,3.69,Non-MKE State and County Sales Tax,5.5000,2
-b047b925-11ef-4788-b047-74e2e3b9a22b,5ea5328e-44c9-4490-9abc-6838523b4622,3.69,Non-MKE State and County Sales Tax,5.5000,2
-811f4778-97b6-4cc0-9a7d-338a79b0582d,3b626e28-03cc-4f49-abca-bd8c806c163a,115.00,State and County Sales Tax,5.5000,1
-13fac795-19f0-454b-b1d5-5ba4e287ee8b,70977fd5-005a-4510-b323-3473acea4650,2.99,Non-MKE State and County Sales Tax,5.5000,2
-1a837613-2a54-41ee-b2d5-6aa6c198ee65,2f4af2f2-21d4-4865-ae6b-30c5fcd20554,2.99,Non-MKE State and County Sales Tax,5.5000,2
-63bf37a5-207b-49d4-be9e-57f0a140c914,b2be5977-1a5c-464e-aece-cb96d830a574,6.45,State and County Sales Tax,5.5000,1
-66c3e388-fb9a-47e0-bf47-aa33d69ef26a,c13f33d7-2f34-4fe9-99d2-d3693dbbb3ff,3.09,Non-MKE State and County Sales Tax,5.5000,2
-7c353d42-cdda-4d48-8af1-f08e3443f570,0fa22ff5-a40a-47c4-9f3c-f70a34eb2757,2.75,Non-MKE State and County Sales Tax,5.5000,2
-b6c055e7-a729-4286-8b25-4e23d7f8355c,abfb83af-7de0-4b94-b992-d5df2bca027f,-2.75,Non-MKE State and County Sales Tax,5.5000,2
-bbb32037-12ac-42cd-b5f5-4beb3417d457,d0d6008b-536b-45b1-a0f8-e53c460669c9,12.40,State and County Sales Tax,5.5000,1
-75d207a3-72a5-42a5-9c34-239d569b4626,2f307c48-77f0-4024-a108-d3f9e65aecd8,4.19,State and County Sales Tax,5.5000,1
-63b977be-6f83-4c55-85f4-193fa4cc8bdc,9e7c58ad-1237-419b-97e2-c0c79dc52711,4.89,State and County Sales Tax,5.5000,1
-4fb0f96e-9c67-436d-95f4-2faf8145cdee,a51d1c17-0193-4301-8965-89c264e09240,4.89,State and County Sales Tax,5.5000,1
-8561ac88-6ed6-4040-97ec-f0a8f67541b8,ab630041-7b22-47c7-a08f-54fce93b4132,9.70,State and County Sales Tax,5.5000,1
-58236612-58b5-4b67-acb6-196705b8b429,0cb46802-0547-4607-b18a-2a5c650c5f8e,11.50,State and County Sales Tax,5.5000,1
-8f9fd38a-634b-4484-b905-abe57061b5ee,cab1b64d-f02d-40f3-b370-57a80a868e83,12.44,State and County Sales Tax,5.5000,1
-de5adefa-5e24-4c15-99d6-8754bfbe134c,1cfa4790-7c2b-4a36-ac17-5b4a2512a692,5.69,State and County Sales Tax,5.5000,1
-db4aa6f9-40d0-433b-8c5a-0ccc36870df2,aedabe3b-7af3-4f6c-9f92-c401961eb016,5.69,State and County Sales Tax,5.5000,1
-2670e66e-ed89-4003-aba1-34ae85df6f6b,7c80e767-e856-4b68-8bd0-9c544e3b0c64,5.69,State and County Sales Tax,5.5000,1
-9745841b-867c-4d68-9a9d-9e96622fccc6,421ec151-4582-4b29-93cd-4e216150692b,3.69,Non-MKE State and County Sales Tax,5.5000,2
-d2712754-6bba-489a-bdee-e73130304db9,e84484bc-d3d2-4796-9673-a8f3b29c95b6,2.25,Non-MKE State and County Sales Tax,5.5000,2
-51e7b110-33b1-4c7b-a79f-8cedc8fda841,54153831-bb4d-4438-9ddf-d77b6ebfa78f,2.25,Non-MKE State and County Sales Tax,5.5000,2
-05337824-95d3-4209-952f-59d35162d866,8c760216-0f4c-4744-a516-c157c9b66e99,2.79,Non-MKE State and County Sales Tax,5.5000,2
-70ce1fd1-eb85-46e8-8d24-841c96feaea4,666fc70b-a18e-4569-87f4-eeeac1b9e2c4,12.40,State and County Sales Tax,5.5000,1
-119a8007-b8d4-4773-89ee-34d7a26b24b6,f65a3416-7c94-4456-b57b-fece4b72a1a4,4.49,Non-MKE State and County Sales Tax,5.5000,2
-ac4bf6a8-c495-4cf6-bff0-93aab708dcd4,e4de65f2-576f-4c8c-8c88-45100c6a73ee,4.49,Non-MKE State and County Sales Tax,5.5000,2
-d5ff3c76-4179-4923-ae31-3bd85c77ca96,7868aac7-48a1-4acc-a093-99b42bb28418,4.49,Non-MKE State and County Sales Tax,5.5000,2
-fb7796ff-52cf-4dec-b58d-a0c5ca0a4426,3237d2dd-09dc-4311-80c5-48c4a8480f07,2.62,Non-MKE State and County Sales Tax,5.5000,2
-0862ab32-3d81-4ddd-bee6-3969e3059000,21c58566-c147-4827-a073-b4cae269b6d0,2.63,Non-MKE State and County Sales Tax,5.5000,2
-724d54f5-67fe-4de9-9b0c-0f59e69e0702,176dba13-6db2-437a-8763-eba0800402e8,9.87,State and County Sales Tax,5.5000,1
-fa6a54b9-cf6f-4d4f-921f-32bf9867a00f,526b253c-095c-4c6c-99d5-e0e048283dc2,2.99,Non-MKE State and County Sales Tax,5.5000,2
-ad66bf6c-12b5-4841-9173-83376d7af608,b1f732ea-fd63-46f5-9952-b22a082b79a1,11.49,Non-MKE State and County Sales Tax,5.5000,2
-7ac80882-47f7-4b59-b788-631baecbb789,414e9b74-2bdd-4d8c-9f65-4f9a3f0c7f66,11.49,Non-MKE State and County Sales Tax,5.5000,2
-33a8f5c1-5585-48c8-8aad-11eeef692a79,1d097e77-0262-4308-b92c-519ff8e448df,5.69,State and County Sales Tax,5.5000,1
-c7318b1a-8f1d-46e2-8006-fcabb7c03ca2,1774d927-abbd-4c71-a75e-5170be6f3bf9,5.69,State and County Sales Tax,5.5000,1
-40755309-fc4e-4e24-ad12-9fee10d06660,c580d1d5-8dcb-4ebb-9884-9b6eee7260a6,2.69,Non-MKE State and County Sales Tax,5.5000,2
-a0e1aef9-0bdd-4327-8232-afac3a5e7ac1,b8cd33f4-a603-4662-b06a-644dab63ab82,12.40,State and County Sales Tax,5.5000,1
-1776f431-3fe5-48bd-b235-1a5a6f6333ad,491a1016-3108-4e01-90e4-2a6d8483b7ea,2.00,State and County Sales Tax,5.5000,1
-c32c7317-4695-4216-b5fe-823816a9dd52,8a634910-e0d1-4746-acc5-9e323a2d001e,2.99,Non-MKE State and County Sales Tax,5.5000,2
-02406e85-3395-4ecd-9f17-a5abf2e36445,52f9f089-1341-4dbd-bb80-dda809fd632b,2.69,Non-MKE State and County Sales Tax,5.5000,2
-71d39573-2fa5-41f5-aa8c-30d5b1d6b379,9db4ad82-0db2-491e-9d4e-e17c24214c4d,2.49,State and County Sales Tax,5.5000,1
-b8d840a1-443f-4aa7-aad7-b5bb6607a495,a42d971f-6337-4ce7-8c05-4d29a33d6feb,2.19,State and County Sales Tax,5.5000,1
-bd6a5960-327b-455d-812f-6e2d3823cc5b,ab98cb52-d4fc-40ca-8293-ce68f95235f1,1.69,State and County Sales Tax,5.5000,1
-76b598f0-7978-4be9-8ba2-f7d6e25a8395,a2cef1c0-7846-4dc5-93b6-379631b3051f,3.39,Non-MKE State and County Sales Tax,5.5000,2
-b072deaf-d3b8-4401-87b5-21a39f5122e6,449b01c5-a8bf-4d6f-b1e4-e5791f1819bd,3.39,Non-MKE State and County Sales Tax,5.5000,2
-a1e99b65-1538-4b93-991b-8442ac0eca62,e4a5236d-b730-433b-b96d-032534e53ff4,2.75,Non-MKE State and County Sales Tax,5.5000,2
-eb145130-35a9-48b3-bc74-2f2b9cbf90eb,a8f1acd7-8780-4f5f-9a7e-9a2e193d358b,2.75,Non-MKE State and County Sales Tax,5.5000,2
-31cdaae7-603f-4cc7-9b02-8551583fba4a,cdb33d96-e185-41ed-864f-4c659b2ada15,3.39,Non-MKE State and County Sales Tax,5.5000,2
-5d9b09c4-3f08-46e8-ac86-7bb24b1d25f5,0826470b-e6f6-4131-bc19-bf8af43e6365,1.99,State and County Sales Tax,5.5000,1
-4a22a721-d0ab-42d2-a890-8f882267fa75,81b1d122-8bc0-499f-aa45-1e913d432066,2.75,Non-MKE State and County Sales Tax,5.5000,2
-fbf9f8e6-7c03-4399-9b15-4d32c5cbd9f0,6a9bf754-7de0-4418-83b2-14f718083221,2.75,Non-MKE State and County Sales Tax,5.5000,2
-24b5bd56-8690-4fa2-ad76-60410b9d5a1b,f772b9d1-4129-473f-9938-cddc5eb66310,2.29,Non-MKE State and County Sales Tax,5.5000,2
-37fab7f6-90db-482f-9f6e-49e8b6465568,105233d3-c243-4e5c-9f2b-ce938c4d9009,12.29,State and County Sales Tax,5.5000,1
-cea2cae0-f92c-42a9-8944-fa9fe58d857a,4a5e7c10-4c2a-4ddd-9e19-1f8e5c0dc3ab,4.69,State and County Sales Tax,5.5000,1
-21f62e08-7aa5-45a4-a7c7-81ca75f6f074,03390f4e-1e2f-457a-aad4-55fd5810dd6a,2.25,Non-MKE State and County Sales Tax,5.5000,2
-f8204cd5-8586-49c1-a55b-5af13e07b5bd,8b356812-b367-4af9-b017-3868230421ee,2.25,Non-MKE State and County Sales Tax,5.5000,2
-74501d57-37e0-4b0c-ace7-daa47ee4ccc5,ff7fd5ac-4580-4466-8958-a9465f6fe982,1.00,Non-MKE State and County Sales Tax,5.5000,2
-306683f6-b4f1-4811-973d-a4b99b6a7a31,5f6bec92-25ab-43cd-8af2-5dd9d7a10ec5,1.00,Non-MKE State and County Sales Tax,5.5000,2
-5c6fea58-5f05-4359-800e-464bb93558a7,5cf4a92e-eb2a-43c2-bdd5-9ae82b8c14ea,9.70,State and County Sales Tax,5.5000,1
-0cc84f01-e4d8-4e35-ba16-92fbcb2ef6bf,29ddf3e1-917e-4b9e-97be-048987009775,11.50,State and County Sales Tax,5.5000,1
-bfac9dc4-70e3-4803-9be0-e37c7cece259,d24d2b31-aad3-499f-b994-dc5c5967b558,3.49,Non-MKE State and County Sales Tax,5.5000,2
-50f90674-4ad0-42b0-9f3b-34283311f98f,8b6e9a20-2111-4835-b300-ee08b5c3d15f,2.00,Non-MKE State and County Sales Tax,5.5000,2
-7cefc987-929f-4de1-a7b5-77ed6da36079,ecafd5ff-9668-45e2-9b12-ada58bf2e9f7,2.00,Non-MKE State and County Sales Tax,5.5000,2
-59542c8a-d432-4da9-900c-c4f99da07ece,520c9b81-59a2-40f0-933a-39ed958f09f5,2.00,Non-MKE State and County Sales Tax,5.5000,2
-add0a280-338c-4f8c-951d-0c6935c97bb3,fb4dfd1d-e477-488f-85d7-6b2e3b0b54d2,12.29,State and County Sales Tax,5.5000,1
-9025a921-567e-49c9-bd45-9a6d22432e1a,996acf49-9d92-4aac-b387-2c2bbf9709d5,2.99,Non-MKE State and County Sales Tax,5.5000,2
-0d2f63c2-2ce3-4b6b-89d5-4fe605ee59b8,17ea3765-584c-4546-9a44-b44081b298fd,1.99,Non-MKE State and County Sales Tax,5.5000,2
-7b524252-3388-4e20-994d-b1485f4d628c,6ddeec70-2bf5-44a7-8881-b0db89587cb1,2.19,Non-MKE State and County Sales Tax,5.5000,2
-afe6f864-ce92-45b2-a465-7b4a4a05c1a8,0c81932c-be6a-40de-8718-0a095b517921,12.29,State and County Sales Tax,5.5000,1
-c5f5e4ba-3855-47a4-ad98-70b4f1163ce1,3a1d674e-23f1-4dc9-999c-b0af509dcb9f,12.29,State and County Sales Tax,5.5000,1
-74c7b911-cb0b-4738-812a-563c15474fd0,5ec89444-0bcc-4a92-9961-bc4348421acb,2.69,Non-MKE State and County Sales Tax,5.5000,2
-d85f3ad3-a03e-42dc-8dcd-ac6ad5da2e6f,328dca94-e63e-4bc8-8e44-e8205a5fbc55,12.21,State and County Sales Tax,5.5000,1
-49d143bd-1f6a-4070-aea2-9951bd5effed,a259725b-c580-4f13-badf-d398cf8487f7,12.44,State and County Sales Tax,5.5000,1
-de65e55a-f5bd-4af8-9327-85e4ffc7f88d,3e63547e-05ea-4ba5-b2f6-42d9daf3673d,2.62,Non-MKE State and County Sales Tax,5.5000,2
-dd0bd19a-0453-497d-889e-790c8b148d5a,fff51ac3-9bdf-439a-9676-e67508ce3564,2.63,Non-MKE State and County Sales Tax,5.5000,2
-71e026f7-fe7b-447c-aeea-a364a569f18e,e095623c-9df4-4acb-87fd-49d356e1a504,2.29,Non-MKE State and County Sales Tax,5.5000,2
-474980e3-c688-4dbe-a4e7-bbee8ac84436,4e837188-b4a9-4011-a2ef-dd94328b810c,2.69,Non-MKE State and County Sales Tax,5.5000,2
-53702153-3ab1-4327-b1f3-02b8c2940abb,082ebd34-8fb7-4cc0-a716-230ba0acfe22,11.86,State and County Sales Tax,5.5000,1
-45a97125-fd52-4ed6-9fad-33b06145c48a,210231b0-40b2-4892-9d90-d18652e71c2a,11.86,State and County Sales Tax,5.5000,1
-dec25708-e736-42bc-a8c9-62c377b50a8f,75f4b057-e19f-4a61-80f6-5497de15886c,4.19,State and County Sales Tax,5.5000,1
-d76e3ff7-abbc-4407-888f-1d2d4940aa78,96179890-7673-4409-a628-95eff2d1d6db,4.59,State and County Sales Tax,5.5000,1
-b03f39d5-4d40-4793-b6f0-f4f4cd20eb76,197e331a-375b-46df-87a3-8060b055acc1,12.29,State and County Sales Tax,5.5000,1
-62879004-0352-4df7-9d35-eed89ff3639c,019bc6b9-89d2-4db5-bed5-4ce81ce97b67,2.00,Non-MKE State and County Sales Tax,5.5000,2
-a96cd55c-077d-453b-a827-197791d04a67,a4dc6ce0-7f3b-43a4-92d5-179bd37fa4fb,2.00,Non-MKE State and County Sales Tax,5.5000,2
-32980b8d-aef0-400b-ab5d-18412f11ab03,33c6e223-655f-4f3b-a8fb-df59e5950a9d,2.00,Non-MKE State and County Sales Tax,5.5000,2
-e402ae48-6423-46f4-91bd-7aa22a45537b,be365a6b-b881-4ee2-8d95-fd0730343f51,2.69,Non-MKE State and County Sales Tax,5.5000,2
-a3b672b2-32e3-4858-8e6e-a6105f7f023f,465b7761-5bd0-4485-a84e-4398ae244ef1,2.69,Non-MKE State and County Sales Tax,5.5000,2
-0166a270-fe4f-4560-a91e-b31849b9ee91,dd5323d9-d9ec-4f58-ac6e-539167a8de33,2.69,Non-MKE State and County Sales Tax,5.5000,2
-51addbbf-5a35-48c2-be54-64425570383f,f3f9f884-2008-437d-ae41-8a7876cc39c2,2.62,Non-MKE State and County Sales Tax,5.5000,2
-28a2ffc6-64e8-4967-b246-96bd065220d3,e089520b-f31d-42a7-ac2e-1722230cfa82,2.63,Non-MKE State and County Sales Tax,5.5000,2
-54038e08-750e-4b93-b99f-540ccfff2b8c,662c625f-f441-4c63-a4cd-be79dbac05be,2.99,Non-MKE State and County Sales Tax,5.5000,2
-63b4ef28-e6fa-4ffc-b596-ddbd9911dd83,d7f1f007-7ffc-4119-acc0-f9ffa017cfa3,2.99,Non-MKE State and County Sales Tax,5.5000,2
-2c4a5eeb-8d72-4f1f-a22e-e16e067c6c79,74de3e40-29b6-4af6-9657-770401f25341,26.99,State and County Sales Tax,5.5000,1
-4cfdf408-1f90-4801-b9d2-84dab6063eba,ff4a98d1-ee20-41d6-b0d2-0b626e993ab5,13.77,State and County Sales Tax,5.5000,1
-fe12c45f-61b3-4144-8302-1d6860f256dd,fb84e3f6-da19-4aa5-b421-c6931a8740ec,2.29,State and County Sales Tax,5.5000,1
-4704d3b0-5d8c-4f3e-a8b1-5482c6dbc900,0159c6f7-7f61-49a9-b34f-029fab6e2a90,5.69,State and County Sales Tax,5.5000,1
-b73e02f1-6a84-444f-b50c-ce711f367480,712887e3-4645-42bb-ab42-095658b1976a,13.52,State and County Sales Tax,5.5000,1
-f4dc6928-b31e-4a2f-9e09-8491b39b9705,8e4373a9-2b3c-4fcf-a371-fd438a899240,3.59,Non-MKE State and County Sales Tax,5.5000,2
-f06a4859-c841-4741-afdf-fad1a4c6abb4,2c61e107-cff7-478c-a35e-fc3286cde61b,2.69,Non-MKE State and County Sales Tax,5.5000,2
-f1bd30de-a3f5-4cdd-8536-8bb3316fa056,f68e129f-f600-466c-9062-42a17d1799af,12.40,State and County Sales Tax,5.5000,1
-34aef2a8-dbf3-4fdb-94d8-f3f305ce46e9,d4c2aa20-3d50-4921-90d4-c93ec4abc529,2.00,Non-MKE State and County Sales Tax,5.5000,2
-69662df2-e699-4499-96e8-d2971e582700,13cfc20c-4bce-4657-a25e-933a285885c2,2.00,Non-MKE State and County Sales Tax,5.5000,2
-c37777ae-26ed-499f-adf0-a8634a988fe4,2f924877-379c-46d5-a18c-4c8426a2a5fb,2.00,Non-MKE State and County Sales Tax,5.5000,2
-4e15eeba-4efd-4dcc-9338-6e2334d23e19,050ffe86-ebcf-45a8-a42e-b03aa4037d8a,5.49,State and County Sales Tax,5.5000,1
-f03dd8e3-63e8-43b4-999e-caea05f4f7a0,6cdef3a2-2969-48a9-aaa5-05cccf7af773,1.99,Non-MKE State and County Sales Tax,5.5000,2
-5079febf-3b07-48b5-a70c-b09c50793cbe,59dd400f-1cf2-40b9-8aab-4a1cec25985d,0.48,Non-MKE State and County Sales Tax,5.5000,2
-8f05b9f5-dcdb-410d-a36a-422f0f83d227,c4decdfb-6c14-4bdb-b579-a79775a61d8c,24.45,State and County Sales Tax,5.5000,1
-23a746e6-c7ef-4d20-802a-1582b5690114,2004efcb-ee73-4179-ad3c-e2f43a0f9c05,-24.45,State and County Sales Tax,5.5000,1
-fa1d94ae-365e-4367-93d6-71c7201edb26,8b805175-2001-4196-b097-a7c81a4e1733,4.89,State and County Sales Tax,5.5000,1
-97133d58-dfe5-41c1-84ec-b70da657aac1,091ab201-ec22-4a5f-af81-3ae58ecc5613,4.89,State and County Sales Tax,5.5000,1
-f206a5eb-9c56-40a3-b5d2-076847e954bd,b74643c5-4990-4987-8053-008d3061761f,2.00,Non-MKE State and County Sales Tax,5.5000,2
-b4b9a7d3-235e-4609-ac29-e498ef76b568,3c79e89b-1c36-4c3e-b32a-4dcbab43da04,2.00,Non-MKE State and County Sales Tax,5.5000,2
-eb811663-3b24-4cec-a7d5-5230d0ccde86,ad46dca7-228b-4efc-955a-401d7208b199,2.00,Non-MKE State and County Sales Tax,5.5000,2
-ec99ccf2-e542-4f07-b41e-107fd9b58954,4b232103-642a-49fd-a422-71aa43128f33,5.19,Non-MKE State and County Sales Tax,5.5000,2
-9697e900-4f04-492e-9316-df476fd7b116,45d0c8b9-e309-4a8e-b77d-0d37ace02041,3.49,Non-MKE State and County Sales Tax,5.5000,2
-5d3f18a3-e303-4901-8474-09470c993a85,6188378c-27dc-45d3-bca1-d74b4b65884d,3.79,Non-MKE State and County Sales Tax,5.5000,2
-428bc369-c01c-4c17-a336-61f9f946f479,fef117f6-9faf-4b08-9e54-366c31c6ceb1,2.69,Non-MKE State and County Sales Tax,5.5000,2
-9bdcf0a1-0320-4952-9995-4e6899b951e8,d5506f85-1286-427e-b902-8894f1b2a581,19.99,State and County Sales Tax,5.5000,1
-93d7b363-a9ee-4295-b97f-bfe53c605070,fa0b5c49-f0a1-4b9b-b362-4ab158fcfd99,4.49,Non-MKE State and County Sales Tax,5.5000,2
-5cd5ff7f-0461-4683-946a-0521caf029c1,5732defe-fd9d-4313-9926-4ccec59fc48f,2.69,Non-MKE State and County Sales Tax,5.5000,2
-722b89da-06b6-4c43-995e-8fca2a7a47f8,dd9e6207-00ab-4489-b1d4-7c7d7cda89c6,19.99,State and County Sales Tax,5.5000,1
-8f6c2a61-34b4-4c68-9dd4-dc5229815d8b,88e345ea-d297-48bd-a069-a1927dc59176,4.49,Non-MKE State and County Sales Tax,5.5000,2
-5479c04c-4705-411a-b75c-2f761b35ea83,ed53b907-4e27-4bda-b2fd-46221a5f2ff7,2.69,Non-MKE State and County Sales Tax,5.5000,2
-c2286abf-fc4e-4e95-9de1-914bb569835c,41b35476-c2a1-476c-9718-35b69a78bf13,19.99,State and County Sales Tax,5.5000,1
-02283792-c75e-4a4e-a5d7-d39f12098e15,e4835b0c-943d-4b14-b5ed-79824da2dd82,4.49,Non-MKE State and County Sales Tax,5.5000,2
-620336f2-6d26-4121-a80e-63317819e327,09eec279-8027-409e-9842-6730d02c9d6b,5.19,Non-MKE State and County Sales Tax,5.5000,2
-20b23c59-fde6-46cc-92c5-01620d9f6491,a8340ddd-0b1f-4dbe-93c3-0755047f87f2,2.99,Non-MKE State and County Sales Tax,5.5000,2
-30fef166-df22-45ce-a043-cdbb45000dcb,4ad64aa0-31e9-45ca-81f0-0fa461081d96,2.99,Non-MKE State and County Sales Tax,5.5000,2
-86a03382-15a7-433b-9fb3-5fee2161509f,0980b9eb-9820-4a1f-a292-dcad87571605,2.99,Non-MKE State and County Sales Tax,5.5000,2
-e0f99421-bc2c-48c7-9638-72bf76adaa1d,a542c9ab-2c9c-4367-8eb9-5a7bc2420379,2.29,Non-MKE State and County Sales Tax,5.5000,2
-abb61300-1752-4476-bdd5-f72bf0ba3529,ba12d131-9a11-4f9b-8cda-e1c2a136b6a0,1.49,Non-MKE State and County Sales Tax,5.5000,2
-acaef228-c2f5-493a-b3ce-c1b8d3c96e19,02678635-cee3-40ad-bf1e-b39aadfea0a1,3.25,Non-MKE State and County Sales Tax,5.5000,2
-5e46dbbf-f777-4883-a66e-591ac632b411,a4d59bbc-d320-4ef6-b0c4-3a2283fe9871,3.25,Non-MKE State and County Sales Tax,5.5000,2
-8df8d90e-8424-484f-abb0-10e39ded049e,b14586d6-42e6-4108-92a0-01e41cf00f14,10.99,State and County Sales Tax,5.5000,1
-f5f1e1f3-f82d-4966-b3b8-f2c46c37ccaa,bdec5017-c696-4c40-9898-9f0fe7d177d5,25.45,State and County Sales Tax,5.5000,1
-29f116dd-ad37-47fd-96da-0abd5ba60500,79a1cd48-80e2-4373-a623-73751061420f,3.25,Non-MKE State and County Sales Tax,5.5000,2
-286315d9-10b7-476c-b6e1-19888a82cfbb,82406ff4-8b82-4769-a6a9-227e3bd31f80,3.25,Non-MKE State and County Sales Tax,5.5000,2
-ecd54a48-b267-4227-a859-ce5fea3b1da9,2eadfd44-4438-4bbf-9910-d819ce63d74c,10.99,State and County Sales Tax,5.5000,1
-fda50f34-429a-4172-a973-78e3ee12958a,501a6662-48f8-4af5-9a90-541e4acb98a3,3.25,Non-MKE State and County Sales Tax,5.5000,2
-9d16394e-73c3-4e67-a76f-295a751db8b9,e6d2f390-234c-4492-8714-208c0c6e2bb5,3.25,Non-MKE State and County Sales Tax,5.5000,2
-3be37efd-e8ee-4854-b3bd-491e5982d031,eba099dd-7a9f-4506-9b5c-3a55cf312b4d,10.99,State and County Sales Tax,5.5000,1
-a80ef921-a293-4a6c-b545-7795850a3ef7,402fc088-b310-4ba8-b516-aa0cb50699e6,5.49,State and County Sales Tax,5.5000,1
-925ebed4-a836-41d0-9ac2-ee9797b6b44a,9f7d9aaf-d590-4709-bd1a-0c8335fbad55,2.25,Non-MKE State and County Sales Tax,5.5000,2
-2eb2eae2-8f36-458f-83f3-86cd1d98e05d,1fe01aaa-a004-494e-832b-0413519b5d12,2.25,Non-MKE State and County Sales Tax,5.5000,2
-eb21fe7b-570d-4c94-955d-1318e129cc21,b24d14ee-a632-42e2-9313-980a85f0cb30,2.99,Non-MKE State and County Sales Tax,5.5000,2
-f9646928-4aec-4402-bfc3-158e77c25211,2ee062f0-6a64-43ec-9e68-45dfac06270e,2.19,Non-MKE State and County Sales Tax,5.5000,2
-9a3321b7-1a44-4c8c-88ed-bcf5dec2b09b,b9582a8b-0158-4ab5-9ff2-8346bf17d69a,2.99,Non-MKE State and County Sales Tax,5.5000,2
-9854c8b1-98ca-41f5-bd50-7598988c96d2,2edeb68c-fbaa-47f0-95b6-ec27fb57345b,3.89,Non-MKE State and County Sales Tax,5.5000,2
-b0bb6f97-26e4-4e19-8d74-30a81b5b63a5,e2d79cd6-c132-47f8-a3a3-fdb90f24b65e,21.99,Non-MKE State and County Sales Tax,5.5000,2
-876f4129-9201-4597-8d82-cf2a2660165e,50ebccd5-98ec-45ed-a92c-4e8cafd0db90,15.99,Non-MKE State and County Sales Tax,5.5000,2
-2bf796ae-182e-4ce5-b48d-2169bf1b5b84,f8a189f4-c823-48ba-8391-bd4bc352b98f,5.69,State and County Sales Tax,5.5000,1
-35d9dbda-6575-4344-bd02-9760dbe258c3,de864bf5-fb4a-494d-88ce-d27f735866fc,1.99,Non-MKE State and County Sales Tax,5.5000,2
-84d43b11-0b61-4715-8e63-1550d291da8d,d51f5b8c-7a2e-4076-8a9c-f0a4f18e3ad2,1.99,Non-MKE State and County Sales Tax,5.5000,2
-f89a6a9f-dcfa-43d6-bcbe-2d7ba5cf9169,094f2828-f690-4149-81d1-1f938cdd94f3,3.39,Non-MKE State and County Sales Tax,5.5000,2
-897e01f9-31b5-4e81-b2fa-1e1f0aa49fee,4387711d-aa80-415b-8b31-f72e686f5133,12.40,State and County Sales Tax,5.5000,1
-309f7e39-a2d3-4d65-8f28-a293a3053ce5,b1cc055a-cde1-4ea2-8473-bdf91c9c8c83,1.99,Non-MKE State and County Sales Tax,5.5000,2
-1c73d857-771d-429f-812a-42834b7baa4b,6c608c29-945b-4e4a-b350-d9a11642feb2,1.99,Non-MKE State and County Sales Tax,5.5000,2
-3326f070-b056-4b71-96e8-1e36c15f0603,8906e379-29da-44b6-b389-7369ecdc94cc,11.50,State and County Sales Tax,5.5000,1
-6f1056cb-6a0f-4928-9d6d-fc853428a194,1826d25c-c1d0-4af7-84f8-e33a40f60179,11.50,State and County Sales Tax,5.5000,1
-ed5523ca-023a-4cd1-b782-12bfaca6a179,0cad1155-d743-4966-9fad-fd11118dea14,3.49,Non-MKE State and County Sales Tax,5.5000,2
-8dc01429-943f-41bd-b392-a850eb5bbd82,7a4001d2-1403-4e61-89d7-08952566f618,7.99,State and County Sales Tax,5.5000,1
-25f9bd64-7af9-459f-9aa2-a11ca152b332,610fa537-e0c3-4e91-9a8b-c0be01f64f3d,5.69,State and County Sales Tax,5.5000,1
-a64d7ca0-8594-4a77-bdef-716f4ae4af3c,c669bf4a-7c88-45aa-91e9-8ba3e9c0f773,5.69,State and County Sales Tax,5.5000,1
-dc51a61d-80e9-40d3-854f-1b5f6a8628a4,03302098-473c-41c3-9ad5-cc17401e05d1,5.69,State and County Sales Tax,5.5000,1
-b7c75b39-1beb-4529-bd15-471912b984cf,7ea0d719-6680-4384-8d60-7ebcd349f554,6.99,State and County Sales Tax,5.5000,1
-1b799b70-63cf-4830-a8d5-81a7fad61650,df2bf205-6124-47e2-a58a-27ddb5b7e25a,1.99,State and County Sales Tax,5.5000,1
-ee59305d-d298-42fe-8ffe-eb416a4eeee4,68ae4b52-3da5-438f-a39e-fe6b8bdb40f2,2.25,Non-MKE State and County Sales Tax,5.5000,2
-8b17d350-61d9-430b-b81d-93e01286ebb7,db42b9e2-c23d-4c78-95df-e97bb61b6e8e,2.25,Non-MKE State and County Sales Tax,5.5000,2
-9243dfef-f8f7-4690-bd58-1581d0407dbf,6301f3fa-966c-4930-a53e-e3799770fc21,14.67,State and County Sales Tax,5.5000,1
-13355ea2-6531-45a1-a21d-2f9409fc87b0,88f30249-69e3-4e3a-87e4-5e015a180759,14.67,State and County Sales Tax,5.5000,1
-b03bec10-4c00-444d-842f-14aa30090a7b,5448fc83-2154-4cb4-acd8-93c30cfb5556,1.99,Non-MKE State and County Sales Tax,5.5000,2
-ffe64db9-b280-43f1-91e5-f1fa7024444c,c1b70f69-9615-4f7d-8a69-ababebf44ea4,2.25,Non-MKE State and County Sales Tax,5.5000,2
-5929a66c-150c-4734-8ca0-71e05c7ed24f,bf198141-7d9b-4702-8ee7-1b762173cd92,2.25,Non-MKE State and County Sales Tax,5.5000,2
-a6e8c167-ca12-4c4c-aa2c-dbd3227a3714,a547f384-8229-49f6-b71a-24d9e0323bc6,2.25,Non-MKE State and County Sales Tax,5.5000,2
-46b1953b-3385-4de3-8ed9-9c65f61669cd,732d8891-4159-4038-bd96-58d71fe26d6b,2.25,Non-MKE State and County Sales Tax,5.5000,2
-bcf2cd53-64f1-4f2d-b194-8e954f8f8de8,bf62ea56-2c25-45a4-9478-956344f14223,8.99,State and County Sales Tax,5.5000,1
-5107f708-d5c0-4cbb-b5ce-f5142bf2f2b9,14233e5f-8c8e-48aa-b318-c854f198a36a,4.99,State and County Sales Tax,5.5000,1
-9d567745-1cef-43b6-8565-481d83cc8371,fc6bdb93-c423-4595-bfd3-df8ce8f151e5,3.49,Non-MKE State and County Sales Tax,5.5000,2
-65340776-dae1-466c-ae11-b53eed429bf8,3ebd8e94-45cc-4e2b-a71f-907b91d1257d,3.49,Non-MKE State and County Sales Tax,5.5000,2
-4952cb68-0c73-4596-972e-b764df5e2560,acdeaec5-9681-4b1c-8fbb-82343945f1f4,12.40,State and County Sales Tax,5.5000,1
-e68cbc4e-f37c-492c-9fca-94e0efbc1e6f,67ba3eae-2d00-4fb5-844b-70bc63c1368e,2.62,Non-MKE State and County Sales Tax,5.5000,2
-d11fbad4-3fb2-47b7-977c-5629fc02036e,b1d43dc4-f799-483d-9ac0-588baa16df4c,2.63,Non-MKE State and County Sales Tax,5.5000,2
-569b2ddc-65e1-401e-98d0-699e5a62cb93,05489847-bd35-4919-92cd-2c133848b04b,2.69,Non-MKE State and County Sales Tax,5.5000,2
-4042c966-8e6d-4e6b-abc3-91de8dbd482a,2ae339a3-9d79-4d10-9939-111f76ff240e,2.19,Non-MKE State and County Sales Tax,5.5000,2
-94d6bb9d-aed5-481f-83b7-c035b3140d58,22f66a62-a147-4b68-a639-a4ac0a3d368b,1.89,Non-MKE State and County Sales Tax,5.5000,2
-edbb7ddb-bfc9-496c-8b82-741ce6812982,9b347f32-94fd-4479-8d10-0d72f7aac9c2,1.99,Non-MKE State and County Sales Tax,5.5000,2
-a5f75c61-4e9b-4c8f-99d5-aa43197ef78c,6b2c19d9-2824-4e66-9851-13090d77d09a,12.40,State and County Sales Tax,5.5000,1
-d61bb811-3157-4ee2-b868-b80f5521c17c,83121e17-1268-45ab-b710-385fd3b16d1b,1.75,Non-MKE State and County Sales Tax,5.5000,2
-4798404f-30cf-400f-882b-4ba65b01fd19,821a1393-9e00-4343-8d0c-0fb9f45b507d,1.75,Non-MKE State and County Sales Tax,5.5000,2
-481c0d97-5123-493d-8da3-8c523c0bc5f1,7c4bd979-539d-4bfd-97eb-83268e8dad3b,3.50,State and County Sales Tax,5.5000,1
-7f66b5cf-73dc-421e-9fc0-b19c6b4d571c,0af3d225-e416-4017-be5b-07422f155bdd,3.50,State and County Sales Tax,5.5000,1
-8a231616-eda0-4847-bcc9-904098043c0e,7da2add8-b830-45cc-9d5a-8f1cdf50ff01,3.79,State and County Sales Tax,5.5000,1
-243bfee5-8200-443b-a5ae-d852eb85b45e,c7b20bed-cb7f-497d-940d-25beadb217e2,2.69,Non-MKE State and County Sales Tax,5.5000,2
-e18a1d5a-8ea6-4ad2-b339-feb3d3160f09,44124c67-0469-4d0a-bf65-42dfb350292e,0.99,State and County Sales Tax,5.5000,1
-0b5f67be-8e23-4905-8451-8818d2e9ffdf,0dbc958e-666f-4997-bb78-4d2b8de69c43,0.99,State and County Sales Tax,5.5000,1
-537620c8-e7a1-4744-bd66-bfd6a8210302,eaa02e47-3200-44e9-a06e-fd944aa39c82,2.99,Non-MKE State and County Sales Tax,5.5000,2
-46f0609e-91cc-4ae1-90ed-3a6d319d809f,bfde2cd7-6b67-4344-9b08-12b679bf5ccc,3.50,State and County Sales Tax,5.5000,1
-4fa6afe0-8a16-4230-85b4-2d3330475a26,a846f9f7-0444-41e4-b010-e0db69060753,3.50,State and County Sales Tax,5.5000,1
-aa3f1a34-45d9-4219-bd4d-71b185b41866,5e0bacc5-9f1f-48d6-871b-b45c674d7d5f,3.50,State and County Sales Tax,5.5000,1
-6db9106b-5b52-4774-8649-d8016947c75d,7dccb20f-3dd8-4ce6-aa79-0f5b474656cc,3.50,State and County Sales Tax,5.5000,1
-2d58e766-ac29-481e-a721-904143927fc0,597129a6-31cc-4745-8518-41e7202e1d86,12.40,State and County Sales Tax,5.5000,1
-1d7fcf5e-6166-4aa5-b3df-c1fcfe201c76,9b498338-e830-4ae5-af2e-2278d5f099cb,3.69,Non-MKE State and County Sales Tax,5.5000,2
-11133821-c11e-447d-8150-75c3f1173e92,92edc13d-762f-4aca-a247-60e8355c6116,2.69,Non-MKE State and County Sales Tax,5.5000,2
-d2ecb993-be73-4027-ac29-c8878501e17c,e0307f98-1e63-4a47-a5b3-849d31a2388e,3.00,Non-MKE State and County Sales Tax,5.5000,2
-8d6911df-fd47-4ed3-88fb-bce97636534f,05d02c5b-d09d-4791-bbfe-cd08682293a3,3.00,Non-MKE State and County Sales Tax,5.5000,2
-60ff573a-9d21-48a8-a448-79555b72e4d7,a52934e0-21a5-437b-a5ec-3cd6bfbfc5e5,1.99,Non-MKE State and County Sales Tax,5.5000,2
-8628cc47-556c-48a6-b30a-bf9bbaa1faea,08df7b08-060a-43e6-af2d-dfc92c549dbb,1.99,Non-MKE State and County Sales Tax,5.5000,2
-a7217928-59fe-4198-9541-f1f05d9bc47d,951269d6-ebeb-4c44-897a-92619d482655,3.29,Non-MKE State and County Sales Tax,5.5000,2
-06d8b43e-6a6d-4449-ad8f-222071f95b85,4ac9ff79-d0fa-49cd-80c9-3ab776b057a4,3.29,Non-MKE State and County Sales Tax,5.5000,2
-3ac71c3e-cb5a-45df-87d6-cd5e32b9ab8e,fbbd5da6-7123-4fc7-b53f-8f66a5924626,2.29,Non-MKE State and County Sales Tax,5.5000,2
-7f6423a9-b95f-4f38-abfe-fab00e536f6b,13e022e4-fb77-4eda-b08c-e2b375b6aca2,2.29,Non-MKE State and County Sales Tax,5.5000,2
-f989531d-c3c7-4516-92f5-0eb919df1c56,29df93fd-e717-45eb-b7e5-38c3c4771150,2.19,Non-MKE State and County Sales Tax,5.5000,2
-c59afc4f-4333-4c7b-a7be-9ea3b9b94f29,a28add37-2b5e-4cea-8403-52e0cc1f2da0,2.99,Non-MKE State and County Sales Tax,5.5000,2
-75bd413e-4923-48ae-8a2c-cee8f7120d2b,6da77eca-91a5-4d16-821b-6be3883158b4,3.39,Non-MKE State and County Sales Tax,5.5000,2
-30fa9b26-1ffe-4c39-9977-ba0d8dfdd5bd,4504c8b2-8e50-415d-81d7-83882d968e46,3.39,Non-MKE State and County Sales Tax,5.5000,2
-e0fc6e74-3879-4532-bffb-6903cc5852a2,aa2db695-7d6e-4212-a015-2f9ac2da8185,9.70,State and County Sales Tax,5.5000,1
-79056400-4c98-4ada-8c2b-13e44b505c47,097370fc-1c20-4a49-8663-231981b1eb64,11.50,State and County Sales Tax,5.5000,1
-78f49aae-ec3b-4bd7-9db2-fe5f7a08bc60,d8825023-bc9c-4964-9a41-78e35469888c,3.49,Non-MKE State and County Sales Tax,5.5000,2
-c3f23b17-8869-4029-9a90-30c76d924d0b,736d3fd1-e95f-4b23-a390-e4d3fce3cd4e,3.49,Non-MKE State and County Sales Tax,5.5000,2
-5584e04a-d465-4dae-9a10-6f66a8a4a44f,0efd08ac-1ec2-4860-82a9-a87b376b0769,2.99,Non-MKE State and County Sales Tax,5.5000,2
-6587ad93-3c13-47e9-8b7f-b56a1ce20a0a,9d55db37-6882-45ed-b666-08263e8598da,2.99,Non-MKE State and County Sales Tax,5.5000,2
-b5f6c441-00c4-4af9-ac39-d15b16b97d42,b4f197f3-4a76-4bab-8195-a928e88683da,2.59,State and County Sales Tax,5.5000,1
-d4e497cc-bcc2-4d42-befc-e19c86f16c6f,8538ee16-8ed0-4c96-9f2a-1f747ed3029f,2.59,State and County Sales Tax,5.5000,1
-fb583015-dfd7-4972-baab-adf35a786dfd,16f64fee-c9b8-492a-b959-21b44e2177f8,1.99,Non-MKE State and County Sales Tax,5.5000,2
-c17d8246-8f02-4a1d-8b51-520f249b45ce,2637a25f-3d22-472a-8178-d9615669d52d,20.99,State and County Sales Tax,5.5000,1
-599e029b-7bbd-46ba-9aa9-806db70084fe,e7361fc3-10ea-41d4-8547-30380977fce2,20.99,State and County Sales Tax,5.5000,1
-47973c09-4c92-4066-ac56-2a0b3c4fb7f3,17c35d08-8b63-412b-91af-099412e53c68,21.99,Non-MKE State and County Sales Tax,5.5000,2
-1aa8de90-84d6-4005-89d9-08bb82e67141,f6eda066-7fa1-4a63-a89b-b6c5f900242b,6.79,State and County Sales Tax,5.5000,1
-0849aa7c-3651-4a3f-bea7-719495300de9,12049363-78e9-4247-b70d-d5bc72d23656,12.40,State and County Sales Tax,5.5000,1
-cc725087-a4c8-45bb-b30b-3297a4755c9d,6be73116-fa08-4f78-abf5-53025730929a,1.99,Non-MKE State and County Sales Tax,5.5000,2
-c6dde0ca-7674-48b1-8ef3-57c21c969704,d8b2fd3d-f69c-4e90-915a-5ad60ba480b3,1.99,Non-MKE State and County Sales Tax,5.5000,2
-18674618-2afc-46a3-aca7-73a4b76eb3a5,9e1c1e9e-e9ed-49dd-8e76-28de60f3597f,4.99,State and County Sales Tax,5.5000,1
-f134bf4f-9f5d-418f-b7d5-34b952c436c2,9266080f-9854-486d-a92f-ea032612fb06,0.89,State and County Sales Tax,5.5000,1
-e0a72f63-4cf8-478b-92f5-4f75b5d5964b,486c56e8-f8fb-442f-a1f2-4695eb30276b,2.25,Non-MKE State and County Sales Tax,5.5000,2
-192d044b-2a6d-4c31-b9ff-6f68ea7a8346,2a19790a-1f66-413c-80b3-38054f77de43,2.25,Non-MKE State and County Sales Tax,5.5000,2
-f23ecc9a-1b80-4296-8963-22dad8df32d7,7ba45a8f-511e-4ffd-bc8a-464ee608f7a0,9.59,Non-MKE State and County Sales Tax,5.5000,2
-bf6c6151-c34f-4b52-99d0-9a2c156f3c29,4cec1be1-31e0-44d1-888c-030a38dca97a,21.99,Non-MKE State and County Sales Tax,5.5000,2
-b3888ff0-f292-46fa-b3b4-95269ce01068,6fd3e2b3-916c-4710-82ca-566bdf4b9e6e,26.99,State and County Sales Tax,5.5000,1
-50f678d8-4cd8-44d3-a519-6b052cd679eb,5279f0cd-a637-4704-8f09-b0f5dde95b7c,3.09,Non-MKE State and County Sales Tax,5.5000,2
-f4d4d0ba-525d-443e-889f-8dfaf1e61107,20138301-bbd4-436b-805b-6d47efadc000,5.69,State and County Sales Tax,5.5000,1
-c17ca5a1-3aa0-454f-a08d-b88e6d3ba93a,ed85d8bd-945b-44ac-bbbf-77eb7216f649,2.99,Non-MKE State and County Sales Tax,5.5000,2
-780dc4bb-1975-4a0a-85d1-aa1142da3367,effd837e-5e1b-4180-88db-3b2fc79fc1f1,16.99,State and County Sales Tax,5.5000,1
-72263e9f-c93f-4e2b-9eb4-332a1d528658,7a328afb-5ed3-4524-a56f-f704df1a3d60,3.09,Non-MKE State and County Sales Tax,5.5000,2
-258f3d38-4dd6-4273-9519-ff06f71eae75,0a0fdd48-9bd5-48bd-8f10-9fdf94ee3ce3,4.89,State and County Sales Tax,5.5000,1
-d5270a9e-06ca-4bdc-aee5-1eda0e491db2,aec5d660-1f9b-4b0b-a44f-357168637373,5.69,State and County Sales Tax,5.5000,1
-194ab0b3-64ba-47cb-ac69-bc1cf41d63f3,6c7743cf-94d5-44e9-986e-caacdb54f694,2.39,Non-MKE State and County Sales Tax,5.5000,2
-080eafc6-1cff-42a2-8bae-589f8b74b83a,f7b95992-1d23-4c10-a1dd-c287b0979713,2.39,Non-MKE State and County Sales Tax,5.5000,2
-0dc9f0d5-5ac6-4706-9694-380e5ad69b88,8ca8aab4-66b2-4155-8673-cf4653d8006f,3.89,Non-MKE State and County Sales Tax,5.5000,2
-eef4fb29-bcba-4e57-ba87-48545ef692e6,e367ebf9-7743-4ed6-8b2b-32cee714363e,4.19,State and County Sales Tax,5.5000,1
-9dfff164-ec31-452e-a803-2c93a10e032d,bc038729-993a-4d0a-b27d-21ef0ef9c66d,4.19,State and County Sales Tax,5.5000,1
-dcadc689-29a6-4cd0-bf47-513e5c524e03,cf7756ca-bf93-4693-84eb-84d9a7370f87,4.19,State and County Sales Tax,5.5000,1
-db90249e-3475-410a-88ac-8a8933d7d449,06af21e7-4689-4c9d-941c-e891a94cc372,2.99,Non-MKE State and County Sales Tax,5.5000,2
-06cfd58f-cd5a-45a0-a42e-2ff8e8e6093d,e9eeaa43-33ee-4d3a-bcfb-ace7eb893882,3.49,State and County Sales Tax,5.5000,1
-a0e57b48-e2a9-49a4-aaf3-c306b84e8022,6b287aa3-1892-41be-8b2c-265766f5a36e,2.69,Non-MKE State and County Sales Tax,5.5000,2
-ed357918-31d8-4418-8368-0ca2f68745c9,63fc6157-d9c4-4b11-99ba-e46fd293ea1c,2.19,Non-MKE State and County Sales Tax,5.5000,2
-1ccd0782-cb16-4057-aa19-24db808d771e,d54e999f-53e6-4598-a8bb-8085fcf18153,2.19,Non-MKE State and County Sales Tax,5.5000,2
-e3dd59a4-1304-4dd8-a400-ddb9902a2a69,0e6d9695-c78d-4c82-a45d-9bf93a2baa0b,5.79,State and County Sales Tax,5.5000,1
-c48b64cc-5d78-4fcb-8ebd-0ec4954d8488,1af3f89d-aa7f-4bc8-b8c6-73512c230280,3.79,State and County Sales Tax,5.5000,1
-7282a380-f6ee-49a0-8ea0-aab88a9d03f2,2bd3c58f-6d44-4bd5-a001-bf969c2fe2ac,5.99,Non-MKE State and County Sales Tax,5.5000,2
-178c0ca4-17a5-48aa-9cac-56e88efab46d,df5c0d29-7536-4541-bd87-53ec05025f93,4.19,State and County Sales Tax,5.5000,1
-605a3d94-09e1-4202-b54a-f233bb8bf57a,46f98f78-0ed5-4355-be37-a53b97c28b0a,2.69,Non-MKE State and County Sales Tax,5.5000,2
-b4d67d16-bd22-4ca5-951e-0c2bb539e503,d4709264-8bb6-4247-a4d8-0f9c930dcfb9,2.79,Non-MKE State and County Sales Tax,5.5000,2
-dfeca2fe-31f8-4a4b-8b76-dc16961dfaf9,7d50b548-ab6e-445e-a30b-dbdbc5408ba1,3.89,Non-MKE State and County Sales Tax,5.5000,2
-cbe63b2e-1a30-48c8-b8db-1e82456de338,a338b8ef-c1fb-49bd-9ba3-4cc433a7bd94,3.00,Non-MKE State and County Sales Tax,5.5000,2
-c7d0fa0c-4250-49e4-8758-75b46d342677,c2052e97-52cb-4e78-8819-44fe58e1f57f,3.00,Non-MKE State and County Sales Tax,5.5000,2
-108bfa7d-b8fe-438e-8121-ebddeba16ecd,b525f190-cb45-4646-bff8-044c38a0b25e,3.49,Non-MKE State and County Sales Tax,5.5000,2
-52809a5b-f2cf-4d42-8821-595ecaf220d6,465607cb-9a71-40e1-b1cd-a1d96adb986e,3.59,Non-MKE State and County Sales Tax,5.5000,2
-9f31dece-7309-4c0a-887f-a7a2f9e03386,65f4392b-d9ce-4961-ae42-1aee1f4a832d,53.98,State and County Sales Tax,5.5000,1
-3dc57dbc-431a-4a5b-81f1-1f5dc2323ca7,2ef6e3d9-c014-44b0-85c9-67f82f09d512,2.25,Non-MKE State and County Sales Tax,5.5000,2
-7ecaac31-242e-43ab-81f6-e98efc37cad3,cb56a81d-bb9c-4f1d-8729-53851ab5aa3a,2.25,Non-MKE State and County Sales Tax,5.5000,2
-102f4bfe-c3ac-47c2-bc4e-73bffa3da358,55bc256c-7efc-4780-bac8-838badd145da,2.69,Non-MKE State and County Sales Tax,5.5000,2
-bb41a288-a4f2-42c7-bff9-77f6f92ab39c,e68104b1-6150-4309-989a-ead613e73715,1.75,Non-MKE State and County Sales Tax,5.5000,2
-a819de0a-f8bb-4032-bee2-db5a37c44d0a,5b87367c-46bc-4496-bfcf-8114e76bbdfb,1.75,Non-MKE State and County Sales Tax,5.5000,2
-bb54a450-1e66-4939-a06f-a8cdbffab0c5,b7fd9889-ed3b-4c78-a1fb-bcb0bf34dca6,13.18,State and County Sales Tax,5.5000,1
-e67d039a-8630-468d-86d9-e6de41dd0400,2898b2f0-7f26-462e-af84-ded19b1dc37b,13.18,State and County Sales Tax,5.5000,1
-be8792bb-8d38-424c-befe-f56d71468a06,a2b66889-964a-45e1-a46a-40aab4d793f5,11.51,State and County Sales Tax,5.5000,1
-7436f818-0def-4012-bb83-b16cf86504f4,50c15d91-c821-45ea-aa24-0faf8e666f41,11.85,State and County Sales Tax,5.5000,1
-15fd5ae4-152a-468e-aa77-e0196696b6e2,814a550f-6ac6-4716-830e-e7ffd42b15bd,2.99,Non-MKE State and County Sales Tax,5.5000,2
-86a415ff-0099-4576-af44-0878110c3f1a,b7090d2b-5ecb-42ad-a83f-bbb78cc2ced5,1.99,Non-MKE State and County Sales Tax,5.5000,2
-13b995f8-4eaf-4728-8038-163a7d3da729,4305616b-6e98-42c5-8398-3dbcaae9fd17,3.49,Non-MKE State and County Sales Tax,5.5000,2
-5096f8b7-52e5-4d11-a4cb-9b66ee6194ae,5d406dea-257c-4b86-80df-ca7df7ec1a16,3.99,Non-MKE State and County Sales Tax,5.5000,2
-9b77da14-486c-4620-9f3c-d9d6de95cd92,1b0e7432-5037-4b60-b367-1df946ae0644,2.19,Non-MKE State and County Sales Tax,5.5000,2
-6f41a50c-343a-4cdc-a806-240837b41c73,75651f15-1144-42c2-920c-3450f5165f6d,2.19,State and County Sales Tax,5.5000,1
-7b4f0bcb-9e86-46aa-bf0f-8ca435ecdf4e,75dd721d-9d2d-424a-8ca8-ab378a47d58e,3.99,Non-MKE State and County Sales Tax,5.5000,2
-353b0643-045e-4cab-88bf-88437521bd97,3f9bd6ca-c436-4241-8336-637897b22ec6,2.19,Non-MKE State and County Sales Tax,5.5000,2
-a57653dd-e0ed-4cfa-bb48-b44df50770ae,0b4e3e34-144d-4a7d-a2e0-f11f6e4a8ac0,2.19,State and County Sales Tax,5.5000,1
-63faba37-9303-4051-8b03-22a773fe1175,a1bb0255-a60e-4947-819e-6b73e8563f18,3.99,Non-MKE State and County Sales Tax,5.5000,2
-56b094f5-a88f-4696-ba3d-99ef7c55f0ac,9b73569c-2d17-404f-9534-12abbf8e970b,2.19,Non-MKE State and County Sales Tax,5.5000,2
-c64e4d50-4189-416b-9a8e-dae4f87fb4dc,4a925821-0771-4844-81ed-0111abd85e8d,2.19,State and County Sales Tax,5.5000,1
-03536c60-ad31-42fa-a7da-ece0194c51c3,ab87b74b-96bc-4f18-be5e-3e565d1c14c4,3.25,Non-MKE State and County Sales Tax,5.5000,2
-221d55b7-510f-4480-a360-3acd8d08fc4e,90cfaabe-2bf3-4369-9581-986c105547a6,3.25,Non-MKE State and County Sales Tax,5.5000,2
-aa7e4221-baa5-4ad6-9dc9-c3d728ca8237,031b6b43-cfcf-46ca-b4c4-07f0fc981b16,1.99,State and County Sales Tax,5.5000,1
-d0c95df0-b61b-4ac4-909b-db35636aaf78,0cc7bb9c-533a-49d2-b212-e65413a1487c,9.95,State and County Sales Tax,5.5000,1
-9442a626-4ac0-44ba-a3d7-1de99b395a2f,e2f0e643-7db0-42c1-a1f8-4f88394dd7ab,4.49,Non-MKE State and County Sales Tax,5.5000,2
-5e52164f-14ba-47a5-8705-e3fb4c832b71,57e09db6-b2f7-4e4c-84dd-d260848d696a,2.69,Non-MKE State and County Sales Tax,5.5000,2
-642fcc2d-fffd-46cb-9324-a5949ccb2242,0830aec8-06aa-4956-ac8c-0befbf0abb5b,2.69,Non-MKE State and County Sales Tax,5.5000,2
-44c1251d-cb70-47ce-9296-6f0a1fb2f9f4,93fa29cd-3185-4810-bcae-ff15544b27ee,3.29,State and County Sales Tax,5.5000,1
-293c7e83-fa9d-4501-91f7-ecda92919877,ea5291ac-5d95-4eb1-8fce-8da6a8073cd0,2.59,State and County Sales Tax,5.5000,1
-23516ba2-394d-4ce0-a667-0530142c9e22,eb8e73ae-a734-47ed-aeab-b4ec07a9fb53,4.89,State and County Sales Tax,5.5000,1
-15765320-91d6-4dfa-adf6-ac7d4f80c174,6b061a3b-e784-4e21-bf74-6156270c8d64,9.70,State and County Sales Tax,5.5000,1
-ad7da5ee-7de2-4106-b4b1-cded8d4c4fd0,142f1dbf-70af-41dc-80e1-ae1f5973847e,11.50,State and County Sales Tax,5.5000,1
-41dc6dac-bb92-430c-80df-9b70132c168d,507a53a9-1ff2-469a-98a7-f26eed8b225b,2.25,Non-MKE State and County Sales Tax,5.5000,2
-8f9368b2-25f4-40f2-998a-39b41823030f,e8fd2516-b520-43a9-8c7b-4e9b72260224,2.25,Non-MKE State and County Sales Tax,5.5000,2
-f4dbfa95-1d21-4300-aa57-53361cddaaa1,ac559b05-7bfc-4c2a-98e6-cc8c554ef95f,1.99,Non-MKE State and County Sales Tax,5.5000,2
-4c4078f1-32c3-4c52-90d1-9ba4376517f9,7c3030c9-7e9b-4786-af8f-5e8cf7e85e2b,1.99,Non-MKE State and County Sales Tax,5.5000,2
-b6884345-7d46-40f8-b8c3-d69e04deb1fc,c1e1e16d-7859-4b94-b8eb-9df7194a3bc1,1.99,Non-MKE State and County Sales Tax,5.5000,2
-c1e65369-54aa-4807-9f04-4046dd138c3e,396347ff-3b65-4614-9a5c-61186923d985,1.99,Non-MKE State and County Sales Tax,5.5000,2
-b03cc581-e521-4053-9504-fd8347c51af4,ceaa8bcc-4ec7-4380-b544-3d1e788046db,9.99,Non-MKE State and County Sales Tax,5.5000,2
-7456ee16-25df-4730-aba9-3147c53ca168,e9768d9f-34f0-4cdb-89a1-53ff9d733ba0,2.99,Non-MKE State and County Sales Tax,5.5000,2
-a47e85e0-0327-4edd-9854-b36d9b6d3fb0,e2dc171f-f442-4242-ab62-be34a86a42cc,3.29,Non-MKE State and County Sales Tax,5.5000,2
-0cee9fd9-2d78-4c94-86b6-8442ecf503e4,f4544a7b-afae-4e47-a829-81a03c72ef16,3.99,State and County Sales Tax,5.5000,1
-a0a9d3d1-c6d8-4ca1-a94b-9cb0f5f26ba4,48132ddc-b3f3-43a7-9e08-c00957001761,3.99,State and County Sales Tax,5.5000,1
+line_item_tax_uuid,line_item_uuid,tax_line_amount,tax_line_category,tax_line_rate,tax_line_sys_id,transaction_id
+bf847603-82ce-4d7c-9b4b-c40a1b046972,3b618383-1f81-4e47-ac6e-1608d4301be8,3.89,Non-MKE State and County Sales Tax,5.5000,2,1011176
+9ff7adbb-729b-40e7-8e18-8c7d873432b5,95de476e-b9ce-4183-b657-12063e5c0265,5.79,State and County Sales Tax,5.5000,1,1011176
+f37eccca-6bb9-46cd-8770-4eef9a57149a,6effabc8-64c1-4656-96cf-503fc35fc88a,2.49,State and County Sales Tax,5.5000,1,1011177
+2e6ffb46-372c-4cdd-88bf-e268ab4acbd7,1d67e2e4-19b2-4008-a810-04b615d5726b,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011178
+92a88a83-2e23-4eb1-ad5e-5c82a43f2ab7,153e820d-19b8-499e-b376-54b7a22581d8,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011178
+f24071d8-ddf5-4e96-a331-ca3a5097c81f,53ea9cc8-353a-4fcb-a6c3-825178bb2ef7,1.69,State and County Sales Tax,5.5000,1,1011179
+eee15eed-dee3-4ea4-a0f3-4277e6746aa8,d9db1842-a61f-4668-9b09-0875d7716275,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011180
+cb4af874-6c2e-4332-be14-2a885f09425b,c9642291-54b0-401f-a572-48e37b79244a,1.69,State and County Sales Tax,5.5000,1,9035508
+9354970c-aac8-4455-8906-347eec0a0739,06a5f013-55a0-4442-ba8a-a0633c2787d3,1.69,State and County Sales Tax,5.5000,1,1011179
+2eea6e1b-7a60-4277-aaca-a4304263668d,e4662f23-ae76-4f84-871c-2d3a7713e3aa,2.75,Non-MKE State and County Sales Tax,5.5000,2,1011181
+1cc09b32-1fc8-43da-917f-1cd92e336767,5cd58673-787e-4b49-a234-db7fa837c380,2.75,Non-MKE State and County Sales Tax,5.5000,2,1011181
+f6c84b40-6b70-4de2-b75f-eb76204c3980,e7cf4d80-436d-4c65-8154-a692902a2845,10.73,State and County Sales Tax,5.5000,1,1011181
+af895bf0-99ec-4f73-8c17-68503b1a2f5b,60b7e700-cd85-47e7-b473-af8a8a88c76c,10.68,State and County Sales Tax,5.5000,1,1011181
+6180bb6b-5bab-4795-a938-bc3164c2bc24,7a0286c7-3187-4ae1-99ff-d7acd8acc536,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011182
+5d538bb2-815e-4347-9b95-e98915baa53a,7f86d326-446e-49a1-a098-826bfb8225f6,3.09,Non-MKE State and County Sales Tax,5.5000,2,1011182
+8801b452-f5dc-4d46-a6ea-ee419e003fd3,6ea50558-a7cc-49e5-8b2a-afcb56731cb2,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011182
+24a6a95d-a21f-4185-bd6a-902215bc0548,61838959-8a1b-441d-8eea-1df58333e84d,11.49,Non-MKE State and County Sales Tax,5.5000,2,1011183
+2d052f93-037a-4d51-8c7a-4cef4d28d1f8,94d3d14f-d73d-4c02-b63d-61d56a9151aa,20.49,Non-MKE State and County Sales Tax,5.5000,2,1011183
+aa1faa7d-5586-465b-b3c8-ea301ade70bb,e8c068b0-41b5-473a-9f10-66a8d54b57a5,43.28,State and County Sales Tax,5.5000,1,1011183
+d1f2dcd3-1ffa-450f-83de-2e5a15b82647,815448f0-7755-4f08-8e2e-c13804b860b2,11.94,State and County Sales Tax,5.5000,1,1011184
+ac6a65c3-8a0b-4d7d-b2f5-199afe598973,697b0581-2945-430d-aec4-982c2c048a5d,3.89,Non-MKE State and County Sales Tax,5.5000,2,1011186
+36a6b0b7-d573-440b-809d-3bacf8855f4e,8a7bfbab-a5ba-4ec9-a79e-85d6b8e1e973,4.89,Non-MKE State and County Sales Tax,5.5000,2,1011187
+8ad16326-6800-402f-bbc8-7c15d373c957,9dea0826-6f7d-4660-92c6-9b96ef512d3b,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011188
+0dd7e298-508c-4c8f-833f-7dbbd3a2d40a,966d26ab-e215-4f49-aa55-08db01aa813d,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011188
+07eb36dd-bc8d-41ce-9b6b-dc062a1779ca,6a809721-23a3-4706-a4d1-8a8cf088746a,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011189
+fff27119-320d-4174-8bdd-2cfa3bee2431,6113789a-f6a9-4ac6-b621-1509fa81aa7a,12.11,State and County Sales Tax,5.5000,1,1011190
+1ffc8d3b-2d9d-42e8-bc19-ce0d5e8cd66e,ecfcbd99-947c-43e7-9663-0665771ed7e9,12.11,State and County Sales Tax,5.5000,1,1011190
+ad946d4b-3177-44ca-9e58-483399eca5cf,192f01e6-fe24-41d1-a138-cdd8e92d8ac2,3.29,Non-MKE State and County Sales Tax,5.5000,2,1011192
+4a8cc517-4709-47e3-9e29-d3528a4275a7,bb94728c-3048-41dd-b9be-7a8bea9a210d,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011192
+45722b43-d681-4fda-9107-84a86b98b9c2,a5cd81fa-0e4e-453c-af0f-4f9db44053c9,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011193
+a76902fa-753b-4a94-80a9-e3d41731e225,abc3b55e-7d2a-4adc-bbb1-4b8e6dc4b0a7,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011193
+a55f81df-8916-4356-9cb2-f1320a244940,2855e837-9919-4717-8062-512c0cc466e1,110.88,State and County Sales Tax,5.5000,1,1011194
+ee4bcb5d-f1f5-4cfb-8bac-8b6b38fe03f6,e18b2b29-b564-4b31-96f1-63a022233ba9,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011195
+555ab68c-144d-447f-8015-d4227c921079,51ea0388-3be3-45ae-895a-c793f9f1e4b4,25.49,State and County Sales Tax,5.5000,1,1011196
+47e69be0-233b-4a2d-898b-642d1bf23bc6,15660a40-5ca1-4070-8e39-2003594890ed,5.79,State and County Sales Tax,5.5000,1,1011197
+d9f7e6aa-c0fb-4af8-97df-7e60fdbbdf49,f80c3429-4eac-4811-9c5c-8fcf764ff3c4,1.99,Non-MKE State and County Sales Tax,5.5000,2,9076372
+9c14f45e-8cfe-4fb8-b787-ed5c912c6b6e,d554c7a2-c3cd-45cb-9bde-123b2a6999b6,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011195
+f33de55e-d885-47f2-9492-c5a0bd387628,0a14f7f0-3deb-48fa-ba64-e2f99d871cf0,2.19,Non-MKE State and County Sales Tax,5.5000,2,1011198
+a07e1a2c-1dc1-4f10-8b38-f27bb9676b90,e6684487-deaf-4431-9a5c-422c55b8b710,2.99,State and County Sales Tax,5.5000,1,1011198
+bc7a6e86-d514-4280-9cba-12b95738741c,1b761065-1776-4e1d-93e8-1e2df77a7eed,2.99,State and County Sales Tax,5.5000,1,1011198
+ca39a8a2-808d-4941-945c-cfa7f7dd416e,79eca756-6a90-4823-9bab-765c3209aba0,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011200
+4728c8ee-5177-4dee-b666-77925001e4d2,e8615881-195c-4ff4-9f29-3b19dd981fc1,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011201
+ad078988-d879-4bf5-b1b6-1443d18a9c6f,3bb20a00-be4e-4ada-b5dd-5e71a9618be2,2.19,Non-MKE State and County Sales Tax,5.5000,2,1011202
+4772bc0f-9b89-444f-b132-eb9909a61ee9,ec545830-2dcc-45ea-89a0-0c216c40240a,2.19,Non-MKE State and County Sales Tax,5.5000,2,1011202
+4c95e729-a2bb-49fc-b69f-d0e92d84eead,6d548b34-680a-4dc9-8d88-2c539e1ab044,0.89,State and County Sales Tax,5.5000,1,1011203
+4af4a422-ae68-4440-930b-5859ff69fdeb,87d154f6-0b24-4e7a-8ef0-a3bdc5d74104,12.45,State and County Sales Tax,5.5000,1,1011204
+dc845383-02fc-48a5-8544-ac00a3ecd483,8ddd0b3e-d124-4513-acfe-8cf59d1aa702,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011205
+ed970690-fed8-4b1d-a950-7e5ea7bb8b53,f128e841-6a23-4f66-a2a7-d3ffb1770460,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011205
+f8cc68bd-1871-49a4-a83e-5cf10216880e,29859f2a-94fb-466a-90bb-737128ec9c67,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011205
+b6c26ee5-9bec-4fd3-a3ee-5c7f80ca838a,39be4e0a-55f7-44af-8f81-c56ba3b79c9f,3.00,Non-MKE State and County Sales Tax,5.5000,2,9084773
+d0715cbc-3494-41d5-8d23-484ffce02313,d774eb91-54a0-4d02-a667-6c4dfad4cdb4,3.00,Non-MKE State and County Sales Tax,5.5000,2,9084773
+d7dcd431-acc8-446e-8103-d15c2394c0be,0fcebdce-2931-4a24-a4d2-cdab1d3475b6,1.99,Non-MKE State and County Sales Tax,5.5000,2,9084773
+97982c41-2df4-4884-8ba4-0f07523dbf49,ee766d4d-ebac-4fbc-9076-47698607ac6a,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011205
+ed773fa6-3ec8-495f-ad78-809d110cf8ed,f04d5262-2303-4151-aed8-5fcf53ec7fba,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011205
+c41db95d-5c91-4af0-845f-99658bfb52f6,889aa02c-e345-4cd5-ac14-c136a493fec3,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011205
+70451890-a6c8-4a73-a645-cb1aa32cd01d,dc0abc2a-b433-409e-ab7d-e7b282ee252d,5.79,State and County Sales Tax,5.5000,1,1011206
+614782ff-5e76-4bee-9f63-b65db1f2b450,b913b66b-52db-45a8-94ec-56e56b3379f5,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011207
+b294c93c-ad69-476d-9495-b529ca55a61b,ab25d3bc-7a38-4fa9-9d37-66e7e19599e0,12.45,State and County Sales Tax,5.5000,1,1011208
+24a44c00-9cd3-4c23-85bc-d5771321f2c5,5b1e1139-7cf8-48ab-adc1-e0f92e0d2fbe,10.73,State and County Sales Tax,5.5000,1,1011209
+ef5eb54b-c233-4f7c-9bfd-fd1b854e907e,2d0a38cd-ec35-4629-ae07-1668a7b2ac41,1.69,State and County Sales Tax,5.5000,1,1011209
+0d058854-be14-4e69-9781-d1b071db3998,92388bdb-c032-4791-a4e5-4c09a9ac3ecd,2.75,Non-MKE State and County Sales Tax,5.5000,2,1011211
+3ea83a89-94be-4fbe-bb98-621643d91786,66034544-0146-475c-856d-a6a92d75e357,2.75,Non-MKE State and County Sales Tax,5.5000,2,1011211
+96e0a93c-5440-4532-8d22-f6fe9b80a60d,1d470f4c-d2a0-4d69-845e-27eafcce632c,4.69,State and County Sales Tax,5.5000,1,1011212
+0ea67b75-c3a2-491b-a941-656330ff30ad,c661cd4e-1930-499c-b73a-a7ca08466e1f,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011212
+7e1cb0b7-47ef-4949-a0eb-8cb8eebf235e,65fc845f-9a77-4c4f-95a5-b2c58707b111,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011213
+aa0f20af-35d6-4743-ae2f-471939a1af3e,5e9b3c50-ee91-4f70-bd0e-c6cf16505503,1.09,Non-MKE State and County Sales Tax,5.5000,2,1011213
+1cad11b2-27ee-4f13-a01a-78b933fc4feb,3a4d508c-f760-4b80-b1af-08534aa3449c,4.89,Non-MKE State and County Sales Tax,5.5000,2,1011214
+ebf5aa24-0d36-4831-9686-938ecae50dd1,dccf4409-8612-4ba4-b2bc-20d04b50be6d,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011214
+121ed2f0-1cc4-421a-b0f2-964e6fa76a52,8bdf1a3c-84d6-46be-a355-5a36054282b3,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011214
+d7f3382f-f299-42dc-9be9-3030e815bbb0,db66acfb-5080-4bcd-b692-05ac032856eb,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011214
+50de0dff-c31f-468f-a7d9-00e7052e39eb,98f4cf5d-92a1-4c52-8f30-00cd71573240,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011214
+81423b9a-dfa6-4b71-b2c0-3746874652ce,d0a9af14-6f99-420a-88b2-4ab7d382854c,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011214
+c1d10b64-75b5-4f06-94f0-8879b589da14,a9b9b2bd-4ca5-4a0e-be62-5752105ca9db,3.79,Non-MKE State and County Sales Tax,5.5000,2,1011214
+5f85af9f-9b36-4334-ba0e-58644b8fa60e,7067cca4-70b2-40e4-ad5c-7faaec174eed,4.47,State and County Sales Tax,5.5000,1,1011215
+1cd864bb-03db-4a02-b546-bc98d08d0702,2dc2413e-75fa-4f53-b7ba-ce83fa09f73f,3.89,Non-MKE State and County Sales Tax,5.5000,2,1011216
+11f2ddf4-d21f-483b-bd56-797884c02641,49f40ea3-fe71-4c96-b5d1-b045338c3b71,5.04,State and County Sales Tax,5.5000,1,1011216
+bc87173d-bb92-4784-bd4a-fdb4e608bead,c9cc6e79-206d-4a14-9a5a-8cfb544b87ee,5.04,State and County Sales Tax,5.5000,1,1011216
+6952ec5e-f0c0-4a62-bbe7-bff6a329bb73,a7dccf69-467d-4496-a41e-92c030232535,5.04,State and County Sales Tax,5.5000,1,1011216
+04a7b86d-5e5a-4f65-b0a2-66a9be3174e7,3f3f492d-3e79-4ca0-8dfa-f97811898155,2.49,State and County Sales Tax,5.5000,1,1011217
+2d85712f-b802-44bb-84eb-678d5d44b89b,0c3f277b-1ff6-4761-bd76-edaa45a876b5,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011217
+ec5fc193-6030-4460-8f63-7df47fa495cf,9acae0c8-5708-41f2-88eb-f90b75c64662,5.79,State and County Sales Tax,5.5000,1,1011218
+9fd44927-0c91-4a32-8b9a-d5416c142f12,bdac2fff-ac33-492d-9422-c2f9afab47ee,2.49,State and County Sales Tax,5.5000,1,1011219
+8f336d3c-e2bf-4134-945d-e04ee1692a59,ff54a21d-a8c6-4cf2-ac45-3b9e25a1e336,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011219
+219b31cd-21bb-4afc-a9d2-6af7b816accb,b12ad921-a559-4f4d-928f-0b1d538eb951,11.26,State and County Sales Tax,5.5000,1,1011220
+3ae659e0-0403-4475-9b2e-2fc064be92df,c81c7bf6-3f85-4a4a-8e72-5d75484541c2,11.26,State and County Sales Tax,5.5000,1,1011220
+9cbfe7a1-b64e-46a1-8cfe-25f3faffccdf,f5211237-7818-430c-be9b-d23310defc64,2.49,State and County Sales Tax,5.5000,1,1011221
+bd3bee71-f5ba-4c6b-b690-0be0696dbecc,f17cb68f-5c8d-48aa-a9b9-d75848697994,5.79,State and County Sales Tax,5.5000,1,1011222
+244fda38-3486-4976-b75b-f00e112ce4d2,49554a5e-ceec-42f4-8b37-87bc8cc3c00d,1.89,Non-MKE State and County Sales Tax,5.5000,2,1011223
+baf242b2-4fc1-4975-b49f-1a789b96133a,19a82501-e3cc-4971-a3c0-196fd54890b7,1.89,Non-MKE State and County Sales Tax,5.5000,2,1011223
+5d7f4030-dd83-4731-8a76-dc1ca11b8e82,d6ebb96f-1d35-4665-89ec-f59f48e6caf7,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011223
+7e160e55-bead-4fa0-88c8-fc5fb487c45c,3f70459e-8f48-4044-9a28-6dde88da4e33,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011223
+9348034a-cb40-4b96-8e87-fe528bda44a9,cd886d26-69b3-473b-b21a-f5b7a7dd5e08,5.79,State and County Sales Tax,5.5000,1,9013374
+d01e56c8-01f5-4d2d-8080-4c3f09a0d57f,0e8eace4-382c-4d8a-8505-54e8ecfe673d,5.79,State and County Sales Tax,5.5000,1,1011222
+6b30223d-9f02-41b0-ba47-f24e1e7b5f3f,ce9a6f90-0bb1-4dd5-a4a4-b6903f3022d1,14.87,State and County Sales Tax,5.5000,1,1011225
+4cdbbe2d-6d71-41c4-b78b-6a34ee8145cf,826b117e-d78e-4958-b025-3ec1a78e6709,11.55,State and County Sales Tax,5.5000,1,1011226
+1e3f8734-734e-4da9-b11d-8c5f825f37e4,17072e5e-5aab-4d1a-8885-bca5c00f994d,11.55,State and County Sales Tax,5.5000,1,1011226
+62e51815-e664-4c6b-9882-7c22e7e76a45,c1ee7284-c3f1-4bdc-ab5d-f248b5eb5d21,3.99,Non-MKE State and County Sales Tax,5.5000,2,1011227
+1e5ded36-0f97-4b8f-b21a-a0d6a65aaefb,17c2d3c5-6ded-4ada-af3b-47e5387cf18c,1.75,Non-MKE State and County Sales Tax,5.5000,2,1011227
+a3fd5243-eb11-4e3d-b97b-02add17058ea,284d15fe-4e89-405f-ae7f-4cf53a99ef5e,1.75,Non-MKE State and County Sales Tax,5.5000,2,1011227
+4b38e475-c080-4185-a73f-74747518b393,122689bc-4125-4847-86d5-0b354e19b756,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011227
+b1a75c43-8518-4d2e-a7b1-07fc8285abca,74bddaf0-b09f-4106-b334-c222ce6a300b,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011228
+c9a5c780-dc73-4cba-8cf7-5f7324793fde,aa66adc9-b989-4f72-8139-7d1fe9ef843c,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011228
+446c24a6-2be5-40ac-a71d-668a1c4728cf,7c75a8d3-16a7-42e7-ace4-699198c3a6b2,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011230
+36de17b4-86d0-4634-9637-1388d7d4190e,ca10be1d-2b97-4e8f-b612-d7de6c778003,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011230
+634a0e34-9d3d-4270-bd8d-534cc4bdeb99,5656f33d-28e5-4ecb-8a85-c15659675ede,12.16,State and County Sales Tax,5.5000,1,1011231
+1aa3de8b-26f7-404e-b0a6-a4a297d63efa,b852973c-df19-4cf7-90d4-ea8679fdf241,5.79,State and County Sales Tax,5.5000,1,1011231
+eed4daac-2cc5-4f55-9fd2-e9eecd54a535,d40fa250-f26b-459c-b252-1045df00bb71,2.19,Non-MKE State and County Sales Tax,5.5000,2,1011233
+a498e641-56d7-4d54-af5c-b831b29e996c,e139f045-fe60-45ea-a574-7f5f22bd4ae1,9.46,State and County Sales Tax,5.5000,1,1011234
+dbacf72a-cf9c-4898-978f-70f25e2bee69,ef34acc9-109e-4bee-bb78-773470acc6c4,11.26,State and County Sales Tax,5.5000,1,1011234
+5e67d78b-4d55-405b-a7cc-554375d25374,69b32539-5cb1-4527-8937-3548a85fff9e,1.99,State and County Sales Tax,5.5000,1,1011235
+af8af6d8-a8e6-475b-844e-f679bc0d43e2,8b6e6b48-82cd-4458-b65e-f3f5a4679520,2.49,State and County Sales Tax,5.5000,1,1011236
+8e192e91-1629-4481-b21f-b818195b1cda,5356c1eb-971f-462d-bf01-0040d9ac3121,28.95,State and County Sales Tax,5.5000,1,1011236
+ccd0ebeb-2cc0-4788-b562-0566c59a61f3,0a56a47b-5111-4468-842a-7cfaa94ab7f2,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011237
+4eb7f7cc-6dc8-413d-8674-485043e074fb,740cc0f5-c7e6-4b64-a1a1-dab5421b792b,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011237
+cbd8cf07-45f7-4fd8-8916-d4bef9668cab,76d99da8-15f7-4811-8c01-d804ad4ce630,0.89,State and County Sales Tax,5.5000,1,1011238
+447ad9ff-f835-4415-a8d4-c4738ef16c04,70843041-9faf-415b-9f18-3d4993308628,10.59,Non-MKE State and County Sales Tax,5.5000,2,1011238
+c687a958-dda0-49f7-a17e-8195a5e23c01,a8a3685f-54d1-487f-8eac-4115981f1749,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011239
+52810a48-fbc4-493f-b063-f3feb25df9e5,f2b76290-4ea2-452c-b68b-063b14d10a11,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011239
+aa9c702e-6921-45d4-9b60-3e8258562f88,dcd9ee42-e94c-40a5-aef2-1ecb2013192d,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011240
+7a97fc88-92bc-4cf4-96db-b83179c264ea,573e3e29-9c40-4daf-b330-b6ef1119dcce,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011240
+955fd421-0a66-41ab-b8bf-62575edc47d9,3bd37fe8-d20f-4951-aabd-a611b266f0f6,2.19,Non-MKE State and County Sales Tax,5.5000,2,1011240
+07072b46-091a-474e-9533-dbe685c4d307,cb8ad573-300a-43bc-b765-c12079a67f86,0.89,State and County Sales Tax,5.5000,1,9035511
+21de6b8e-3ff5-4860-8c0d-4a083dca7047,18ba315d-064f-49e9-a811-0e92a8ba221a,10.59,Non-MKE State and County Sales Tax,5.5000,2,9035511
+bb66aa9d-8c2a-449c-a112-bb3275674749,4f4c62cf-9d26-487d-afa4-f44ccbe1eb96,0.89,State and County Sales Tax,5.5000,1,1011238
+0c27ab51-a943-4984-94b2-6ebacb4d3b76,cf2f0137-0ff6-41c1-aa3f-964361579072,10.59,Non-MKE State and County Sales Tax,5.5000,2,1011238
+422cbcd3-b95d-4f95-97a9-483d7d94b2af,1d2ec869-0b00-4aa6-9735-fc5c5feddd09,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011242
+4857d78f-3007-429c-b00a-ccff40c71311,31c66358-18bd-45e3-8ce7-90aafe24753a,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011242
+1341036d-ebb5-48bf-a64c-e548d3eef055,97b0b432-2c2e-4d3c-ac82-52131cd4975b,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011243
+38e88fd2-6dce-49e9-a03d-50a54130d16b,1cef9344-43c0-4692-bdbf-ee70cbad66a8,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011243
+52e2d41a-f4ab-46ed-94fe-58ad2983ff8a,290cbda0-23ea-4770-b8fd-c62864fb0c27,4.19,State and County Sales Tax,5.5000,1,1011243
+df3b655c-f18b-46b7-a3b5-8a677568a953,21700766-379f-4143-a1dd-eb1a303ba53b,3.00,Non-MKE State and County Sales Tax,5.5000,2,9045136
+5fae8394-cb68-4ba9-8ec5-33c27b2ddea5,44ef5d61-45fb-4a61-a9dc-9e5309158261,3.00,Non-MKE State and County Sales Tax,5.5000,2,9045136
+887ef59a-5a7c-4c83-98e5-1bee18974835,012fa597-9d68-4d4a-85eb-54eb9a58de63,4.19,State and County Sales Tax,5.5000,1,9045136
+7d17ff0a-e1a7-4b88-a7cd-a0597faf6f21,1bdc9120-54cb-4aac-a2cb-1f85a28a365c,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011243
+3b707477-bf06-4cfa-8208-26c4fef80814,604c5838-f2a3-40b7-ae8d-51e3964286af,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011243
+4601e733-9d96-46bb-b7fe-98a346df2a19,eea738cf-7158-43ff-861d-e12b9e4117fe,4.19,State and County Sales Tax,5.5000,1,1011243
+00da8137-5446-4c77-b398-cd7175680e79,7b5af934-8dff-488b-8758-6f35079764ea,1.49,Non-MKE State and County Sales Tax,5.5000,2,1011248
+495523e7-5c50-4a38-9c37-98a87ddda06e,cb432c3a-bc8e-46ba-b468-9fe1e4257428,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011249
+b469e16e-1cdc-42ae-9cc9-0ee6a45a0498,4286441a-6a19-49ff-9000-e1632fb1232a,5.79,State and County Sales Tax,5.5000,1,1011249
+bb8ae91c-f80c-4fba-b583-58f9fcfac94f,81813514-b903-415c-b064-792b4b8c9e92,5.59,State and County Sales Tax,5.5000,1,1011251
+c978267a-8cae-4c5f-81a7-6bfd897b0bae,cff057fb-de96-4ab0-96c1-0af0c0956fa7,5.59,State and County Sales Tax,5.5000,1,1011251
+7feae083-c9b9-40bc-a73a-360b437a0212,8704d222-2182-45ee-a98c-965fae197b74,3.79,Non-MKE State and County Sales Tax,5.5000,2,1011256
+2502529a-7661-46cf-a417-8287e0210856,ca7d62e4-af10-422d-99cb-93ef94fdd28f,3.99,Non-MKE State and County Sales Tax,5.5000,2,1011256
+63f7e499-426c-4364-83a9-a2918b2cb351,c3bb2798-cc22-419d-8823-901d4910a205,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011257
+0b805992-afe9-4022-b44c-f9cb2d45f8a8,932c7878-0600-48d0-90c7-776f877f7223,13.38,State and County Sales Tax,5.5000,1,1011257
+06c7ed2f-ca78-45b0-b471-0d0bfde93e77,ca155c29-122b-4ea9-8eb6-39f87e172d50,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011258
+30a3afaa-0206-4ea1-98e8-716837a67f39,0902c785-b565-44bb-8695-790ad2ef87b9,2.75,Non-MKE State and County Sales Tax,5.5000,2,1011261
+690ad674-cd6c-48e1-b166-ac4ecaa9db78,13c05d25-af6b-4b8c-83f7-193a7e3698e4,2.75,Non-MKE State and County Sales Tax,5.5000,2,1011261
+dd3316e6-7da3-4fb3-9595-dc22d9719ab0,120d143f-307e-464e-a756-ae1f7f0762d2,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011262
+ab61e45c-d2b2-4457-88d2-31844da883c5,d76b043d-235d-4786-b757-d178f89c4a75,2.29,State and County Sales Tax,5.5000,1,1011264
+3722e105-2bd1-451c-b28f-6a73062b9149,cd785b8d-7dfa-400a-b820-1fc41a074046,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011265
+c69a1905-cc4d-4369-bbb7-5528ed768579,ac5e51c0-d81e-4973-9cfa-378888f78651,7.00,Non-MKE State and County Sales Tax,5.5000,2,1011267
+dc324434-f8cc-4d18-92e3-10ac9d2b6ca2,171922a8-9039-4018-b99d-61729ab51d7b,9.78,State and County Sales Tax,5.5000,1,1011267
+87097f79-a8b2-45c9-ad56-ba686ff6ec60,f33bd38e-90fd-4a2b-a4e6-cd4f4c8562a9,9.78,State and County Sales Tax,5.5000,1,1011267
+ad094c25-b18f-45f4-a332-33e982459543,9ac7c0e0-0b9b-4c83-b55d-740c85c674fb,12.81,State and County Sales Tax,5.5000,1,1011268
+4b90f10e-c4e4-4857-a364-d2d7695d59f4,3e3cb620-10c5-4fe9-8eba-bf1d1b839ce9,11.37,Non-MKE State and County Sales Tax,5.5000,2,1011269
+76d62eaf-ff50-462f-a193-14afbb7df6d1,b3e1b194-7b24-4035-aa59-50df6433adfc,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011270
+35b7bca7-2c8b-46ff-99df-15e2689ac566,e4202dfe-889e-45d8-9c07-d7d0e7b855fd,3.09,Non-MKE State and County Sales Tax,5.5000,2,1011271
+46e12f5d-ea3b-4f50-a996-0ad893bb81c7,ee1e694a-5e0c-49cc-879f-1c508064230c,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011272
+2766d107-a1a4-4b35-825f-0e952b93a2da,dddb8843-f703-46b7-a780-f7726a7333f9,12.16,State and County Sales Tax,5.5000,1,1011272
+6e93ffe2-7099-4053-a109-f1c11c8fb9cf,f1de70aa-4cf0-435f-96b7-bfc10edca503,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011272
+af797788-a328-472b-990d-6d29fc2049b2,9ac5b11e-998c-443d-b57b-959f811139c9,-1.99,Non-MKE State and County Sales Tax,5.5000,2,1011272
+497bed13-fdf8-42a9-8ee1-fb8192bdfb8d,241bdb0c-4fed-4fc2-b1b0-220285054a46,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011273
+4def2972-59cc-4e36-b4e5-273dcb577760,797b2d3c-a5a2-4868-813a-b0ceec373bc7,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011274
+2da6a077-db63-40a9-ae64-6290a003ffdc,7ecfc1f2-575a-49fc-a905-addbc040996b,1.89,Non-MKE State and County Sales Tax,5.5000,2,1011274
+73aa9f4a-f632-41e4-81ae-3941fbafea8a,a53e3d7d-2a27-473e-ad0a-e9e4f18cbd60,12.45,State and County Sales Tax,5.5000,1,1011275
+46a8d595-2170-459e-9ba0-b45b2e1cad2b,66f7492e-75fd-456a-8781-ce07d92dce18,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011276
+6df15a4e-43fe-475b-bcaf-ac6a09976be9,1d940b15-8e3f-4ecf-acf6-56dccb4a52ec,19.99,State and County Sales Tax,5.5000,1,1011277
+82822784-0b19-4078-9c75-53f465c0f734,98cbdf11-2c86-44c2-9a6e-092dc2f0d66b,9.75,State and County Sales Tax,5.5000,1,1011278
+885d9b48-46b5-4afe-b438-4779f3b6953d,51178073-4fb0-435f-be1c-3012a678d3eb,11.55,State and County Sales Tax,5.5000,1,1011278
+e2083d09-2d5e-4d21-b443-4c21b9c9437d,addeba8f-5de9-4788-bfff-dd047524fc10,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011279
+933d712e-b28c-4f10-9061-9027bc30ec3a,2e6f2ac7-45b5-4c57-af5a-f0a44a2c1704,4.19,State and County Sales Tax,5.5000,1,1011279
+6ef659d7-f4f0-4fff-8255-480e65f7c77b,dae39ab1-500b-43d6-ae00-a3a95ea55121,1.99,Non-MKE State and County Sales Tax,5.5000,2,9024624
+b92d3291-58fc-43b6-965e-f524f9a1842e,2c95afb3-a8f5-4726-8c4b-a7e016e9735c,4.19,State and County Sales Tax,5.5000,1,9024624
+6298fe1f-8c63-45cb-91d0-5d2f6a4af04c,9880e6bc-cbea-423e-9c09-b82fd63291cd,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011279
+4fc5119c-60cc-4451-b038-8a7a040463dc,8abe00ff-bf43-4b8e-b75d-c5d13e0c6fc4,4.19,State and County Sales Tax,5.5000,1,1011279
+e65ed7f9-b124-47bc-ada8-e4e8f0410289,4aba87d6-8978-416a-a5e6-3b7e05b8660e,3.99,State and County Sales Tax,5.5000,1,1011282
+c4a09c5c-1050-4066-876f-ef71da88df74,7baed00e-de56-4ce5-b4c8-f63d13a2ed7c,3.99,State and County Sales Tax,5.5000,1,1011282
+dc0c3673-ff13-4cc0-b226-a4033ea58b31,625ea5df-d0f3-44f7-9a25-2db3efcdebb4,3.99,Non-MKE State and County Sales Tax,5.5000,2,1011282
+9556f71a-816c-4919-810e-0db83ccf7d70,144c8d1a-69b3-469b-99c9-5db481a957f4,5.19,Non-MKE State and County Sales Tax,5.5000,2,1011283
+dfb64344-a210-4d84-9b96-dfa296ebc1ef,a4f9fb7f-ab2f-4d97-a2d9-bfbb9be9a0be,20.99,State and County Sales Tax,5.5000,1,1011284
+9fac164a-ea96-416d-aedb-cb9a4126f3c0,b1fb9929-8c38-4e2a-b05f-dcda93c7669e,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011284
+95dcdbbe-f80c-43e9-a433-6d6b9b2ef1bc,e6c78aae-f3ed-4646-a281-dfaf2d9932c7,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011284
+77781ba6-b559-4289-a17b-8cc576c3a181,fb41bc6d-b210-410f-9c56-25946f641276,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011285
+17ce586e-f8b9-480f-8db2-2357a265fd23,56f852d4-c141-47b1-8b05-1a46dc91fe38,3.39,Non-MKE State and County Sales Tax,5.5000,2,1011286
+10f2ec3c-0941-45b6-81b7-8d10b48aa835,6fe4505b-124b-4977-9415-295c59edb013,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011286
+ddfd24c8-48db-4f47-b09f-d697e637f539,c0318269-6250-42f7-8aaf-64ad9fde9866,3.50,State and County Sales Tax,5.5000,1,1011287
+daac5174-d26d-4ac0-ad9a-bf12db5f30f1,3a9c07cd-cc60-42c2-a377-1a14a7370509,3.50,State and County Sales Tax,5.5000,1,1011287
+f360d9a3-39d0-467f-9d57-5064bced971e,15da1684-ac5e-465e-9eec-c91a8f51b5e2,6.79,State and County Sales Tax,5.5000,1,1011287
+48a99550-cf33-4f17-9a77-58c8271c51b3,b78f3ed6-f7db-46b3-87d7-0b80f99d1c7a,2.19,Non-MKE State and County Sales Tax,5.5000,2,1011288
+2840b630-74f0-4645-930d-68156a8f174f,731f1322-f175-4d5c-add9-8bedb2d7f3c7,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011288
+0105af99-f7fe-44a4-af78-d61410614ce9,2d5d72c9-0e11-417a-99db-8b83fa60c6f4,12.16,State and County Sales Tax,5.5000,1,1011289
+82cf468c-b4cf-4ac9-9543-1e328b4cf515,fa83870d-e38e-41d1-92c6-12679c588a58,11.58,State and County Sales Tax,5.5000,1,1011290
+b4e72b36-63f4-463e-91c5-1c2e4c5d6d2b,668ba495-5a12-4667-ba1c-a98563c8bfd9,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011291
+e5569e91-da2a-483a-a5da-45462817220b,97ed9629-72f8-4cf0-b1bf-3cad62262753,112.68,State and County Sales Tax,5.5000,1,1011292
+5ceafc64-2ed7-49b9-b2ef-d85ddf24de3e,54826215-94de-474c-b9e6-531ad160240b,3.99,State and County Sales Tax,5.5000,1,1011293
+eb56ad9c-7be8-4cc5-825d-e66545cf5fa3,87d5a1db-f616-4e76-b450-1d78061f7d1c,3.99,State and County Sales Tax,5.5000,1,1011293
+f2289b65-6203-48e8-949c-761ce5cdcb36,2573aa4f-9160-4951-9590-acb9d335f464,3.99,State and County Sales Tax,5.5000,1,1011293
+dad84d8c-be88-46d4-bed5-77426795d37b,1dbf5cd1-4f5e-42a2-b174-920c35bb2637,3.99,State and County Sales Tax,5.5000,1,1011293
+7cf1e45b-2e84-4ae1-844d-d0dce492beae,cdd93d78-16fa-46d0-848e-be0a93b99ae7,93.10,State and County Sales Tax,5.5000,1,1011293
+5c613bd0-4125-43f8-bdb6-2609f8b940c3,19f62b3d-1555-4c63-a8ea-59f363bd2961,3.99,Non-MKE State and County Sales Tax,5.5000,2,1011294
+c3ffa110-e350-4d68-b52b-9d4bbceb990a,113fd2f4-9e48-47b6-bcd8-7c27e9f2f355,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011295
+afe66668-a19c-47d8-bb70-116525f98a2a,a57675a4-ebe5-40bf-8cda-55e3d872195c,1.00,Non-MKE State and County Sales Tax,5.5000,2,1011296
+16d8ea5b-6211-45a6-bdfe-7df182dad17e,0b7d45ed-8ca6-4544-996e-4fd4b3346d40,1.00,Non-MKE State and County Sales Tax,5.5000,2,1011296
+8a0e3087-348b-4998-8093-c631c6d45492,1a9ad1b4-1c51-4e00-9487-8acd603ba1e5,2.19,Non-MKE State and County Sales Tax,5.5000,2,1011297
+76771c0f-ad88-4fc3-a13e-86d8b9a8605f,45961ed8-7c01-4fef-b1fe-24515dbc6681,2.49,State and County Sales Tax,5.5000,1,1011297
+59e3af1b-9079-4575-8acb-69163259c506,2d34da1a-7cf6-46c3-8aed-23b7ec38e404,3.89,Non-MKE State and County Sales Tax,5.5000,2,1011298
+ecd0853b-5987-48db-8a1c-e95570e9b6b4,665b715d-9f67-4eed-aba9-ba3243082237,2.19,Non-MKE State and County Sales Tax,5.5000,2,1011299
+67a7401c-db23-453c-8cec-42cd70896cf6,f64a0dc1-8fd5-49d3-8aee-976fa25e7a5a,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011299
+47ad1713-9256-486c-8ec7-0f0798ad1339,e97a2ffc-a4fc-48b6-a845-f15c70ab68b8,12.81,State and County Sales Tax,5.5000,1,1011300
+57ea0576-e473-4942-9107-1b622776503b,06fb3dcb-da32-4860-ab23-acd2267e0aef,12.02,State and County Sales Tax,5.5000,1,1011301
+6fb3063c-864f-40f8-a432-6ba6c79c6482,76e75fc5-340d-4555-ad43-cc33b9ed3a68,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011302
+3a9b6643-4c93-47ea-9638-9091f50e493c,d5e4e6e9-5260-416f-9597-279406385cfd,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011302
+aca1bdd1-acf8-44f8-b498-5f1794029c69,a4311f8e-d5ed-4f67-b708-04353cb35afb,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011302
+2ca9f061-e521-49f2-a196-5053b4c3d4b2,02272af2-ed61-4025-a0cc-2e5057fa4109,3.39,Non-MKE State and County Sales Tax,5.5000,2,1011305
+d558416d-b756-46b6-921d-f3eef3b04e28,5ac6628a-3c39-421b-b4fb-e912de440a76,11.58,State and County Sales Tax,5.5000,1,1011305
+f7b4c890-1cb3-4751-ad11-09236adb9615,c160ebd6-a959-4bf8-bfc1-1426e096ffc2,1.69,State and County Sales Tax,5.5000,1,1011305
+2f163970-9685-49b8-98c1-0f4454f62f06,ac1d2998-c430-40d8-a4ef-fe79d560a63e,10.03,State and County Sales Tax,5.5000,1,1011307
+d72c506a-07bd-4063-8f5e-1d829ea19c18,52579abe-cb32-4db2-9048-7812baeae2d3,2.62,Non-MKE State and County Sales Tax,5.5000,2,1011308
+578d467a-5950-42ed-8701-87f2667faac8,4c8760a9-e1b4-437b-ac1a-ca8c7d6a8871,2.63,Non-MKE State and County Sales Tax,5.5000,2,1011308
+20926549-80b6-4b91-b10b-747484865318,31b34d8b-e43c-4c58-a77a-f5b648c22b4e,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011309
+0b9a6fab-a609-46f2-a099-2d0c833b2753,36a8360f-05b8-410a-9b57-a2d5fcfa08d0,1.89,Non-MKE State and County Sales Tax,5.5000,2,1011309
+96534a7e-eeee-471e-9839-627f9d289119,52d90ccb-0314-4a8f-a4b9-4b5e6712c0eb,28.95,State and County Sales Tax,5.5000,1,1011312
+cf9c9736-c01a-4405-a584-11a85e0c192f,5cb1fb3c-2769-4807-99c5-105bc6ea694b,3.89,Non-MKE State and County Sales Tax,5.5000,2,1011313
+8ab335c5-8d37-4224-8b9a-e39d95d1764a,88a8f799-f9a8-4af3-9823-bc8586d68d7a,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011319
+061fd414-e227-4d7f-b42a-ca34cd729c80,94f72e51-8401-4bc2-ab02-9f8d6eb75700,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011320
+5eaa3ee8-c4f8-4068-a2ce-95ddd63f8eee,3da0503d-c054-4e39-8e66-43285e1b615d,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011320
+e2b648b9-eabf-4f3b-9446-acf8bcd80f08,ae0a5f63-4767-4fe9-b008-500a54817ded,5.99,Non-MKE State and County Sales Tax,5.5000,2,1011320
+c7d19557-288c-4a70-b49a-82041eeaaebd,9d925b1d-18fd-427f-848a-dfc13bbcb95f,12.02,State and County Sales Tax,5.5000,1,1011320
+4af3bac4-5b6f-4583-83f9-7f7e81187ce7,373c95dd-4ded-4277-b80c-9e5d36f0398b,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011321
+8cdfde88-ba53-44fc-8c14-c951168676eb,b3ba42dc-9944-428d-b314-5b41713a0063,6.99,Non-MKE State and County Sales Tax,5.5000,2,1011324
+d718fc8d-2756-4c6f-b584-b61a9764e37c,f8bc508c-4db3-4613-891f-1eefa01e70d0,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011325
+62735770-fe10-4103-98b7-e7e1fdc39cca,40bb3d2d-ae13-4baf-8b07-cc709e195686,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011326
+3096f5db-d74a-41bc-920c-40b950345e29,7c3f7c3b-c8c6-4b59-8fca-8d00e9fe1844,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011327
+97af671d-16ab-4b26-8f6f-5fac882e268f,60efbdd9-5486-4365-85a4-e7ac3c9b5cea,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011327
+055e2389-e341-4e7a-a36e-7142256e661d,58d91bd5-0f86-4ff3-93c5-88b78b29a689,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011327
+108c3fc2-e42d-4053-b45f-539d01a1aa5d,73fbf204-7a5b-4f8e-a694-97c4f80c6822,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011327
+ade75a56-2736-4e34-b986-72262c82cb4c,02840628-e9bd-4fe5-b340-6342aa69b324,5.59,State and County Sales Tax,5.5000,1,1011328
+234a4452-16f6-4a31-8469-ebcfe7b9652c,93a9b9ec-1294-4fa1-8abd-3e53371d780c,5.59,State and County Sales Tax,5.5000,1,1011328
+56ea1a31-d7df-46e9-af00-993a6856fcba,d38269dd-59a9-4bff-9a20-9ba5d7c42918,3.99,Non-MKE State and County Sales Tax,5.5000,2,1011329
+ed4ffe50-e432-464c-bf7d-67b191c50f7d,ed1abc32-709e-4d07-85f3-d7be8a50f960,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011329
+3798d4ed-6b5c-4b65-a02a-c3b279bf47c3,c5a7f648-1109-42ba-8ccc-e7c6ccb1b253,11.26,State and County Sales Tax,5.5000,1,1011330
+6c3bd471-af6d-4f5f-9314-ed16817f85b3,78b84db6-f3b9-496b-8881-1d9fbe112cbb,11.26,State and County Sales Tax,5.5000,1,1011330
+3833450c-5303-4a32-b8fb-917ecb823f7c,dc4137e6-c650-47ec-b75d-d96fdf9cdaa1,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011334
+7b788588-2b9a-4af1-a39e-487d67ba8c4d,dfdae9b5-16b8-4364-9a46-f5abd33fab81,5.19,Non-MKE State and County Sales Tax,5.5000,2,1011334
+a14633d1-d7a4-4fe2-8938-9028a34c707d,f868a3b4-6f24-485f-9ca1-88763829a16f,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011335
+783c1cc1-2ffb-4ce2-b1a0-28a707bda01b,f3d90ac8-acc8-454e-86dd-2a059d4fb04f,9.46,State and County Sales Tax,5.5000,1,1011336
+ef2fffda-47c9-44f7-9034-23deae7f7f9d,63220036-b153-447a-9915-a88441dc6ba7,11.26,State and County Sales Tax,5.5000,1,1011336
+83c96aa2-c81d-4c09-abb2-3c091f4a330a,70cbd9fa-6e4c-4c67-9c97-5b2f9ed90932,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011337
+c10c8dad-4a2b-4bf2-92e1-5607c35ec530,115fe503-9497-438d-bf03-6ae36804f0d4,3.99,Non-MKE State and County Sales Tax,5.5000,2,1011338
+6e20b2cf-8e5c-40c0-8732-4b39422f4e73,a7763f7a-55a7-4902-9870-63734719f311,3.99,Non-MKE State and County Sales Tax,5.5000,2,1011339
+d39c3dbe-202a-4203-8aab-637ef9c899b1,ba619d75-2eb4-4392-ae92-c8506e4eb8ec,9.46,State and County Sales Tax,5.5000,1,1011340
+37e17bb9-c8ae-443d-ae59-4cc726204817,75ca675f-68fc-4b03-9ece-20433ce62d28,11.26,State and County Sales Tax,5.5000,1,1011340
+023fec6f-ee2a-49de-93ab-ec6542c948fd,23969287-b039-4371-af70-41005dae3add,95.30,State and County Sales Tax,5.5000,1,1011341
+cc4f404e-4db6-41a3-843a-e81801ab2e1c,bb9ace68-8333-4577-b2e6-1e5a4e2ed3de,10.73,State and County Sales Tax,5.5000,1,1011342
+87fb8d03-bd9b-4122-8117-90e7243ad83c,9c457e85-2078-42c8-a813-265d10572235,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011343
+52e314bf-52fb-4bfb-843d-5da4da4f2eb8,8588d106-abac-4dbb-ac5f-91981093c155,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011343
+ea0f58ed-b614-4e03-8496-72aa31499107,e495efe0-0a4b-4dbe-8658-d738e71ba1f8,2.39,Non-MKE State and County Sales Tax,5.5000,2,9035522
+834b4647-7a07-43c4-a121-000ae44ea6e0,3628d3ff-90af-40ac-a294-3ed746ec0ff0,2.39,Non-MKE State and County Sales Tax,5.5000,2,9035522
+69d035b1-b216-4146-8580-cd591f78def1,ac5ac439-d168-45e3-8aca-dd9f41b520f4,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011343
+3d5a3910-ca5a-44c9-93d7-35080e30c504,8cd76c70-21e9-407f-85ef-1f6028770a75,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011343
+d7032a12-ff3e-4396-a0c2-d8777d66b37c,c51ad537-18d1-4b35-a085-0c0b28f7c0ed,3.89,Non-MKE State and County Sales Tax,5.5000,2,1011344
+82ae571c-8134-4d6e-9540-371bd82e1dff,54b478ab-dcac-4056-9409-925ee2f332b3,5.99,Non-MKE State and County Sales Tax,5.5000,2,1011346
+2cb303ee-e818-4a6d-9599-7bbcabb438d1,72c71b34-1614-43c2-a73e-326a8a371cd6,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011347
+67eb8ff5-29dc-4d90-919f-711dd0d05865,1c76cf1e-79ab-4834-8741-fc17d7c09e70,5.99,Non-MKE State and County Sales Tax,5.5000,2,9024630
+526820fd-eda1-4deb-8164-d7ccb6c20015,321e2ef0-1b33-4e3f-9a93-f6744d9dfa83,5.99,Non-MKE State and County Sales Tax,5.5000,2,1011346
+0b133a47-d9d8-43ea-9832-0e8d06177349,f4d65900-e140-44c5-a717-2783ea7c9429,3.89,Non-MKE State and County Sales Tax,5.5000,2,9013382
+1ef2e5e6-e47e-459b-aab9-b769a8cfc739,0cb8746d-7a83-4b30-ab34-cd6b4bb39a97,3.89,Non-MKE State and County Sales Tax,5.5000,2,1011344
+7d35f72c-3a78-4f7e-a3c0-c1486b34bd76,14c4fc2b-8923-4921-b239-137ea6edc8e2,1.89,Non-MKE State and County Sales Tax,5.5000,2,1011352
+20d3457e-6aac-4bc9-bd20-6b644d41c51b,f17285eb-ced9-4484-a99a-d997d5f8e3bc,1.89,Non-MKE State and County Sales Tax,5.5000,2,1011352
+5513718b-c85e-451d-9e5d-577b053cbb70,3c7f5f48-d9ea-4cc4-b79c-213c02f0754b,3.29,Non-MKE State and County Sales Tax,5.5000,2,1011352
+a9883886-f74c-41db-b1f5-5e8df5a52d3c,9ea1c3c1-60d8-47eb-92ca-588720465b79,3.29,Non-MKE State and County Sales Tax,5.5000,2,1011352
+91e18d7f-b29d-40f0-a784-e9f43dded109,bc6dc780-bf14-48dd-a745-8342b0583c3d,3.99,State and County Sales Tax,5.5000,1,1011353
+54a720d6-760a-4739-9b21-706fff99e1be,cee34f18-c1b3-4ceb-88ba-9f7421649bc3,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011353
+b5c81ada-5d9f-4007-9d7b-e76471305c1e,58d7ea3d-3896-480e-a6b5-b42c11345be1,102.30,State and County Sales Tax,5.5000,1,1011354
+9b9556e5-f6bf-4557-969d-9f92948e3c41,2c424701-1ad9-4781-ace6-423199e625be,2.49,State and County Sales Tax,5.5000,1,1011355
+1ec9678f-3e02-4084-98e1-dcc51870383f,f3e19c8c-ba03-45aa-bafe-62cda7f54ada,0.99,Non-MKE State and County Sales Tax,5.5000,2,1011357
+90428066-f0fd-46c8-afd2-984791f7b974,d295637a-4091-499d-8121-6537792f1eeb,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011357
+553ec0f3-0945-4486-a9c9-3c02ac6b85a9,55fb12b3-ba58-49c7-91b1-a3ed1c264359,3.39,Non-MKE State and County Sales Tax,5.5000,2,1011359
+32202f84-b05c-4930-b10d-362067202fb9,33788881-a411-4052-a0a1-829d6800f60d,23.75,State and County Sales Tax,5.5000,1,1011360
+d2c7a6fc-3061-4936-afc1-7296a54586f7,59d89e66-df6a-4cc4-a602-76c56385beff,13.47,State and County Sales Tax,5.5000,1,1011362
+70e93c2a-c724-4bd2-8cb2-62ef662ea0fc,6d4635c8-2e79-4e9d-9338-7eeaf9cc3099,13.01,State and County Sales Tax,5.5000,1,1011363
+240ca45a-7eda-4e5d-8590-cfe77728bad0,fab35f0d-9da8-427f-a8c1-c15f52cb93a9,15.06,State and County Sales Tax,5.5000,1,1011367
+cf62a978-a37e-45cb-9748-c4244bdd7084,110214db-7b01-4de3-be3a-4e221b190577,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011368
+22c39cb9-22b8-42a2-987b-28f3eb695501,28c78dd7-a21f-42d9-89a6-d6bf53984931,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011368
+b747f391-ce5b-4cad-bc29-f882e844bfca,e7f007c0-6f88-4d4d-ae77-cbfd28ba3362,19.99,State and County Sales Tax,5.5000,1,1011369
+244575d5-a44d-461a-b03d-9ee668f90e34,acf936b0-56cb-4249-b538-1629fd05b60a,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011371
+2e186e3e-4b8e-48de-85a5-05826e0740e8,7dfacb60-2ea5-40ec-849f-7a2d36b2c0d0,11.02,State and County Sales Tax,5.5000,1,1011374
+a28bec07-7424-496e-b521-0d435897889b,cb1e2369-7c5b-4441-b4d1-90ee0b7761a2,12.59,Non-MKE State and County Sales Tax,5.5000,2,1011375
+b8b7eb72-9b68-4330-8e91-783d899e4815,61b09d37-b7b3-4a37-bcd5-c8632d07792d,11.26,State and County Sales Tax,5.5000,1,1011376
+9cefd38c-5d6b-44ed-8c88-98aa5c427474,489f476f-6f9c-40e9-b72e-cbb6cb679dd7,11.26,State and County Sales Tax,5.5000,1,1011376
+6ba52919-7db8-4707-9cad-1a92a942bed7,41bb8ef1-a393-4b9e-bf41-49fbd0f5b7f2,7.99,State and County Sales Tax,5.5000,1,1011379
+31f5270a-8964-4632-aff3-87b0fcfe614d,76f44a1c-a4b4-4abc-95e1-9dcc51a82bb2,7.99,State and County Sales Tax,5.5000,1,1011379
+5e28910b-9a73-4f32-8431-6315561a6690,48d8eb07-d84f-4cc8-9271-1b33c1d63efc,1.75,Non-MKE State and County Sales Tax,5.5000,2,1011379
+9785f763-b346-4584-a4e0-2e0533d3bfe9,3533f375-1d62-4382-b185-399172a5b193,1.75,Non-MKE State and County Sales Tax,5.5000,2,1011379
+b24628a9-e925-4085-a716-334ef21aefbb,ff1331be-fd8d-449b-a038-8a4914d4d196,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011380
+b4773fdb-1e85-413b-8af2-9caeb18ca686,d05becfd-bb09-4991-be90-d45cf48d4a05,3.99,Non-MKE State and County Sales Tax,5.5000,2,1011380
+26c7156b-0d2d-4c47-a86f-bb6f2eebd652,0863fee4-33e6-4a40-9fb6-cbde8ac73e70,12.15,State and County Sales Tax,5.5000,1,1011382
+ffa353f1-5a5a-4eec-a6c7-80b48764cc19,e475b6a9-7df0-4cd2-8df9-c071d61a6d1a,12.15,State and County Sales Tax,5.5000,1,1011382
+e559c283-8e3b-44b2-8efd-a83ae799d90c,49ae4cb5-fefe-497f-ad62-7c8631725be2,10.59,Non-MKE State and County Sales Tax,5.5000,2,1011384
+2971ab4a-6971-40f2-8284-92336da0a7f5,26a3b1d2-31ca-43dd-bc58-cb0f0fd2b65b,2.29,State and County Sales Tax,5.5000,1,1011384
+84787ff1-650c-4ff6-8b93-5e83cb0b8a64,894ba801-3786-4e5a-baaa-75cc69228c31,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011386
+17904348-6247-41b7-b798-7b567daf9b29,f8aa7006-0a1d-4da8-a653-7bb0b39a41c0,12.16,State and County Sales Tax,5.5000,1,1011386
+754c2e49-a470-4c62-97ad-c3f6b6ac7684,e20f6c4d-f335-44cb-ab8f-55c03dac4a14,7.96,State and County Sales Tax,5.5000,1,1011388
+dee17e80-e57f-4ea9-a918-34b177a37587,41405342-7829-48bd-abe2-024201bba00e,3.79,Non-MKE State and County Sales Tax,5.5000,2,1011389
+c59df63b-dc24-41de-9efd-b52644f14404,6a7fb9b0-63ac-4fa9-b64c-4aaa1db3488f,3.79,Non-MKE State and County Sales Tax,5.5000,2,1011389
+4fc80a72-e6bc-4c60-8eff-ffae0717093c,b837024a-fb02-42a9-9a3d-d0021d0a4f9f,1.89,Non-MKE State and County Sales Tax,5.5000,2,1011390
+514a0521-fba8-4b3d-8f88-d84b3ca5a089,ce779b8a-92b2-4d59-a14c-09b15789589a,7.99,Non-MKE State and County Sales Tax,5.5000,2,1011390
+737f9caa-26dd-4e7c-bf94-5a5a3a72724e,7c93cd62-b55f-41ea-a6a8-00aa327e937c,1.89,Non-MKE State and County Sales Tax,5.5000,2,1011390
+6e8fd71e-6231-4fe4-b5c9-74948a93ca06,63c868ff-6046-4f00-b3f9-c29a302a2801,3.59,State and County Sales Tax,5.5000,1,1011391
+5c0b5565-ef7e-4391-aff0-e60618a3b5c8,9b1800ef-2541-4f36-8767-54e6d2eeb119,4.19,State and County Sales Tax,5.5000,1,1011391
+5d526d21-078b-45d9-851c-ff562bd1c0b3,b3d03fbe-e6cf-4c44-8637-cc30f3f65346,4.19,State and County Sales Tax,5.5000,1,1011391
+568d0bcf-aa4f-49b7-bca1-a905a6dc8da0,77008d4c-b5d5-4ebb-bfcd-52b7d60eb417,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011391
+2e5bfae4-8936-4363-8d2c-5c4d35afe205,73535fa9-b997-4895-9aa2-6952061579d0,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011391
+9430ef2f-d338-4573-b611-34478a0cc5d2,13e96104-7068-4044-bcda-dc3b2365e3c9,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011391
+89f85daf-972d-4bff-8643-40f181bbd7ab,fb1b5362-67f8-406f-93ce-e189e8a126da,2.29,Non-MKE State and County Sales Tax,5.5000,2,1011391
+f8982833-17f4-4c5d-b241-f1f3050c8d84,f1a2711a-297a-4da6-ba83-7c07fcad6179,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011391
+e85831ce-584c-4045-893f-f286439d4540,e9f8f446-3177-497d-ac31-2f419a45ed9c,3.49,Non-MKE State and County Sales Tax,5.5000,2,1011391
+90ba2e31-2420-47da-b8bd-e6308dda0d66,21ae830d-b70f-4902-ba33-5c3117b9593d,3.39,Non-MKE State and County Sales Tax,5.5000,2,1011392
+2ae1003a-9128-45bb-9994-821026486d55,b045c175-2b7a-455b-8c86-19d30df1c55c,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011393
+593f9cc5-5d5f-4d37-9fe6-aee1de16ab24,6280d779-384c-4f9f-b292-85951b8d99bf,2.39,Non-MKE State and County Sales Tax,5.5000,2,1011393
+81d5a8cc-5fe4-4360-9834-0b33aa7a9020,1fed309c-d99e-46f1-a63a-5bb95143ea8a,9.58,State and County Sales Tax,5.5000,1,1011395
+1e342090-4910-42d1-b374-16c77d21c785,e09eb700-0c95-4797-8774-45f3e49b3cef,11.47,State and County Sales Tax,5.5000,1,1011395
+70643344-22a0-4915-809e-4821f18a8c4f,26bed0c4-1181-464f-9204-b322dc743025,3.59,Non-MKE State and County Sales Tax,5.5000,2,1011395
+96d92f97-708b-4210-8592-8703805a4e93,2d3b5624-9d5b-4cf4-971c-f5f8cd42d275,10.23,State and County Sales Tax,5.5000,1,1011396
+ade9d8ee-00f8-4415-9bb2-a3441fbe1537,9896eab4-2fc5-45c4-bf70-6260a0d3c484,10.23,State and County Sales Tax,5.5000,1,1011396
+63c85c2b-ebfb-4052-8a48-45feb712df4a,e55ad29b-c2da-49c1-b316-c11f3a89451d,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011396
+fed511c3-e284-432e-8f72-a8e13715aab2,1be1565f-9a3b-4d91-a77e-c99a8390ecaa,3.00,Non-MKE State and County Sales Tax,5.5000,2,1011396
+b7d9bd5c-4517-4cde-8380-85a583665790,d75b0ced-6967-40b2-a3e7-3e52e4b5f7fe,28.95,State and County Sales Tax,5.5000,1,1011397
+fabf740b-2e2e-41c4-810d-959bf0fe9d48,92ac3984-ebbe-4e95-ba32-6514a24655e5,12.02,State and County Sales Tax,5.5000,1,1011400
+b6ca033d-3ce7-4b07-8353-3e6e94385112,83eb844b-029c-43c0-8ec1-81e6881c3eaa,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011401
+c015faa2-b70f-42bc-b5d1-774e31edc490,7436d5ec-29d0-4c85-804a-7bf4995e4e29,23.59,Non-MKE State and County Sales Tax,5.5000,2,1011402
+b58b75c1-e466-4096-9b05-4ee098cc033e,6d0a0323-5a00-481d-a226-555c39251a8a,9.46,State and County Sales Tax,5.5000,1,1011403
+797c67a9-e0d9-4608-9deb-a9425e8408a1,18b90b9e-2520-4409-9bcf-358b27d6f997,11.26,State and County Sales Tax,5.5000,1,1011403
+68e36f80-b13a-46e1-b3f8-ba1e43ba35e2,799621fe-1f52-49c0-a809-f94dd1b75412,26.99,State and County Sales Tax,5.5000,1,1011404
+b69ed0c2-a074-46c8-8e06-01ec7a9eee1e,e53d9b44-f2e2-4d89-9e15-f7ddfcffbf6a,14.99,State and County Sales Tax,5.5000,1,1011408
+dd6bdda7-a249-47c8-903a-016451845972,342eed2e-43c5-41ce-a1fd-a1214c04642d,3.29,State and County Sales Tax,5.5000,1,1011409
+53ab5bfc-ecf4-4544-b9ac-c69e104f5cc0,8075e9ef-ceac-404d-b390-ae356248cacb,3.29,State and County Sales Tax,5.5000,1,1011409
+2098302c-754d-4b90-95a0-da6a33af91e7,9db0689b-ec07-446e-bb49-e084fac8f051,4.94,State and County Sales Tax,5.5000,1,1011410
+782ca6a2-9e3e-4d49-87ed-880503f49cfd,5ee13e2a-b4f9-4e39-af3d-cd4f8598721d,4.94,State and County Sales Tax,5.5000,1,1011410
+df61e2ec-85c1-4c34-aee5-611c4a1caa59,f2279ade-26ba-4271-b719-1fa84a90879f,12.81,State and County Sales Tax,5.5000,1,1011411
+0cd042e1-7597-4a82-b682-aa64a403ab29,6ad4001b-aaf7-4ba1-9693-43e2dbd46491,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011411
+bd01af9e-635f-4796-9c83-c24f9d8ff940,3557179a-ad69-42bc-89a2-53883d9cc4bd,3.79,Non-MKE State and County Sales Tax,5.5000,2,1011412
+d789d9c8-e215-48aa-bfe7-16329cea7b6c,826b1c64-33a1-4210-a407-95e08077fbf4,3.79,Non-MKE State and County Sales Tax,5.5000,2,1011412
+c02a3cc2-0161-43d1-b7c6-7e8b19ad96e5,05efbcb2-a1a4-4dfd-bf74-e35873be37e9,3.79,Non-MKE State and County Sales Tax,5.5000,2,1011412
+e8b82699-c97c-49b4-b856-a54f4e96c74f,fbf3257b-c851-4d0c-8501-08e4f7926eb7,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011413
+fbeabcbe-c101-4386-b81a-b035cddb1cda,1423244c-cf9d-4194-b942-51d1249feb07,3.25,Non-MKE State and County Sales Tax,5.5000,2,1011413
+27d00c6c-084a-42fd-b835-51374fc88d97,540f1b67-3417-4b79-8c3d-40c238bdf5c2,2.29,Non-MKE State and County Sales Tax,5.5000,2,1011414
+550ab83c-ec03-4066-972d-80726ec7cc81,2fbd6f58-f09f-4a45-ab72-2e4bdd3d7c6b,2.79,Non-MKE State and County Sales Tax,5.5000,2,1011414
+d7b920ee-0485-4916-ad9f-e64fb35e9ec6,ec4faf50-617c-4717-be51-2cd72127231a,11.49,Non-MKE State and County Sales Tax,5.5000,2,1011414
+6425c3a8-a04e-4e16-9c58-879f0d0168f9,bd368305-2f75-4d17-8cd9-fe700187823b,15.99,Non-MKE State and County Sales Tax,5.5000,2,1011415
+344a6dbf-e528-431c-bc2f-88b59395535a,b51603e9-594f-4a73-aab2-b4f7526743b8,1.49,Non-MKE State and County Sales Tax,5.5000,2,1011417
+446f10aa-1f3e-4f33-8553-63b98eb3a6bb,bbf9ece7-8676-42db-addb-f5d409d3e3d6,12.02,State and County Sales Tax,5.5000,1,1011417
+38bc699d-6452-437a-b870-476536fa34be,1bddae05-1c56-47f2-abdc-9a9a61ab0b1e,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011418
+bd4e0b75-c063-4d76-85c5-002da5bc6bf7,b4ff0aa2-315e-4aea-8d05-701e0c311ca2,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011418
+77bf99d2-cf28-4bbe-8d14-e773a97263e7,7fc7b568-bc7b-4f8a-a119-a5b6dcec88f9,8.71,State and County Sales Tax,5.5000,1,1011420
+b31e35b0-d0cb-4ad0-9665-dad91b77a4a1,cb1eb834-e893-4c45-8c7e-e220c993ff72,11.49,Non-MKE State and County Sales Tax,5.5000,2,1011421
+529ae526-305c-45c3-9736-7f24d899f05e,0e2fb3fb-fa88-45ab-b8d1-6ab9862c48a0,1.49,Non-MKE State and County Sales Tax,5.5000,2,1011422
+d0b31c14-27fd-48ca-82a6-bdc5bcd6b3fa,11ff14ed-bf92-4b7f-9b0b-766ebc3e755b,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011423
+01b11807-e930-4a4d-a932-deb5a19bd712,2fbc9e2e-3158-4025-80d9-8f62de4b7eb4,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011424
+4414ed4f-5626-4f9a-b1cf-bb5d08901503,4e479333-f1aa-466a-bd6f-38ff5a4bbd06,2.25,Non-MKE State and County Sales Tax,5.5000,2,1011424
+02099cdc-aee1-437c-9d70-34d9393474bf,3384be32-fc07-42b8-b749-bd86091a4e79,1.79,Non-MKE State and County Sales Tax,5.5000,2,1011425
+ac8c0e04-4a3e-47ce-948b-38bcaa730922,026a78f1-d2f5-4f62-9bec-9371ac2e326f,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011425
+dee1ff68-b764-4994-8925-e47a5b6dc573,abff9512-ad40-4402-93b6-8d8566f01ab8,12.31,State and County Sales Tax,5.5000,1,1011426
+14fc620f-8271-41ce-8b53-de138d64317a,e77c854f-68ad-4ef7-9f2e-dba63d2c11ed,12.31,State and County Sales Tax,5.5000,1,1011426
+2de8ffca-9e00-429a-868c-bc948e6f4eb2,26e7d16c-3509-4e58-aa60-fb8a15f0a8bb,5.49,Non-MKE State and County Sales Tax,5.5000,2,1011426
+f402b3f8-7a28-40aa-b4d0-587c9f2fee32,396f622d-cab9-4ed6-8ef1-89855234b62a,2.99,Non-MKE State and County Sales Tax,5.5000,2,1011427
+9674c77b-cc57-4cc9-81cb-cf53ccb1e3bb,9fdae3f5-588f-47df-85b6-8f0421c3d9bb,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011428
+c5b70fc6-6497-4595-9777-00a18325bbf0,e3a0f33e-7e15-42cf-b2fe-a5d87f17e8ce,1.99,Non-MKE State and County Sales Tax,5.5000,2,9045156
+f51f6c97-e939-44c6-b0aa-390fa0c7212a,b9470786-f7e8-4807-8b3d-968606107968,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011428
+09096cb7-0c35-40ce-bf29-ef5bc5268d90,0c297ac5-3c84-484e-a49e-7ece7cbd75b3,3.29,State and County Sales Tax,5.5000,1,1011431
+f263a238-0361-40c2-84f3-57ed2f97d2e9,d38a2016-812e-4808-b7e1-7d4fda983f32,12.31,State and County Sales Tax,5.5000,1,1011432
+08722563-dc30-4e61-9b83-83abe1d2525e,43fcffa9-f5a8-4f28-86d8-8f947668011e,12.31,State and County Sales Tax,5.5000,1,1011432
+604e1359-091d-47f4-be5a-0218a2179c8e,b7393207-a7ae-4063-bb6e-360f818198b6,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011433
+aced1721-9749-4539-bbd5-ca2ab4c3da8e,c9c8fff6-2226-4b8a-bcf7-e680ba2bdee3,2.69,Non-MKE State and County Sales Tax,5.5000,2,1011436
+cdac7d48-5931-4a1a-aee3-8909bf72fd88,02787eff-99c8-4dd7-8a73-551c9c01281a,1.69,State and County Sales Tax,5.5000,1,1011436
+4feb0b4e-81de-4d5c-a98d-e94ccebbd840,9b1d19c7-6a6c-41ce-843b-f27e20c585c8,1.99,State and County Sales Tax,5.5000,1,1011436
+282acf40-3236-4831-aaca-b7447d4f0ae8,87d9fae9-4f2b-4d64-a542-dae55921bcb4,2.62,Non-MKE State and County Sales Tax,5.5000,2,1011439
+440eaf26-a557-4a98-9cf4-acffd5b5bfd5,daaf5638-699b-46ce-a679-902dfe97b194,2.63,Non-MKE State and County Sales Tax,5.5000,2,1011439
+1cdcf390-cf9b-4598-9f31-f09ebae770fc,4693a2ed-02fb-41e4-aa0c-badf439444a9,1.99,Non-MKE State and County Sales Tax,5.5000,2,1011441
+21188be0-60a1-44d1-b248-fad8c8f511a5,3733cbf4-fc26-4eb7-9c11-f51214a3d35f,11.55,State and County Sales Tax,5.5000,1,1011442
+ecaf7b66-423e-482a-9187-ee580c158e28,11a6f161-49a8-48b1-ae88-9fe0042f372f,11.55,State and County Sales Tax,5.5000,1,1011442

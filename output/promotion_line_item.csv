@@ -1,0 +1,105 @@
+line_item_promo_uuid,promotion_id,line_item_uuid,match_price,match_quantity,mix_group_id,promo_amount,promotion_name,promotion_type
+1557d7bd-eda9-4b0b-80df-999c839cb436,3,e4662f23-ae76-4f84-871c-2d3a7713e3aa,2.75,1,100,0.34,Pepsi 1L Q1 2025,mixAndMatchOffer
+bd09da2f-a9c6-4e8c-ba31-73611dcf224c,3,5cd58673-787e-4b49-a234-db7fa837c380,2.75,1,100,0.34,Pepsi 1L Q1 2025,mixAndMatchOffer
+c1311534-113a-49d4-941e-276a3440e56d,25,e8c068b0-41b5-473a-9f10-66a8d54b57a5,45.08,4,100,3.56,RCI Altria Marlboro Buy 4 July 2024,mixAndMatchOffer
+a5bd5aac-f49f-4339-aff7-4cfb67a7a9cd,38,9dea0826-6f7d-4660-92c6-9b96ef512d3b,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+83db1831-5d44-42a1-9ce5-2dd0e1137e27,38,966d26ab-e215-4f49-aa55-08db01aa813d,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+525311c5-ca15-49d3-a0d3-3bd60532c456,44,6113789a-f6a9-4ac6-b621-1509fa81aa7a,12.11,1,100,0.50,Buy 2 Save 1 Copenhagen,mixAndMatchOffer
+b3d4e2bf-1ee6-4083-a806-5c0e3498d937,44,ecfcbd99-947c-43e7-9663-0665771ed7e9,12.11,1,100,0.50,Buy 2 Save 1 Copenhagen,mixAndMatchOffer
+b4d92761-d7ab-490d-894a-685fa4df5dc9,1,a5cd81fa-0e4e-453c-af0f-4f9db44053c9,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+ffb4a36c-6e18-4396-aa68-65f504432d3d,1,abc3b55e-7d2a-4adc-bbb1-4b8e6dc4b0a7,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+2ded07a8-7e98-423d-95f6-04234448b467,,2855e837-9919-4717-8062-512c0cc466e1,,,,,,""
+51359b01-ec01-47c5-92cb-2fdceaf25fd1,38,8ddd0b3e-d124-4513-acfe-8cf59d1aa702,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+c8c49f75-d134-4adb-814a-297a7ace9504,38,f128e841-6a23-4f66-a2a7-d3ffb1770460,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+81509104-de4a-4a7b-b145-f32b0de16d30,38,39be4e0a-55f7-44af-8f81-c56ba3b79c9f,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+47d9696a-cd73-4f31-a076-03f92c7a760f,38,d774eb91-54a0-4d02-a667-6c4dfad4cdb4,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+419f9d16-2939-402e-9974-ae79759b8448,38,ee766d4d-ebac-4fbc-9076-47698607ac6a,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+8407e0ae-d0f3-43d6-a6c9-9c8c03d82b44,38,f04d5262-2303-4151-aed8-5fcf53ec7fba,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+f8c46572-398e-4663-996b-31397dee54cd,2,92388bdb-c032-4791-a4e5-4c09a9ac3ecd,2.75,1,100,0.34,2024 Red Bull 8z,mixAndMatchOffer
+dcc1d04a-6697-448d-bd68-dedb72c46ca6,2,66034544-0146-475c-856d-a6a92d75e357,2.75,1,100,0.34,2024 Red Bull 8z,mixAndMatchOffer
+ac97c6a3-b1e1-46ce-bb52-061c48d9245b,13,8bdf1a3c-84d6-46be-a355-5a36054282b3,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+6faafc69-748b-4b42-ae6e-fa75f2430dfd,13,db66acfb-5080-4bcd-b692-05ac032856eb,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+bcbae3cc-46ea-4673-9da1-9e29ff117647,24,b12ad921-a559-4f4d-928f-0b1d538eb951,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+2629b32e-5ec1-4e66-a47e-2f9de7dbcf34,24,c81c7bf6-3f85-4a4a-8e72-5d75484541c2,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+b8eb8ed8-b553-4385-b7bf-84d444f3951e,1,d6ebb96f-1d35-4665-89ec-f59f48e6caf7,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+0e5a851c-b43e-4e04-bb71-e9f94b921db8,1,3f70459e-8f48-4044-9a28-6dde88da4e33,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+218d181b-ab94-4c14-aa36-6f33602a1953,24,826b117e-d78e-4958-b025-3ec1a78e6709,11.55,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+5829bb5c-60eb-4fa1-94fb-2de2b4f5d243,24,17072e5e-5aab-4d1a-8885-bca5c00f994d,11.55,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+0db56aec-2ad5-4ec9-a281-e54afb2ecacd,29,17c2d3c5-6ded-4ada-af3b-47e5387cf18c,1.75,1,101,0.24,RCI Coke 16z,mixAndMatchOffer
+ea01b825-fc83-4d88-9590-5796a4949d1b,29,284d15fe-4e89-405f-ae7f-4cf53a99ef5e,1.75,1,101,0.24,RCI Coke 16z,mixAndMatchOffer
+31dcb69f-8219-4693-bea5-3f33211996ca,1,74bddaf0-b09f-4106-b334-c222ce6a300b,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+cb9747fa-d4bc-45b7-85ab-1e024085c971,1,aa66adc9-b989-4f72-8139-7d1fe9ef843c,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+d630c8a4-52a6-4083-8294-28979c11d550,1,7c75a8d3-16a7-42e7-ace4-699198c3a6b2,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+f6f980ba-52f0-4301-8230-e45ef6518bec,1,ca10be1d-2b97-4e8f-b612-d7de6c778003,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+bfbe67b2-d9dd-4ee3-880c-2d50049c3f12,24,e139f045-fe60-45ea-a574-7f5f22bd4ae1,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+c41bb1aa-2b42-4d78-95f0-26b1c2dfee6c,24,ef34acc9-109e-4bee-bb78-773470acc6c4,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+eb3fed95-1be6-41eb-94a9-a7e99da6ed17,1,0a56a47b-5111-4468-842a-7cfaa94ab7f2,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+c6ae2802-0cb0-4772-bb8c-81abc0a21490,1,740cc0f5-c7e6-4b64-a1a1-dab5421b792b,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+3564ff18-3fb3-48e2-971c-a2cd57929ebb,1,a8a3685f-54d1-487f-8eac-4115981f1749,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+8533440b-d013-4101-a11e-70995b65362c,1,f2b76290-4ea2-452c-b68b-063b14d10a11,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+59471e97-f585-4330-bf8c-9164d0b30719,13,1d2ec869-0b00-4aa6-9735-fc5c5feddd09,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+223a997c-e2f0-4eb0-bb13-5bb25bbd622e,13,31c66358-18bd-45e3-8ce7-90aafe24753a,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+650e1b42-3231-479d-b3d5-bb2a8937cad2,38,97b0b432-2c2e-4d3c-ac82-52131cd4975b,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+7d9eff0a-db58-4ad9-8785-22d0312652c7,38,1cef9344-43c0-4692-bdbf-ee70cbad66a8,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+fd4670e0-e4fd-4f72-b43a-889197a77f21,38,21700766-379f-4143-a1dd-eb1a303ba53b,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+29746848-eaed-4b52-a345-11ba7a2dffb5,38,44ef5d61-45fb-4a61-a9dc-9e5309158261,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+5435397c-e7fd-40f9-bd80-e553f825e6c7,38,1bdc9120-54cb-4aac-a2cb-1f85a28a365c,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+207e34e2-05a7-433d-a0f7-984f3fba577e,38,604c5838-f2a3-40b7-ae8d-51e3964286af,3.00,1,100,0.49,RCI Monster 16Z,mixAndMatchOffer
+72970e90-6111-4924-96dc-6c2b849c17f4,2,0902c785-b565-44bb-8695-790ad2ef87b9,2.75,1,100,0.34,2024 Red Bull 8z,mixAndMatchOffer
+ab01df7f-3571-4a1c-9b27-291f7bea74a4,2,13c05d25-af6b-4b8c-83f7-193a7e3698e4,2.75,1,100,0.34,2024 Red Bull 8z,mixAndMatchOffer
+a12203ab-dd04-4c2a-8650-010912ee45e2,,ac5e51c0-d81e-4973-9cfa-378888f78651,,,,,,""
+6124019e-dc53-4e93-ac5f-371bc6dd4b1e,24,171922a8-9039-4018-b99d-61729ab51d7b,9.78,1,102,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+8d049374-015a-4cf7-aee1-b48ebd3356aa,24,f33bd38e-90fd-4a2b-a4e6-cd4f4c8562a9,9.78,1,102,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+d18ffdad-163e-43eb-aa1c-32803f35d9be,24,98cbdf11-2c86-44c2-9a6e-092dc2f0d66b,11.55,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+f9589114-eebc-4000-bc86-3cd67d654ee2,24,51178073-4fb0-435f-be1c-3012a678d3eb,11.55,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+64c88258-cae1-438b-b0fc-4106be1b67ac,1,b1fb9929-8c38-4e2a-b05f-dcda93c7669e,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+9c4f0b7b-d368-4c83-8a57-d60cca678bb2,1,e6c78aae-f3ed-4646-a281-dfaf2d9932c7,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+59638964-43ce-4f75-879e-fa5cfe7c8f5e,18,c0318269-6250-42f7-8aaf-64ad9fde9866,3.50,1,100,0.69,Pepsi Starbucks Frapp Q1 2025,mixAndMatchOffer
+efeb985d-ffae-4a2e-b500-d24321dd4d48,18,3a9c07cd-cc60-42c2-a377-1a14a7370509,3.50,1,100,0.69,Pepsi Starbucks Frapp Q1 2025,mixAndMatchOffer
+5c3a692b-b524-4ad5-9a75-310925d7f023,,97ed9629-72f8-4cf0-b1bf-3cad62262753,,,,,,""
+3e55f412-16ee-41c4-8e4d-8f27b07da5d6,,cdd93d78-16fa-46d0-848e-be0a93b99ae7,,,,,,""
+62fecee0-ff34-4889-93d9-6e33a5a8cc60,27,a57675a4-ebe5-40bf-8cda-55e3d872195c,1.00,1,100,0.09,RCI Coke 12z,mixAndMatchOffer
+02ea856c-8399-4b12-aeaa-72b511e48aca,27,0b7d45ed-8ca6-4544-996e-4fd4b3346d40,1.00,1,100,0.09,RCI Coke 12z,mixAndMatchOffer
+ef787cb7-a445-48f7-9494-1c8f251cdfb8,13,76e75fc5-340d-4555-ad43-cc33b9ed3a68,2.25,1,101,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+fa379c11-a101-42de-bf3d-5e3cb8fc2889,13,d5e4e6e9-5260-416f-9597-279406385cfd,2.25,1,101,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+8dd7d384-fb84-4625-98e7-c3e0c4ca47d0,22,52579abe-cb32-4db2-9048-7812baeae2d3,2.62,1,100,0.37,Pepsi Rockstar 16z Q1 2025,mixAndMatchOffer
+2ce7eb56-a45e-426f-b186-6afd8113b444,22,4c8760a9-e1b4-437b-ac1a-ca8c7d6a8871,2.63,1,100,0.36,Pepsi Rockstar 16z Q1 2025,mixAndMatchOffer
+be543990-10e9-4a2c-b6da-6e718829ab5c,13,7c3f7c3b-c8c6-4b59-8fca-8d00e9fe1844,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+6b3a0aa5-885b-465b-a892-73541b902f82,13,60efbdd9-5486-4365-85a4-e7ac3c9b5cea,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+ebc37027-ca05-4821-b3b4-fe2022c30943,24,c5a7f648-1109-42ba-8ccc-e7c6ccb1b253,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+69c7d409-b15d-4a19-964f-1f3c72bb60d2,24,78b84db6-f3b9-496b-8881-1d9fbe112cbb,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+a86faae0-8ebb-4f58-a304-d92397ba2ac9,24,f3d90ac8-acc8-454e-86dd-2a059d4fb04f,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+fee6020e-b9b9-468f-8154-a4759ab52348,24,63220036-b153-447a-9915-a88441dc6ba7,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+266cbd3f-76e1-4c61-8a3a-7f11c8d6ec17,24,ba619d75-2eb4-4392-ae92-c8506e4eb8ec,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+8325fae4-0acb-4baf-b39d-e5504b20e1c4,24,75ca675f-68fc-4b03-9ece-20433ce62d28,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+8429bdb2-0367-42c5-b1f8-a6c6962f739d,,23969287-b039-4371-af70-41005dae3add,,,,,,""
+8d9b3cad-f5df-467a-9fec-9995c808cbf6,,58d7ea3d-3896-480e-a6b5-b42c11345be1,,,,,,""
+999f48b1-c119-4dd2-9ba8-cd2686fb2b8f,,33788881-a411-4052-a0a1-829d6800f60d,,,,,,""
+6ffc84a5-2453-49ac-a2fe-2d583250c55f,13,110214db-7b01-4de3-be3a-4e221b190577,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+452edad9-e906-4cb4-872a-3fd94841db68,13,28c78dd7-a21f-42d9-89a6-d6bf53984931,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+01fbf5a2-3344-48fd-ada2-38d0c26d7323,24,61b09d37-b7b3-4a37-bcd5-c8632d07792d,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+a7f87023-8546-47cb-b9d9-b1f4d994db14,24,489f476f-6f9c-40e9-b72e-cbb6cb679dd7,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+024bd78d-9f93-4d2b-8861-30ba781fdff1,29,48d8eb07-d84f-4cc8-9271-1b33c1d63efc,1.75,1,100,0.24,RCI Coke 16z,mixAndMatchOffer
+af8327cc-6fa9-44a5-9f41-6590ad7a068c,29,3533f375-1d62-4382-b185-399172a5b193,1.75,1,100,0.24,RCI Coke 16z,mixAndMatchOffer
+981882c3-0762-436e-b723-f07fbc127bb6,1134,939946c5-d30b-4962-bce4-cca7904971cb,2.00,2,100,1.18,RCI Donuts 2 for 2,mixAndMatchOffer
+f4c478d0-2296-4347-bf35-55d96aa424c2,14,1fed309c-d99e-46f1-a63a-5bb95143ea8a,9.58,1,100,0.45,2024 RCI All Non Marb Buy 2,mixAndMatchOffer
+a3e265af-5936-49de-ac01-c9b9c4a9891b,14,e09eb700-0c95-4797-8774-45f3e49b3cef,11.47,1,100,0.55,2024 RCI All Non Marb Buy 2,mixAndMatchOffer
+0590c388-a508-4910-a77c-ede033bd18d9,14,2d3b5624-9d5b-4cf4-971c-f5f8cd42d275,10.23,1,100,0.50,2024 RCI All Non Marb Buy 2,mixAndMatchOffer
+79cb1ec1-798c-4b49-a8b9-4ac76781a3ea,14,9896eab4-2fc5-45c4-bf70-6260a0d3c484,10.23,1,100,0.50,2024 RCI All Non Marb Buy 2,mixAndMatchOffer
+b8d4c825-ee67-4fdf-a907-e5e84c226c59,38,e55ad29b-c2da-49c1-b316-c11f3a89451d,3.00,1,101,0.49,RCI Monster 16Z,mixAndMatchOffer
+c2d65dac-a7df-4849-ab9e-2e7f4929ec6f,38,1be1565f-9a3b-4d91-a77e-c99a8390ecaa,3.00,1,101,0.49,RCI Monster 16Z,mixAndMatchOffer
+a0e5607c-181a-4b79-acd6-be70f0c354d1,24,6d0a0323-5a00-481d-a226-555c39251a8a,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+b31d11a6-0bb0-4554-9865-b7dfc2186bf0,24,18b90b9e-2520-4409-9bcf-358b27d6f997,11.26,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+b9a0b8c9-d03f-4e3f-b160-008117bcb82b,1,fbf3257b-c851-4d0c-8501-08e4f7926eb7,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+62bed6eb-cef9-4973-beb7-3abaa598edfd,1,1423244c-cf9d-4194-b942-51d1249feb07,3.25,1,100,0.64,2024 Red Bull 12z,mixAndMatchOffer
+03c5b800-1cf7-4d81-8757-2cec78f40461,1134,01de5071-87f6-4eef-9e08-38c726497b8c,2.00,2,100,1.18,RCI Donuts 2 for 2,mixAndMatchOffer
+a6762df3-3765-44d0-a8b7-dc007ca32830,13,2fbc9e2e-3158-4025-80d9-8f62de4b7eb4,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+9e20bbad-8d32-4a50-aa50-2b36d4048409,13,4e479333-f1aa-466a-bd6f-38ff5a4bbd06,2.25,1,100,0.44,Pepsi 20z Q1 2025,mixAndMatchOffer
+3a451181-d7a6-49a1-bc1d-f9b54a5d784f,14,abff9512-ad40-4402-93b6-8d8566f01ab8,12.31,1,100,0.50,2024 RCI All Non Marb Buy 2,mixAndMatchOffer
+dd5e33dd-43e2-4f72-9bdf-6e7f8e90d564,14,e77c854f-68ad-4ef7-9f2e-dba63d2c11ed,12.31,1,100,0.50,2024 RCI All Non Marb Buy 2,mixAndMatchOffer
+895a088e-7715-4fb4-a9bf-ca5894a7d155,14,d38a2016-812e-4808-b7e1-7d4fda983f32,12.31,1,100,0.50,2024 RCI All Non Marb Buy 2,mixAndMatchOffer
+f689488b-d2c7-48aa-bdbd-6d13eb2e258b,14,43fcffa9-f5a8-4f28-86d8-8f947668011e,12.31,1,100,0.50,2024 RCI All Non Marb Buy 2,mixAndMatchOffer
+908535bd-41ac-434b-b230-dd28e31cff70,43,87d9fae9-4f2b-4d64-a542-dae55921bcb4,2.62,1,100,0.37,RCI Bucked Up 16z,mixAndMatchOffer
+e58b1bae-1e6a-4425-9082-5fd94909a869,43,daaf5638-699b-46ce-a679-902dfe97b194,2.63,1,100,0.36,RCI Bucked Up 16z,mixAndMatchOffer
+d9cae3ee-98c2-41a9-9ce0-7dfec9ea3255,24,3733cbf4-fc26-4eb7-9c11-f51214a3d35f,11.55,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer
+ef0e5932-5ad9-42de-a722-46daeb643227,24,11a6f161-49a8-48b1-ae88-9fe0042f372f,11.55,1,100,0.90,RCI Altria Marlboro Buy 2 July 2024,mixAndMatchOffer

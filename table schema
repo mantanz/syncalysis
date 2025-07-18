@@ -50,11 +50,20 @@ create table public.pricebook (
   upc_description text null,
   cost numeric(10, 2) null,
   retail_price numeric(10, 2) null,
+  cost_avail_flag char(1) not null default 'N',
+  retail_price_avail_flag char(1) not null default 'N',
+  upc_source text null,
+  created_by text not null default 'Gunjan',
+  creation_date timestamp with time zone not null default now(),
+  modified_by text null default null,
+  modified_date timestamp with time zone null default null,
   constraint pricebook_pkey primary key (upc_id),
   constraint pricebook_department_id_fkey foreign KEY (department_id) references departments (department_id)
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_pricebook_department on public.pricebook using btree (department_id) TABLESPACE pg_default;
+
+create index IF not exists idx_pricebook_source on public.pricebook using btree (upc_source) TABLESPACE pg_default;
 
 create table public.promotions_line_item (
   line_item_promo_uuid uuid not null default gen_random_uuid (),
@@ -185,20 +194,20 @@ create index IF not exists idx_transaction_line_item_transaction on public.trans
 
 create index IF not exists idx_transaction_line_item_upc on public.transaction_line_item using btree (upc_id) TABLESPACE pg_default;
 
-
-
 create table public.transaction_line_item_tax (
   line_item_tax_uuid uuid not null default gen_random_uuid (),
   line_item_uuid uuid null,
+  transaction_id numeric null,
   tax_line_amount numeric(10, 2) null,
   tax_line_category text null,
   tax_line_rate numeric(5, 4) null,
   tax_line_sys_id numeric null,
   constraint transaction_line_item_tax_pkey primary key (line_item_tax_uuid),
-  constraint transaction_line_item_tax_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid)
+  constraint transaction_line_item_tax_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid),
+  constraint transaction_line_item_tax_transaction_id_fkey foreign KEY (transaction_id) references sales_transaction (transaction_id)
 ) TABLESPACE pg_default;
 
-
+create index IF not exists idx_transaction_line_item_tax_transaction on public.transaction_line_item_tax using btree (transaction_id) TABLESPACE pg_default;
 
 create table public.transaction_loyalty (
   loyalty_transaction_uuid uuid not null default gen_random_uuid (),
@@ -214,3 +223,35 @@ create table public.transaction_loyalty (
 ) TABLESPACE pg_default;
 
 create index IF not exists idx_loyalty_transaction on public.transaction_loyalty using btree (transaction_id) TABLESPACE pg_default;
+
+create table public.promotion_upc_linkage (
+  linkage_id uuid not null default gen_random_uuid (),
+  promotion_id numeric not null,
+  upc_id numeric not null,
+  created_date timestamp with time zone not null default now(),
+  is_active boolean not null default true,
+  constraint promotion_upc_linkage_pkey primary key (linkage_id),
+  constraint promotion_upc_linkage_promotion_id_fkey foreign KEY (promotion_id) references promotions_program_details (promotion_id),
+  constraint promotion_upc_linkage_upc_id_fkey foreign KEY (upc_id) references pricebook (upc_id),
+  constraint promotion_upc_linkage_unique unique (promotion_id, upc_id)
+) TABLESPACE pg_default;
+
+create index IF not exists idx_promotion_upc_linkage_promotion on public.promotion_upc_linkage using btree (promotion_id) TABLESPACE pg_default;
+
+create index IF not exists idx_promotion_upc_linkage_upc on public.promotion_upc_linkage using btree (upc_id) TABLESPACE pg_default;
+
+create table public.rebate_upc_linkage (
+  linkage_id uuid not null default gen_random_uuid (),
+  rebate_id numeric not null,
+  upc_id numeric not null,
+  created_date timestamp with time zone not null default now(),
+  is_active boolean not null default true,
+  constraint rebate_upc_linkage_pkey primary key (linkage_id),
+  constraint rebate_upc_linkage_rebate_id_fkey foreign KEY (rebate_id) references rebate_program_details (rebate_id),
+  constraint rebate_upc_linkage_upc_id_fkey foreign KEY (upc_id) references pricebook (upc_id),
+  constraint rebate_upc_linkage_unique unique (rebate_id, upc_id)
+) TABLESPACE pg_default;
+
+create index IF not exists idx_rebate_upc_linkage_rebate on public.rebate_upc_linkage using btree (rebate_id) TABLESPACE pg_default;
+
+create index IF not exists idx_rebate_upc_linkage_upc on public.rebate_upc_linkage using btree (upc_id) TABLESPACE pg_default;
