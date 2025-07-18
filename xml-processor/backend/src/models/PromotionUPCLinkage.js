@@ -1,13 +1,8 @@
 module.exports = (sequelize, DataTypes) => {
   const PromotionUPCLinkage = sequelize.define('PromotionUPCLinkage', {
-    linkage_id: {
-      type: DataTypes.UUID,
-      primaryKey: true,
-      defaultValue: DataTypes.UUIDV4,
-      allowNull: false
-    },
     promotion_id: {
       type: DataTypes.DECIMAL,
+      primaryKey: true,
       allowNull: false,
       references: {
         model: 'promotions_program_details',
@@ -16,16 +11,12 @@ module.exports = (sequelize, DataTypes) => {
     },
     upc_id: {
       type: DataTypes.DECIMAL,
+      primaryKey: true,
       allowNull: false,
       references: {
         model: 'pricebook',
         key: 'upc_id'
       }
-    },
-    created_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW
     },
     is_active: {
       type: DataTypes.BOOLEAN,
@@ -44,11 +35,7 @@ module.exports = (sequelize, DataTypes) => {
         name: 'idx_promotion_upc_linkage_upc',
         fields: ['upc_id']
       },
-      {
-        name: 'idx_promotion_upc_linkage_unique',
-        fields: ['promotion_id', 'upc_id'],
-        unique: true
-      }
+
     ]
   });
 

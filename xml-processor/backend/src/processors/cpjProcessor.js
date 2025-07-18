@@ -625,7 +625,6 @@ class CPJProcessor {
         defaults: {
           promotion_id: promotionId,
           upc_id: upcId,
-          created_date: new Date(),
           is_active: true
         },
         transaction: options.transaction

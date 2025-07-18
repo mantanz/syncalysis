@@ -267,12 +267,9 @@ create index IF not exists idx_promotion_upc_linkage_promotion on public.promoti
 create index IF not exists idx_promotion_upc_linkage_upc on public.promotion_upc_linkage using btree (upc_id) TABLESPACE pg_default;
 
 create table public.rebate_upc_linkage (
-  linkage_id uuid not null default gen_random_uuid (),
   rebate_id numeric not null,
   upc_id numeric not null,
-  created_date timestamp with time zone not null default now(),
   is_active boolean not null default true,
-  constraint rebate_upc_linkage_pkey primary key (linkage_id),
   constraint rebate_upc_linkage_rebate_id_fkey foreign KEY (rebate_id) references rebate_program_details (rebate_id),
   constraint rebate_upc_linkage_upc_id_fkey foreign KEY (upc_id) references pricebook (upc_id),
   constraint rebate_upc_linkage_unique unique (rebate_id, upc_id)
