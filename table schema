@@ -13,9 +13,9 @@ create table public.loyalty_line_items (
   line_item_uuid uuid null,
   transaction_id numeric null,
   sales_transaction_unique_id text null,
-  discount_amount numeric(10, 2) null,
-  quantity_applied numeric null,
-  tax_credit numeric(10, 2) null,
+  loyalty_discount_amount numeric(10, 2) null,
+  loyalty_quantity_applied numeric null,
+  loyalty_tax_credit numeric(10, 2) null,
   constraint loyalty_line_items_pkey primary key (line_loyalty_uuid),
   constraint loyalty_line_items_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid),
   constraint loyalty_line_items_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id)
@@ -102,26 +102,12 @@ create table public.promotions_line_item (
   match_price numeric(10, 2) null,
   match_quantity numeric null,
   mix_group_id numeric null,
-  promo_amount numeric(10, 2) null,
+  line_item_promo_amount numeric(10, 2) null,
   promotion_name text null,
   promotion_type text null,
   constraint promotions_line_item_pkey primary key (line_item_promo_uuid),
   constraint promotions_line_item_line_item_uuid_fkey foreign KEY (line_item_uuid) references transaction_line_item (line_item_uuid),
   constraint promotions_line_item_promotion_id_fkey foreign KEY (promotion_id) references promotions_program_details (promotion_id)
-) TABLESPACE pg_default;
-
-create table public.rebate_program_details (
-  rebate_id numeric not null,
-  rebate_name text null,
-  rebate_description text null,
-  rebate_type text null default 'cashback',
-  rebate_amount numeric(10, 2) null,
-  rebate_percentage numeric(5, 2) null,
-  is_active boolean null default true,
-  rebate_code text null,
-  vendor_id text null,
-  product_category text null,
-  constraint rebate_program_details_pkey primary key (rebate_id)
 ) TABLESPACE pg_default;
 
 create table public.sales_transaction (
@@ -208,6 +194,15 @@ create table public.transaction_line_item (
   upc_description text null,
   upc_entry_type text null,
   upc_modifier numeric null,
+  car_wash_package numeric null,
+  car_wash_code numeric null,
+  car_wash_promo_type text null,
+  car_wash_promo_amount numeric(10, 2) null,
+  is_fuel_only boolean null default false,
+  is_fuel_sale boolean null default false,
+  is_lottery_payout boolean null default false,
+  is_line_void boolean null default false,
+  has_special_discount boolean null default false,
   constraint transaction_line_item_pkey primary key (line_item_uuid),
   constraint transaction_line_item_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id),
   constraint transaction_line_item_upc_id_fkey foreign KEY (upc_id) references pricebook (upc_id)
@@ -243,7 +238,7 @@ create table public.transaction_loyalty (
   loyalty_customer_discount numeric(10, 2) null,
   loyalty_entry_method text null,
   loyalty_sub_total numeric(10, 2) null,
-  program_name text null,
+  loyalty_program_name text null,
   constraint transaction_loyalty_pkey primary key (loyalty_transaction_uuid),
   constraint transaction_loyalty_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id)
 ) TABLESPACE pg_default;
@@ -252,12 +247,9 @@ create index IF not exists idx_loyalty_transaction on public.transaction_loyalty
 create index IF not exists idx_loyalty_sales_transaction_unique_id on public.transaction_loyalty using btree (sales_transaction_unique_id) TABLESPACE pg_default;
 
 create table public.promotion_upc_linkage (
-  linkage_id uuid not null default gen_random_uuid (),
   promotion_id numeric not null,
   upc_id numeric not null,
-  created_date timestamp with time zone not null default now(),
   is_active boolean not null default true,
-  constraint promotion_upc_linkage_pkey primary key (linkage_id),
   constraint promotion_upc_linkage_promotion_id_fkey foreign KEY (promotion_id) references promotions_program_details (promotion_id),
   constraint promotion_upc_linkage_upc_id_fkey foreign KEY (upc_id) references pricebook (upc_id),
   constraint promotion_upc_linkage_unique unique (promotion_id, upc_id)

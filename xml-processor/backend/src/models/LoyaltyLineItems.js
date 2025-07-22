@@ -26,15 +26,15 @@ module.exports = (sequelize, DataTypes) => {
         key: 'sales_transaction_unique_id'
       }
     },
-    discount_amount: {
+    loyalty_discount_amount: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
     },
-    quantity_applied: {
+    loyalty_quantity_applied: {
       type: DataTypes.DECIMAL,
       allowNull: true
     },
-    tax_credit: {
+    loyalty_tax_credit: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
     }

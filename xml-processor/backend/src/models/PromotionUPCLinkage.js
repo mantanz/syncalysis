@@ -2,7 +2,6 @@ module.exports = (sequelize, DataTypes) => {
   const PromotionUPCLinkage = sequelize.define('PromotionUPCLinkage', {
     promotion_id: {
       type: DataTypes.DECIMAL,
-      primaryKey: true,
       allowNull: false,
       references: {
         model: 'promotions_program_details',
@@ -11,7 +10,6 @@ module.exports = (sequelize, DataTypes) => {
     },
     upc_id: {
       type: DataTypes.DECIMAL,
-      primaryKey: true,
       allowNull: false,
       references: {
         model: 'pricebook',
@@ -35,7 +33,11 @@ module.exports = (sequelize, DataTypes) => {
         name: 'idx_promotion_upc_linkage_upc',
         fields: ['upc_id']
       },
-
+      {
+        name: 'idx_promotion_upc_linkage_unique',
+        fields: ['promotion_id', 'upc_id'],
+        unique: true
+      }
     ]
   });
 

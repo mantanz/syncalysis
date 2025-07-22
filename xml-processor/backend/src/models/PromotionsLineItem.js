@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DECIMAL,
       allowNull: true
     },
-    promo_amount: {
+    line_item_promo_amount: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
     },

@@ -91,6 +91,7 @@ const path = require('path');
 const logger = require('../utils/logger');
 const models = require('../models');
 const { classifyDepartment } = require('../utils/departmentClassifier');
+const { parseDateTime, getCurrentUTC } = require('../utils/dateUtils');
 
 class CPJProcessor {
   constructor() {
@@ -251,18 +252,18 @@ class CPJProcessor {
       sales_transaction_unique_id: header.uniqueid || Date.now(),
       transaction_id: parseInt(header.trticknum?.trseq) || null,
       store_id: header.storenumber || null,
-      register_id: parseInt(header.trticknum.posnum) || parseInt(header.posnum),
+      register_id: parseInt(header.trticknum?.posnum) || parseInt(header.posnum) || null,
       transaction_event_log_id: eventLogId,
-      cashier_session: parseInt(header.cashier?.period),
-      employee_id: parseInt(header.cashier?.sysid),
+      cashier_session: parseInt(header.cashier?.period) || null,
+      employee_id: parseInt(header.cashier?.sysid) || null,
       employee_name: header.cashier?._ || null,
       cashier_system_id: parseInt(header.cashier?.sysid) || null,
-      food_stamp_eligible_total: values.trfstmp?.trfstmptot ? parseFloat(values.trfstmp?.trfstmptot) : null,
-      grand_totalizer: parseFloat(values.trgtotalizer),
-      total_amount: parseFloat(values.trtotwtax),
-      total_no_tax: parseFloat(values.trtotnotax),
-      total_tax_amount: parseFloat(values.trtottax),
-      transaction_datetime: this.parseDateTime(header.date),
+      food_stamp_eligible_total: values.trfstmp?.trfstmptot ? parseFloat(values.trfstmp?.trfstmptot) || null : null,
+      grand_totalizer: parseFloat(values.trgtotalizer) || null,
+      total_amount: parseFloat(values.trtotwtax) || null,
+      total_no_tax: parseFloat(values.trtotnotax) || null,
+      total_tax_amount: parseFloat(values.trtottax) || null,
+      transaction_datetime: parseDateTime(header.date),
       transaction_type: transData.type,
       original_register_id: parseInt(header.troriginalticknum?.posnum) || null,
       original_transaction_id: parseInt(header.troriginalticknum?.trseq) || null,
@@ -323,7 +324,18 @@ class CPJProcessor {
       unit_price: parseFloat(lineData.trlunitprice) || null,
       upc_description: lineData.trldesc || null,
       upc_entry_type: lineData.trlupcentry?.type || null,
-      upc_modifier: typeof lineData.trlmodifier === 'string' ? parseInt(lineData.trlmodifier) : null
+      upc_modifier: typeof lineData.trlmodifier === 'string' ? parseInt(lineData.trlmodifier) : null,
+      // New car wash related fields
+      car_wash_package: parseInt(lineData.trlCwLineIx) || null,
+      car_wash_code: parseInt(lineData.trlCwCode) || null,
+      car_wash_promo_type: lineData.trlCwPromo?.type || null,
+      car_wash_promo_amount: parseFloat(lineData.trlCwPromo?._) || null,
+      // New flag fields
+      is_fuel_only: typeof lineData.trlFuelOnly === 'string',
+      is_fuel_sale: typeof lineData.trlFuelSale === 'string',
+      is_lottery_payout: lineData.trlNegative?.cause === 'negDept',
+      is_line_void: typeof lineData.trlNetVoid === 'string',
+      has_special_discount: typeof lineData.trlSpDisc === 'string'
     };
 
     const lineItem = await models.TransactionLineItem.create(lineItemData, {
@@ -385,13 +397,18 @@ class CPJProcessor {
       }
     }
 
+    // Calculate line item promo amount: promo_amount / matched_units
+    const promoAmount = parseFloat(lineData.trlmixmatches?.trlmatchline?.trlpromoamount) || 0;
+    const matchedUnits = parseFloat(lineData.trlmixmatches?.trlmatchline?.trlmatchquantity) || 1;
+    const lineItemPromoAmount = matchedUnits > 0 ? promoAmount / matchedUnits : promoAmount;
+
     const promotionData = {
       line_item_uuid: lineItemUuid,
       promotion_id: promotionId,
       match_price: parseFloat(lineData.trlmixmatches?.trlmatchline?.trlmatchprice) || null,
-      match_quantity: parseFloat(lineData.trlmixmatches?.trlmatchline?.trlmatchquantity) || null,
+      match_quantity: matchedUnits,
       mix_group_id: parseInt(lineData.trlmixmatches?.trlmatchline?.trlmatchmixes) || null,
-      promo_amount: parseFloat(lineData.trlmixmatches?.trlmatchline?.trlpromoamount) || null,
+      line_item_promo_amount: lineItemPromoAmount,
       promotion_name: lineData.trlmixmatches?.trlmatchline?.trlmatchname || null,
       promotion_type: lineData.trlmixmatches?.trlmatchline?.trlpromotionid?.promotype || ''
     };
@@ -406,9 +423,9 @@ class CPJProcessor {
       line_item_uuid: lineItemUuid,
       transaction_id: transactionId,
       sales_transaction_unique_id: salesTransactionUniqueId,
-      discount_amount: parseFloat(lineData.trlolnitemdisc?.discamt) || null,
-      quantity_applied: parseFloat(lineData.trlolnitemdisc?.qty) || null,
-      tax_credit: parseFloat(lineData.trlolnitemdisc?.taxcred)
+      loyalty_discount_amount: parseFloat(lineData.trlolnitemdisc?.discamt) || null,
+      loyalty_quantity_applied: parseFloat(lineData.trlolnitemdisc?.qty) || null,
+      loyalty_tax_credit: parseFloat(lineData.trlolnitemdisc?.taxcred)
     };
 
     await models.LoyaltyLineItems.create(loyaltyData, {
@@ -426,7 +443,7 @@ class CPJProcessor {
       mop_amount: parseFloat(paymentData.trpamt) || null,
       mop_code: mopCode,
       payment_entry_method: paymentData.trppaycode?._ || null,
-      payment_timestamp: (mopCode === 1 ? this.parseDateTime(header.date) : this.parseDateTime(paymentData.trpcardinfo?.trpcauthdatetime)) || null,
+      payment_timestamp: (mopCode === 1 ? parseDateTime(header.date) : parseDateTime(paymentData.trpcardinfo?.trpcauthdatetime)) || null,
       payment_type: paymentData.type || null
     };
     await models.Payment.create(paymentInfo, {
@@ -440,14 +457,14 @@ class CPJProcessor {
     
     if (loyaltyProgram) {
       const transactionLoyaltyData = {
-      transaction_id: transactionId,
-      sales_transaction_unique_id: salesTransactionUniqueId,
+        transaction_id: transactionId,
+        sales_transaction_unique_id: salesTransactionUniqueId,
         loyalty_account_number: loyaltyProgram.trloaccount || null,
         loyalty_auto_discount: parseFloat(loyaltyProgram.trloautodisc),
         loyalty_customer_discount: parseFloat(loyaltyProgram.trlocustdisc),
         loyalty_entry_method: loyaltyProgram.trloentrymeth || null,
         loyalty_sub_total: parseFloat(loyaltyProgram.trlosubtotal) || null,
-        program_name: loyaltyProgram.programID  || 'Default Loyalty Program'
+        loyalty_program_name: loyaltyProgram.programID  || 'Default Loyalty Program'
       };
 
       await models.TransactionLoyalty.create(transactionLoyaltyData, {
@@ -539,7 +556,7 @@ class CPJProcessor {
         retail_price_avail_flag: lineData.trlunitprice ? 'Y' : 'N',
         upc_source: transactionId ? transactionId.toString() : null,
         created_by: 'TLOG',
-        creation_date: new Date(),
+        creation_date: getCurrentUTC(),
         modified_by: null,
         modified_date: null
       },
@@ -617,24 +634,30 @@ class CPJProcessor {
 
   async ensurePromotionUPCLinkage(promotionId, upcId, options = {}) {
     try {
-      const [linkage, created] = await models.PromotionUPCLinkage.findOrCreate({
-        where: { 
-          promotion_id: promotionId,
-          upc_id: upcId
-        },
-        defaults: {
-          promotion_id: promotionId,
-          upc_id: upcId,
-          is_active: true
-        },
+      // Use raw SQL instead of findOrCreate
+      const [existing] = await models.sequelize.query(`
+        SELECT promotion_id, upc_id 
+        FROM promotion_upc_linkage 
+        WHERE promotion_id = :promotionId AND upc_id = :upcId
+      `, {
+        replacements: { promotionId, upcId },
         transaction: options.transaction
       });
 
-      if (created) {
+      if (existing.length === 0) {
+        // Insert new record
+        await models.sequelize.query(`
+          INSERT INTO promotion_upc_linkage (promotion_id, upc_id, is_active)
+          VALUES (:promotionId, :upcId, true)
+        `, {
+          replacements: { promotionId, upcId },
+          transaction: options.transaction
+        });
+        
         logger.info(`Created new promotion UPC linkage: Promotion ${promotionId} - UPC ${upcId}`);
       }
 
-      return linkage;
+      return { promotion_id: promotionId, upc_id: upcId };
     } catch (error) {
       logger.warn(`Failed to create promotion UPC linkage: ${error.message}`);
       return null;
@@ -651,7 +674,6 @@ class CPJProcessor {
         defaults: {
           rebate_id: rebateId,
           upc_id: upcId,
-          created_date: new Date(),
           is_active: true
         },
         transaction: options.transaction
@@ -664,27 +686,6 @@ class CPJProcessor {
       return linkage;
     } catch (error) {
       logger.warn(`Failed to create rebate UPC linkage: ${error.message}`);
-      return null;
-    }
-  }
-
-  parseDateTime(dateString) {
-    if (!dateString) return null;
-    try {
-      // Handle various date formats without timezone conversion
-      if (typeof dateString === 'string') {
-        // If it's an ISO format with timezone info, parse it as local time
-        if (dateString.includes('T')) {
-          // Remove timezone indicators to treat as local time
-          const localDateString = dateString.replace(/[Zz]$/, '').replace(/[+-]\d{2}:?\d{2}$/, '');
-          return new Date(localDateString);
-        }
-        // For other formats, parse as local time
-        return new Date(dateString);
-      }
-      return new Date(dateString);
-    } catch (error) {
-      logger.warn(`Failed to parse date: ${dateString}`);
       return null;
     }
   }

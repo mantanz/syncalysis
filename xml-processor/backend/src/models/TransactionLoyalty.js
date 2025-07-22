@@ -38,7 +38,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
     },
-    program_name: {
+    loyalty_program_name: {
       type: DataTypes.TEXT,
       allowNull: true
     }

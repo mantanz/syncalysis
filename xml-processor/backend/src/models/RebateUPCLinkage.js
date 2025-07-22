@@ -1,11 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
   const RebateUPCLinkage = sequelize.define('RebateUPCLinkage', {
-    linkage_id: {
-      type: DataTypes.UUID,
-      primaryKey: true,
-      defaultValue: DataTypes.UUIDV4,
-      allowNull: false
-    },
     rebate_id: {
       type: DataTypes.DECIMAL,
       allowNull: false,

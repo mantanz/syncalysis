@@ -117,6 +117,47 @@ module.exports = (sequelize, DataTypes) => {
     upc_modifier: {
       type: DataTypes.DECIMAL,
       allowNull: true
+    },
+    car_wash_package: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    car_wash_code: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
+    },
+    car_wash_promo_type: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    car_wash_promo_amount: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: true
+    },
+    is_fuel_only: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    is_fuel_sale: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    is_lottery_payout: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    is_line_void: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
+    },
+    has_special_discount: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
     }
   }, {
     tableName: 'transaction_line_item',

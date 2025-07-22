@@ -83,6 +83,7 @@ const csv = require('csv-parser');
 const models = require('../models');
 const logger = require('../utils/logger');
 const { classifyDepartment } = require('../utils/departmentClassifier');
+const { parseDateTime, parseDateTimeLocal, formatDateTimeUTC, getCurrentUTC } = require('../utils/dateUtils');
 
 class PricebookProcessor {
   constructor() {
@@ -216,7 +217,7 @@ class PricebookProcessor {
           retail_price_avail_flag: (productData.retailPrice && productData.retailPrice > 0) ? 'Y' : 'N',
           upc_source: 'Manual',
           created_by: 'Gunjan',
-          creation_date: new Date(),
+          creation_date: getCurrentUTC(),
           modified_by: null,
           modified_date: null
         },
@@ -237,7 +238,7 @@ class PricebookProcessor {
           updateData.retail_price_avail_flag = (productData.retailPrice && productData.retailPrice > 0) ? 'Y' : 'N';
         }
         updateData.modified_by = 'Gunjan';
-        updateData.modified_date = new Date();
+        updateData.modified_date = getCurrentUTC();
 
         if (Object.keys(updateData).length > 0) {
           await product.update(updateData, { transaction });
