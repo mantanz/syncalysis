@@ -3,8 +3,7 @@ module.exports = (sequelize, DataTypes) => {
     payment_uuid: {
       type: DataTypes.UUID,
       primaryKey: true,
-      defaultValue: DataTypes.UUIDV4,
-      allowNull: false
+      defaultValue: DataTypes.UUIDV4
     },
     transaction_id: {
       type: DataTypes.DECIMAL,
@@ -39,7 +38,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true
     },
     payment_timestamp: {
-      type: DataTypes.DATE,
+      type: DataTypes.TEXT,
       allowNull: true
     },
     payment_type: {

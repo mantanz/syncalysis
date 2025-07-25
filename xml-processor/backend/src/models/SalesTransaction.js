@@ -17,12 +17,12 @@ module.exports = (sequelize, DataTypes) => {
         key: 'store_id'
       }
     },
-    register_id: {
-      type: DataTypes.DECIMAL,
+    store_pos_unique_id: {
+      type: DataTypes.TEXT,
       allowNull: true,
       references: {
         model: 'pos_device_terminal',
-        key: 'register_id'
+        key: 'store_pos_unique_id'
       }
     },
     transaction_event_log_id: {
@@ -70,7 +70,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true
     },
     transaction_datetime: {
-      type: DataTypes.DATE,
+      type: DataTypes.TEXT,
       allowNull: true
     },
     transaction_type: {
@@ -122,6 +122,9 @@ module.exports = (sequelize, DataTypes) => {
       },
       {
         fields: ['transaction_id']
+      },
+      {
+        fields: ['store_pos_unique_id']
       }
     ]
   });
@@ -132,12 +135,8 @@ module.exports = (sequelize, DataTypes) => {
       as: 'store'
     });
     SalesTransaction.belongsTo(models.PosDeviceTerminal, {
-      foreignKey: 'register_id',
+      foreignKey: 'store_pos_unique_id',
       as: 'terminal'
-    });
-    SalesTransaction.belongsTo(models.PosDeviceTerminal, {
-      foreignKey: 'original_register_id',
-      as: 'original_terminal'
     });
     SalesTransaction.belongsTo(models.TransactionEventLog, {
       foreignKey: 'transaction_event_log_id',

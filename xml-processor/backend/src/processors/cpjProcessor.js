@@ -91,7 +91,7 @@ const path = require('path');
 const logger = require('../utils/logger');
 const models = require('../models');
 const { classifyDepartment } = require('../utils/departmentClassifier');
-const { parseDateTime, getCurrentUTC } = require('../utils/dateUtils');
+const { getCurrentUTC, parseDateTimePreserveFormat } = require('../utils/dateUtils');
 
 class CPJProcessor {
   constructor() {
@@ -127,7 +127,9 @@ class CPJProcessor {
         await this.processTransaction(transaction);
           processedCount++;
         } catch (error) {
-          logger.error(`Error processing transaction ${transaction.trheader?.trticknum.trseq}:`, error);
+          // Get transaction ID safely for error logging
+          const transactionId = this.getTransactionId(transaction);
+          logger.error(`Error processing transaction ${transactionId}:`, error);
           errorCount++;
         }
       }
@@ -147,6 +149,21 @@ class CPJProcessor {
     }
   }
 
+  // Add a helper method to safely get transaction ID
+  getTransactionId(transaction) {
+    try {
+      // Try multiple possible locations for transaction ID
+      return transaction?.trheader?.trticknum?.trseq || 
+             transaction?.trheader?.trseq ||
+             transaction?.trheader?.transactionid ||
+             transaction?.transactionid ||
+             transaction?.id ||
+             null;
+    } catch (error) {
+      return null;
+    }
+  }
+
   async processTransaction(transData) {
     const transaction = await models.sequelize.transaction();  
 
@@ -160,20 +177,26 @@ class CPJProcessor {
       // Process "network sale", "sale", "nosale", "refund sale", and "void" transaction types
       const transactionType = transData.type || '';
       const allowedTypes = ['network sale', 'sale', 'nosale', 'refund sale', 'void'];
+      
       if (!allowedTypes.includes(transactionType)) {
         logger.info(`Skipping transaction type: ${transactionType}`);
         await transaction.commit();
         return;
       }
-      console.log(transData)
+
+      // Safely extract posnum with proper null checking
+      const posnum = header.posnum || header.trticknum?.posnum;
+      const posnumInt = posnum ? parseInt(posnum) : null;
+      const storePosUniqueId = header.storenumber && posnumInt ? `${header.storenumber}-${posnumInt}` : null;
+      const isVoid = this.isTransactionVoid(transData.type);
       // Ensure store exists
       if (header.storenumber) {
         await this.ensureStoreExists(header.storenumber, { transaction });
       }
 
       // Ensure POS terminal exists
-      if ((header.posnum || header.trticknum.posnum) && header.storenumber) {
-        await this.ensurePosTerminalExists((header.posnum || header.trticknum.posnum), header.storenumber, { transaction });
+      if (posnumInt && header.storenumber) {
+        await this.ensurePosTerminalExists(storePosUniqueId, posnumInt, header.storenumber, { transaction });
       }
 
       // Process transaction event log
@@ -184,6 +207,7 @@ class CPJProcessor {
         transData,
         header, 
         values, 
+        storePosUniqueId,
         eventLog?.transaction_event_log_id, 
         { transaction }
       );
@@ -192,7 +216,7 @@ class CPJProcessor {
       if (lines.trline) {
         const lineItems = Array.isArray(lines.trline) ? lines.trline : [lines.trline];
         for (const lineItem of lineItems) {
-          await this.processTransactionLineItem(salesTransaction.transaction_id, salesTransaction.sales_transaction_unique_id, lineItem, { transaction });
+          await this.processTransactionLineItem(isVoid, salesTransaction.transaction_id, salesTransaction.sales_transaction_unique_id, lineItem, { transaction });
         }
       }
 
@@ -218,14 +242,18 @@ class CPJProcessor {
   }
 
   async processTransactionEventLog(header, values, options = {}) {
-    if (!header.termmsgsn && !header.trticknum.trseq) {
+    // Add more robust checking for required fields
+    const termMsgSN = header.termmsgsn?._ || '';
+    const termValue = header.termmsgsn?.term || '';
+    const trSeq = header.trticknum?.trseq || header.trseq || '';
+    
+    if (!termMsgSN && !trSeq) {
+      logger.warn('Skipping transaction event log - missing required fields');
       return null;
     }
 
     // Compute transaction_event_log_id as <termMsgSN term= + - + termMsgSN>
-    const termMsgSN = header.termmsgsn?._ || '';
-    const termValue = header.termmsgsn?.term || '';
-    const transactionEventLogId = `${termValue}-${termMsgSN}`;
+    const transactionEventLogId = termValue && termMsgSN ? `${termValue}-${termMsgSN}` : `seq-${trSeq}`;
 
     const eventLogData = {
       transaction_event_log_id: transactionEventLogId,
@@ -247,12 +275,15 @@ class CPJProcessor {
     return eventLog;
   }
 
-  async createSalesTransaction(transData, header, values, eventLogId, options = {}) {
+  async createSalesTransaction(transData, header, values, storePosUniqueId, eventLogId, options = {}) {
+    // Add more robust field extraction with fallbacks
     const transactionData = {
-      sales_transaction_unique_id: header.uniqueid || Date.now(),
-      transaction_id: parseInt(header.trticknum?.trseq) || null,
+      sales_transaction_unique_id: header.uniqueid || `trans_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      transaction_id: parseInt(header.trticknum?.trseq) || parseInt(header.trseq) || null,
       store_id: header.storenumber || null,
-      register_id: parseInt(header.trticknum?.posnum) || parseInt(header.posnum) || null,
+      store_pos_unique_id: storePosUniqueId,
+      original_register_id: parseInt(header.troriginalticknum?.posnum) || null,
+      original_transaction_id: parseInt(header.troriginalticknum?.trseq) || null,
       transaction_event_log_id: eventLogId,
       cashier_session: parseInt(header.cashier?.period) || null,
       employee_id: parseInt(header.cashier?.sysid) || null,
@@ -263,16 +294,17 @@ class CPJProcessor {
       total_amount: parseFloat(values.trtotwtax) || null,
       total_no_tax: parseFloat(values.trtotnotax) || null,
       total_tax_amount: parseFloat(values.trtottax) || null,
-      transaction_datetime: parseDateTime(header.date),
+      transaction_datetime: header.date,  // Store the original string directly
       transaction_type: transData.type,
-      original_register_id: parseInt(header.troriginalticknum?.posnum) || null,
-      original_transaction_id: parseInt(header.troriginalticknum?.trseq) || null,
       is_fuel_prepay: transData.fuelPrepay === 'true' || transData.fuelPrepay === true,
       is_fuel_prepay_completion: transData.fuelPrepayCompletion === 'true' || transData.fuelPrepayCompletion === true,
       is_rollback: transData.rollback === 'true' || transData.rollback === true,
       is_suspended: transData.suspended === 'true' || transData.suspended === true,
       was_recalled: transData.recalled === 'true' || transData.recalled === true
     };
+    console.log('---------------------------------------');
+    console.log(header.date);
+    console.log(transactionData.transaction_datetime);
     
     const [salesTransaction, created] = await models.SalesTransaction.findOrCreate({
       where: { sales_transaction_unique_id: transactionData.sales_transaction_unique_id },
@@ -280,14 +312,15 @@ class CPJProcessor {
       transaction: options.transaction
     });
 
-    if (!created) {
-      await salesTransaction.update(transactionData, { transaction: options.transaction });
+    if (created) {
+      logger.info(`Created new sales transaction: ${salesTransaction.sales_transaction_unique_id}`);
     }
 
     return salesTransaction;
   }
+  
 
-  async processTransactionLineItem(transactionId, salesTransactionUniqueId, lineData, options = {}) {
+  async processTransactionLineItem(isVoid, transactionId, salesTransactionUniqueId, lineData, options = {}) {
     // Ensure department exists
     let departmentId = null;
     if (lineData.trldept?.number || lineData.trldept) {
@@ -326,16 +359,18 @@ class CPJProcessor {
       upc_entry_type: lineData.trlupcentry?.type || null,
       upc_modifier: typeof lineData.trlmodifier === 'string' ? parseInt(lineData.trlmodifier) : null,
       // New car wash related fields
-      car_wash_package: parseInt(lineData.trlCwLineIx) || null,
-      car_wash_code: parseInt(lineData.trlCwCode) || null,
-      car_wash_promo_type: lineData.trlCwPromo?.type || null,
-      car_wash_promo_amount: parseFloat(lineData.trlCwPromo?._) || null,
+      car_wash_package: parseInt(lineData.trlcw?.trlcwlineix) || null,
+      car_wash_code: parseInt(lineData.trlcw?.trlcwcode) || null,
+      car_wash_promo_type: lineData.trlcw?.trlcwpromo?.type || null,
+      car_wash_promo_amount: parseFloat(lineData.trlcw?.trlcwpromo?._) || null,
       // New flag fields
-      is_fuel_only: typeof lineData.trlFuelOnly === 'string',
-      is_fuel_sale: typeof lineData.trlFuelSale === 'string',
-      is_lottery_payout: lineData.trlNegative?.cause === 'negDept',
-      is_line_void: typeof lineData.trlNetVoid === 'string',
-      has_special_discount: typeof lineData.trlSpDisc === 'string'
+      is_fuel_only: typeof lineData.trlflags.trlfuelonly === 'string',
+      is_fuel_sale: typeof lineData.trlflags.trlfuelsale === 'string',
+      is_lottery_payout: lineData.trlflags.trlnegative?.cause === 'negDept',
+      is_line_void: typeof lineData.trlflags.trlnetvoid === 'string',
+      has_special_discount: typeof lineData.trlflags.trlspdisc === 'string',
+      // New transaction void field - calculate based on transaction type
+      is_transaction_void: isVoid
     };
 
     const lineItem = await models.TransactionLineItem.create(lineItemData, {
@@ -358,6 +393,19 @@ class CPJProcessor {
     }
 
     return lineItem;
+  }
+
+  // Add helper method to determine if transaction is void
+  isTransactionVoid(transactionType) {
+    if (!transactionType) return false;
+    
+    // Convert to lowercase for case-insensitive comparison
+    const type = transactionType.toLowerCase();
+    
+    // Transaction types that indicate void
+    const voidTypes = ['void'];
+    
+    return voidTypes.includes(type);
   }
 
   async processLineItemTax(lineItemUuid, lineData, transactionId, salesTransactionUniqueId, options = {}) {
@@ -443,7 +491,7 @@ class CPJProcessor {
       mop_amount: parseFloat(paymentData.trpamt) || null,
       mop_code: mopCode,
       payment_entry_method: paymentData.trppaycode?._ || null,
-      payment_timestamp: (mopCode === 1 ? parseDateTime(header.date) : parseDateTime(paymentData.trpcardinfo?.trpcauthdatetime)) || null,
+      payment_timestamp: (mopCode === 1 ? header.date : paymentData.trpcardinfo?.trpcauthdatetime) || null,  // Store as string directly
       payment_type: paymentData.type || null
     };
     await models.Payment.create(paymentInfo, {
@@ -495,10 +543,11 @@ class CPJProcessor {
     return store;
   }
 
-  async ensurePosTerminalExists(registerId, storeId, options = {}) {
+  async ensurePosTerminalExists(storePosUniqueId, registerId, storeId, options = {}) {
     const [terminal, created] = await models.PosDeviceTerminal.findOrCreate({
-      where: { register_id: registerId },
+      where: { store_pos_unique_id: storePosUniqueId },
       defaults: {
+        store_pos_unique_id: storePosUniqueId,
         register_id: registerId,
         store_id: storeId,
         device_type: ''

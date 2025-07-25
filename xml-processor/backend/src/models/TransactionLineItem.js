@@ -3,8 +3,7 @@ module.exports = (sequelize, DataTypes) => {
     line_item_uuid: {
       type: DataTypes.UUID,
       primaryKey: true,
-      defaultValue: DataTypes.UUIDV4,
-      allowNull: false
+      defaultValue: DataTypes.UUIDV4
     },
     transaction_id: {
       type: DataTypes.DECIMAL,
@@ -36,7 +35,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     department: {
       type: DataTypes.DECIMAL,
-      allowNull: true
+      allowNull: true,
+      references: {
+        model: 'departments',
+        key: 'department_id'
+      }
     },
     department_name: {
       type: DataTypes.TEXT,
@@ -118,6 +121,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DECIMAL,
       allowNull: true
     },
+    // Car wash related fields
     car_wash_package: {
       type: DataTypes.DECIMAL,
       allowNull: true
@@ -134,6 +138,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: true
     },
+    // Flag fields
     is_fuel_only: {
       type: DataTypes.BOOLEAN,
       allowNull: true,
@@ -158,6 +163,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BOOLEAN,
       allowNull: true,
       defaultValue: false
+    },
+    // New field for transaction void
+    is_transaction_void: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true,
+      defaultValue: false
     }
   }, {
     tableName: 'transaction_line_item',
@@ -167,10 +178,10 @@ module.exports = (sequelize, DataTypes) => {
         fields: ['transaction_id']
       },
       {
-        fields: ['sales_transaction_unique_id']
+        fields: ['upc_id']
       },
       {
-        fields: ['upc_id']
+        fields: ['sales_transaction_unique_id']
       }
     ]
   });
@@ -184,17 +195,21 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: 'upc_id',
       as: 'product'
     });
+    TransactionLineItem.belongsTo(models.Departments, {
+      foreignKey: 'department',
+      as: 'departmentInfo'
+    });
     TransactionLineItem.hasMany(models.TransactionLineItemTax, {
       foreignKey: 'line_item_uuid',
       as: 'taxes'
     });
-    TransactionLineItem.hasMany(models.LoyaltyLineItems, {
-      foreignKey: 'line_item_uuid',
-      as: 'loyaltyDiscounts'
-    });
     TransactionLineItem.hasMany(models.PromotionsLineItem, {
       foreignKey: 'line_item_uuid',
       as: 'promotions'
+    });
+    TransactionLineItem.hasMany(models.LoyaltyLineItems, {
+      foreignKey: 'line_item_uuid',
+      as: 'loyaltyItems'
     });
   };
 

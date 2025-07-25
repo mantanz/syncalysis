@@ -179,6 +179,42 @@ function convertFromUTC(utcDate) {
   }
 }
 
+function parseDateTimeWithOffset(dateString) {
+  if (!dateString) return null;
+  
+  // Parse the date string and return as Date object
+  // This preserves the timezone offset information
+  const date = new Date(dateString);
+  
+  // Check if the date is valid
+  if (isNaN(date.getTime())) {
+    console.warn(`Invalid date string: ${dateString}`);
+    return null;
+  }
+  
+  return date;
+}
+
+function parseDateTimePreserveFormat(dateString) {
+  if (!dateString) return null;
+  
+  // If it's already in the format we want, return it as is
+  if (typeof dateString === 'string' && dateString.includes('T') && (dateString.includes('Z') || dateString.includes('+') || dateString.includes('-'))) {
+    return dateString;
+  }
+  
+  // For other formats, parse and return in ISO format with timezone
+  const date = new Date(dateString);
+  
+  if (isNaN(date.getTime())) {
+    console.warn(`Invalid date string: ${dateString}`);
+    return null;
+  }
+  
+  // Return in ISO format with timezone offset
+  return date.toISOString().replace('Z', `-${String(date.getTimezoneOffset() / 60).padStart(2, '0')}:${String(date.getTimezoneOffset() % 60).padStart(2, '0')}`);
+}
+
 module.exports = {
   // Current time functions
   getCurrentUTC,
@@ -194,5 +230,7 @@ module.exports = {
   
   // Timezone conversion functions
   convertToUTC,
-  convertFromUTC
+  convertFromUTC,
+  parseDateTimeWithOffset,
+  parseDateTimePreserveFormat
 }; 

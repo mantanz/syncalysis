@@ -1,9 +1,13 @@
 module.exports = (sequelize, DataTypes) => {
   const PosDeviceTerminal = sequelize.define('PosDeviceTerminal', {
-    register_id: {
-      type: DataTypes.DECIMAL,
+    store_pos_unique_id: {
+      type: DataTypes.TEXT,
       primaryKey: true,
       allowNull: false
+    },
+    register_id: {
+      type: DataTypes.DECIMAL,
+      allowNull: true
     },
     store_id: {
       type: DataTypes.STRING,
@@ -23,6 +27,9 @@ module.exports = (sequelize, DataTypes) => {
     indexes: [
       {
         fields: ['store_id']
+      },
+      {
+        fields: ['register_id']
       }
     ]
   });
@@ -33,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
       as: 'store'
     });
     PosDeviceTerminal.hasMany(models.SalesTransaction, {
-      foreignKey: 'register_id',
+      foreignKey: 'store_pos_unique_id',
       as: 'transactions'
     });
   };

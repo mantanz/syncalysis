@@ -30,7 +30,7 @@ create table public.payment (
   mop_amount numeric(10, 2) null,
   mop_code numeric null,
   payment_entry_method text null,
-  payment_timestamp timestamp with time zone null,
+  payment_timestamp text null,  -- Changed from timestamp with time zone to text
   payment_type text null,
   constraint payment_pkey primary key (payment_uuid),
   constraint payment_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id)
@@ -125,7 +125,7 @@ create table public.sales_transaction (
   total_amount numeric(10, 2) null,
   total_no_tax numeric(10, 2) null,
   total_tax_amount numeric(10, 2) null,
-  transaction_datetime timestamp with time zone null,
+  transaction_datetime text null,
   transaction_type text null,
   original_register_id numeric null,
   original_transaction_id numeric null,
@@ -203,6 +203,7 @@ create table public.transaction_line_item (
   is_lottery_payout boolean null default false,
   is_line_void boolean null default false,
   has_special_discount boolean null default false,
+  is_transaction_void boolean null default false,  -- New field
   constraint transaction_line_item_pkey primary key (line_item_uuid),
   constraint transaction_line_item_sales_transaction_unique_id_fkey foreign KEY (sales_transaction_unique_id) references sales_transaction (sales_transaction_unique_id),
   constraint transaction_line_item_upc_id_fkey foreign KEY (upc_id) references pricebook (upc_id)

@@ -26,7 +26,7 @@ async function testWithDatabase() {
       //'HRS2025-03-10-868.xml',  // Hours/Schedule file (HRS)
       //'SUM2025-03-10-868.xml',  // Summary file (smaller)
       //'FCF2025-03-10-868.xml',  // Fuel control file (small)
-       'CPJ2025-03-10-868.xml'   // Transaction file (large) - uncomment to test
+       'CPJ2025-06-05-717.xml' , 'CPJ2025-06-27-736.xml'  // Transaction file (large) - uncomment to test
       //'Pricebook - Report.csv'
     ];
 
